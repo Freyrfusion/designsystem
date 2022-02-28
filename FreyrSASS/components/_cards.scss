@@ -1,0 +1,20 @@
+.card{
+    display: block;
+    padding: 0.75rem;
+    border:1px solid #ddd;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    img{
+        width:100%;
+        margin-bottom: $base-margin;
+    }
+    .card-title{
+        font-size: $h6-font-size;
+        padding-bottom: $base-padding;
+        font-weight:$font-weight-bold;
+    }
+    .card-body{
+        font-size:$font-size-base;
+    }
+    
+}

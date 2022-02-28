@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+ 
+.bars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  > div p{
+    margin: 10px;
+    
+    &:nth-child(odd) {
+      margin-left: 0;
+    }
+  }
+}
+
+.progress-bar {
+  background: $gray-200;
+  border-radius: 99px;
+  width: 200px;
+  height: 5px;
+  position: relative;overflow: hidden;
+  
+  &::before {
+    border-radius: 99px;
+    position: absolute;
+    height: 5px;
+    background: $primary;
+    content: '';
+    width: 0;
+    transition: width .2s;
+  }
+}
+
+$start: 1;
+$end: 10;
+
+@for $i from $start through $end {
+  $i: 10 * $i;
+  .progress-bar-#{$i}::before { width: $i * 1% }
+}

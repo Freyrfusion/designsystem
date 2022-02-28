@@ -1,0 +1,17 @@
+
+header{
+    background: $primary;
+    color: $white;
+    text-align: center;
+    height: $header-height;
+    line-height: $header-height;
+    @include box-shadow(1px, 1px, 3px, 1px, $gray-400);
+
+    margin-bottom: $base-margin / 1.5;
+}
+section{
+   // background: $gray-100;
+    @include border(0 0 $base-border-thickness 0, $gray-200);
+    padding: $base-padding * 3 $base-padding;
+
+}

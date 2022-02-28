@@ -1,0 +1,28 @@
+// Container
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  // margin-left: - $grid-gap;
+  // margin-right: - $grid-gap;
+}
+.col{
+  display: flex;
+  flex-wrap: wrap;
+}
+// Creating Cols Media Query
+@each $modifier , $colbreakpoint in $grid-columnsset {
+  @include create-col-classes($modifier, $grid__cols, $colbreakpoint);
+  
+} 
+
+
+
+
+

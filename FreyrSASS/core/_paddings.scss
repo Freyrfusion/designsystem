@@ -1,0 +1,21 @@
+// variable initialization
+$loop-begin:  2 !default;
+$loop-end:   100 !default;
+$interval:    2 !default;
+
+// sub-property: abbreviation
+$sides: (top: t, bottom: b, left: l, right: r);
+
+// loop
+$cursor: $loop-begin;
+
+@while $cursor <= $loop-end {
+
+  @each $side, $name in $sides {
+    .p-#{$name}-#{$cursor} {
+      padding-#{$side}: #{$cursor}px;
+    }
+  }
+
+  $cursor: $cursor + $interval;
+}

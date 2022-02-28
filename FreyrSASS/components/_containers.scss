@@ -1,0 +1,28 @@
+$container-max-widths: (
+    xs: 360px,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+.container{
+    @include xs{
+        max-width:map-get($container-max-widths,"xs");
+    }
+    @include sm{
+        max-width:map-get($container-max-widths,"sm");
+    }
+    @include md{
+        max-width:map-get($container-max-widths,"md");
+    }
+    @include lg{
+        max-width:map-get($container-max-widths,"lg");
+    }
+    @include xl{
+        max-width:map-get($container-max-widths,"xl");
+    }
+    @include xxl{
+        max-width:map-get($container-max-widths,"xxl");
+    }
+}

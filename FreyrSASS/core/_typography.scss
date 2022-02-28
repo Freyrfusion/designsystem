@@ -1,0 +1,47 @@
+html, body{
+  font-family: $font-family;  
+  line-height: 24px;
+  @include fluid-type(18px, 20px);
+  
+}
+h1{
+    @include fluid-type($h1-font-size, $h1-font-size * 1);
+}
+h2{
+    @include fluid-type($h2-font-size, $h2-font-size * 1);
+}
+h3{
+    @include fluid-type($h3-font-size, $h3-font-size * 1);
+}
+h4{
+    @include fluid-type($h4-font-size, $h4-font-size * 1);
+}
+h5{
+    @include fluid-type($h5-font-size, $h5-font-size * 1);
+}
+h6{
+    @include fluid-type($h6-font-size, $h6-font-size * 1);
+}
+p{
+    @include fluid-type($font-size-sm, $font-size-sm * 1 );
+  
+}
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            500 !default;
+$font-weight-bolder:          600 !default;
+// Text Weights
+$text-weights: (
+  "light":  300,
+  "400":    400,
+  "500":    500,
+  "600":    600,
+ 
+) !default;
+
+@each $key, $val in $text-weights {
+    .weight-#{$key}{
+        font-weight: $val;
+    }
+}
