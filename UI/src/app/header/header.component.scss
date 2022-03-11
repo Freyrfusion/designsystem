@@ -1,0 +1,35 @@
+header{
+    width: 100%;
+    height: 54px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+}
+.logospace{
+    width:200px;
+    float: left;
+}
+.logo{
+  width:auto;
+  height: 35px;
+  margin: 10px;
+  float: left;
+}
+nav{
+    float: left;
+    ul{
+        list-style-type: none;
+        li{
+            float: left;
+            padding: 2px 20px;
+            a{
+                text-decoration: none;
+                color: #777;
+                font-size: 14px;
+                font-weight: 400;
+                &:hover{
+                    color:#000;
+                }
+            }
+        }
+    }
+}
