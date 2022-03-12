@@ -1,0 +1,35 @@
+.sidebar{
+    width:16%;
+    height: 100vh;
+    float: left;
+    border-right:1px solid #eaeaea;
+    padding: 10px;
+    background: #fafafa;
+    overflow-y: auto;
+    ul{
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+        li{
+           
+            padding: 6px 10px;
+            a{
+                text-decoration: none;
+                color: #777;
+                font-size: 13px;
+                font-weight: 400;
+                &:hover{
+                    color:#000;
+                }
+            }
+        }
+    }
+}
+.control-search{
+    float: left;
+    width:90%;
+    margin: 0 10px 10px;
+    border: 1px solid #eaeaea;
+    height: 24px;
+    border-radius: 3px;
+}

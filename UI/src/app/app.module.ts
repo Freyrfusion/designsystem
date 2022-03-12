@@ -10,6 +10,16 @@ import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { TypographyComponent } from './components/typography/typography.component';
+import { FoundationsComponent } from './pages/foundations/foundations.component';
+import { UicomponentsComponent } from './pages/uicomponents/uicomponents.component';
+import { PatternsComponent } from './pages/patterns/patterns.component';
+import { ResourcesComponent } from './pages/resources/resources.component';
+import { ContentComponent } from './content/content.component';
+import { DynamicContentComponent } from './dynamic-content/dynamic-content.component';
+import { DynamicSidebarComponent } from './dynamic-sidebar/dynamic-sidebar.component';
+import { DynamicSample1Component } from './dynamic-sidebar/dynamic-sidebar.component';
+import { DynamicSample2Component } from './dynamic-sidebar/dynamic-sidebar.component';
+import { UnknownDynamicComponent } from './dynamic-sidebar/dynamic-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +30,24 @@ import { TypographyComponent } from './components/typography/typography.componen
     FooterComponent,
     SidebarComponent,
     ButtonsComponent,
-    TypographyComponent
+    TypographyComponent,
+    FoundationsComponent,
+    UicomponentsComponent,
+    PatternsComponent,
+    ResourcesComponent,
+    ContentComponent,
+    DynamicContentComponent,
+    DynamicSidebarComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
+  ],
+  entryComponents: [
+    DynamicSample1Component,
+    DynamicSample2Component,
+    UnknownDynamicComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

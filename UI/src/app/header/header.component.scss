@@ -18,9 +18,11 @@ nav{
     float: left;
     ul{
         list-style-type: none;
+        margin:0;
+        padding: 0;
         li{
             float: left;
-            padding: 2px 20px;
+            padding: 18px 20px;
             a{
                 text-decoration: none;
                 color: #777;
