@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,17 +22,26 @@ import { DynamicSidebarComponent } from './dynamic-sidebar/dynamic-sidebar.compo
 import { DynamicSample1Component } from './dynamic-sidebar/dynamic-sidebar.component';
 import { DynamicSample2Component } from './dynamic-sidebar/dynamic-sidebar.component';
 import { UnknownDynamicComponent } from './dynamic-sidebar/dynamic-sidebar.component';
+import { UicomponentTabsDirective } from './uicomponent-tabs.directive';
+import { IconsComponent } from './components/icons/icons.component';
+import { PrimitivesComponent } from './components/primitives/primitives.component';
+import { AlertsComponent } from './components/alerts/alerts.component';
+import { ModalsComponent } from './components/modals/modals.component';
+import { TabsComponent } from './components/tabs/tabs.component';
+import { FormsComponent } from './components/forms/forms.component';
+import { CheckboxsComponent } from './components/checkboxs/checkboxs.component';
+import { TooltipsComponent } from './components/tooltips/tooltips.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ColorsComponent,
-    NavigationsComponent,
+   // ColorsComponent,
+   // NavigationsComponent,
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    ButtonsComponent,
-    TypographyComponent,
+   // ButtonsComponent,
+  //  TypographyComponent,
     FoundationsComponent,
     UicomponentsComponent,
     PatternsComponent,
@@ -38,16 +49,34 @@ import { UnknownDynamicComponent } from './dynamic-sidebar/dynamic-sidebar.compo
     ContentComponent,
     DynamicContentComponent,
     DynamicSidebarComponent,
+    UicomponentTabsDirective,
+  
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Ng2SearchPipeModule,
+    FormsModule
+    
   ],
   entryComponents: [
     DynamicSample1Component,
     DynamicSample2Component,
-    UnknownDynamicComponent
+    UnknownDynamicComponent,
+    ColorsComponent,
+    NavigationsComponent,
+    ButtonsComponent,
+    TypographyComponent,
+    IconsComponent,
+    PrimitivesComponent,
+    AlertsComponent,
+    ModalsComponent,
+    TabsComponent,
+    FormsComponent,
+    CheckboxsComponent,
+    TooltipsComponent,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

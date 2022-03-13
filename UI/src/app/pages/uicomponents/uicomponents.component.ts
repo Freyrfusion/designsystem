@@ -7,7 +7,6 @@ import { SidebarComponent } from './../../sidebar/sidebar.component';
   styleUrls: ['./uicomponents.component.scss'],
   
 })
-
 export class UicomponentsComponent implements OnInit {
 
   constructor() { }
