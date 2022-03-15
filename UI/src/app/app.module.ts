@@ -9,7 +9,7 @@ import { ColorsComponent } from './components/colors/colors.component';
 import { NavigationsComponent } from './components/navigations/navigations.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
+// import { SidebarComponent } from './sidebar/sidebar.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { TypographyComponent } from './components/typography/typography.component';
 import { FoundationsComponent } from './pages/foundations/foundations.component';
@@ -17,11 +17,11 @@ import { UicomponentsComponent } from './pages/uicomponents/uicomponents.compone
 import { PatternsComponent } from './pages/patterns/patterns.component';
 import { ResourcesComponent } from './pages/resources/resources.component';
 import { ContentComponent } from './content/content.component';
-import { DynamicContentComponent } from './dynamic-content/dynamic-content.component';
-import { DynamicSidebarComponent } from './dynamic-sidebar/dynamic-sidebar.component';
-import { DynamicSample1Component } from './dynamic-sidebar/dynamic-sidebar.component';
-import { DynamicSample2Component } from './dynamic-sidebar/dynamic-sidebar.component';
-import { UnknownDynamicComponent } from './dynamic-sidebar/dynamic-sidebar.component';
+// import { DynamicContentComponent } from './dynamic-content/dynamic-content.component';
+// import { DynamicSidebarComponent } from './dynamic-sidebar/dynamic-sidebar.component';
+// import { DynamicSample1Component } from './dynamic-sidebar/dynamic-sidebar.component';
+// import { DynamicSample2Component } from './dynamic-sidebar/dynamic-sidebar.component';
+// import { UnknownDynamicComponent } from './dynamic-sidebar/dynamic-sidebar.component';
 import { UicomponentTabsDirective } from './uicomponent-tabs.directive';
 import { IconsComponent } from './components/icons/icons.component';
 import { PrimitivesComponent } from './components/primitives/primitives.component';
@@ -39,7 +39,7 @@ import { TooltipsComponent } from './components/tooltips/tooltips.component';
    // NavigationsComponent,
     HeaderComponent,
     FooterComponent,
-    SidebarComponent,
+   // SidebarComponent,
    // ButtonsComponent,
   //  TypographyComponent,
     FoundationsComponent,
@@ -47,8 +47,8 @@ import { TooltipsComponent } from './components/tooltips/tooltips.component';
     PatternsComponent,
     ResourcesComponent,
     ContentComponent,
-    DynamicContentComponent,
-    DynamicSidebarComponent,
+    // DynamicContentComponent,
+    // DynamicSidebarComponent,
     UicomponentTabsDirective,
   
     
@@ -61,9 +61,9 @@ import { TooltipsComponent } from './components/tooltips/tooltips.component';
     
   ],
   entryComponents: [
-    DynamicSample1Component,
-    DynamicSample2Component,
-    UnknownDynamicComponent,
+    // DynamicSample1Component,
+    // DynamicSample2Component,
+    // UnknownDynamicComponent,
     ColorsComponent,
     NavigationsComponent,
     ButtonsComponent,

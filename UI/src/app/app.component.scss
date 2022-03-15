@@ -42,6 +42,21 @@
     width:90%;
     margin: 0 10px 10px;
     border: 1px solid #eaeaea;
-    height: 24px;
+    height: 26px;
+    padding: 5px;
     border-radius: 3px;
+    font-size: 13px;
+}
+.tab-content{
+    width:calc(100% - 20%);
+    float: left;
+    padding: 10px;
+}
+.html-content{
+    background: #666;
+    color: #fff;
+    float: left;
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;;
 }
