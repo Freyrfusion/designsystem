@@ -45,3 +45,16 @@
     height: 24px;
     border-radius: 3px;
 }
+.tab-content{
+    width:calc(100% - 20%);
+    float: left;
+    padding: 10px;
+}
+.html-content{
+    background: #666;
+    color: #fff;
+    float: left;
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;;
+}

@@ -1,0 +1,246 @@
+.dropdown-menu {
+    font-family: $font-family;
+   // background: $gray-100;
+    color: $white;
+    
+    .item {
+        padding: 0 $base-padding / 2;
+        font-size: $font-size-sm;
+        position: relative;
+        border-bottom:  $base-border-thickness solid $gray-200;
+        margin-right: $base-margin;
+      &:hover {
+        cursor: pointer;
+      }
+      
+      i {
+        margin-left: 10px;
+      }
+        
+      ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        background: $white;
+        left: auto;
+        right: auto;
+        z-index: 1;
+        border-top: $base-border-thickness solid $gray-200;
+        @include box-shadow(1px, 1px, 3px, 0px, $gray-400);
+        border-radius: $base-border-radius / 2;
+        
+        li {
+          font-size:$font-size-sm / 1.05;
+          padding: $base-padding / 2  $base-padding;
+          color:$gray-800;
+          border-radius: $base-border-radius / 2;
+          word-break: keep-all;
+          white-space: nowrap;
+          &:hover {
+            background:$gray-200;
+            color:$gray-800;
+          }
+          a{
+              color: $gray-900;
+              text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  @include sm{
+    .dropdown-menu {
+        display: flex;
+        justify-content: flex-end;
+        
+        .item {
+          border: none;
+        }
+      }
+}
+.drop-open {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.1);
+    &.hidden{
+        display: none;
+    }
+}
+
+//Custom Dropdown
+
+/**
+ * Dropdown – Structure
+ *
+ */
+
+ .customdropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.customdropdown-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width:100%;
+  height:100vh;
+}
+.customdropdown-inner {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+  ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    li{
+      white-space: nowrap;
+      padding: 6px 15px;
+      &:hover{
+        background-color: $gray-200;
+      }
+      a{
+        font-size: $font-size-sm - .1;
+        color: $gray-800;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.customdropdown-hover:hover .customdropdown-inner,
+.customdropdown-open:checked ~ .customdropdown-inner {
+  opacity: 1;
+  visibility: visible
+}
+.customdropdown-hover:hover ~ .customdropdown-overlay,
+.customdropdown-open:checked ~ .customdropdown-overlay {
+  display: block
+}
+
+
+.customdropdown-inner {
+  min-width: 100%;
+  padding: 0px;
+  background: #fff;
+  border: #aaa solid 1px;
+  border-radius: 3px;
+  transition: opacity .3s, visibility .3s;
+}
+
+/* To enable focus */
+.customdropdown-overlay {
+  background-color: rgba(0,0,0,0);
+}
+
+@media (max-width: 960px) {
+  .customdropdown-inner {
+    position: fixed;
+    min-width: 0;
+    margin: 20px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+  }
+}
+//Dropdown flickity
+//flickity Dropdown  Css
+.dropdown-header {
+  color: $primary;
+  cursor: pointer;
+  text-align: center;
+  font-size: $font-size-base;
+  i{
+    padding-left: $base-padding / 2;
+  }
+}
+
+.dropdown-container {
+  opacity: 0;
+  background: $white;
+  position: relative;
+  border: 1px solid $gray-300;
+  border-radius: $base-border-thickness;
+  padding: $base-padding 0 0;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px 0px;
+  max-width: 240px;
+
+  transition: all .25s ease-in-out;
+  &.active {
+    opacity: 1;
+    transform: translateY(12px);
+  }
+}
+
+/* Triangle via: cssarrowplease.com */
+.dropdown-container:after, .dropdown-container:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.dropdown-container:after {
+	border-bottom-color:$gray-300;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.dropdown-container:before {
+	border-bottom-color: $gray-300;
+	border-width: 11px;
+	margin-left: -11px;
+}
+
+/* End Triangle */
+
+.dropdown-container li {
+  padding: $base-padding / 1.8;
+  text-align: center;
+  cursor: pointer;
+  color: $gray-800;
+  font-size: $font-size-sm;
+}
+
+.dropdown-container li:hover {
+  color: $primary;
+}
+
+.dropdown-container li:nth-last-child(2) {
+  padding-bottom: $base-padding;
+}
+
+.dropdown-container li:last-child {
+  border-top: 1px solid $gray-200;
+  color: $danger;
+  padding: $base-padding 0 $base-padding;
+}
+
+
+
+/* Flickity Stuff */
+
+.dropdown-carousel {
+  overflow: hidden;
+  outline: none;
+}
+
+.dropdown-cell {
+  width: 100%;
+}
+

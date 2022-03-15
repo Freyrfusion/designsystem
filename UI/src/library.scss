@@ -1,0 +1,33 @@
+
+// Vendor Files
+@import "assets/scss/vendors/all";
+
+// Abstract files
+@import "assets/scss/abstracts/all";
+
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	@include border-box;
+}
+
+// Core files
+@import "assets/scss/core/all";
+
+
+// Components
+@import "assets/scss/components/all";
+
+// Layout
+@import "assets/scss/layout/all";
+
+
+// Sections
+//@import "sections/all";
+
+// Pages
+//@import "pages/all";
+
+

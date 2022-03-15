@@ -39,7 +39,7 @@ const routes: Routes = [
     { path: 'Alerts', component: AlertsComponent },
     { path: 'Typography', component: TypographyComponent }
   ] },
-  { path: 'patterns', component: PatternsComponent,children:[
+  { path: 'patterns', component: PatternsComponent, children:[
 
     
   ] },
