@@ -50,7 +50,7 @@ export class DynamicContentComponent implements OnInit {
  
   loadTabComponent(_selectedTab: string ) {
 
-
+  
 
 
 
@@ -77,6 +77,20 @@ export class DynamicContentComponent implements OnInit {
    // var activetabs = document.getElementsByClassName("activetab"); 
     var currenttab = _selectedTab;
     var gettabparent = document.getElementById(currenttab);
+    var getactivetabs = document.getElementsByClassName("activetab")[0];
+    if(typeof getactivetabs =='undefined'){
+     
+      gettabparent.className == "activetab";
+    }
+    else{
+      getactivetabs.classList.remove("activetab");
+      gettabparent.className == "activetab";
+    }
+   
+   
+       // Loop through the buttons and add the active class to the current/clicked button
+    
+  
     
     this._component = "";
     if (_selectedTab == "colors")
@@ -114,21 +128,25 @@ export class DynamicContentComponent implements OnInit {
     let componentRef = this.viewContainerRef.createComponent(componentFactory);
     this.componentsList.push(componentRef);
 
+   
+   
 
-    // Get the container element
-    var btnContainer = document.getElementById("dynamic-tabs");
+    // for (var i = 0; i < btns.length; i++) {
+     
+    //   btns[i].addEventListener("click", function() {
+    //     var current = document.getElementsByClassName("activetab")[0];
+    //     if (current.classList.contains('activetab')) {
+    //       // do some stuff
+    //       alert("yes");
+    //       current.classList.remove("activetab");
+    //   }
+    //   else{
+    //     alert("no");
+    //     this.className += " activetab";
+    //   }
 
-    // Get all buttons with class="btn" inside the container
-    var btns = btnContainer.getElementsByTagName("li");
-    
-    // Loop through the buttons and add the active class to the current/clicked button
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("activetab");
-        current[0].className = current[0].className.replace("activetab", "");
-        this.className += " activetab";
-      });
-    }
+    //   });
+    // }
 
   }
 SearchFunction() {
@@ -154,6 +172,7 @@ SearchFunction() {
       txtValue = td.textContent || td.innerText;
       if (txtValue.toUpperCase().indexOf(filter) > -1) {
         tr[i].style.display = "";
+        
       } else {
         tr[i].style.display = "none";
       }
