@@ -4,4 +4,83 @@
 <app-header></app-header>
 
 
-<app-content></app-content>
+<!-- <app-content></app-content> -->
+
+
+
+<div class="sidebar" >
+<!--Foundations Sidebar -->
+<div *ngIf="hasRoute('foundations')">
+  
+        <h5 class="m-l-10 m-b-10">Foundations</h5>
+        <input type="text" class="control-search" placeholder="Search">
+        <ul id="dynamic-tabs">
+            <li id="colors"><a routerLink="foundations/Colors"  routerLinkActive="active" data-toggle="tab" role="tab" (click)="loadTabComponent('colors')" >Colors</a></li>
+            <li id="icons"><a routerLink="foundations/Icons" routerLinkActive="active" data-toggle="tab" role="tab" (click)="loadTabComponent('icons')" >Icons</a></li>
+            <li id="primitives"><a routerLink="foundations/Primitives" routerLinkActive="active" data-toggle="tab" role="tab" (click)="loadTabComponent('primitives')">Layout Primitives</a></li>
+            <li id="typography"><a routerLink="foundations/Typography" routerLinkActive="active" data-toggle="tab" role="tab" (click)="loadTabComponent('typography')">Typography</a></li>
+        </ul>
+    
+
+</div>
+
+<!--UIcomponents Sidebar -->
+<div *ngIf="hasRoute('uicomponents')" >
+   
+        <h5 class="m-l-10 m-b-10">UI Components</h5>
+        <input type="text" class="control-search" (keyup)="SearchFunction()" placeholder="Search" id="searchInput" >
+        <ul id="dynamic-tabs">
+            <li id="alerts" ><a data-toggle="tab" role="tab"  routerLink="uicomponents/Alerts" routerLinkActive="active">Alerts</a></li>
+            <li id="buttons"><a data-toggle="tab" role="tab"  routerLink="uicomponents/Buttons" routerLinkActive="active" >Buttons</a></li>
+            <li id="checkboxs"><a data-toggle="tab" role="tab"  routerLink="uicomponents/CheckBox" routerLinkActive="active" >Checkboxs</a></li>
+            <li id="forms"><a data-toggle="tab" role="tab"  routerLink="uicomponents/Forms" routerLinkActive="active" >Forms</a></li>
+            <li id="modals"><a data-toggle="tab" role="tab"  routerLink="uicomponents/Modals" routerLinkActive="active">Modals</a></li>
+            <li id="navigations"><a data-toggle="tab" role="tab"  routerLink="uicomponents/Navigation" routerLinkActive="active">Navigations</a></li>
+            <li id="tabs"><a data-toggle="tab" role="tab"  routerLink="uicomponents/Tabs" routerLinkActive="active">Tabs</a></li>
+            <li id="tooltips"><a data-toggle="tab" role="tab"  routerLink="uicomponents/Tooltip" routerLinkActive="active">Tooltips</a></li>
+            <li id="typography"><a data-toggle="tab" role="tab"  routerLink="uicomponents/Typography" routerLinkActive="active">Typography</a></li>
+        </ul>
+    
+ 
+</div>
+
+<!--Patterns Sidebar -->
+<div *ngIf="hasRoute('patterns')">
+ 
+        <h5 class="m-l-10 m-b-10">Patterns</h5>
+        <input type="text" class="control-search" placeholder="Search">
+        <ul>
+            <li id="colors"><a data-toggle="tab" role="tab" (click)="loadTabComponent('colors')">Colors</a></li>
+            <li id="typography"><a data-toggle="tab" role="tab" (click)="loadTabComponent('typography')">Buttons</a></li>
+            <li id="typography"><a data-toggle="tab" role="tab" (click)="loadTabComponent('typography')">Navigation</a></li>
+            <li id="typography"><a data-toggle="tab" role="tab" (click)="loadTabComponent('typography')">Typography</a></li>
+        </ul>
+    
+     
+</div>
+
+<!--Resources Sidebar -->
+<div *ngIf="hasRoute('resources')">
+   
+        <h5 class="m-l-10 m-b-10">Resources</h5>
+        <input type="text" class="control-search" placeholder="Search">
+        <ul>
+            <li><a href="/colors">Colors</a></li>
+            <li><a href="/buttons">Buttons</a></li>
+            <li><a href="/navigation">Navigation</a></li>
+            <li><a href="/typography">Typography</a></li>
+        </ul>
+ 
+</div>
+</div>
+<!-- Second view activated when the route doesn't contain the home route -->
+<!-- <div *ngIf="!hasRoute('home')">
+    Second View
+</div> -->
+
+
+<div class="tab-content">
+    <!-- <ng-template active-tab></ng-template> -->
+
+    <router-outlet></router-outlet>
+</div>

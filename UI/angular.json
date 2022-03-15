@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sass-angular"
+    }
+  },
+  "defaultProject": "sass-angular",
+  "cli": {
+    "analytics": "735333b6-1ac3-4e7a-9f77-7b1e7170bcec"
+  }
 }
