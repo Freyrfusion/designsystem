@@ -13,7 +13,7 @@
 <div *ngIf="hasRoute('foundations')">
   
         <h5 class="m-l-10 m-b-10">Foundations</h5>
-        <input type="text" class="control-search" placeholder="Search">
+        <input type="text" (keyup)="SearchFunction()" class="control-search" placeholder="Search" id="searchInput">
         <ul id="dynamic-tabs">
             <li id="colors" routerLink="foundations/Colors"  routerLinkActive="activetab"><a data-toggle="tab" role="tab" (click)="loadTabComponent('colors')" >Colors</a></li>
             <li id="icons" routerLink="foundations/Icons" routerLinkActive="activetab"><a data-toggle="tab" role="tab" (click)="loadTabComponent('icons')" >Icons</a></li>
@@ -48,7 +48,7 @@
 <div *ngIf="hasRoute('patterns')">
  
         <h5 class="m-l-10 m-b-10">Patterns</h5>
-        <input type="text" class="control-search" placeholder="Search">
+        <input type="text" (keyup)="SearchFunction()" class="control-search" placeholder="Search" id="searchInput">
         <ul>
             <li id="colors"><a data-toggle="tab" role="tab" (click)="loadTabComponent('colors')">Colors</a></li>
             <li id="typography"><a data-toggle="tab" role="tab" (click)="loadTabComponent('typography')">Buttons</a></li>
@@ -63,7 +63,7 @@
 <div *ngIf="hasRoute('resources')">
    
         <h5 class="m-l-10 m-b-10">Resources</h5>
-        <input type="text" class="control-search" placeholder="Search">
+        <input type="text" (keyup)="SearchFunction()" class="control-search" placeholder="Search" id="searchInput">
         <ul>
             <li><a href="/colors">Colors</a></li>
             <li><a href="/buttons">Buttons</a></li>
