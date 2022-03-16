@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Rubik:wght@300;400;500;600&display=swap');
+@import "assets/themes/variables";
+@import "assets/themes/blue.scss";
+@import "assets/themes/green.scss";
+@import "assets/themes/dark.scss";
+@import "assets/themes/light.scss";
+@import "assets/themes/theming-function";
+
 html, body{
     margin:0;
     padding:0;
@@ -37,3 +44,4 @@ h5{
     padding: 10px;
     font-size: 13px;;
 }
+@import "assets/scss/vendors/icons";

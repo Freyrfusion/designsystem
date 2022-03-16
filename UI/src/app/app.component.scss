@@ -51,6 +51,8 @@
     width:calc(100% - 20%);
     float: left;
     padding: 10px;
+    height: calc(100vh - 54px);
+    max-height: 100vh;
 }
 .html-content{
     background: #666;

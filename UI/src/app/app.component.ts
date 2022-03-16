@@ -12,7 +12,10 @@ export class AppComponent {
 
   constructor(
     private router: Router,
-  ) { }
+  ) { 
+    let theme = Theme.Green;
+    //document.body.classList.add(theme);
+  }
 
   loadTabComponent(value: any) {
 
@@ -54,3 +57,8 @@ SearchFunction() {
     return this.router.url.includes(route);
   }
 }
+enum Theme{
+  Blue="blue",
+  Green="green",
+  Dark="dark"
+  }
