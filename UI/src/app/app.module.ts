@@ -31,6 +31,11 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { FormsComponent } from './components/forms/forms.component';
 import { CheckboxsComponent } from './components/checkboxs/checkboxs.component';
 import { TooltipsComponent } from './components/tooltips/tooltips.component';
+import { KendocomponentsComponent } from './components/kendocomponents/kendocomponents.component';
+import { KendodropdownComponent } from './components/kendocomponents/kendodropdown/kendodropdown.component';
+import { KendotableComponent } from './components/kendocomponents/kendotable/kendotable.component';
+import { KendoinputsComponent } from './components/kendocomponents/kendoinputs/kendoinputs.component';
+import { KendomultiselectComponent } from './components/kendocomponents/kendomultiselect/kendomultiselect.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +55,8 @@ import { TooltipsComponent } from './components/tooltips/tooltips.component';
     // DynamicContentComponent,
     // DynamicSidebarComponent,
     UicomponentTabsDirective,
+    KendocomponentsComponent,
+
   
     
   ],
@@ -76,6 +83,10 @@ import { TooltipsComponent } from './components/tooltips/tooltips.component';
     FormsComponent,
     CheckboxsComponent,
     TooltipsComponent,
+    KendodropdownComponent,
+    KendotableComponent,
+    KendoinputsComponent,
+    KendomultiselectComponent,
 
   ],
   providers: [],

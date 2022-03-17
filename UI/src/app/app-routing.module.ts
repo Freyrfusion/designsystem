@@ -1,3 +1,8 @@
+import { KendotableComponent } from './components/kendocomponents/kendotable/kendotable.component';
+import { KendomultiselectComponent } from './components/kendocomponents/kendomultiselect/kendomultiselect.component';
+import { KendoinputsComponent } from './components/kendocomponents/kendoinputs/kendoinputs.component';
+import { KendodropdownComponent } from './components/kendocomponents/kendodropdown/kendodropdown.component';
+import { KendocomponentsComponent } from './components/kendocomponents/kendocomponents.component';
 import { ResourcesComponent } from './pages/resources/resources.component';
 import { PatternsComponent } from './pages/patterns/patterns.component';
 import { UicomponentsComponent } from './pages/uicomponents/uicomponents.component';
@@ -44,11 +49,16 @@ const routes: Routes = [
     
   ] },
   { path: 'resources', component: ResourcesComponent },
+  { path: 'kendocomponents', component: KendocomponentsComponent, children:[
+    { path: 'kendodropdown', component: KendodropdownComponent },
+    { path: 'kendoinputs', component: KendoinputsComponent },
+    { path: 'kendomultiselect', component: KendomultiselectComponent },
+    { path: 'kendotable', component: KendotableComponent },
+    
+  ] }
+ 
   //Components
-  { path: 'colors', component: ColorsComponent },
-  { path: 'buttons', component: ButtonsComponent },
-  { path: 'navigations', component: NavigationsComponent },
-  { path: 'typography', component: TypographyComponent },
+  
 ];
 
 @NgModule({
