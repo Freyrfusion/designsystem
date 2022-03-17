@@ -33,52 +33,31 @@ import { CheckboxsComponent } from './components/checkboxs/checkboxs.component';
 import { TooltipsComponent } from './components/tooltips/tooltips.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-   // ColorsComponent,
-   // NavigationsComponent,
-    HeaderComponent,
-    FooterComponent,
-   // SidebarComponent,
-   // ButtonsComponent,
-  //  TypographyComponent,
-    FoundationsComponent,
-    UicomponentsComponent,
-    PatternsComponent,
-    ResourcesComponent,
-    ContentComponent,
-    // DynamicContentComponent,
-    // DynamicSidebarComponent,
-    UicomponentTabsDirective,
-  
-    
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    Ng2SearchPipeModule,
-    FormsModule
-    
-  ],
-  entryComponents: [
-    // DynamicSample1Component,
-    // DynamicSample2Component,
-    // UnknownDynamicComponent,
-    ColorsComponent,
-    NavigationsComponent,
-    ButtonsComponent,
-    TypographyComponent,
-    IconsComponent,
-    PrimitivesComponent,
-    AlertsComponent,
-    ModalsComponent,
-    TabsComponent,
-    FormsComponent,
-    CheckboxsComponent,
-    TooltipsComponent,
-
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        // ColorsComponent,
+        // NavigationsComponent,
+        HeaderComponent,
+        FooterComponent,
+        // SidebarComponent,
+        // ButtonsComponent,
+        //  TypographyComponent,
+        FoundationsComponent,
+        UicomponentsComponent,
+        PatternsComponent,
+        ResourcesComponent,
+        ContentComponent,
+        // DynamicContentComponent,
+        // DynamicSidebarComponent,
+        UicomponentTabsDirective,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        Ng2SearchPipeModule,
+        FormsModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
