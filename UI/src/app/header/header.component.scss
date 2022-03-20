@@ -41,7 +41,44 @@ nav{
                     font-weight: 500;
                 }
             }
+            &.main-dropdown{
+              background: none;
+              padding: 10px;
+              a{
+                padding: 8px 10px;
+              }
+              &:hover{
+                .dropdown_menu{
+                  display: table;
+                  background: #fff;
+                  box-shadow: 0 0 10px 0 rgb(82 63 105 / 15%);
+                
+                }
+                li{
+                  display: block;
+                  background: none;
+                  &:hover{
+                    background: #fafafa;
+                  }
+                }
+              }
+              .dropdown_menu{
+                width: 400px !important;
             
+                left: 10%;
+                
+                li{
+                
+                 
+                  div{
+                    float: left;
+                    &::before{
+                      content: none;
+                    }
+                  }
+                }
+              }
+            }
         }
     }
 }

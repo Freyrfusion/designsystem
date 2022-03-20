@@ -31,7 +31,13 @@
             }
         }
     }
+    .code{
+        color:  map-get-value($map, code-color) !important;  
+    }
     p{
+        color:  map-get-value($map, text-color) !important;  
+    }
+    h1, h2, h3, h4, h5, h6{
         color:  map-get-value($map, text-color) !important;  
     }
     .sidebar{

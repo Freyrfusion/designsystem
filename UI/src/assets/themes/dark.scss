@@ -1,6 +1,7 @@
 $primary :#000000;
 $sidebarcolor : #000000;
 $hovercolor : #555555;
+$codecolor:#f3db00;
 $dark-value-map:(
     name:"dark",
     text-color:$white,
@@ -10,6 +11,7 @@ $dark-value-map:(
     button-color-dark:$primary,
     sidebar-color:$sidebarcolor,
     hover-color:$hovercolor,
+    code-color:$codecolor,
     button-text-color:$white,
     
 )

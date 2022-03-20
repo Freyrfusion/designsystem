@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ColorsComponent } from './components/colors/colors.component';
@@ -36,6 +37,28 @@ import { KendodropdownComponent } from './components/kendocomponents/kendodropdo
 import { KendotableComponent } from './components/kendocomponents/kendotable/kendotable.component';
 import { KendoinputsComponent } from './components/kendocomponents/kendoinputs/kendoinputs.component';
 import { KendomultiselectComponent } from './components/kendocomponents/kendomultiselect/kendomultiselect.component';
+import { AllcomponentsComponent } from './pages/allcomponents/allcomponents.component';
+import { AngularcomponentsComponent } from './pages/allcomponents/angularcomponents/angularcomponents.component';
+import { PrimecomponentsComponent } from './pages/allcomponents/primecomponents/primecomponents.component';
+import { AccordionsComponent } from './components/accordions/accordions.component';
+import { BadgesComponent } from './components/badges/badges.component';
+import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
+import { DatepickersComponent } from './components/datepickers/datepickers.component';
+import { DropdownsComponent } from './components/dropdowns/dropdowns.component';
+import { ColumnsComponent } from './components/columns/columns.component';
+import { HeadersComponent } from './components/headers/headers.component';
+import { MultiselectComponent } from './components/multiselect/multiselect.component';
+import { NotificationsComponent } from './components/notifications/notifications.component';
+import { NotificationlistComponent } from './components/notificationlist/notificationlist.component';
+import { ProgressbarComponent } from './components/progressbar/progressbar.component';
+import { RadiobuttonsComponent } from './components/radiobuttons/radiobuttons.component';
+import { SweetalertsComponent } from './components/sweetalerts/sweetalerts.component';
+import { SearchboxComponent } from './components/searchbox/searchbox.component';
+import { TablesComponent } from './components/tables/tables.component';
+import { ToastsComponent } from './components/toasts/toasts.component';
+import { ToggleComponent } from './components/toggle/toggle.component';
+import { ValidationsComponent } from './components/validations/validations.component';
+import { WizardComponent } from './components/wizard/wizard.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +71,7 @@ import { KendomultiselectComponent } from './components/kendocomponents/kendomul
    // ButtonsComponent,
   //  TypographyComponent,
     FoundationsComponent,
-    UicomponentsComponent,
+   
     PatternsComponent,
     ResourcesComponent,
     ContentComponent,
@@ -56,6 +79,28 @@ import { KendomultiselectComponent } from './components/kendocomponents/kendomul
     // DynamicSidebarComponent,
     UicomponentTabsDirective,
     KendocomponentsComponent,
+    AllcomponentsComponent,
+    AngularcomponentsComponent,
+    PrimecomponentsComponent,
+    AccordionsComponent,
+    BadgesComponent,
+    BreadcrumbsComponent,
+    DatepickersComponent,
+    DropdownsComponent,
+    ColumnsComponent,
+    HeadersComponent,
+    MultiselectComponent,
+    NotificationsComponent,
+    NotificationlistComponent,
+    ProgressbarComponent,
+    RadiobuttonsComponent,
+    SweetalertsComponent,
+    SearchboxComponent,
+    TablesComponent,
+    ToastsComponent,
+    ToggleComponent,
+    ValidationsComponent,
+    WizardComponent,
 
   
     
@@ -71,6 +116,7 @@ import { KendomultiselectComponent } from './components/kendocomponents/kendomul
     // DynamicSample1Component,
     // DynamicSample2Component,
     // UnknownDynamicComponent,
+    UicomponentsComponent,
     ColorsComponent,
     NavigationsComponent,
     ButtonsComponent,

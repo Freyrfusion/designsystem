@@ -1,6 +1,7 @@
 $primary :#0084d1;
 $sidebarcolor :#fafafa;
 $hover-color:#EBF0FF;
+$codecolor:#f70020;
 $light-value-map:(
     name:"light",
     text-color:$gray-800,
@@ -9,5 +10,7 @@ $light-value-map:(
     button-color:$primary,
     sidebar-color:$sidebarcolor,
     hover-color:$hover-color,
+    code-color:$codecolor,
     button-text-color:$white,
+
 )

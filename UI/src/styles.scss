@@ -44,7 +44,23 @@ h5{
     padding: 10px !important;
     font-size: 13px !important;
 }
-@import "assets/scss/vendors/icons";
+.code{
+    color: #5e000c;
+}
+.font14{
+    font-size: 14px
+}
+pre {
+    font-family: monospace, monospace;
+    font-size: 100%;
+    line-height: 18px;
+    word-break: break-word;
+    white-space: break-spaces;
+}
 
+//Icons
+@import "assets/scss/vendors/icons";
 //Tabs
 @import "assets/tabs";
+//Margin Paddings
+@import "assets/margin-paddings";

@@ -2,24 +2,34 @@
 $activeColor: #ffffff;
 $unactiveColor: #eeeeee;
 $unactiveHoverColor: #dddddd;
-.pc-tab > input,
-.pc-tab section > div {
-  display: none;
-}
 
-#tab1:checked ~ section .tab1,
+.pc-tab, .pc-tab1 {
+> input{
+  display: none;
+  }
+  section.tabsection {
+    > div {
+      display: none;
+    }
+  } 
+  #tab1:checked ~ section .tab1,
 #tab2:checked ~ section .tab2,
-#tab3:checked ~ section .tab3 {
+#pctab1:checked ~ section .pctab1,
+#pctab2:checked ~ section .pctab2{
   display: block;
 }
 
 #tab1:checked ~ nav .tab1,
 #tab2:checked ~ nav .tab2,
-#tab3:checked ~ nav .tab3 {
+#pctab1:checked ~ nav .pctab2,
+#pctab2:checked ~ nav .pctab2{
   color: red;
 }
+}
 
-.pc-tab { 
+
+
+.pc-tab, .pc-tab1 { 
     width: 100%;
     float: left;
     ul {
@@ -52,10 +62,10 @@ $unactiveHoverColor: #dddddd;
         }
       }
     }
-    section {
+    section.tabsection {
      
       clear: both;
-      div {
+      > div {
         padding: 20px; 
         width: 100%;
         border: 1px solid #ddd;
@@ -64,33 +74,35 @@ $unactiveHoverColor: #dddddd;
         letter-spacing: 0.3px;
         color: #444;
         float: left;
-        h2 {
+        > h2 {
           margin: 0;
          
           color: #34495e;
         }
       }
     }
-  }
-  
-  #tab1:checked ~ nav .tab1,
-  #tab2:checked ~ nav .tab2,
-  #tab3:checked ~ nav .tab3 {
-    label {
-        background: white;
-        color:#4284d1;
-        position: relative;
-        border-bottom: 3px solid #4284d1;
-      &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        height: 2px;
-        width: 100%;
-        background: $activeColor;
-        left: 0;
-        bottom: -1px;
+    #tab1:checked ~ nav .tab1,
+    #tab2:checked ~ nav .tab2,
+    #pctab1:checked ~ nav .pctab1,
+    #pctab2:checked ~ nav .pctab2{
+      label {
+          background: white;
+          color:#4284d1;
+          position: relative;
+          border-bottom: 3px solid #4284d1;
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          height: 2px;
+          width: 100%;
+          background: $activeColor;
+          left: 0;
+          bottom: -1px;
+        }
       }
     }
   }
+  
+ 
   

@@ -10,17 +10,18 @@
 	outline: none;
 	font-size: $font-size-sm;
 	transition: 0.4s;
+  color: $gray-900;
 	&:hover {
 		background-color: $gray-300;
 	}
 	&:after {
 		content: '\002B';
-		color: $gray-500;
+		color: $gray-800;
 		font-weight: $font-weight-bold;
 		float: right;
 		margin-left: 5px;
 	}
-  .active {
+  &.active {
     background-color: $gray-200;
     &:after {
       content: "\2212";
@@ -59,6 +60,7 @@
     display: flex;
     justify-content: space-between;
     padding: 5px 10px;
+    color: $gray-900;
     width: 100%;
     background: $gray-200;
     font-weight: $font-weight-bold;
@@ -68,13 +70,14 @@
       background: darken($gray-300, 10%);
     }
     &::after {
-      content: "\276F";
+      font-family: "icons" !important;
+      content: "\e004";
       width: 1em;
       height: 1em;
       text-align: center;
       transition: all .35s;
       float:right;
-      
+      color: $gray-800;
     }
   }
   &-content {
@@ -102,7 +105,7 @@ input:checked {
   + .tab-label {
     background: darken($gray-300, 10%);
     &::after {
-      transform: rotate(90deg);
+      transform: rotate(180deg);
     }
   }
   ~ .tab-content {
