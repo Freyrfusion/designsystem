@@ -240,3 +240,5 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/UI/.angular/cache/13.3.0/babel-webpack
+/UI/.angular/cache/13.3.0/angular-webpack/2e7486aa8c7322b43d61d248484dccc787cf66c7
