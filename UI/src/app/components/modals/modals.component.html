@@ -1,1 +1,460 @@
-<p>modals works!</p>
+
+<div class="pc-tab">
+    <input checked="checked" id="tab1" type="radio" name="pct" />
+    <input id="tab2" type="radio" name="pct" />
+    <!-- <input id="tab3" type="radio" name="pct" /> -->
+    <div class="row">
+        <div class="col-md-12 p-l-0 m-t-10 ">
+            <h5 class="m-b-10">Modal popup</h5>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li class="tab1">
+                <label for="tab1">Details</label>
+            </li>
+            <li class="tab2">
+                <label for="tab2">Source Code</label>
+            </li>
+            <!-- <li class="tab3">
+            <label for="tab3">Third Tab</label>
+          </li> -->
+        </ul>
+    </nav>
+  
+  
+    <section class="tabsection">
+        <div class="tab1">
+            <a class="button css-pop btn btn-primary" id="pop1" >Small</a> &nbsp;
+
+            <a class="button css-pop btn btn-primary"  id="pop2" >Medium </a> &nbsp;
+            
+            <a class="button css-pop btn btn-primary"  id="pop3" >Large</a> &nbsp;
+
+            <a class="button css-pop btn btn-primary"  id="pop4" >XL</a> &nbsp;            
+
+            <a class="button css-pop btn btn-primary"  id="pop5" >XXL</a> &nbsp;
+
+            <a class="button css-pop btn btn-primary"  id="pop6" >Right</a> &nbsp;
+
+            <a class="button css-pop btn btn-primary"  id="pop7" >Left</a> &nbsp;
+
+            <a class="button css-pop btn btn-primary"  id="pop8" >Bottom</a> &nbsp;
+
+        </div>
+        <div class="tab2">
+          <div class="row">
+            <div class="col-md-12 p-0">
+              <h6 class="">Javascript</h6>
+            </div>
+          </div>
+         
+            <div class="html-content m-t-10"  >
+                
+                <pre #copytextone>
+
+        &lt;script&gt;
+        <![CDATA[
+        $(".css-pop#pop1").click(function () {    
+            $(".css-pop-overlay#pop1").addClass("active");      
+          });
+          $(".css-pop#pop2").click(function () {    
+            $(".css-pop-overlay#pop2").addClass("active");      
+          });
+          $(".css-pop#pop3").click(function () {    
+            $(".css-pop-overlay#pop3").addClass("active");      
+          });
+          $(".css-pop#pop4").click(function () {    
+            $(".css-pop-overlay#pop4").addClass("active");      
+          });
+          $(".css-pop#pop5").click(function () {    
+            $(".css-pop-overlay#pop5").addClass("active");      
+          });
+          $(".css-pop#pop6").click(function () {    
+            $(".css-pop-overlay#pop6").addClass("active");      
+          });
+          $(".css-pop#pop7").click(function () {    
+            $(".css-pop-overlay#pop7").addClass("active");      
+          });
+          $(".css-pop#pop8").click(function () {    
+            $(".css-pop-overlay#pop8").addClass("active");      
+          });
+        
+        
+        
+          $(".css-pop.close").click(function () {    
+            $(".css-pop-overlay").removeClass("active");      
+          });
+        ]]>
+        &lt;/script&gt;
+                </pre>
+            </div>
+            <div class="row">
+              <div class="col-md-12 p-0">
+                <h6 class="m-t-20 m-b-0">HTML</h6>
+              </div>
+            </div>
+            
+            <div class="html-content m-t-10">
+                <pre>
+        <![CDATA[
+       
+        <a class="button css-pop btn btn-primary" id="pop1" >Small</a> &nbsp;
+
+        <a class="button css-pop btn btn-primary"  id="pop2" >Medium </a> &nbsp;
+        
+        <a class="button css-pop btn btn-primary"  id="pop3" >Large</a> &nbsp;
+
+        <a class="button css-pop btn btn-primary"  id="pop4" >XL</a> &nbsp;            
+
+        <a class="button css-pop btn btn-primary"  id="pop5" >XXL</a> &nbsp;
+
+        <a class="button css-pop btn btn-primary"  id="pop6" >Right</a> &nbsp;
+
+        <a class="button css-pop btn btn-primary"  id="pop7" >Left</a> &nbsp;
+
+        <a class="button css-pop btn btn-primary"  id="pop8" >Bottom</a> &nbsp;
+
+
+
+        
+    <div id="pop1" class="css-pop-overlay" >
+        <div class="css-pop-1 pop-small">
+            <div class="modal-head">
+                <h3>Css Popop <a class="close css-pop">&times;</a></h3>
+               
+            </div>
+            <div class="modal-content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+            <div class="modal-footer">
+                <button class="css-pop close btn btn-light text-dark ">Cancel</button>
+                <button class="css-pop close btn btn-primary">Ok</button>
+            </div>
+           
+        </div>
+    </div>
+
+    
+
+                
+            ]]>
+
+        </pre>
+            </div>
+
+        
+
+
+            <div class="row">
+                <div class="col-md-12 p-0">
+                  <h6 class="m-t-20 m-b-0">SASS</h6>
+                </div>
+              </div>
+            <div class="html-content m-t-10">
+                <pre>
+        <![CDATA[
+       
+        .css-pop-overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            display:none;
+            z-index: 999;
+            opacity:0;
+            animation-name: fade;
+            animation-duration: 0.2s;
+          
+                &.active{
+                    display:block;
+                    opacity:1;
+                     transition: all 5s ease-in-out;
+                     .css-pop-1{
+                          margin: 40px auto;
+                          transition:1s;
+                          opacity:1;
+                          top:30px;
+                          
+                     }
+                }     
+                  .css-pop-1 {
+                        margin: 0px auto;
+                        background: #fff;
+                        border-radius: 5px;
+                        width: 30%;
+                        position: relative;
+                        transition: all 5s ease-in-out;
+                        box-shadow: 5px 5px 45px rgba(0, 0, 0, 0.2);
+                        opacity:0;
+                        top:0;
+                        position: relative;
+                        animation-name: pop-move;
+                        animation-duration: 0.4s;
+                        &.pop-small{
+                            width: 30%;
+                        }
+                        &.pop-med{
+                            width: 50%;
+                        }
+                        &.pop-large{
+                            width: 60%;
+                        }
+                        &.pop-xl{
+                            width: 75%;
+                        }              
+                        &.pop-xxl{
+                            width: 90%;
+                        }				
+                        &.pop-right{
+                            right: 0;
+                            top: 0;
+                            height: 100vh;
+                            margin: 0;
+                            border-radius: 0;
+                            position: fixed;
+                            animation-name: pop-move-right !important;
+                             .modal-content{
+                                 max-height:initial;
+                                 height: calc(100vh - 80px);
+                             }
+                        }
+                        &.pop-left{
+                            left: 0;
+                            top: 0;
+                            height: 100vh;
+                            margin: 0;
+                            border-radius: 0;
+                            position: fixed;
+                            animation-name: pop-move-left !important;
+                             .modal-content{
+                                 max-height:initial;
+                                 height: calc(100vh - 80px);
+                             }
+                        }
+                        &.pop-bottom{
+                            left: 0;
+                            bottom: 0;
+                            margin: 0;
+                            border-radius: 0;
+                            position: fixed;
+                            width: 100%;
+                            top: auto;
+                            animation-name: pop-move-bottom !important;					 
+                        }
+                        .modal-head{
+                           padding: 5px 15px;
+                           border-bottom: 1px solid #eee;
+                           h3 {
+                              margin: 0;
+                              color: black;
+                              font-family: Tahoma, Arial, sans-serif;
+                              font-weight: 500;
+                              font-size: 1.2em;
+                          }
+                          .close {
+                            transition: all 200ms;
+                            color: black;
+                            font-size:1em;
+                            float: right;
+                            cursor: pointer;
+                             &:hover {
+                                color: gray;
+                              }
+                          }
+                        }
+                        .modal-content{
+                          padding: 5px 15px;
+                          max-height: 30%;
+                          overflow: auto;
+                          font-size: 0.9em;
+                          line-height: 1.5em;
+                        }
+          
+                        .modal-footer{
+                            padding:5px 15px;
+                            border-top: 1px solid #eee;
+                            text-align:right;
+                        }                            
+                      }
+          }
+          
+          @keyframes pop-move {
+                  0%   { transform: translateY(-50px); }
+                  50%  { transform: translateY(10px); }  
+          }
+          @keyframes pop-move-right {
+            0%   { transform: translateX(100px); }
+            50%  { transform: translateX(0px); }  
+        }
+        @keyframes pop-move-left {
+            0%   { transform: translateX(-100px); }
+            50%  { transform: translateX(0px); }  
+        }
+        @keyframes pop-move-bottom {
+            0%   { transform: translateY(100px); }
+            50%  { transform: translateY(0px); }  
+        }
+          
+          @keyframes fade {
+                  0%   { background:rgba(0, 0, 0, 0.1) }
+                  30%  {  background:rgba(0, 0, 0, 0.5) }
+          }
+                
+            ]]>
+
+        </pre>
+            </div>
+        </div>
+
+
+        
+
+    </section>
+
+</div>
+
+
+
+<!-- <p>modals works!</p> -->
+
+
+    <div id="pop1" class="css-pop-overlay" >
+        <div class="css-pop-1 pop-small">
+            <div class="modal-head">
+                <h3>Css Popop <a class="close css-pop">&times;</a></h3>
+               
+            </div>
+            <div class="modal-content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+            <div class="modal-footer">
+                <button class="css-pop close btn btn-light text-dark ">Cancel</button>
+                <button class="css-pop close btn btn-primary">Ok</button>
+            </div>
+           
+        </div>
+    </div>
+
+    <div id="pop2" class="css-pop-overlay" >
+        <div class="css-pop-1 pop-med">
+            <div class="modal-head">
+                <h3>Css Popop <a class="close css-pop">&times;</a></h3>
+               
+            </div>
+            <div class="modal-content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+            <div class="modal-footer">
+                <button class="css-pop close btn btn-light text-dark ">Cancel</button>
+                <button class="css-pop close btn btn-primary">Ok</button>
+            </div>
+           
+        </div>
+    </div>
+
+    <div id="pop3" class="css-pop-overlay" >
+        <div class="css-pop-1 pop-large">
+            <div class="modal-head">
+                <h3>Css Popop <a class="close css-pop">&times;</a></h3>
+               
+            </div>
+            <div class="modal-content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+            <div class="modal-footer">
+                <button class="css-pop close btn btn-light text-dark ">Cancel</button>
+                <button class="css-pop close btn btn-primary">Ok</button>
+            </div>
+           
+        </div>
+    </div>
+
+    <div id="pop4" class="css-pop-overlay" >
+        <div class="css-pop-1 pop-xl">
+            <div class="modal-head">
+                <h3>Css Popop <a class="close css-pop">&times;</a></h3>
+               
+            </div>
+            <div class="modal-content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+            <div class="modal-footer">
+                <button class="css-pop close btn btn-light text-dark ">Cancel</button>
+                <button class="css-pop close btn btn-primary">Ok</button>
+            </div>
+           
+        </div>
+    </div>
+
+    <div id="pop5" class="css-pop-overlay" >
+        <div class="css-pop-1 pop-xxl">
+            <div class="modal-head">
+                <h3>Css Popop <a class="close css-pop">&times;</a></h3>
+               
+            </div>
+            <div class="modal-content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+            <div class="modal-footer">
+                <button class="css-pop close btn btn-light text-dark ">Cancel</button>
+                <button class="css-pop close btn btn-primary">Ok</button>
+            </div>
+           
+        </div>
+    </div>
+
+    <div id="pop6" class="css-pop-overlay" >
+        <div class="css-pop-1 pop-right">
+            <div class="modal-head">
+                <h3>Css Popop <a class="close css-pop">&times;</a></h3>
+               
+            </div>
+            <div class="modal-content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+            <div class="modal-footer">
+                <button class="css-pop close btn btn-light text-dark ">Cancel</button>
+                <button class="css-pop close btn btn-primary">Ok</button>
+            </div>
+           
+        </div>
+    </div>
+
+    <div id="pop7" class="css-pop-overlay" >
+        <div class="css-pop-1 pop-left">
+            <div class="modal-head">
+                <h3>Css Popop <a class="close css-pop">&times;</a></h3>
+               
+            </div>
+            <div class="modal-content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+            <div class="modal-footer">
+                <button class="css-pop close btn btn-light text-dark ">Cancel</button>
+                <button class="css-pop close btn btn-primary">Ok</button>
+            </div>
+           
+        </div>
+    </div>
+
+    <div id="pop8" class="css-pop-overlay" >
+        <div class="css-pop-1 pop-bottom">
+            <div class="modal-head">
+                <h3>Css Popop <a class="close css-pop">&times;</a></h3>
+               
+            </div>
+            <div class="modal-content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+            <div class="modal-footer">
+                <button class="css-pop close btn btn-light text-dark ">Cancel</button>
+                <button class="css-pop close btn btn-primary">Ok</button>
+            </div>
+           
+        </div>
+    </div>
+
