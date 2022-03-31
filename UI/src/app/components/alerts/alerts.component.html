@@ -1,54 +1,120 @@
-<p>alerts works!</p>
-
-
-
 <div class="pc-tab">
     <input checked="checked" id="tab1" type="radio" name="pct" />
     <input id="tab2" type="radio" name="pct" />
     <!-- <input id="tab3" type="radio" name="pct" /> -->
-      <nav>
+    <div class="row">
+        <div class="col-md-12 p-l-0 m-t-10 ">
+            <h5 class="m-b-10">Alerts</h5>
+            <p>The Alert component is used to show feedback to the user about an action or state.</p>
+        </div>
+    </div>
+    <nav>
         <ul>
-          <li class="tab1">
-            <label for="tab1">Details</label>
-          </li>
-          <li class="tab2">
-            <label for="tab2">Source Code</label>
-          </li>
-          <!-- <li class="tab3">
+            <li class="tab1">
+                <label for="tab1">Details</label>
+            </li>
+            <li class="tab2">
+                <label for="tab2">Source Code</label>
+            </li>
+            <!-- <li class="tab3">
             <label for="tab3">Third Tab</label>
           </li> -->
         </ul>
-      </nav>
-      <section>
+    </nav>
+  
+  
+    <section class="tabsection">
         <div class="tab1">
-          <h5>Details</h5>
-          <p>Will Display Details Here...</p>
+         
+            <section>
+           
+                <button class="accordion">Section 1</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button class="accordion">Section 2</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </section>
+
+
         </div>
         <div class="tab2">
-          <h5>Source Code</h5>
-         
-<div class="html-content">
-    <pre>
+          <div class="row">
+            <div class="col-md-12 p-0">
+              <h6 class="">Javascript</h6>
+            </div>
+          </div>
+           <input type="text">
+          <button class="btn btn-primary" >Copy text</button>
+            <div class="html-content m-t-10"  >
+                
+                <pre #copytextone>
+
+        &lt;script&gt;
         <![CDATA[
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
-        </head>
-        <body>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
             
-        </body>
-        </html>
+            for (i = 0; i <script acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+               
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                alert(panel.style.maxHeight);
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
         ]]>
-    </pre>
-    </div>
+        &lt;/script&gt;
+                </pre>
+            </div>
+            <div class="row">
+              <div class="col-md-12 p-0">
+                <h6 class="m-t-20 m-b-0">HTML</h6>
+              </div>
+            </div>
+            
+            <div class="html-content m-t-10">
+                <pre>
+        <![CDATA[
+        <section>
+            <h6 class="text-dark weight-500 m-b-30">Accordion with symbols</h6>  
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-        <!-- <div class="tab3">
-          <h2>Third</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, nobis culpa rem, vitae earum aliquid.</p>
-        </div> -->
-      </section>
-    </div>
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        </section>
+    ]]>
+
+    </pre>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
