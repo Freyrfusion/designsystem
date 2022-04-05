@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
@@ -59,6 +60,11 @@ import { ToastsComponent } from './components/toasts/toasts.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
 import { ValidationsComponent } from './components/validations/validations.component';
 import { WizardComponent } from './components/wizard/wizard.component';
+import { PrismComponent } from './components/prism/prism.component';
+import { AngulartabsComponent } from './components/angulartabs/angulartabs.component';
+import { ClipboardModule } from 'ngx-clipboard';
+
+
 
 @NgModule({
   declarations: [
@@ -84,6 +90,7 @@ import { WizardComponent } from './components/wizard/wizard.component';
     PrimecomponentsComponent,
     AccordionsComponent,
     BadgesComponent,
+    ButtonsComponent,
     BreadcrumbsComponent,
     DatepickersComponent,
     DropdownsComponent,
@@ -101,6 +108,8 @@ import { WizardComponent } from './components/wizard/wizard.component';
     ToggleComponent,
     ValidationsComponent,
     WizardComponent,
+    PrismComponent,
+    AngulartabsComponent,
 
   
     
@@ -109,7 +118,8 @@ import { WizardComponent } from './components/wizard/wizard.component';
     BrowserModule,
     AppRoutingModule,
     Ng2SearchPipeModule,
-    FormsModule
+    FormsModule,
+    ClipboardModule
     
   ],
   entryComponents: [
@@ -119,7 +129,7 @@ import { WizardComponent } from './components/wizard/wizard.component';
     UicomponentsComponent,
     ColorsComponent,
     NavigationsComponent,
-    ButtonsComponent,
+    
     TypographyComponent,
     IconsComponent,
     PrimitivesComponent,

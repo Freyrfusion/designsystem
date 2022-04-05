@@ -1,12 +1,7 @@
 
-
-
 <app-header></app-header>
-
-
+ 
 <!-- <app-content></app-content> -->
-
-
 
 <div class="sidebar" >
 <!--Foundations Sidebar -->
@@ -24,7 +19,7 @@
 
 </div>
 <!--Components Sidebar -->
-<div *ngIf="hasRoute('components') && !hasRoute('uicomponents') && !hasRoute('kendocomponents')" >
+<div *ngIf="hasRoute('components') && !hasRoute('uicomponents') && !hasRoute('kendocomponents') && !hasRoute('angularcomponents')" >
    
     <h5 class="m-l-10 m-b-10">Components</h5>
     <input type="text" class="control-search" (keyup)="SearchFunction()" placeholder="Search" id="searchInput" >
@@ -104,7 +99,17 @@
         </ul>
  
 </div>
+<!--Resources Sidebar -->
+<div *ngIf="hasRoute('components/angularcomponents')">
+   
+    <h5 class="m-l-10 m-b-10">Angular Tabs</h5>
+    <input type="text" (keyup)="SearchFunction()" class="control-search" placeholder="Search" id="searchInput">
+    <ul>
+        <li><a href="components/angularcomponents/angulartabs">Angular Tabs</a></li>
+     
+    </ul>
 
+</div>
 <!--Kendo Sidebar -->
 <div *ngIf="hasRoute('kendocomponents')">
    

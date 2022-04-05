@@ -22,12 +22,13 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base + 1.7 !default;
-$h2-font-size:                $font-size-base + 1.2 !default;
-$h3-font-size:                $font-size-base + .95 !default;
-$h4-font-size:                $font-size-base + .7 !default;
-$h5-font-size:                $font-size-base + .45 !default;
-$h6-font-size:                $font-size-base + .2 !default;
+
+$h1-font-size:                2rem  !default;
+$h2-font-size:                1.5rem  !default;
+$h3-font-size:                1.25rem  !default;
+$h4-font-size:                1.15rem  !default;
+$h5-font-size:                1.1rem  !default;
+$h6-font-size:                1rem  !default;
 
 // Container Variables
 //

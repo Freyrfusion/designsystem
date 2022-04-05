@@ -21,6 +21,7 @@
     "@angular/router": "~13.3.0",
     "jquery": "^3.6.0",
     "ng2-search-filter": "^0.5.1",
+    "ngx-clipboard": "^15.1.0",
     "rxjs": "~7.5.5",
     "tslib": "^2.3.1",
     "zone.js": "~0.11.5"
@@ -41,6 +42,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.3",
     "karma-jasmine": "~4.0.1",
     "karma-jasmine-html-reporter": "^1.7.0",
+    "prismjs": "^1.27.0",
     "protractor": "~7.0.0",
     "ts-node": "~10.7.0",
     "tslint": "~6.1.0",

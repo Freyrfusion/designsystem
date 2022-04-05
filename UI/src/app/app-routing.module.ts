@@ -1,3 +1,4 @@
+import { AngulartabsComponent } from './components/angulartabs/angulartabs.component';
 import { WizardComponent } from './components/wizard/wizard.component';
 import { ValidationsComponent } from './components/validations/validations.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
@@ -101,11 +102,8 @@ const routes: Routes = [
   { path: 'kendotable', component: KendotableComponent },
   
 ]},
-{ path: 'angularcomponents', component: AngularcomponentsComponent, children:[
-  { path: 'kendodropdown', component: KendodropdownComponent },
-  { path: 'kendoinputs', component: KendoinputsComponent },
-  { path: 'kendomultiselect', component: KendomultiselectComponent },
-  { path: 'kendotable', component: KendotableComponent },
+{ path: 'angularcomponents',  children:[
+  {  path: 'angulartabs', component: AngulartabsComponent }
   
 ] }
 ]},
@@ -115,7 +113,7 @@ const routes: Routes = [
   ] },
   { path: 'resources', component: ResourcesComponent },
 
- 
+  
   //Components
   
 ];

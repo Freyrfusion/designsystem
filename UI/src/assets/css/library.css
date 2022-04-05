@@ -6329,131 +6329,40 @@ template {
 html, body {
   font-family: "Roboto", sans-serif;
   line-height: 24px;
-  font-size: calc(18px + 2 * ( (100vw - 420px) / 900));
-}
-@media screen and (min-width: 420px) {
-  html, body {
-    font-size: 18px;
-    line-height: 18px;
-  }
-}
-@media screen and (max-width: 1320px) {
-  html, body {
-    font-size: 20px;
-    line-height: 20px;
-  }
 }
 
 h1 {
-  font-size: calc(2.5rem + 0 * ( (100vw - 420px) / 900));
-}
-@media screen and (min-width: 420px) {
-  h1 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-  }
-}
-@media screen and (max-width: 1320px) {
-  h1 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-  }
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 h2 {
-  font-size: calc(2rem + 0 * ( (100vw - 420px) / 900));
-}
-@media screen and (min-width: 420px) {
-  h2 {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-}
-@media screen and (max-width: 1320px) {
-  h2 {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 h3 {
-  font-size: calc(1.75rem + 0 * ( (100vw - 420px) / 900));
-}
-@media screen and (min-width: 420px) {
-  h3 {
-    font-size: 1.75rem;
-    line-height: 1.75rem;
-  }
-}
-@media screen and (max-width: 1320px) {
-  h3 {
-    font-size: 1.75rem;
-    line-height: 1.75rem;
-  }
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 h4 {
-  font-size: calc(1.5rem + 0 * ( (100vw - 420px) / 900));
-}
-@media screen and (min-width: 420px) {
-  h4 {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
-}
-@media screen and (max-width: 1320px) {
-  h4 {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
+  font-size: 1.15rem;
+  font-weight: 500;
 }
 
 h5 {
-  font-size: calc(1.25rem + 0 * ( (100vw - 420px) / 900));
-}
-@media screen and (min-width: 420px) {
-  h5 {
-    font-size: 1.25rem;
-    line-height: 1.25rem;
-  }
-}
-@media screen and (max-width: 1320px) {
-  h5 {
-    font-size: 1.25rem;
-    line-height: 1.25rem;
-  }
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 h6 {
-  font-size: calc(1rem + 0 * ( (100vw - 420px) / 900));
-}
-@media screen and (min-width: 420px) {
-  h6 {
-    font-size: 1rem;
-    line-height: 1rem;
-  }
-}
-@media screen and (max-width: 1320px) {
-  h6 {
-    font-size: 1rem;
-    line-height: 1rem;
-  }
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 p {
-  font-size: calc(0.7rem + 0 * ( (100vw - 420px) / 900));
-}
-@media screen and (min-width: 420px) {
-  p {
-    font-size: 0.7rem;
-    line-height: 0.7rem;
-  }
-}
-@media screen and (max-width: 1320px) {
-  p {
-    font-size: 0.7rem;
-    line-height: 0.7rem;
-  }
+  font-size: 0.8rem;
 }
 
 .weight-light {

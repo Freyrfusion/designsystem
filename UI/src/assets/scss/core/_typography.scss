@@ -1,29 +1,42 @@
 html, body{
   font-family: $font-family;  
   line-height: 24px;
-  @include fluid-type(18px, 20px);
+ // @include fluid-type(2rem, 1rem);
   
 }
 h1{
-    @include fluid-type($h1-font-size, $h1-font-size * 1);
+    font-size:$h1-font-size; 
+    font-weight: $font-weight-bold;
+   // @include fluid-type($h1-font-size, $h4-font-size);
 }
 h2{
-    @include fluid-type($h2-font-size, $h2-font-size * 1);
+    font-size:$h2-font-size; 
+    font-weight: $font-weight-bold;
+    //@include fluid-type($h2-font-size, $h5-font-size);
 }
 h3{
-    @include fluid-type($h3-font-size, $h3-font-size * 1);
+    font-size:$h3-font-size;
+    font-weight: $font-weight-bold; 
+   // @include fluid-type($h3-font-size, $h6-font-size);
 }
 h4{
-    @include fluid-type($h4-font-size, $h4-font-size * 1);
+    font-size:$h4-font-size; 
+    font-weight: $font-weight-bold;
+   // @include fluid-type($h4-font-size, $h4-font-size);
 }
 h5{
-    @include fluid-type($h5-font-size, $h5-font-size * 1);
+    font-size:$h5-font-size; 
+    font-weight: $font-weight-bold;
+  //  @include fluid-type($h5-font-size, $h5-font-size);
 }
 h6{
-    @include fluid-type($h6-font-size, $h6-font-size * 1);
+    font-size:$h6-font-size; 
+    font-weight: $font-weight-bold;
+    //@include fluid-type($h6-font-size, $h6-font-size);
 }
 p{
-    @include fluid-type($font-size-sm, $font-size-sm * 1 );
+    font-size:$font-size-base; 
+  //  @include fluid-type($font-size-sm, $font-size-sm);
   
 }
 $font-weight-lighter:         lighter !default;

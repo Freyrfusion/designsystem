@@ -1,24 +1,69 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, AfterViewChecked } from '@angular/core';
 import { Router } from '@angular/router';
-
-
+import * as $ from 'jquery';
+import { ClipboardService } from 'ngx-clipboard'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit, AfterViewChecked {
   title = 'sass-angular';
   searchedKeyword: string;
 
-  constructor(
-    private router: Router,
-   
-  //  private router: Router
-  ) { 
+  blogPost: AppComponent;
+  tabLists = ['Details','Source Code','How to Use']
+  selectedList:any;
+
+  constructor(private router: Router,private _clipboardService: ClipboardService) { 
     let theme = Theme.Green;
-    //document.body.classList.add(theme);
   }
+ // copy(text: string){
+   // this._clipboardService.copy(text);
+    // let listener = (e: ClipboardEvent) => {
+    //   e.clipboardData.setData('text/plain', (text));
+    //   e.preventDefault();
+    // };
+    // document.addEventListener('copy', listener);
+    // document.execCommand('copy');
+    // document.removeEventListener('copy', listener);
+ //}
+ copyToClipboard(el: HTMLDivElement) {
+  console.log(el.innerText);
+
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(el.innerText).then(() => {
+      alert('Copied to Clipboard')
+    }, (error) => {
+      console.log(error)
+    });
+  } else {
+    console.log('Browser do not support Clipboard API')
+  }
+
+}
+  ngAfterViewChecked() {
+    if (this.blogPost ) {
+     // this.prismjsService.highlightAll();
+     
+    }
+    
+  }
+  
+  ngOnInit(): void  {
+    this.selectedList = this.tabLists[0];
+    
+    
+  }
+ 
+
+ 
+  openTabList(tabList:any){
+    this.selectedList = tabList;
+    //this.prismjsService.highlightAll();
+    
+  }
+  
 
   loadTabComponent(value: any) {
 
