@@ -1,1 +1,39 @@
-<p>kendotable works!</p>
+<kendo-grid class="kendo-custom" [data]="gridView" [pageSize]="10" [pageable]="true" [sortable]="true"
+  [groupable]="true" [reorderable]="true" [resizable]="true" [height]="400" [columnMenu]="{ filter: true }"
+  [skip]="skip" (pageChange)="pageChange($event)">
+  <!-- <kendo-grid-checkbox-column  title="Select">
+  <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+    <div class="">
+      <input type="checkbox" [kendoGridSelectionCheckbox]="rowIndex" />
+    </div>
+  </ng-template>
+</kendo-grid-checkbox-column> -->
+  <kendo-grid-column field="ProductName" title="Product Name"> </kendo-grid-column>
+  <kendo-grid-column field="ProductCategory" title="Product Category"> </kendo-grid-column>
+  <kendo-grid-column field="FormulationReferenceNumber" title="Formulation Reference Number"> </kendo-grid-column>
+  <kendo-grid-column field="Markets" title="Markets"> </kendo-grid-column>
+  <kendo-grid-column field="Status" title="Status">
+
+    <ng-template kendoGridCellTemplate let-dataItem>
+      <div class="{{dataItem.Status === 'Draft' ? 'draft_Status' : ''}}">
+        <span>{{dataItem.Status}}</span>
+      </div>
+    </ng-template>
+
+  </kendo-grid-column>
+  <kendo-grid-column field="Actions" title="Actions">
+    <ng-template kendoGridCellTemplate let-dataItem>
+
+      <!-- <span>
+        <i class="{{dataItem.StatusClass}}"></i> 
+      </span>-->
+
+      <div class="k-grid-icons">
+        <button type="button" class="btn"> <span class="icon-ban"></span> </button>
+        <button type="button" class="btn"> <span class="icon-delete-button-lines"></span> </button>
+        <button type="button" class="btn"> <span class="icon-download-file"></span> </button>
+        
+      </div>
+    </ng-template>
+  </kendo-grid-column>
+</kendo-grid>

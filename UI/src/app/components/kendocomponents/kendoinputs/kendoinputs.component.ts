@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./kendoinputs.component.scss']
 })
 export class KendoinputsComponent implements OnInit {
-
+  public textboxValue = "";
   constructor() { }
 
   ngOnInit(): void {

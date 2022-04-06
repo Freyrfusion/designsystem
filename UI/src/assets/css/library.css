@@ -12690,6 +12690,94 @@ input:checked ~ .tab-content {
     background: rgba(0, 0, 0, 0.5);
   }
 }
+.kendo-custom .k-grid-header {
+  background: #f5f8fa;
+  font-weight: 500;
+  border-width: 0;
+}
+.kendo-custom .k-grid-header .k-grid-header-wrap table thead th:last-child {
+  overflow: hidden;
+}
+.kendo-custom .k-grid-content {
+  background-color: #fff;
+  overflow: auto;
+}
+.kendo-custom .k-grid-content .k-grid-table tbody tr > td {
+  color: #283252;
+  border-color: #f5f8fa;
+}
+.kendo-custom .k-grid-content .k-alt {
+  background-color: #f8f9fa;
+}
+.kendo-custom .k-grid-content .k-alt .k-state-selected:hover {
+  background: pink;
+}
+.kendo-custom .k-grid-content .k-state-selected > td {
+  background-color: #f8f9fa;
+}
+.kendo-custom .k-grid-content .k-grid-status-list .badge {
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+.kendo-custom .k-grid-content .k-grid-status-list .badge-primary {
+  color: #009ef7 !important;
+  background-color: #f1faff;
+}
+.kendo-custom .k-grid-content .k-grid-status-list .badge-secondary {
+  color: #7e8299;
+  background-color: #f5f8fa;
+}
+.kendo-custom .k-grid-content .k-grid-status-list .badge-success {
+  color: #50cd89 !important;
+  background-color: #e8fff3;
+}
+.kendo-custom .k-grid-content .k-grid-status-list .badge-danger {
+  color: #f1416c !important;
+  background-color: #fff5f8;
+}
+.kendo-custom .k-grid-content .k-grid-status-list .badge-warning {
+  color: #d7a922 !important;
+  background-color: #fff8dd;
+}
+.kendo-custom .k-grid-content .k-grid-status-list .badge-info {
+  color: #7239ea !important;
+  background-color: #f8f5ff;
+}
+.kendo-custom .k-grid-content .k-grid-status-list .badge-light {
+  color: #7e8299 !important;
+  background-color: #f5f8fa;
+}
+.kendo-custom .k-grid-content .k-grid-status-list .badge-text-wrapper {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 90px !important;
+  overflow: hidden;
+}
+.kendo-custom .k-grid-content .k-grid-icons button {
+  margin-right: 10px;
+}
+.kendo-custom .k-grid-content .k-grid-icons button .icon-ban {
+  padding: 5px;
+  background: #e6e9eb;
+  border-radius: 4px;
+}
+.kendo-custom .k-grid-content .k-grid-icons button .icon-delete-button-lines {
+  padding: 5px;
+  background: #e6e9eb;
+  border-radius: 4px;
+}
+.kendo-custom .k-grid-content .k-grid-icons button .icon-download-file {
+  padding: 5px;
+  background: #e6e9eb;
+  border-radius: 4px;
+}
+
 .sidebar, .sidebar-white, .sidebar-dark, .sidebar-light, .sidebar-danger, .sidebar-warning, .sidebar-info, .sidebar-success, .sidebar-secondary, .sidebar-primary {
   background: #212121;
   border-right: 1px solid #e5e5e5;

@@ -63,7 +63,11 @@ import { WizardComponent } from './components/wizard/wizard.component';
 import { PrismComponent } from './components/prism/prism.component';
 import { AngulartabsComponent } from './components/angulartabs/angulartabs.component';
 import { ClipboardModule } from 'ngx-clipboard';
-
+import { GridModule } from '@progress/kendo-angular-grid';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
+import { InputsModule } from '@progress/kendo-angular-inputs';
+import { LabelModule } from '@progress/kendo-angular-label';
 
 
 @NgModule({
@@ -110,7 +114,10 @@ import { ClipboardModule } from 'ngx-clipboard';
     WizardComponent,
     PrismComponent,
     AngulartabsComponent,
-
+    KendodropdownComponent,
+    KendotableComponent,
+    KendoinputsComponent,
+    KendomultiselectComponent,
   
     
   ],
@@ -119,7 +126,12 @@ import { ClipboardModule } from 'ngx-clipboard';
     AppRoutingModule,
     Ng2SearchPipeModule,
     FormsModule,
-    ClipboardModule
+    ClipboardModule,
+    BrowserAnimationsModule,
+    GridModule,
+    DropDownsModule,
+    LabelModule,
+    InputsModule,
     
   ],
   entryComponents: [
@@ -139,10 +151,6 @@ import { ClipboardModule } from 'ngx-clipboard';
     FormsComponent,
     CheckboxsComponent,
     TooltipsComponent,
-    KendodropdownComponent,
-    KendotableComponent,
-    KendoinputsComponent,
-    KendomultiselectComponent,
 
   ],
   providers: [],
