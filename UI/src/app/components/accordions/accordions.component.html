@@ -1,179 +1,102 @@
-<div class="pc-tab">
-    <input checked="checked" id="tab1" type="radio" name="pct" />
-    <input id="tab2" type="radio" name="pct" />
-    <!-- <input id="tab3" type="radio" name="pct" /> -->
-    <div class="row">
-        <div class="col-md-12 p-l-0 m-t-10 ">
-            <h5 class="m-b-10">Accordion with symbols</h5>
-        </div>
-    </div>
-    <nav>
-        <ul>
-            <li class="tab1">
-                <label for="tab1">Details</label>
-            </li>
-            <li class="tab2">
-                <label for="tab2">Source Code</label>
-            </li>
-            <!-- <li class="tab3">
-            <label for="tab3">Third Tab</label>
-          </li> -->
-        </ul>
-    </nav>
-  
-  
-    <section class="tabsection">
-        <div class="tab1">
-         
-            <section>
-           
-                <button class="accordion">Section 1</button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <button class="accordion">Section 2</button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <button class="accordion">Section 3</button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-            </section>
-
-
-        </div>
-        <div class="tab2">
-          <div class="row">
-            <div class="col-md-12 p-0">
-              <h6 class="">Javascript</h6>
-            </div>
-          </div>
-           <input type="text">
-          <button class="btn btn-primary" >Copy text</button>
-            <div class="html-content m-t-10"  >
-                
-                <pre #copytextone>
-
-        &lt;script&gt;
-        <![CDATA[
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-            
-            for (i = 0; i <script acc.length; i++) {
-              acc[i].addEventListener("click", function() {
-               
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                alert(panel.style.maxHeight);
-                if (panel.style.maxHeight) {
-                  panel.style.maxHeight = null;
-                } else {
-                  panel.style.maxHeight = panel.scrollHeight + "px";
-                } 
-              });
-            }
-        ]]>
-        &lt;/script&gt;
-                </pre>
-            </div>
-            <div class="row">
-              <div class="col-md-12 p-0">
-                <h6 class="m-t-20 m-b-0">HTML</h6>
-              </div>
-            </div>
-            
-            <div class="html-content m-t-10">
-                <pre>
-        <![CDATA[
-        <section>
-            <h6 class="text-dark weight-500 m-b-30">Accordion with symbols</h6>  
-        <button class="accordion">Section 1</button>
-        <div class="panel">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <button class="accordion">Section 2</button>
-        <div class="panel">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <button class="accordion">Section 3</button>
-        <div class="panel">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        </section>
-    ]]>
-
-    </pre>
-            </div>
-        </div>
-
-    </section>
-
+<div class="container">
+<div class="row">
+  <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0">
+      <h2 class="m-b-10 display-b">Accordions</h2>
+      <p class="m-b-30">Accordions conserve space on mobile but they can also cause disorientation and too much scrolling. Easy design fixes improve the usability of these UI elements.</p>
+  </div>
 </div>
+ <div class="ngtabs">
 
+  <ul>
+    <li id="tab1" *ngFor="let tab of commontablist; index as i; first as isFirst"> 
+       <a (click)="openTabList(i)" [ngClass]="{'active': selectedList === i }"
+            href="javascript:void(0)"> {{tab}}</a>
+    </li>
+</ul>
+<div class="ng-tabcontent">
+  <ng-container *ngIf="selectedList === 0">
+      <h6>Example One</h6>
 
-<div class="pc-tab1 m-t-20">
-    <input checked="checked" id="pctab1" type="radio" name="pcpct" />
-    <input id="pctab2" type="radio" name="pcpct" />
-    <!-- <input id="tab3" type="radio" name="pct" /> -->
-    <nav>
-        <ul>
-            <li class="pctab1">
-                <label for="pctab1"> Details</label>
-            </li>
-            <li class="pctab2">
-                <label for="pctab2">Source Code</label>
-            </li>
-            <!-- <li class="tab3">
-            <label for="tab3">Third Tab</label>
-          </li> -->
-        </ul>
-    </nav>
-    <section class="tabsection">
-        <div class="pctab1">
-           <section>
-                <div class="tabs">
-                          <div class="tab">
-                            <input type="checkbox" id="chck1" class="hiddentab-check">
-                            <label class="tab-label" for="chck1">Item 1</label>
-                            <div class="tab-content">
-                                <p>
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
-                            </p>
-                            </div>
-                          </div>
-                          <div class="tab">
-                            <input type="checkbox" id="chck2" class="hiddentab-check">
-                            <label class="tab-label" for="chck2">Item 2</label>
-                            <div class="tab-content">
-                                <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!</p>
-                            </div>
-                          </div>
-                        </div>
-                     
-              </section>
-             </div>
-        <div class="pctab2">
-          
-          <div class="row">
-            <div class="col-md-12">
-              <h6 class="">HTML</h6>
-            </div>
+      <section>
+           
+        <button class="accordion" (click)="accordionTabs(i);">Section 1</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="accordion" (click)="accordionTabs(i);">Section 2</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="accordion" (click)="accordionTabs(i);">Section 3</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </section>
+    <br/>
+    <h6>Example Two</h6>
+    <section>
+      <div class="tabs p-t-0">
+                <div class="tab">
+                  <input type="checkbox" id="chck1" class="hiddentab-check">
+                  <label class="tab-label" for="chck1">Item 1</label>
+                  <div class="tab-content">
+                      <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+                  </p>
+                  </div>
+                </div>
+                <div class="tab">
+                  <input type="checkbox" id="chck2" class="hiddentab-check">
+                  <label class="tab-label" for="chck2">Item 2</label>
+                  <div class="tab-content">
+                      <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!</p>
+                  </div>
+                </div>
+              </div>
+           
+    </section>
+  </ng-container>
+  <ng-container *ngIf="selectedList === 1">
+    
+
+    <button ngxClipboard (click)='copyToClipboard(htmlContentToCopy, $event)'  class="copybutton" [innerHTML]="copytxt"></button>
+    <pre prism language="html" class="language-html" >
+      <code #htmlContentToCopy>
+      &lt;script&gt;
+      <![CDATA[
+      //HTML
+      <h6>Example One</h6>
+      <section>
+         <button class="accordion" (click)="accordionTabs(i);">Section 1</button>
+          <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
-            <div class="html-content">
-                <pre>
+          <button class="accordion" (click)="accordionTabs(i);">Section 2</button>
+          <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <button class="accordion" (click)="accordionTabs(i);">Section 3</button>
+          <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </section>
 
-        <![CDATA[
-      
-<section>
-    <div class="tabs">
+        <h6>Example Two</h6>
+        <section>
+            <div class="tabs">
               <div class="tab">
                 <input type="checkbox" id="chck1" class="hiddentab-check">
                 <label class="tab-label" for="chck1">Item 1</label>
@@ -192,14 +115,45 @@
                 </div>
               </div>
             </div>
-         
-  </section>
-   
-    ]]> 
+               
+        </section>
+      ]]>
+      &lt;/script&gt;
+      </code>
+              </pre>
 
-    </pre>
-            </div>
-        </div>
 
-    </section>
-</div>
+    <button ngxClipboard (click)='copyToClipboard(typescriptContentToCopy, $event)'  class="copybutton" [innerHTML]="copytxt"></button>
+    <pre prism language="javascript" class="language-js" >
+      <code #typescriptContentToCopy>
+      &lt;script&gt;
+      <![CDATA[
+      //Javascript
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          
+          for (i = 0; i <acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+             
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              alert(panel.style.maxHeight);
+              if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+              } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+              } 
+            });
+          }
+      ]]>
+      &lt;/script&gt;
+      </code>
+              </pre>
+</ng-container>
+<ng-container *ngIf="selectedList === 2">
+  <h5>How to Use</h5>
+</ng-container>
+  </div>
+ </div>
+
+ </div>

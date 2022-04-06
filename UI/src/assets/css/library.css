@@ -12377,7 +12377,7 @@ ul.breadcrumb li + li:before {
 
 /* Accordion styles */
 .tabs {
-  border-radius: 8px;
+  border-radius: 0px;
   overflow: hidden;
 }
 

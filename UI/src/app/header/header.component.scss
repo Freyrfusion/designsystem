@@ -25,7 +25,7 @@ nav{
         padding: 0;
         li{
             float: left;
-            padding: 18px 20px;
+            padding: 14px 20px;
             a{
                 text-decoration: none;
                 color: #777;
@@ -43,9 +43,9 @@ nav{
             }
             &.main-dropdown{
               background: none;
-              padding: 10px;
+            //  padding: 10px;
               a{
-                padding: 8px 10px;
+                padding:2px 10px;
               }
               &:hover{
                 .dropdown_menu{
@@ -63,12 +63,12 @@ nav{
                 }
               }
               .dropdown_menu{
-                width: 400px !important;
+                width: 200px !important;
             
                 left: 10%;
                 
                 li{
-                
+                float:none;
                  
                   div{
                     float: left;
