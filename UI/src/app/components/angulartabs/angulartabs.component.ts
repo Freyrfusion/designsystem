@@ -26,7 +26,6 @@ export class AngulartabsComponent implements OnInit {
   }
   openTabList(commontablist:any){
     this.selectedList = commontablist;
-
   }
 
 }

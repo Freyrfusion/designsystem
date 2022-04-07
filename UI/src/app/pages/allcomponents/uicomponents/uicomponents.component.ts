@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-//import { SidebarComponent } from './../../sidebar/sidebar.component';
-
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-uicomponents',
   templateUrl: './uicomponents.component.html',
@@ -9,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UicomponentsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router: ActivatedRoute) { }
 
   ngOnInit(): void {
   }

@@ -15,7 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { TypographyComponent } from './components/typography/typography.component';
 import { FoundationsComponent } from './pages/foundations/foundations.component';
-import { UicomponentsComponent } from './pages/uicomponents/uicomponents.component';
+import { UicomponentsComponent } from './pages/allcomponents/uicomponents/uicomponents.component';
 import { PatternsComponent } from './pages/patterns/patterns.component';
 import { ResourcesComponent } from './pages/resources/resources.component';
 import { ContentComponent } from './content/content.component';
@@ -33,11 +33,11 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { FormsComponent } from './components/forms/forms.component';
 import { CheckboxsComponent } from './components/checkboxs/checkboxs.component';
 import { TooltipsComponent } from './components/tooltips/tooltips.component';
-import { KendocomponentsComponent } from './components/kendocomponents/kendocomponents.component';
-import { KendodropdownComponent } from './components/kendocomponents/kendodropdown/kendodropdown.component';
-import { KendotableComponent } from './components/kendocomponents/kendotable/kendotable.component';
-import { KendoinputsComponent } from './components/kendocomponents/kendoinputs/kendoinputs.component';
-import { KendomultiselectComponent } from './components/kendocomponents/kendomultiselect/kendomultiselect.component';
+import { KendocomponentsComponent } from './pages/allcomponents/kendocomponents/kendocomponents.component';
+import { KendodropdownComponent } from './pages/allcomponents/kendocomponents/kendodropdown/kendodropdown.component';
+import { KendotableComponent } from './pages/allcomponents/kendocomponents/kendotable/kendotable.component';
+import { KendoinputsComponent } from './pages/allcomponents/kendocomponents/kendoinputs/kendoinputs.component';
+import { KendomultiselectComponent } from './pages/allcomponents/kendocomponents/kendomultiselect/kendomultiselect.component';
 import { AllcomponentsComponent } from './pages/allcomponents/allcomponents.component';
 import { AngularcomponentsComponent } from './pages/allcomponents/angularcomponents/angularcomponents.component';
 import { PrimecomponentsComponent } from './pages/allcomponents/primecomponents/primecomponents.component';
@@ -89,6 +89,7 @@ import { LabelModule } from '@progress/kendo-angular-label';
     // DynamicSidebarComponent,
     UicomponentTabsDirective,
     KendocomponentsComponent,
+    UicomponentsComponent,
     AllcomponentsComponent,
     AngularcomponentsComponent,
     PrimecomponentsComponent,
@@ -131,14 +132,14 @@ import { LabelModule } from '@progress/kendo-angular-label';
     GridModule,
     DropDownsModule,
     LabelModule,
-    InputsModule,
+    InputsModule
     
   ],
   entryComponents: [
     // DynamicSample1Component,
     // DynamicSample2Component,
     // UnknownDynamicComponent,
-    UicomponentsComponent,
+   
     ColorsComponent,
     NavigationsComponent,
     

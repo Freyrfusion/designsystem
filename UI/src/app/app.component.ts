@@ -1,13 +1,12 @@
 import { Component, OnInit, AfterViewChecked } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
-import { ClipboardService } from 'ngx-clipboard'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit, AfterViewChecked {
+export class AppComponent implements OnInit {
   title = 'sass-angular';
   searchedKeyword: string;
 
@@ -15,7 +14,7 @@ export class AppComponent implements OnInit, AfterViewChecked {
   tabLists = ['Details','Source Code','How to Use']
   selectedList:any;
 
-  constructor(private router: Router,private _clipboardService: ClipboardService) { 
+  constructor(private router: Router) { 
     let theme = Theme.Green;
   }
  // copy(text: string){
@@ -28,27 +27,8 @@ export class AppComponent implements OnInit, AfterViewChecked {
     // document.execCommand('copy');
     // document.removeEventListener('copy', listener);
  //}
- copyToClipboard(el: HTMLDivElement) {
-  console.log(el.innerText);
 
-  if (navigator.clipboard) {
-    navigator.clipboard.writeText(el.innerText).then(() => {
-      alert('Copied to Clipboard')
-    }, (error) => {
-      console.log(error)
-    });
-  } else {
-    console.log('Browser do not support Clipboard API')
-  }
-
-}
-  ngAfterViewChecked() {
-    if (this.blogPost ) {
-     // this.prismjsService.highlightAll();
-     
-    }
-    
-  }
+  
   
   ngOnInit(): void  {
     this.selectedList = this.tabLists[0];
