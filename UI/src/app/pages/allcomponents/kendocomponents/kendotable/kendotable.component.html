@@ -1,4 +1,4 @@
-<kendo-grid class="kendo-custom" [data]="gridView" [pageSize]="10" [pageable]="true" [sortable]="true"
+<kendo-grid class="kendo-custom-grid" [data]="gridView" [pageSize]="10" [pageable]="true" [sortable]="true"
   [groupable]="true" [reorderable]="true" [resizable]="true" [height]="400" [columnMenu]="{ filter: true }"
   [skip]="skip" (pageChange)="pageChange($event)">
   <!-- <kendo-grid-checkbox-column  title="Select">
@@ -15,8 +15,10 @@
   <kendo-grid-column field="Status" title="Status">
 
     <ng-template kendoGridCellTemplate let-dataItem>
-      <div class="{{dataItem.Status === 'Draft' ? 'draft_Status' : ''}}">
-        <span>{{dataItem.Status}}</span>
+      <div class="k-grid-status-list">
+        <div [class]="dataItem.Status | TransformationStatuCodeColor : 'kendotable'  ">
+          {{dataItem.Status}}
+        </div>
       </div>
     </ng-template>
 
