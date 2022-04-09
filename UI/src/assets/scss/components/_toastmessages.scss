@@ -1,0 +1,27 @@
+@each $key, $val in $theme-colors {
+    .toast-message-#{$key}{
+        @include toast($val);
+        &:hover{
+            background-color: lighten($val, 45%) ; 
+        }
+        > p{
+            float: left;
+            line-height: 22px;
+            width: 85%;
+            padding: 0 12px;
+            font-weight: 500;
+            color: $val $imp;
+        }
+        > i {
+            float: left;
+            width: 7%;
+            line-height: 22px;
+            font-size: $font-size-lg;
+            padding: 0 5px;
+        }
+        > p + i{
+            font-size:calc($font-size-base * 1) ;
+            color: $black $imp;
+        }
+    }
+}

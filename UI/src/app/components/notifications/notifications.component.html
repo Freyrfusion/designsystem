@@ -1,1 +1,80 @@
-<p>notifications works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="ngtabs">
+                <ul>
+                    <li id="tab1" *ngFor="let tab of commontablist; index as i; first as isFirst"> 
+                       <a (click)="openTabList(i)" [ngClass]="{'active': selectedList === i }"
+                            href="javascript:void(0)"> {{tab}} </a> 
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="ng-tabcontent">
+              <ng-container *ngIf="selectedList === 0">
+               <div class="notify bar-top" style="display: none;" data-notification-status="success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, reprehenderit obcaecati itaque. Officiis libero provident perspiciatis eum fugiat laudantium sequi.</div> 
+                <div class="m-t-20">
+                    <a href="#" class="btn btn-primary" (click)="showNotification($event)" data-type="top-left" data-status="success">Top Left</a>
+                    <a href="#" class="btn btn-primary" (click)="showNotification($event)" data-type="top-right" data-status="warning">Top Right</a>
+                    <a href="#" class="btn btn-primary" (click)="showNotification($event)" data-type="bottom-right" data-status="error">Bottom Right</a>
+                    <a href="#" class="btn btn-primary" (click)="showNotification($event)" data-type="bottom-left" data-status="notice">Bottom Left</a>
+                    <a href="#" class="btn btn-primary" (click)="showNotification($event)" data-type="bar-top" data-status="success">Top bar</a>
+                    <a href="#" class="btn btn-primary" (click)="showNotification($event)" data-type="bar-bottom" data-status="plain">Bottom bar</a>
+                </div>
+
+                    </ng-container>
+                    <ng-container *ngIf="selectedList === 1">
+
+                        <button ngxClipboard (click)='copyToClipboard(htmlContentToCopy, $event)'  class="copybutton" [innerHTML]="copytxt"></button>
+                        <pre prism language="html" class="language-html" >
+                          <code #htmlContentToCopy>
+                        
+                          <![CDATA[
+                          //HTML
+                          <div class="notify bar-top" style="display: none;" data-notification-status="success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, reprehenderit obcaecati itaque. Officiis libero provident perspiciatis eum fugiat laudantium sequi.</div> 
+                          <div class="m-t-20">
+                              <a href="#" class="btn btn-primary" (click)="showNotification($event)" data-type="top-left" data-status="success">Top Left</a>
+                              <a href="#" class="btn btn-primary" (click)="showNotification($event)" data-type="top-right" data-status="warning">Top Right</a>
+                              <a href="#" class="btn btn-primary" (click)="showNotification($event)" data-type="bottom-right" data-status="error">Bottom Right</a>
+                              <a href="#" class="btn btn-primary" (click)="showNotification($event)" data-type="bottom-left" data-status="notice">Bottom Left</a>
+                              <a href="#" class="btn btn-primary" (click)="showNotification($event)" data-type="bar-top" data-status="success">Top bar</a>
+                              <a href="#" class="btn btn-primary" (click)="showNotification($event)" data-type="bar-bottom" data-status="plain">Bottom bar</a>
+                          </div>
+                          ]]>
+                      
+                          <![CDATA[
+                          //Typescript
+                          showNotification(event:any) {
+                            var type =  event.target.getAttribute("data-type");
+                            var status =  event.target.getAttribute("data-status");
+                          $('.button').removeClass('is-active');
+                          $(this).addClass('is-active');
+                          
+                          $('.notify')
+                            .removeClass()
+                            .removeAttr('style')
+                            .attr('data-notification-status', status)
+                            .addClass(type + ' notify')
+                            .addClass('do-show'); 
+                          
+                          event.preventDefault();
+                          }
+                        }
+                          ]]>
+                          </code>
+                                  </pre>
+                    </ng-container>
+                    <ng-container *ngIf="selectedList === 2">
+                    </ng-container>
+            </div>
+            
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12"></div>
+    </div>
+
+
+</div>

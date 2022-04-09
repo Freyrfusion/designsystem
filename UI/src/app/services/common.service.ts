@@ -14,5 +14,9 @@ export class CommonService {
     return ['Details','Source Code', 'How to Use'];
 
   }
+  ngtabList1(){
+    //let tabarray = ['Details','Source Code', 'How to Use'];
+    return ['Details','Source Code', 'How to Use'];
 
+  }
 }
