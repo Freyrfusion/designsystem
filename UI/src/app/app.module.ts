@@ -68,10 +68,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
 import { InputsModule } from '@progress/kendo-angular-inputs';
 import { LabelModule } from '@progress/kendo-angular-label';
-
+import { TransformationStatuCodeColor } from './pages/allcomponents/kendocomponents/Pipes/TransformationStatuCodeColor.pipe';
 
 @NgModule({
-  declarations: [
+    declarations: [
+    TransformationStatuCodeColor,
     AppComponent,
    // ColorsComponent,
    // NavigationsComponent,

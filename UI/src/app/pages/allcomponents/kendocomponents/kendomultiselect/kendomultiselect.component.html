@@ -1,8 +1,8 @@
-<p>kendomultiselect works!</p>
-<kendo-multiselect
-        [data]="listItems"
-        textField="text"
-        valueField="value"
-        [(ngModel)]="selectedItems"
-      >
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <kendo-multiselect [data]="listItems" textField="text" valueField="value" [(ngModel)]="selectedItems">
       </kendo-multiselect>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,9 @@
-<p>kendodropdown works! 123</p>
-<kendo-dropdownlist class="kendo_custom_dropdown" [data]="impurities" textField="Name" valueField="Id"
-    [valuePrimitive]="true"  [(ngModel)]="modal"
-    [defaultItem]="defaultItem"
-    [ngClass]="">
-</kendo-dropdownlist>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <kendo-dropdownlist class="kendo-custom-dropdown" [data]="impurities" textField="Name" valueField="Id"
+                [valuePrimitive]="true" [(ngModel)]="modal" [defaultItem]="defaultItem" [ngClass]="">
+            </kendo-dropdownlist>
+        </div>
+    </div>
+</div>
