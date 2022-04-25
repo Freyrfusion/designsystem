@@ -1,14 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { GridDataResult, PageChangeEvent } from '@progress/kendo-angular-grid';
-
+import { CommonService } from 'src/app/services/common.service';
+import { CopyserviceService } from 'src/app/services/copy/copyservice.service';
 @Component({
   selector: 'app-kendotable',
   templateUrl: './kendotable.component.html',
   styleUrls: ['./kendotable.component.scss']
 })
 export class KendotableComponent implements OnInit {
-
-  constructor() { }
+  commontablist:any;
+  selectedList:any;
+  copyToClipboard:any;
+  copytxt: any;
+  constructor(public _common:CommonService, public _copy:CopyserviceService) { }
   public data: any[] = [
     {
       ProductName: 'Face mask',
@@ -236,7 +240,15 @@ export class KendotableComponent implements OnInit {
 
   private items: any[] = this.data;
   ngOnInit(): void {
+    this.commontablist=this._common.ngtabList();
+    this.selectedList = 0;
+    this.copyToClipboard=this._copy.copyToClipboard;
+    this.copytxt = this._copy.copytxt;
     this.loadItems()
+  }
+  openTabList(commontablist:any){
+    this.selectedList = commontablist;
+
   }
   public pageChange(event: PageChangeEvent): void {
     this.skip = event.skip;

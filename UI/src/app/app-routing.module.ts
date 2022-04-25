@@ -59,6 +59,7 @@ import { KendotableComponent } from './pages/allcomponents/kendocomponents/kendo
 import { KendomultiselectComponent } from './pages/allcomponents/kendocomponents/kendomultiselect/kendomultiselect.component';
 import { KendoinputsComponent } from './pages/allcomponents/kendocomponents/kendoinputs/kendoinputs.component';
 import { KendodropdownComponent } from './pages/allcomponents/kendocomponents/kendodropdown/kendodropdown.component';
+import { KendodatepickerComponent } from './pages/allcomponents/kendocomponents/kendodatepicker/kendodatepicker.component';
 
 
 const routes: Routes = [
@@ -107,6 +108,7 @@ const routes: Routes = [
   { path: 'kendoinputs', component: KendoinputsComponent },
   { path: 'kendomultiselect', component: KendomultiselectComponent },
   { path: 'kendotable', component: KendotableComponent },
+  { path: 'kendodatepicker', component: KendodatepickerComponent },
   
 ] },
 { path: 'primecomponents', component: PrimecomponentsComponent, children:[

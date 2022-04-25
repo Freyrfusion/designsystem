@@ -69,6 +69,7 @@ import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
 import { InputsModule } from '@progress/kendo-angular-inputs';
 import { LabelModule } from '@progress/kendo-angular-label';
 import { TransformationStatuCodeColor } from './pages/allcomponents/kendocomponents/Pipes/TransformationStatuCodeColor.pipe';
+import { KendodatepickerComponent } from './pages/allcomponents/kendocomponents/kendodatepicker/kendodatepicker.component';
 
 @NgModule({
     declarations: [
@@ -120,6 +121,7 @@ import { TransformationStatuCodeColor } from './pages/allcomponents/kendocompone
     KendotableComponent,
     KendoinputsComponent,
     KendomultiselectComponent,
+    KendodatepickerComponent,
   
     
   ],

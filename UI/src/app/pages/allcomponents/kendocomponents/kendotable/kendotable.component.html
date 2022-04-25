@@ -1,41 +1,369 @@
-<kendo-grid class="kendo-custom-grid" [data]="gridView" [pageSize]="10" [pageable]="true" [sortable]="true"
-  [groupable]="true" [reorderable]="true" [resizable]="true" [height]="400" [columnMenu]="{ filter: true }"
-  [skip]="skip" (pageChange)="pageChange($event)">
-  <!-- <kendo-grid-checkbox-column  title="Select">
+<div class="row">
+  <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0">
+    <h2 class="m-b-10 display-b">Kendo Grid</h2>
+    <p class="m-b-30"> Kendo Grid conserve space on mobile but they can also cause disorientation and too much
+      scrolling. Easy design fixes improve the usability of these UI elements.</p>
+  </div>
+</div>
+<div class="ngtabs">
+  <ul>
+    <li id="tab1" *ngFor="let tab of commontablist; index as i; first as isFirst">
+      <a (click)="openTabList(i)" [ngClass]="{'active': selectedList === i }" href="javascript:void(0)"> {{tab}}</a>
+    </li>
+  </ul>
+</div>
+
+<div class="ng-tabcontent">
+  <ng-container *ngIf="selectedList === 0">
+    <kendo-grid class="kendo-custom-grid" [data]="gridView" [pageSize]="10" [pageable]="true" [sortable]="true"
+      [groupable]="true" [reorderable]="true" [resizable]="true" [height]="400" [columnMenu]="{ filter: true }"
+      [skip]="skip" (pageChange)="pageChange($event)">
+      <!-- <kendo-grid-checkbox-column  title="Select">
   <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
     <div class="">
       <input type="checkbox" [kendoGridSelectionCheckbox]="rowIndex" />
     </div>
   </ng-template>
 </kendo-grid-checkbox-column> -->
-  <kendo-grid-column field="ProductName" title="Product Name"> </kendo-grid-column>
-  <kendo-grid-column field="ProductCategory" title="Product Category"> </kendo-grid-column>
-  <kendo-grid-column field="FormulationReferenceNumber" title="Formulation Reference Number"> </kendo-grid-column>
-  <kendo-grid-column field="Markets" title="Markets"> </kendo-grid-column>
-  <kendo-grid-column field="Status" title="Status">
+      <kendo-grid-column field="ProductName" title="Product Name"> </kendo-grid-column>
+      <kendo-grid-column field="ProductCategory" title="Product Category"> </kendo-grid-column>
+      <kendo-grid-column field="FormulationReferenceNumber" title="Formulation Reference Number"> </kendo-grid-column>
+      <kendo-grid-column field="Markets" title="Markets"> </kendo-grid-column>
+      <kendo-grid-column field="Status" title="Status">
 
-    <ng-template kendoGridCellTemplate let-dataItem>
-      <div class="k-grid-status-list">
-        <div [class]="dataItem.Status | TransformationStatuCodeColor : 'kendotable'  ">
-          {{dataItem.Status}}
-        </div>
-      </div>
-    </ng-template>
+        <ng-template kendoGridCellTemplate let-dataItem>
+          <div class="k-grid-status-list">
+            <div [class]="dataItem.Status | TransformationStatuCodeColor : 'kendotable'  ">
+              {{dataItem.Status}}
+            </div>
+          </div>
+        </ng-template>
 
-  </kendo-grid-column>
-  <kendo-grid-column field="Actions" title="Actions">
-    <ng-template kendoGridCellTemplate let-dataItem>
+      </kendo-grid-column>
+      <kendo-grid-column field="Actions" title="Actions">
+        <ng-template kendoGridCellTemplate let-dataItem>
 
-      <!-- <span>
-        <i class="{{dataItem.StatusClass}}"></i> 
-      </span>-->
 
-      <div class="k-grid-icons">
-        <button type="button" class="btn"> <span class="icon-ban"></span> </button>
-        <button type="button" class="btn"> <span class="icon-delete-button-lines"></span> </button>
-        <button type="button" class="btn"> <span class="icon-download-file"></span> </button>
+
+          <div class="k-grid-icons">
+            <button type="button" class="btn"> <span class="icon-ban"></span> </button>
+            <button type="button" class="btn"> <span class="icon-delete-button-lines"></span> </button>
+            <button type="button" class="btn"> <span class="icon-download-file"></span> </button>
+
+          </div>
+        </ng-template>
+      </kendo-grid-column>
+    </kendo-grid>
+  </ng-container>
+  <ng-container *ngIf="selectedList === 1">
+
+
+    <button ngxClipboard (click)='copyToClipboard(htmlContentToCopy, $event)' class="copybutton"
+      [innerHTML]="copytxt"></button>
+    <pre prism language="html" class="language-html">
+      <code #htmlContentToCopy>
+        <!-- &lt;script&gt; -->
+        <![CDATA[
+          // HTML
+
+          <kendo-grid class="kendo-custom-grid" [data]="gridView" [pageSize]="10" [pageable]="true" [sortable]="true"
+          [groupable]="true" [reorderable]="true" [resizable]="true" [height]="400" [columnMenu]="{ filter: true }"
+          [skip]="skip" (pageChange)="pageChange($event)">
+          <kendo-grid-column field="ProductName" title="Product Name"> </kendo-grid-column>
+          <kendo-grid-column field="ProductCategory" title="Product Category"> </kendo-grid-column>
+          <kendo-grid-column field="FormulationReferenceNumber" title="Formulation Reference Number"> </kendo-grid-column>
+          <kendo-grid-column field="Markets" title="Markets"> </kendo-grid-column>
+          <kendo-grid-column field="Status" title="Status">
+          <ng-template kendoGridCellTemplate let-dataItem>
+          <div class="k-grid-status-list">
+          <div [class]="dataItem.Status | TransformationStatuCodeColor : 'kendotable'  ">
+          Dynamic Data
+          </div>
+          </div>
+          </ng-template>
+          </kendo-grid-column>
+          <kendo-grid-column field="Actions" title="Actions">
+          <ng-template kendoGridCellTemplate let-dataItem>
+          <div class="k-grid-icons">
+          <button type="button" class="btn"> <span class="icon-ban"></span> </button>
+          <button type="button" class="btn"> <span class="icon-delete-button-lines"></span> </button>
+          <button type="button" class="btn"> <span class="icon-download-file"></span> </button>
+          </div>
+          </ng-template>
+          </kendo-grid-column>
+          </kendo-grid>
+          
+        ]]>
+      </code>
+    </pre>
+
+    <button ngxClipboard (click)='copyToClipboard(componentts, $event)' class="copybutton"
+      [innerHTML]="copytxt"></button>
+    <pre prism language="javascript" class="language-js">
+      <code #componentts>
+      <![CDATA[
+        // Kenotabel.component.ts
+
+          import { Component, OnInit } from '@angular/core';
+          import { GridDataResult, PageChangeEvent } from '@progress/kendo-angular-grid';
+          import { CommonService } from 'src/app/services/common.service';
+          import { CopyserviceService } from 'src/app/services/copy/copyservice.service';
+          @Component({
+            selector: 'app-kendotable',
+            templateUrl: './kendotable.component.html',
+            styleUrls: ['./kendotable.component.scss']
+          })
+          export class KendotableComponent implements OnInit {
+            commontablist:any;
+            selectedList:any;
+            copyToClipboard:any;
+            copytxt: any;
+            constructor(public _common:CommonService, public _copy:CopyserviceService) { }
+          public data: any[] = [
+          {
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'ILA',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'ILS',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'FSS',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'FSA',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'FSN',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'FMC',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'ILA',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'ILS',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'FSS',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'FSA',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'FSN',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'FMC',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'Draft',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'ILA',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+           
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'ILS',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'FSS',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'FSA',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'FSN',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+           
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'FMC',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'Draft',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'Draft',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          {
+            
+            ProductName: 'Face mask',
+            ProductCategory: 'Skin care',
+            FormulationReferenceNumber: 125367785,
+            Markets: 'Austral, India, UK,',
+            Status: 'Draft',
+            StatusClass: '',
+            Actions: 'Edit',
+          },
+          ];
+          public gridView: GridDataResult;
+          public pageSize = 10;
+          public skip = 0;
         
-      </div>
-    </ng-template>
-  </kendo-grid-column>
-</kendo-grid>
+          public pageChange(event: PageChangeEvent): void {
+            this.skip = event.skip;
+            this.loadItems();
+          }
+
+          private loadItems(): void {
+          this.items.forEach(element => {
+            if(element.Status === 'Draft'){
+              element.StatusClass = 'draft_Status'; 
+            } else if(element.Status === 'New'){
+              element.StatusClass = 'badge-primary'; 
+            } else if(element.Status === 'Pending'){
+              element.StatusClass = 'badge-primary'; 
+            } 
+          });
+          this.gridView = {
+            data: this.items.slice(this.skip, this.skip + this.pageSize),
+            total: this.items.length,
+          };
+          }
+          }
+      
+      ]]>
+      </code>
+    </pre>
+
+
+
+  </ng-container>
+  <ng-container *ngIf="selectedList === 2">
+    How to Use
+  </ng-container>
+</div>
