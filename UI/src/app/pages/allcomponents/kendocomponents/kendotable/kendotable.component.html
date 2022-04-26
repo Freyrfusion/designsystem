@@ -1,8 +1,7 @@
 <div class="row">
   <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0">
     <h2 class="m-b-10 display-b">Kendo Grid</h2>
-    <p class="m-b-30"> Kendo Grid conserve space on mobile but they can also cause disorientation and too much
-      scrolling. Easy design fixes improve the usability of these UI elements.</p>
+    <p class="m-b-30"> </p>
   </div>
 </div>
 <div class="ngtabs">
@@ -103,22 +102,11 @@
       <code #componentts>
       <![CDATA[
         // Kenotabel.component.ts
-
-          import { Component, OnInit } from '@angular/core';
+          
           import { GridDataResult, PageChangeEvent } from '@progress/kendo-angular-grid';
-          import { CommonService } from 'src/app/services/common.service';
-          import { CopyserviceService } from 'src/app/services/copy/copyservice.service';
-          @Component({
-            selector: 'app-kendotable',
-            templateUrl: './kendotable.component.html',
-            styleUrls: ['./kendotable.component.scss']
-          })
+        
           export class KendotableComponent implements OnInit {
-            commontablist:any;
-            selectedList:any;
-            copyToClipboard:any;
-            copytxt: any;
-            constructor(public _common:CommonService, public _copy:CopyserviceService) { }
+            constructor() { }
           public data: any[] = [
           {
             ProductName: 'Face mask',

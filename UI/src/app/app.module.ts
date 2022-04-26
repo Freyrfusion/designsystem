@@ -70,6 +70,9 @@ import { InputsModule } from '@progress/kendo-angular-inputs';
 import { LabelModule } from '@progress/kendo-angular-label';
 import { TransformationStatuCodeColor } from './pages/allcomponents/kendocomponents/Pipes/TransformationStatuCodeColor.pipe';
 import { KendodatepickerComponent } from './pages/allcomponents/kendocomponents/kendodatepicker/kendodatepicker.component';
+import { KendouploadComponent } from './pages/allcomponents/kendocomponents/kendoupload/kendoupload.component';
+import { KendocheckboxComponent } from './pages/allcomponents/kendocomponents/kendocheckbox/kendocheckbox.component';
+import { KendoradiobuttonComponent } from './pages/allcomponents/kendocomponents/kendoradiobutton/kendoradiobutton.component';
 
 @NgModule({
     declarations: [
@@ -122,6 +125,9 @@ import { KendodatepickerComponent } from './pages/allcomponents/kendocomponents/
     KendoinputsComponent,
     KendomultiselectComponent,
     KendodatepickerComponent,
+    KendouploadComponent,
+    KendocheckboxComponent,
+    KendoradiobuttonComponent,
   
     
   ],

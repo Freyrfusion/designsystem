@@ -60,6 +60,9 @@ import { KendomultiselectComponent } from './pages/allcomponents/kendocomponents
 import { KendoinputsComponent } from './pages/allcomponents/kendocomponents/kendoinputs/kendoinputs.component';
 import { KendodropdownComponent } from './pages/allcomponents/kendocomponents/kendodropdown/kendodropdown.component';
 import { KendodatepickerComponent } from './pages/allcomponents/kendocomponents/kendodatepicker/kendodatepicker.component';
+import { KendouploadComponent } from './pages/allcomponents/kendocomponents/kendoupload/kendoupload.component';
+import { KendocheckboxComponent } from './pages/allcomponents/kendocomponents/kendocheckbox/kendocheckbox.component';
+import { KendoradiobuttonComponent } from './pages/allcomponents/kendocomponents/kendoradiobutton/kendoradiobutton.component';
 
 
 const routes: Routes = [
@@ -109,6 +112,9 @@ const routes: Routes = [
   { path: 'kendomultiselect', component: KendomultiselectComponent },
   { path: 'kendotable', component: KendotableComponent },
   { path: 'kendodatepicker', component: KendodatepickerComponent },
+  { path: 'kendoupload', component: KendouploadComponent },
+  { path: 'kendocheckbox', component: KendocheckboxComponent },
+  { path: 'kendoradiobutton', component: KendoradiobuttonComponent },
   
 ] },
 { path: 'primecomponents', component: PrimecomponentsComponent, children:[
