@@ -13,7 +13,11 @@
     </ul>
 </div>
 <div class="ng-tabcontent">
-    <ng-container *ngIf="selectedList === 0"> Kendo Upload</ng-container> 
+    <ng-container *ngIf="selectedList === 0"> 
+        <!-- <kendo-upload [saveUrl]="uploadSaveUrl" [removeUrl]="uploadRemoveUrl">
+        </kendo-upload> -->
+        
+    </ng-container> 
     <ng-container *ngIf="selectedList === 1"> 
         <button ngxClipboard (click)='copyToClipboard(kendouploadhtml, $event)' class="copybutton"
                 [innerHTML]="copytxt"></button>

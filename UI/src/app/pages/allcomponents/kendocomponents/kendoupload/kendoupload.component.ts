@@ -12,6 +12,8 @@ export class KendouploadComponent implements OnInit {
   selectedList: any;
   copyToClipboard: any;
   copytxt: any;
+  // uploadSaveUrl = "saveUrl"; // should represent an actual API endpoint
+  // uploadRemoveUrl = "removeUrl"; // should represent an actual API endpoint
 
   constructor(public _common:CommonService, public _copy:CopyserviceService) { }
 

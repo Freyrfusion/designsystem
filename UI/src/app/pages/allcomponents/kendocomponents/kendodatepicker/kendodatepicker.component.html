@@ -14,7 +14,9 @@
 </div>
 
 <div class="ng-tabcontent">
-    <ng-container *ngIf="selectedList === 0"> Kendo Date picker</ng-container>
+    <ng-container *ngIf="selectedList === 0"> 
+        <kendo-datepicker [(value)]="value"></kendo-datepicker>
+    </ng-container>
     <ng-container *ngIf="selectedList === 1">
         <button ngxClipboard (click)='copyToClipboard(kendodatepickerhtml, $event)' class="copybutton"
             [innerHTML]="copytxt"></button>

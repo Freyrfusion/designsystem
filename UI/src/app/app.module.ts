@@ -73,7 +73,8 @@ import { KendodatepickerComponent } from './pages/allcomponents/kendocomponents/
 import { KendouploadComponent } from './pages/allcomponents/kendocomponents/kendoupload/kendoupload.component';
 import { KendocheckboxComponent } from './pages/allcomponents/kendocomponents/kendocheckbox/kendocheckbox.component';
 import { KendoradiobuttonComponent } from './pages/allcomponents/kendocomponents/kendoradiobutton/kendoradiobutton.component';
-
+import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
+// import { UploadsModule } from "@progress/kendo-angular-upload";
 @NgModule({
     declarations: [
     TransformationStatuCodeColor,
@@ -128,8 +129,8 @@ import { KendoradiobuttonComponent } from './pages/allcomponents/kendocomponents
     KendouploadComponent,
     KendocheckboxComponent,
     KendoradiobuttonComponent,
-  
     
+
   ],
   imports: [
     BrowserModule,
@@ -141,7 +142,9 @@ import { KendoradiobuttonComponent } from './pages/allcomponents/kendocomponents
     GridModule,
     DropDownsModule,
     LabelModule,
-    InputsModule
+    InputsModule,
+    DateInputsModule,
+    // UploadsModule,
     
   ],
   entryComponents: [

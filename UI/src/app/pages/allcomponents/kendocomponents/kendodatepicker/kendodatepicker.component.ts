@@ -12,7 +12,7 @@ export class KendodatepickerComponent implements OnInit {
   selectedList: any;
   copyToClipboard: any;
   copytxt: any;
-
+  public value: Date = new Date(2000, 2, 10);
   constructor(public _common: CommonService, public _copy: CopyserviceService) { }
 
   ngOnInit(): void {
