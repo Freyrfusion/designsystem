@@ -70,11 +70,12 @@ import { InputsModule } from '@progress/kendo-angular-inputs';
 import { LabelModule } from '@progress/kendo-angular-label';
 import { TransformationStatuCodeColor } from './pages/allcomponents/kendocomponents/Pipes/TransformationStatuCodeColor.pipe';
 import { KendodatepickerComponent } from './pages/allcomponents/kendocomponents/kendodatepicker/kendodatepicker.component';
-import { KendouploadComponent } from './pages/allcomponents/kendocomponents/kendoupload/kendoupload.component';
 import { KendocheckboxComponent } from './pages/allcomponents/kendocomponents/kendocheckbox/kendocheckbox.component';
 import { KendoradiobuttonComponent } from './pages/allcomponents/kendocomponents/kendoradiobutton/kendoradiobutton.component';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
-// import { UploadsModule } from "@progress/kendo-angular-upload";
+
+
+
 @NgModule({
     declarations: [
     TransformationStatuCodeColor,
@@ -126,11 +127,9 @@ import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
     KendoinputsComponent,
     KendomultiselectComponent,
     KendodatepickerComponent,
-    KendouploadComponent,
     KendocheckboxComponent,
     KendoradiobuttonComponent,
-    
-
+  
   ],
   imports: [
     BrowserModule,
@@ -144,7 +143,7 @@ import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
     LabelModule,
     InputsModule,
     DateInputsModule,
-    // UploadsModule,
+    
     
   ],
   entryComponents: [
@@ -166,7 +165,9 @@ import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
     TooltipsComponent,
 
   ],
-  providers: [],
+  providers: [
+  ],
+ 
   bootstrap: [AppComponent]
 })
 export class AppModule { }

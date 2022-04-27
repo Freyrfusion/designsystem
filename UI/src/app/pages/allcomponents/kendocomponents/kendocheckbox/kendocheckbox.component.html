@@ -1,9 +1,10 @@
 <div class="row">
     <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0">
-        <h2 class="m-b-10 display-b">Kendo Upload</h2>
+        <h2 class="m-b-10 display-b">Kendo CheckBox</h2>
         <p class="m-b-30"> </p>
     </div>
 </div>
+
 <div class="ngtabs">
     <ul>
         <li id="tab1" *ngFor="let tab of commontablist; index as i; first as isFirst">
@@ -13,18 +14,38 @@
     </ul>
 </div>
 <div class="ng-tabcontent">
-    <ng-container *ngIf="selectedList === 0"> Kendo Upload</ng-container>
+    <ng-container *ngIf="selectedList === 0">
+        <p><input type="checkbox" #notification kendoCheckBox /> Allow Notifications </p> </ng-container>
     <ng-container *ngIf="selectedList === 1">
         <button ngxClipboard (click)='copyToClipboard(kendocheckboxhtml, $event)' class="copybutton"
             [innerHTML]="copytxt"></button>
         <pre prism language="html" class="language-html">
             <code #kendocheckboxhtml>
                 <![CDATA[
-                        
+                //HTML
+
+                <input type="checkbox" #notification kendoCheckBox />     
                 ]]>
             </code>
                
             </pre>
+            <button ngxClipboard (click)='copyToClipboard(appmodule, $event)' class="copybutton"
+            [innerHTML]="copytxt"></button>
+            <pre prism language="javascript" class="language-js">
+                <code #appmodule>
+                    //app.module.ts
+                    <![CDATA[
+                    import { InputsModule } from '@progress/kendo-angular-inputs';
+
+                    @NgModule({
+                        imports: [
+                        InputsModule,
+                        ]
+                    )}
+                    ]]>
+                </code>
+            </pre>
+
     </ng-container>
-    <ng-container *ngIf="selectedList === 2"> </ng-container>
+    <ng-container *ngIf="selectedList === 2"> <h5> We will add content soon!</h5> </ng-container>
 </div>

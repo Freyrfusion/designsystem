@@ -14,19 +14,54 @@
 </div>
 
 <div class="ng-tabcontent">
-    <ng-container *ngIf="selectedList === 0"> 
-        <kendo-datepicker [(value)]="value"></kendo-datepicker>
+    <ng-container *ngIf="selectedList === 0">
+        <div class="row">
+            <div class="col-md-4">
+                <p>Date picker</p>
+                <kendo-datepicker [(value)]="value"></kendo-datepicker>
+            </div>
+        </div>
+
     </ng-container>
     <ng-container *ngIf="selectedList === 1">
         <button ngxClipboard (click)='copyToClipboard(kendodatepickerhtml, $event)' class="copybutton"
             [innerHTML]="copytxt"></button>
         <pre prism language="html" class="language-html">
                     <code #kendodatepickerhtml>
+                        // HTML
                         <![CDATA[
-
+                        <kendo-datepicker [(value)]="value"></kendo-datepicker>
                         ]]>
                     </code>
                 </pre>
+                <button ngxClipboard (click)='copyToClipboard(kendodatepickerts, $event)' class="copybutton"
+            [innerHTML]="copytxt"></button>
+            <pre prism language="javascript" class="language-js">
+                <code #kendodatepickerts>
+                    // kendodatepicker.ts
+                    <![CDATA[
+                    public value: Date = new Date(2000, 2, 10);
+                    ]]>
+                </code>
+            </pre>
+
+            <button ngxClipboard (click)='copyToClipboard(appmouledatepicker, $event)' class="copybutton"
+            [innerHTML]="copytxt"></button>
+            <pre prism language="javascript" class="language-js">
+                <code #appmouledatepicker>
+                    // app.module.ts
+                    <![CDATA[
+                    import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
+
+                    @NgModule({
+                        imports: [
+                        DateInputsModule,
+                        ]
+                    )}
+                    
+                    ]]>
+                </code>
+            </pre>
     </ng-container>
-    <ng-container *ngIf="selectedList === 2"> </ng-container>
+    <ng-container *ngIf="selectedList === 2"><h5> We will add content soon!</h5></ng-container>
 </div>

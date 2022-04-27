@@ -60,9 +60,9 @@ import { KendomultiselectComponent } from './pages/allcomponents/kendocomponents
 import { KendoinputsComponent } from './pages/allcomponents/kendocomponents/kendoinputs/kendoinputs.component';
 import { KendodropdownComponent } from './pages/allcomponents/kendocomponents/kendodropdown/kendodropdown.component';
 import { KendodatepickerComponent } from './pages/allcomponents/kendocomponents/kendodatepicker/kendodatepicker.component';
-import { KendouploadComponent } from './pages/allcomponents/kendocomponents/kendoupload/kendoupload.component';
 import { KendocheckboxComponent } from './pages/allcomponents/kendocomponents/kendocheckbox/kendocheckbox.component';
 import { KendoradiobuttonComponent } from './pages/allcomponents/kendocomponents/kendoradiobutton/kendoradiobutton.component';
+
 
 
 const routes: Routes = [
@@ -75,69 +75,81 @@ const routes: Routes = [
       { path: 'Typography', component: TypographyComponent },
     ]
   },
-  { path: 'components', children: [
-  { path: 'uicomponents', component: UicomponentsComponent, children: [
-    { path: 'Accordions', component: AccordionsComponent },
-    { path: 'Alerts', component: AlertsComponent },
-    { path: 'Badges', component: BadgesComponent },
-    { path: 'Breadcrumbs', component: BreadcrumbsComponent },
-    { path: 'Buttons', component: ButtonsComponent },
-    { path: 'CheckBox', component: CheckboxsComponent },
-    { path: 'Columns', component: ColumnsComponent },
-    { path: 'Datepickers', component: DatepickersComponent },
-    { path: 'Dropdowns', component: DropdownsComponent },
-    { path: 'Forms', component: FormsComponent },
-    { path: 'Headers', component: HeadersComponent },
-    { path: 'Modals', component: ModalsComponent },
-    { path: 'Multiselect', component: MultiselectComponent },
-    { path: 'Navigation', component: NavigationsComponent },
-    { path: 'NotificationList', component: NotificationlistComponent },
-    { path: 'Notifications', component: NotificationsComponent },
-    { path: 'Progressbar', component: ProgressbarComponent },
-    { path: 'Radiobuttons', component: RadiobuttonsComponent },
-    { path: 'Searchbox', component: SearchboxComponent },
-    { path: 'Sweetalerts', component: SweetalertsComponent },
-    { path: 'Tables', component: TablesComponent },
-    { path: 'Tabs', component: TabsComponent },
-    { path: 'Toasts', component: ToastsComponent },
-    { path: 'Toggles', component: ToggleComponent },
-    { path: 'Tooltip', component: TooltipsComponent },
-    { path: 'Validations', component: ValidationsComponent },
-    { path: 'Wizard', component: WizardComponent },
-  ],
-},   
-{ path: 'kendocomponents', component: KendocomponentsComponent, children:[
-  { path: 'kendodropdown', component: KendodropdownComponent },
-  { path: 'kendoinputs', component: KendoinputsComponent },
-  { path: 'kendomultiselect', component: KendomultiselectComponent },
-  { path: 'kendotable', component: KendotableComponent },
-  { path: 'kendodatepicker', component: KendodatepickerComponent },
-  { path: 'kendoupload', component: KendouploadComponent },
-  { path: 'kendocheckbox', component: KendocheckboxComponent },
-  { path: 'kendoradiobutton', component: KendoradiobuttonComponent },
-  
-] },
-{ path: 'primecomponents', component: PrimecomponentsComponent, children:[
-  { path: 'kendodropdown', component: KendodropdownComponent },
-  { path: 'kendoinputs', component: KendoinputsComponent },
-  { path: 'kendomultiselect', component: KendomultiselectComponent },
-  { path: 'kendotable', component: KendotableComponent },
-  
-]},
-{ path: 'angularcomponents', component: AngularcomponentsComponent,  children:[
-  {  path: 'angulartabs', component: AngulartabsComponent }
-  
-] }
-]},
-  { path: 'patterns', component: PatternsComponent, children:[
+  {
+    path: 'components', children: [
+      {
+        path: 'uicomponents', component: UicomponentsComponent, children: [
+          { path: 'Accordions', component: AccordionsComponent },
+          { path: 'Alerts', component: AlertsComponent },
+          { path: 'Badges', component: BadgesComponent },
+          { path: 'Breadcrumbs', component: BreadcrumbsComponent },
+          { path: 'Buttons', component: ButtonsComponent },
+          { path: 'CheckBox', component: CheckboxsComponent },
+          { path: 'Columns', component: ColumnsComponent },
+          { path: 'Datepickers', component: DatepickersComponent },
+          { path: 'Dropdowns', component: DropdownsComponent },
+          { path: 'Forms', component: FormsComponent },
+          { path: 'Headers', component: HeadersComponent },
+          { path: 'Modals', component: ModalsComponent },
+          { path: 'Multiselect', component: MultiselectComponent },
+          { path: 'Navigation', component: NavigationsComponent },
+          { path: 'NotificationList', component: NotificationlistComponent },
+          { path: 'Notifications', component: NotificationsComponent },
+          { path: 'Progressbar', component: ProgressbarComponent },
+          { path: 'Radiobuttons', component: RadiobuttonsComponent },
+          { path: 'Searchbox', component: SearchboxComponent },
+          { path: 'Sweetalerts', component: SweetalertsComponent },
+          { path: 'Tables', component: TablesComponent },
+          { path: 'Tabs', component: TabsComponent },
+          { path: 'Toasts', component: ToastsComponent },
+          { path: 'Toggles', component: ToggleComponent },
+          { path: 'Tooltip', component: TooltipsComponent },
+          { path: 'Validations', component: ValidationsComponent },
+          { path: 'Wizard', component: WizardComponent },
+          
+        ],
+      },
+      {
+        path: 'kendocomponents', component: KendocomponentsComponent, children: [
+          { path: 'kendodropdown', component: KendodropdownComponent },
+          { path: 'kendoinputs', component: KendoinputsComponent },
+          { path: 'kendomultiselect', component: KendomultiselectComponent },
+          { path: 'kendotable', component: KendotableComponent },
+          { path: 'kendodatepicker', component: KendodatepickerComponent },
+          { path: 'kendocheckbox', component: KendocheckboxComponent },
+          { path: 'kendoradiobutton', component: KendoradiobuttonComponent },
+          
 
-    
-  ] },
+        ]
+      },
+      {
+        path: 'primecomponents', component: PrimecomponentsComponent, children: [
+          { path: 'kendodropdown', component: KendodropdownComponent },
+          { path: 'kendoinputs', component: KendoinputsComponent },
+          { path: 'kendomultiselect', component: KendomultiselectComponent },
+          { path: 'kendotable', component: KendotableComponent },
+
+        ]
+      },
+      {
+        path: 'angularcomponents', component: AngularcomponentsComponent, children: [
+          { path: 'angulartabs', component: AngulartabsComponent }
+
+        ]
+      }
+    ]
+  },
+  {
+    path: 'patterns', component: PatternsComponent, children: [
+
+
+    ]
+  },
   { path: 'resources', component: ResourcesComponent },
 
-  
+
   //Components
-  
+
 ];
 
 @NgModule({

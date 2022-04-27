@@ -1,6 +1,14 @@
-import { Component, OnInit, AfterViewChecked } from '@angular/core';
+
 import { Router } from '@angular/router';
-import * as $ from 'jquery';
+import { Component, Injectable, OnInit } from "@angular/core";import {
+  HttpInterceptor,
+  HttpRequest,
+  HttpHandler,
+  HttpEvent,
+  HttpProgressEvent,
+  HttpEventType,
+  HttpResponse,} from "@angular/common/http";import { Observable, of, concat } from "rxjs";import { delay } from "rxjs/operators";
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -91,3 +99,5 @@ enum Theme{
   Green="green",
   Dark="dark"
   }
+
+ 
