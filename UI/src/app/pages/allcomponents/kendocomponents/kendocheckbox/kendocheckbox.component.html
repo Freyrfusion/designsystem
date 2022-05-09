@@ -15,7 +15,11 @@
 </div>
 <div class="ng-tabcontent">
     <ng-container *ngIf="selectedList === 0">
-        <p><input type="checkbox" #notification kendoCheckBox /> Allow Notifications </p> </ng-container>
+        <p><input type="checkbox" class="border" kendoCheckBox /> Check & Uncheckbox </p> <br>
+        <p><input type="checkbox" disabled kendoCheckBox /> Checkbox disabled with the disabled attribute </p>
+        
+    </ng-container>
+
     <ng-container *ngIf="selectedList === 1">
         <button ngxClipboard (click)='copyToClipboard(kendocheckboxhtml, $event)' class="copybutton"
             [innerHTML]="copytxt"></button>
@@ -29,9 +33,9 @@
             </code>
                
             </pre>
-            <button ngxClipboard (click)='copyToClipboard(appmodule, $event)' class="copybutton"
+        <button ngxClipboard (click)='copyToClipboard(appmodule, $event)' class="copybutton"
             [innerHTML]="copytxt"></button>
-            <pre prism language="javascript" class="language-js">
+        <pre prism language="javascript" class="language-js">
                 <code #appmodule>
                     //app.module.ts
                     <![CDATA[
@@ -47,5 +51,7 @@
             </pre>
 
     </ng-container>
-    <ng-container *ngIf="selectedList === 2"> <h5> We will add content soon!</h5> </ng-container>
+    <ng-container *ngIf="selectedList === 2">
+        <h5> We will add content soon!</h5>
+    </ng-container>
 </div>

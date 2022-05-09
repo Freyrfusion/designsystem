@@ -14,7 +14,9 @@
 </div>
 <div class="ng-tabcontent">
     <ng-container *ngIf="selectedList === 0"> 
-        <p> <input type="radio" #terms kendoRadioButton /> Accept Terms & Conditions </p>
+        <p> <input type="radio" #terms kendoRadioButton /> Accept Terms & Conditions </p> <br>
+        <p> <input type="radio" disabled kendoRadioButton /> Radio button disabled with the disabled attribute </p>
+   
         </ng-container>
     <ng-container *ngIf="selectedList === 1">
         <button ngxClipboard (click)='copyToClipboard(kendoradiobutton, $event)' class="copybutton"

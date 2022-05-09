@@ -18,12 +18,10 @@
 .k-picker:focus-within {
     box-shadow: none !important;
 }
-.k-list-item.k-selected.k-hover, .k-list-item.k-selected:hover, .k-selected.k-hover.k-list-optionlabel, .k-selected.k-list-optionlabel:hover {
-    color: #fff;
-    background-color: #671cc9;
-}
-.k-widget .k-state-selected,
-.k-list .k-state-selected
-{ 
-  background: red;
+
+.k-list-item.k-selected, .k-selected.k-list-optionlabel {
+    color: #0084d1 !important;
+    background-color: #ebf0ff !important;
+    border-width:0px;
+    font-weight: 500px;
 }
