@@ -1,1 +1,316 @@
-<p>breadcrumbs works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2 class="m-b-10 display-b">Breadcrumbs</h2>
+            <p class="m-b-30">Breadcrumbs Description</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="ngtabs">
+            <ul>
+                <li id="tab1" *ngFor="let tab of commontablist; index as i; first as isFirst"> 
+                   <a (click)="openTabList(i)" [ngClass]="{'active': selectedList === i }"
+                        href="javascript:void(0)"> {{tab}}</a>
+                </li>
+            </ul>
+           
+            <div class="ng-tabcontent">
+                <ng-container *ngIf="selectedList === 0">
+                 
+
+                    <section>
+                        <h6 class="text-dark weight-500 m-b-30"> Breadcrumbs</h6>
+                    <div class=" breadcrumbs">
+                        <a href="#" class="crumb">
+                          <span class="text">Browse</span>
+                        </a>
+                          <a href="#" class="crumb">
+                          <span class="text">Compare</span>
+                        </a>
+                          <a href="#" class="crumb">
+                          <span class="text">Order Confirmation</span>
+                        </a>
+                          <span >  </span>
+                      </div></section>
+                    
+                      <section>
+                        <h6 class="text-dark weight-500 m-b-30"> Breadcrumb Pagination</h6>
+                         <ul class="breadcrumb">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Pictures</a></li>
+                           <li>Italy</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h6 class="text-dark weight-500 m-b-30"> Clickable Breadcrumb  </h6>
+                        
+                             
+                        <div class="page__section">
+                          <nav class="breadcrumb breadcrumb_type1" aria-label="Breadcrumb">
+                            <ol class="breadcrumb__list r-list">
+                              <li class="breadcrumb__group">
+                                <a href="#0" class="breadcrumb__point r-link">Home</a>
+                                <span class="breadcrumb__divider" aria-hidden="true">/</span>
+                              </li>
+                              <li class="breadcrumb__group">
+                                <a href="#0" class="breadcrumb__point r-link">Blog</a>
+                                <span class="breadcrumb__divider" aria-hidden="true">/</span>
+                              </li>
+                              <li class="breadcrumb__group">
+                                <span class="breadcrumb__point" aria-current="page">Single post</span>
+                              </li>
+                            </ol>
+                          </nav>
+                        </div>         
+                        <div class="page__section">
+                          <nav class="breadcrumb breadcrumb_type2" aria-label="Breadcrumb">
+                            <ol class="breadcrumb__list r-list">
+                              <li class="breadcrumb__group">
+                                <a href="#0" class="breadcrumb__point r-link">Home</a>
+                                <span class="breadcrumb__divider" aria-hidden="true">→</span>
+                              </li>
+                              <li class="breadcrumb__group">
+                                <a href="#0" class="breadcrumb__point r-link">Blog</a>
+                                <span class="breadcrumb__divider" aria-hidden="true">→</span>
+                              </li>
+                              <li class="breadcrumb__group">
+                                <span class="breadcrumb__point" aria-current="page">Single post</span>
+                              </li>
+                            </ol>
+                          </nav>
+                        </div>         
+                        <div class="page__section">
+                          <nav class="breadcrumb breadcrumb_type3" aria-label="Breadcrumb">
+                            <ol class="breadcrumb__list r-list">
+                              <li class="breadcrumb__group">
+                                <a href="#0" class="breadcrumb__point r-link">Home</a>
+                                <span class="breadcrumb__divider" aria-hidden="true">•</span>
+                              </li>
+                              <li class="breadcrumb__group">
+                                <a href="#0" class="breadcrumb__point r-link">Blog</a>
+                                <span class="breadcrumb__divider" aria-hidden="true">•</span>
+                              </li>
+                              <li class="breadcrumb__group">
+                                <span class="breadcrumb__point" aria-current="page">Single post</span>
+                              </li>
+                            </ol>
+                          </nav>
+                        </div>         
+                        <div class="page__section">
+                          <nav class="breadcrumb breadcrumb_type4" aria-label="Breadcrumb">
+                            <ol class="breadcrumb__list r-list">
+                              <li class="breadcrumb__group">
+                                <a href="#0" class="breadcrumb__point r-link">Home</a>
+                                <span class="breadcrumb__divider" aria-hidden="true">|</span>
+                              </li>
+                              <li class="breadcrumb__group">
+                                <a href="#0" class="breadcrumb__point r-link">Blog</a>
+                                <span class="breadcrumb__divider" aria-hidden="true">|</span>
+                              </li>
+                              <li class="breadcrumb__group">
+                                <span class="breadcrumb__point" aria-current="page">Single post</span>
+                              </li>
+                            </ol>
+                          </nav>
+                        </div>         
+                        <div class="page__section">
+                          <nav class="breadcrumb breadcrumb_type5" aria-label="Breadcrumb">
+                            <ol class="breadcrumb__list r-list">
+                              <li class="breadcrumb__group">
+                                <a href="#0" class="breadcrumb__point r-link">Home</a>
+                                <span class="breadcrumb__divider" aria-hidden="true">›</span>
+                              </li>
+                              <li class="breadcrumb__group">
+                                <a href="#0" class="breadcrumb__point r-link">Blog</a>
+                                <span class="breadcrumb__divider" aria-hidden="true">›</span>
+                              </li>
+                              <li class="breadcrumb__group">
+                                <span class="breadcrumb__point" aria-current="page">Single post</span>
+                              </li>
+                            </ol>
+                          </nav>
+                        </div>         
+                        <div class="page__section">
+                          <nav class="breadcrumb breadcrumb_type6" aria-label="Breadcrumb">
+                            <ol class="breadcrumb__list r-list">
+                              <li class="breadcrumb__group">
+                                <a href="#0" class="breadcrumb__point r-link">Home</a>
+                                <span class="breadcrumb__divider" aria-hidden="true">—</span>
+                              </li>
+                              <li class="breadcrumb__group">
+                                <a href="#0" class="breadcrumb__point r-link">Blog</a>
+                                <span class="breadcrumb__divider" aria-hidden="true">—</span>
+                              </li>
+                              <li class="breadcrumb__group">
+                                <span class="breadcrumb__point" aria-current="page">Single post</span>
+                              </li>
+                            </ol>
+                          </nav>
+                        </div>         
+                     
+                      
+                      </section>
+                </ng-container>
+                <ng-container *ngIf="selectedList === 1">
+                 
+                 
+                    <h5 >Source Code (Typescript)</h5>
+                    <!-- <input type="text" /> -->
+                    <button ngxClipboard (click)='copyToClipboard(typescriptContentToCopy, $event)'  class="copybutton" [innerHTML]="copytxt"></button>
+
+                        <pre prism language="javascript" class="language-js" >
+                            <code #typescriptContentToCopy>
+                      
+                                <![CDATA[
+                                // Breadcrumbs
+                                <section>
+                                  
+                                <div class=" breadcrumbs">
+                                    <a href="#" class="crumb">
+                                      <span class="text">Browse</span>
+                                    </a>
+                                      <a href="#" class="crumb">
+                                      <span class="text">Compare</span>
+                                    </a>
+                                      <a href="#" class="crumb">
+                                      <span class="text">Order Confirmation</span>
+                                    </a>
+                                      <span >  </span>
+                                  </div></section>
+                                  //  Breadcrumb Pagination
+                                  <section>
+                                  
+                                     <ul class="breadcrumb">
+                                      <li><a href="#">Home</a></li>
+                                      <li><a href="#">Pictures</a></li>
+                                       <li>Italy</li>
+                                    </ul>
+                                  </section>
+                                  //Clickable Breadcrumbs
+                                  <section>
+                                   
+                                         
+                                    <div class="page__section">
+                                      <nav class="breadcrumb breadcrumb_type1" aria-label="Breadcrumb">
+                                        <ol class="breadcrumb__list r-list">
+                                          <li class="breadcrumb__group">
+                                            <a href="#0" class="breadcrumb__point r-link">Home</a>
+                                            <span class="breadcrumb__divider" aria-hidden="true">/</span>
+                                          </li>
+                                          <li class="breadcrumb__group">
+                                            <a href="#0" class="breadcrumb__point r-link">Blog</a>
+                                            <span class="breadcrumb__divider" aria-hidden="true">/</span>
+                                          </li>
+                                          <li class="breadcrumb__group">
+                                            <span class="breadcrumb__point" aria-current="page">Single post</span>
+                                          </li>
+                                        </ol>
+                                      </nav>
+                                    </div>         
+                                    <div class="page__section">
+                                      <nav class="breadcrumb breadcrumb_type2" aria-label="Breadcrumb">
+                                        <ol class="breadcrumb__list r-list">
+                                          <li class="breadcrumb__group">
+                                            <a href="#0" class="breadcrumb__point r-link">Home</a>
+                                            <span class="breadcrumb__divider" aria-hidden="true">→</span>
+                                          </li>
+                                          <li class="breadcrumb__group">
+                                            <a href="#0" class="breadcrumb__point r-link">Blog</a>
+                                            <span class="breadcrumb__divider" aria-hidden="true">→</span>
+                                          </li>
+                                          <li class="breadcrumb__group">
+                                            <span class="breadcrumb__point" aria-current="page">Single post</span>
+                                          </li>
+                                        </ol>
+                                      </nav>
+                                    </div>         
+                                    <div class="page__section">
+                                      <nav class="breadcrumb breadcrumb_type3" aria-label="Breadcrumb">
+                                        <ol class="breadcrumb__list r-list">
+                                          <li class="breadcrumb__group">
+                                            <a href="#0" class="breadcrumb__point r-link">Home</a>
+                                            <span class="breadcrumb__divider" aria-hidden="true">•</span>
+                                          </li>
+                                          <li class="breadcrumb__group">
+                                            <a href="#0" class="breadcrumb__point r-link">Blog</a>
+                                            <span class="breadcrumb__divider" aria-hidden="true">•</span>
+                                          </li>
+                                          <li class="breadcrumb__group">
+                                            <span class="breadcrumb__point" aria-current="page">Single post</span>
+                                          </li>
+                                        </ol>
+                                      </nav>
+                                    </div>         
+                                    <div class="page__section">
+                                      <nav class="breadcrumb breadcrumb_type4" aria-label="Breadcrumb">
+                                        <ol class="breadcrumb__list r-list">
+                                          <li class="breadcrumb__group">
+                                            <a href="#0" class="breadcrumb__point r-link">Home</a>
+                                            <span class="breadcrumb__divider" aria-hidden="true">|</span>
+                                          </li>
+                                          <li class="breadcrumb__group">
+                                            <a href="#0" class="breadcrumb__point r-link">Blog</a>
+                                            <span class="breadcrumb__divider" aria-hidden="true">|</span>
+                                          </li>
+                                          <li class="breadcrumb__group">
+                                            <span class="breadcrumb__point" aria-current="page">Single post</span>
+                                          </li>
+                                        </ol>
+                                      </nav>
+                                    </div>         
+                                    <div class="page__section">
+                                      <nav class="breadcrumb breadcrumb_type5" aria-label="Breadcrumb">
+                                        <ol class="breadcrumb__list r-list">
+                                          <li class="breadcrumb__group">
+                                            <a href="#0" class="breadcrumb__point r-link">Home</a>
+                                            <span class="breadcrumb__divider" aria-hidden="true">›</span>
+                                          </li>
+                                          <li class="breadcrumb__group">
+                                            <a href="#0" class="breadcrumb__point r-link">Blog</a>
+                                            <span class="breadcrumb__divider" aria-hidden="true">›</span>
+                                          </li>
+                                          <li class="breadcrumb__group">
+                                            <span class="breadcrumb__point" aria-current="page">Single post</span>
+                                          </li>
+                                        </ol>
+                                      </nav>
+                                    </div>         
+                                    <div class="page__section">
+                                      <nav class="breadcrumb breadcrumb_type6" aria-label="Breadcrumb">
+                                        <ol class="breadcrumb__list r-list">
+                                          <li class="breadcrumb__group">
+                                            <a href="#0" class="breadcrumb__point r-link">Home</a>
+                                            <span class="breadcrumb__divider" aria-hidden="true">—</span>
+                                          </li>
+                                          <li class="breadcrumb__group">
+                                            <a href="#0" class="breadcrumb__point r-link">Blog</a>
+                                            <span class="breadcrumb__divider" aria-hidden="true">—</span>
+                                          </li>
+                                          <li class="breadcrumb__group">
+                                            <span class="breadcrumb__point" aria-current="page">Single post</span>
+                                          </li>
+                                        </ol>
+                                      </nav>
+                                    </div>         
+                                 
+                                  
+                                  </section>
+                                ]]>
+                                </code>
+                                      </pre>
+             
+                   
+                    
+                </ng-container>
+                <ng-container *ngIf="selectedList === 2">
+                    <h5> We will add content soon!</h5>
+
+                </ng-container>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+</div>
