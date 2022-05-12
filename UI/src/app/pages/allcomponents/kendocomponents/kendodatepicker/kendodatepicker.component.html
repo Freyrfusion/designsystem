@@ -20,8 +20,45 @@
                 <p>Date picker</p>
                 <kendo-datepicker [(value)]="value"></kendo-datepicker>
             </div>
+            <div class="col-md-4">
+                <p><b>DateInput</b></p>
+                <kendo-dateinput [value]="value"></kendo-dateinput>
+            </div>
+            <div class="col-md-4">
+                <p><b>TimePicker</b></p>
+                <kendo-timepicker [value]="value"></kendo-timepicker>
+                <p>
+            </div>
+        </div> <br>
+        <div class="row">
+            <div class="col-md-4">
+                <p><b>DateTimePicker</b></p>
+                <kendo-datetimepicker [value]="value"> </kendo-datetimepicker>
+            </div>
+            <div class="col-md-5">
+                <kendo-daterange>
+                    <kendo-floatinglabel text="Start">
+                        <kendo-dateinput kendoDateRangeStartInput [(value)]="range.start"></kendo-dateinput>
+                    </kendo-floatinglabel>
+                    <kendo-floatinglabel text="End" style="margin-left: 10px;">
+                        <kendo-dateinput kendoDateRangeEndInput [(value)]="range.end"></kendo-dateinput>
+                    </kendo-floatinglabel>
+                </kendo-daterange>
+                <p>
+            </div>
+           
+        </div> <br>
+        <div class="row">
+            <div class="col-md-4"> 
+                <p>Classic Calendar</p>
+                <kendo-calendar type="classic"></kendo-calendar>
+            </div>
+            <div class="col-md-4">
+                <p>Calendar Disabled</p>
+                <kendo-calendar [disabled]="true"></kendo-calendar>
+            </div>
         </div>
-
+        
     </ng-container>
     <ng-container *ngIf="selectedList === 1">
         <button ngxClipboard (click)='copyToClipboard(kendodatepickerhtml, $event)' class="copybutton"
@@ -34,9 +71,9 @@
                         ]]>
                     </code>
                 </pre>
-                <button ngxClipboard (click)='copyToClipboard(kendodatepickerts, $event)' class="copybutton"
+        <button ngxClipboard (click)='copyToClipboard(kendodatepickerts, $event)' class="copybutton"
             [innerHTML]="copytxt"></button>
-            <pre prism language="javascript" class="language-js">
+        <pre prism language="javascript" class="language-js">
                 <code #kendodatepickerts>
                     // kendodatepicker.ts
                     <![CDATA[
@@ -45,9 +82,9 @@
                 </code>
             </pre>
 
-            <button ngxClipboard (click)='copyToClipboard(appmouledatepicker, $event)' class="copybutton"
+        <button ngxClipboard (click)='copyToClipboard(appmouledatepicker, $event)' class="copybutton"
             [innerHTML]="copytxt"></button>
-            <pre prism language="javascript" class="language-js">
+        <pre prism language="javascript" class="language-js">
                 <code #appmouledatepicker>
                     // app.module.ts
                     <![CDATA[
@@ -63,5 +100,7 @@
                 </code>
             </pre>
     </ng-container>
-    <ng-container *ngIf="selectedList === 2"><h5> We will add content soon!</h5></ng-container>
+    <ng-container *ngIf="selectedList === 2">
+        <h5> We will add content soon!</h5>
+    </ng-container>
 </div>

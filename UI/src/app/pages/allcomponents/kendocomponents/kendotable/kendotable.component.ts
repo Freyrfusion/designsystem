@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { GridDataResult, PageChangeEvent } from '@progress/kendo-angular-grid';
+import { TooltipDirective } from '@progress/kendo-angular-tooltip';
 import { CommonService } from 'src/app/services/common.service';
 import { CopyserviceService } from 'src/app/services/copy/copyservice.service';
+
 @Component({
   selector: 'app-kendotable',
   templateUrl: './kendotable.component.html',
@@ -12,7 +14,21 @@ export class KendotableComponent implements OnInit {
   selectedList:any;
   copyToClipboard:any;
   copytxt: any;
+  // tooltipDir: any;
   constructor(public _common:CommonService, public _copy:CopyserviceService) { }
+  
+  @ViewChild(TooltipDirective) public tooltipDir: TooltipDirective;
+  public showTooltip(e: MouseEvent): void {
+    const element = e.target as HTMLElement;
+    if (element.nodeName === 'TD' || element.nodeName === 'TH' || element.nodeName === 'SPAN')
+      // && element.offsetWidth < element.scrollWidth)
+       {
+      this.tooltipDir.toggle(element);
+    } else {
+      this.tooltipDir.hide();
+    }
+  }
+  
   public data: any[] = [
     {
       ProductName: 'Face mask',
@@ -274,3 +290,5 @@ export class KendotableComponent implements OnInit {
   }
 
 }
+
+

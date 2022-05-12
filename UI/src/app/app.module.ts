@@ -73,6 +73,7 @@ import { KendodatepickerComponent } from './pages/allcomponents/kendocomponents/
 import { KendocheckboxComponent } from './pages/allcomponents/kendocomponents/kendocheckbox/kendocheckbox.component';
 import { KendoradiobuttonComponent } from './pages/allcomponents/kendocomponents/kendoradiobutton/kendoradiobutton.component';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
+import { TooltipModule } from '@progress/kendo-angular-tooltip';
 
 
 
@@ -142,9 +143,10 @@ import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
     DropDownsModule,
     LabelModule,
     InputsModule,
+    TooltipModule,
     DateInputsModule,
-    
-    
+
+
   ],
   entryComponents: [
     // DynamicSample1Component,
@@ -162,7 +164,7 @@ import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
     TabsComponent,
     FormsComponent,
     CheckboxsComponent,
-    TooltipsComponent,
+    TooltipsComponent,     
 
   ],
   providers: [

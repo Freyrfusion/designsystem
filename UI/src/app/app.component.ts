@@ -12,7 +12,7 @@ import { Component, Injectable, OnInit } from "@angular/core";import {
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'] 
 })
 export class AppComponent implements OnInit {
   title = 'sass-angular';
@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
 
   constructor(private router: Router) { 
     let theme = Theme.Green;
-  }
+  } 
  // copy(text: string){
    // this._clipboardService.copy(text);
     // let listener = (e: ClipboardEvent) => {

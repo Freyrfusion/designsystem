@@ -12,6 +12,9 @@ export class KendocheckboxComponent implements OnInit {
   selectedList: any;
   copyToClipboard: any;
   copytxt: any;
+  public model = {
+    terms: true,
+  };
 
   constructor(public _common: CommonService, public _copy: CopyserviceService) { }
 
