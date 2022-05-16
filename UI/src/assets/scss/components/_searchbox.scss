@@ -1,0 +1,147 @@
+  
+  
+  input.search-bar{
+    margin: 0 auto;
+    width: 100%;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid $gray-300;
+    border-radius: 4px;
+    outline: none;
+    &:focus{
+      border: 1px solid $primary;
+      transition: 0.35s ease;
+      color: $gray-600; 
+      &::-webkit-input-placeholder{
+        transition: opacity 0.45s ease; 
+          opacity: 0;
+       }
+      &::-moz-placeholder {
+        transition: opacity 0.45s ease; 
+          opacity: 0;
+       }
+      &:-ms-placeholder {
+       transition: opacity 0.45s ease; 
+         opacity: 0;
+       }    
+     }
+   }
+  
+  .search-icon{
+    position: relative;
+    float: right;
+    color:$gray-400;
+    top: -26px;
+    right: 12px;
+    font-size: 16px !important;
+    
+  }
+
+  /**********************/
+  .form-control{
+    min-height: 28px !important;
+    height: 32px !important;
+    width: 100%;
+    font-size: 13px;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  .search{
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+  .search-clear {
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    color: #132482;
+    font-size: 12px;
+    text-decoration: none;
+    z-index: 10;
+    &:hover {
+      text-decoration: none !important;
+      &:after {
+        color: #6c757d !important;
+      }
+    }
+    &:after {
+      content: "\e031";
+      font-family: 'icons' !important;
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-variant: normal !important;
+      text-transform: none !important;
+      speak: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      position: absolute;
+      right: 12px;
+      top: 0px;
+      color: #6c757d !important;
+    }
+  }
+  .to-close-search {
+    + {
+      .search-clear {
+        i {
+          opacity: 0;
+          right: 11px;
+          top: 0px;
+        }
+      }
+    }
+    &:focus {
+      + {
+        .search-clear {
+          &:after {
+            opacity: 0;
+          }
+          i {
+            opacity: 1;
+            top: -4px;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+  
+/***********************/
+.search1 {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 1px solid $gray-300;
+    border-right: none;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: $gray-600;
+  }
+  
+  .searchTerm:focus{
+    color: $gray-700 ;
+  }
+  
+  .searchButton {
+    width: 40px;
+     border: 1px solid $gray-300;
+    background: $gray-300;
+    text-align: center;
+    color:  $gray-600;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+  }
+/***************************/
+
+ 
+  

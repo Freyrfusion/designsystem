@@ -59,6 +59,7 @@ import { ToastsComponent } from './components/toasts/toasts.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
 import { ValidationsComponent } from './components/validations/validations.component';
 import { WizardComponent } from './components/wizard/wizard.component';
+import { FileuploadComponent } from './components/fileupload/fileupload.component';
 
 @NgModule({
   declarations: [
@@ -101,6 +102,7 @@ import { WizardComponent } from './components/wizard/wizard.component';
     ToggleComponent,
     ValidationsComponent,
     WizardComponent,
+    FileuploadComponent,
 
   
     

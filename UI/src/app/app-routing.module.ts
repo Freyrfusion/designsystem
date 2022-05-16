@@ -13,6 +13,7 @@ import { MultiselectComponent } from './components/multiselect/multiselect.compo
 import { HeadersComponent } from './components/headers/headers.component';
 import { HeaderComponent } from './header/header.component';
 import { DropdownsComponent } from './components/dropdowns/dropdowns.component';
+import { FileuploadComponent } from './components/fileupload/fileupload.component';
 import { DatepickersComponent } from './components/datepickers/datepickers.component';
 import { ColumnsComponent } from './components/columns/columns.component';
 import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
@@ -67,6 +68,7 @@ const routes: Routes = [
     { path: 'Columns', component: ColumnsComponent },
     { path: 'Datepickers', component: DatepickersComponent },
     { path: 'Dropdowns', component: DropdownsComponent },
+    { path: 'Fileupload', component: FileuploadComponent },
     { path: 'Forms', component: FormsComponent },
     { path: 'Headers', component: HeadersComponent },
     { path: 'Modals', component: ModalsComponent },
