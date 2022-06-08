@@ -27,13 +27,13 @@
     <kendo-grid class="kendo-custom-grid" [data]="gridView" [pageSize]="10" [pageable]="true" [sortable]="true"
       [groupable]="true" [reorderable]="true" [resizable]="true" [height]="400" [columnMenu]="{ filter: true }"
       [skip]="skip" (pageChange)="pageChange($event)">
-       <kendo-grid-checkbox-column title="Select" width="100">
+       <!-- <kendo-grid-checkbox-column title="Select" width="100">
   <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
     <div>
       <input type="checkbox"  [kendoGridSelectionCheckbox]="rowIndex" />
     </div>
   </ng-template> 
-</kendo-grid-checkbox-column> 
+</kendo-grid-checkbox-column>  -->
       <kendo-grid-column field="ProductName" title="Product Name"> </kendo-grid-column>
       <kendo-grid-column field="ProductCategory" title="Product Category"> </kendo-grid-column>
       <kendo-grid-column field="FormulationReferenceNumber" title="Formulation Reference Number"> </kendo-grid-column>

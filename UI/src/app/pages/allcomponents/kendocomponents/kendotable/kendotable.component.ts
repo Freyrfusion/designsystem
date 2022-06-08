@@ -20,11 +20,11 @@ export class KendotableComponent implements OnInit {
   @ViewChild(TooltipDirective) public tooltipDir: TooltipDirective;
   public showTooltip(e: MouseEvent): void {
     const element = e.target as HTMLElement;
-    if (element.nodeName === 'TD' || element.nodeName === 'TH' || element.nodeName === 'SPAN')
-      // && element.offsetWidth < element.scrollWidth)
-       {
+    if ((element.nodeName === 'TD' || element.nodeName === 'TH' || element.nodeName === 'SPAN')
+       && element.offsetWidth < element.scrollWidth) {
       this.tooltipDir.toggle(element);
-    } else {
+    } 
+    else {
       this.tooltipDir.hide();
     }
   }
