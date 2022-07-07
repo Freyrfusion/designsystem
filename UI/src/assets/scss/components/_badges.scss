@@ -1,17 +1,35 @@
- 
-.badge {
-	display: inline-block;
-	padding: 0.35em 0.65em;
-	font-size: 11px;
-	font-weight: 300;
-	line-height: 1;
-	color: #eee;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: baseline;
-	border-radius: 0.25rem;
-	margin-right: 5px;
-}
-.rounded-pill {
-	border-radius: 50rem !important;
+.badge-label{
+    padding:0.25rem 0.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: $font-size-sm;
+    
+    &.semirounded{
+        border-radius: 0.25rem;
+    }
+    &.rounded{
+        border-radius: 1rem;
+    }
+    &.badge-danger{
+      
+        background-color: #feb2b2;
+    }
+    &.badge-success{
+      
+        background-color: #c6f6d5;
+    }
+    &.badge-info{
+        background-color: #63b3ed;
+    
+    }
+    &.badge-warning{
+        background-color: #ffbb33;
+    }
+    &.badge-secondary{
+        background-color: #2d3748;
+    }
+    &.badge-semiwhite{
+        background-color: #e2e8f0;
+    }
+   
 }

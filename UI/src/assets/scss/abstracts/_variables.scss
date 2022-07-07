@@ -22,12 +22,12 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base + 1.7 !default;
-$h2-font-size:                $font-size-base + 1.2 !default;
-$h3-font-size:                $font-size-base + .95 !default;
-$h4-font-size:                $font-size-base + .7 !default;
-$h5-font-size:                $font-size-base + .45 !default;
-$h6-font-size:                $font-size-base + .2 !default;
+$h1-font-size:                2rem  !default;
+$h2-font-size:                1.5rem  !default;
+$h3-font-size:                1.25rem  !default;
+$h4-font-size:                1.15rem  !default;
+$h5-font-size:                1.1rem  !default;
+$h6-font-size:                1rem  !default;
 
 // Container Variables
 //
@@ -89,7 +89,7 @@ $blue:    #0d6efd !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
-$red:     #dc3545 !default;
+$red:     #D14343 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #198754 !default;
@@ -134,8 +134,8 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
+  "white":      $white,
   "dark":       $dark,
-  "white":      $white
 ) !default;
 
 
@@ -152,12 +152,31 @@ $blue-900: shade-color($blue, 80%) !default;
 //Spacings
 $base-padding:0.75rem;
 $base-margin:0.75rem;
-$btn-padding-x:$base-padding - 0.5 ;
-$btn-padding-y:$base-padding - 0.2 ;
-$btn-font:$font-size-sm - .03;
+// Medium Button Paddings
+$btn-padding-x:0.3rem;
+$btn-padding-y:0.7rem;
+// Large Button Paddings
+$btn-padding-x-lg:calc($btn-padding-x * 2);
+$btn-padding-y-lg:calc($btn-padding-y * 2) ;
+// Small Button Paddings
+$btn-padding-x-sm:calc($btn-padding-x / 2);
+$btn-padding-y-sm:calc($btn-padding-y / 2);
+// X-Small Button Paddings
+$btn-padding-x-xs:calc($btn-padding-x / 3);
+$btn-padding-y-xs:calc($btn-padding-y / 3);
+
+
+
+$btn-font:$font-size-sm;
 //borders
 $base-border-thickness:1px;
 $base-border-radius:6px;
+
+$base-border-radius-xs:calc($base-border-radius  / 2);
+$base-border-radius-sm:calc($base-border-radius / 1);
+$base-border-radius-lg:calc($base-border-radius  * 2);
+$base-border-radius-xl:calc($base-border-radius  * 4);
+
 
 //Layout
 $imp: !important;

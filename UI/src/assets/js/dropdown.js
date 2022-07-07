@@ -1,5 +1,6 @@
 
 $(document).ready(function(){
+  alert();
   var menuHeader = $('.dropdown-header');
   // var menuHeadertoggle = $('.dropdown-header').attr('data-toggle');
   // var menuContainer = $('.dropdown-header ~ .dropdown-container').attr('id'); //$("#"+ menuHeadertoggle).attr('id');

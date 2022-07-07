@@ -32,13 +32,13 @@
         }
     }
     .code{
-        color:  map-get-value($map, code-color) !important;  
+        color:  map-get-value($map, code-color);  
     }
     p{
-        color:  map-get-value($map, text-color) !important;  
+        color:  map-get-value($map, text-color);  
     }
     h1, h2, h3, h4, h5, h6{
-        color:  map-get-value($map, text-color) !important;  
+        color:  map-get-value($map, text-color);  
     }
     .sidebar{
         background-color: map-get-value($map, sidebar-color) !important;

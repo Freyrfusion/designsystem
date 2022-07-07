@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0">
+        <h2 class="m-b-10 display-b">Kendo Upload</h2>
+        <p class="m-b-30"> </p>
+    </div>
+</div>
+<div class="ngtabs">
+    <ul>
+        <li id="tab1" *ngFor="let tab of commontablist; index as i; first as isFirst">
+            <a (click)="openTabList(i)" [ngClass]="{'active': selectedList === i }" href="javascript:void(0)">
+                {{tab}}</a>
+        </li>
+    </ul>
+</div>
+<div class="ng-tabcontent">
+    <ng-container *ngIf="selectedList === 0"> 
+        <!-- <kendo-upload [saveUrl]="uploadSaveUrl" [removeUrl]="uploadRemoveUrl">
+        </kendo-upload> -->
+        
+    </ng-container> 
+    <ng-container *ngIf="selectedList === 1"> 
+        <button ngxClipboard (click)='copyToClipboard(kendouploadhtml, $event)' class="copybutton"
+                [innerHTML]="copytxt"></button>
+                <pre prism language="html" class="language-html">
+                    <code #kendouploadhtml>
+                        <![CDATA[
+                        
+                        ]]>
+                    </code>
+                </pre>
+
+    </ng-container>
+    <ng-container *ngIf="selectedList === 2"> </ng-container>
+</div>

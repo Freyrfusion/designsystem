@@ -10,9 +10,9 @@ $spacing-breadcrumbs: 10px;
     transition: background .1s linear;
 	  text-decoration: none;
 	  float: left;
-	  font-size: $font-size-base;
+	  font-size: 14px;
 	  color: $white;
-	  padding: 0px 5px 0px 8px + ($spacing-breadcrumbs * 2);
+	  padding:2px 5px 2px 8px + ($spacing-breadcrumbs * 2);
 	  background: $gray-600;
 	  position: relative;
     
@@ -36,7 +36,7 @@ $spacing-breadcrumbs: 10px;
 	    position: absolute;
 	    top: 4px;
       right: 1px - $spacing-breadcrumbs;
-      padding: 9px;
+      padding: 10px;
 	    z-index: 1;
 	    background:  $gray-600;
       
@@ -79,16 +79,16 @@ $spacing-breadcrumbs: 10px;
 /*************** Breadcrumb Pagination *******************/
 
 ul.breadcrumb {
-	padding: 4px 16px !important;
+	padding: 10px 16px;
 	list-style: none;
 	background-color: $gray-200;
 	li {
 		display: inline;
-		font-size: $font-size-sm;
+		font-size: 15px;
 		a {
 			color: $primary;
 			text-decoration: none;
-      font-size: $font-size-sm !important;
+      font-size: 15px !important;
 			&:hover {
 				color:  darken( $primary, 10);
 				text-decoration: underline;
@@ -109,7 +109,7 @@ ul.breadcrumb {
 .breadcrumb__list {
 	display: flex;
 	flex-wrap: wrap;
-	font-size: $font-size-sm;
+	font-size: 15px;
 }
 .breadcrumb__group {
 	display: inline-flex;
