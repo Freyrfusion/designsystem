@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
@@ -14,7 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { TypographyComponent } from './components/typography/typography.component';
 import { FoundationsComponent } from './pages/foundations/foundations.component';
-import { UicomponentsComponent } from './pages/uicomponents/uicomponents.component';
+import { UicomponentsComponent } from './pages/allcomponents/uicomponents/uicomponents.component';
 import { PatternsComponent } from './pages/patterns/patterns.component';
 import { ResourcesComponent } from './pages/resources/resources.component';
 import { ContentComponent } from './content/content.component';
@@ -32,11 +33,11 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { FormsComponent } from './components/forms/forms.component';
 import { CheckboxsComponent } from './components/checkboxs/checkboxs.component';
 import { TooltipsComponent } from './components/tooltips/tooltips.component';
-import { KendocomponentsComponent } from './components/kendocomponents/kendocomponents.component';
-import { KendodropdownComponent } from './components/kendocomponents/kendodropdown/kendodropdown.component';
-import { KendotableComponent } from './components/kendocomponents/kendotable/kendotable.component';
-import { KendoinputsComponent } from './components/kendocomponents/kendoinputs/kendoinputs.component';
-import { KendomultiselectComponent } from './components/kendocomponents/kendomultiselect/kendomultiselect.component';
+import { KendocomponentsComponent } from './pages/allcomponents/kendocomponents/kendocomponents.component';
+import { KendodropdownComponent } from './pages/allcomponents/kendocomponents/kendodropdown/kendodropdown.component';
+import { KendotableComponent } from './pages/allcomponents/kendocomponents/kendotable/kendotable.component';
+import { KendoinputsComponent } from './pages/allcomponents/kendocomponents/kendoinputs/kendoinputs.component';
+import { KendomultiselectComponent } from './pages/allcomponents/kendocomponents/kendomultiselect/kendomultiselect.component';
 import { AllcomponentsComponent } from './pages/allcomponents/allcomponents.component';
 import { AngularcomponentsComponent } from './pages/allcomponents/angularcomponents/angularcomponents.component';
 import { PrimecomponentsComponent } from './pages/allcomponents/primecomponents/primecomponents.component';
@@ -59,10 +60,26 @@ import { ToastsComponent } from './components/toasts/toasts.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
 import { ValidationsComponent } from './components/validations/validations.component';
 import { WizardComponent } from './components/wizard/wizard.component';
-import { FileuploadComponent } from './components/fileupload/fileupload.component';
+import { PrismComponent } from './components/prism/prism.component';
+import { AngulartabsComponent } from './components/angulartabs/angulartabs.component';
+import { ClipboardModule } from 'ngx-clipboard';
+import { GridModule } from '@progress/kendo-angular-grid';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
+import { InputsModule } from '@progress/kendo-angular-inputs';
+import { LabelModule } from '@progress/kendo-angular-label';
+import { TransformationStatuCodeColor } from './pages/allcomponents/kendocomponents/Pipes/TransformationStatuCodeColor.pipe';
+import { KendodatepickerComponent } from './pages/allcomponents/kendocomponents/kendodatepicker/kendodatepicker.component';
+import { KendocheckboxComponent } from './pages/allcomponents/kendocomponents/kendocheckbox/kendocheckbox.component';
+import { KendoradiobuttonComponent } from './pages/allcomponents/kendocomponents/kendoradiobutton/kendoradiobutton.component';
+import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
+import { TooltipModule } from '@progress/kendo-angular-tooltip';
+
+
 
 @NgModule({
-  declarations: [
+    declarations: [
+    TransformationStatuCodeColor,
     AppComponent,
    // ColorsComponent,
    // NavigationsComponent,
@@ -80,11 +97,13 @@ import { FileuploadComponent } from './components/fileupload/fileupload.componen
     // DynamicSidebarComponent,
     UicomponentTabsDirective,
     KendocomponentsComponent,
+    UicomponentsComponent,
     AllcomponentsComponent,
     AngularcomponentsComponent,
     PrimecomponentsComponent,
     AccordionsComponent,
     BadgesComponent,
+    ButtonsComponent,
     BreadcrumbsComponent,
     DatepickersComponent,
     DropdownsComponent,
@@ -102,26 +121,41 @@ import { FileuploadComponent } from './components/fileupload/fileupload.componen
     ToggleComponent,
     ValidationsComponent,
     WizardComponent,
-    FileuploadComponent,
-
+    PrismComponent,
+    AngulartabsComponent,
+    KendodropdownComponent,
+    KendotableComponent,
+    KendoinputsComponent,
+    KendomultiselectComponent,
+    KendodatepickerComponent,
+    KendocheckboxComponent,
+    KendoradiobuttonComponent,
   
-    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     Ng2SearchPipeModule,
-    FormsModule
-    
+    FormsModule,
+    ClipboardModule,
+    BrowserAnimationsModule,
+    GridModule,
+    DropDownsModule,
+    LabelModule,
+    InputsModule,
+    TooltipModule,
+    DateInputsModule,
+
+
   ],
   entryComponents: [
     // DynamicSample1Component,
     // DynamicSample2Component,
     // UnknownDynamicComponent,
-    UicomponentsComponent,
+   
     ColorsComponent,
     NavigationsComponent,
-    ButtonsComponent,
+    
     TypographyComponent,
     IconsComponent,
     PrimitivesComponent,
@@ -130,14 +164,12 @@ import { FileuploadComponent } from './components/fileupload/fileupload.componen
     TabsComponent,
     FormsComponent,
     CheckboxsComponent,
-    TooltipsComponent,
-    KendodropdownComponent,
-    KendotableComponent,
-    KendoinputsComponent,
-    KendomultiselectComponent,
+    TooltipsComponent,     
 
   ],
-  providers: [],
+  providers: [
+  ],
+ 
   bootstrap: [AppComponent]
 })
 export class AppModule { }

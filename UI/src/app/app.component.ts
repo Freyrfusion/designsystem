@@ -1,24 +1,57 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
+import { Router } from '@angular/router';
+import { Component, Injectable, OnInit } from "@angular/core";import {
+  HttpInterceptor,
+  HttpRequest,
+  HttpHandler,
+  HttpEvent,
+  HttpProgressEvent,
+  HttpEventType,
+  HttpResponse,} from "@angular/common/http";import { Observable, of, concat } from "rxjs";import { delay } from "rxjs/operators";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'] 
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'sass-angular';
   searchedKeyword: string;
 
-  constructor(
-    private router: Router,
-   
-  //  private router: Router
-  ) { 
+  blogPost: AppComponent;
+  tabLists = ['Details','Source Code','How to Use']
+  selectedList:any;
+
+  constructor(private router: Router) { 
     let theme = Theme.Green;
-    //document.body.classList.add(theme);
+  } 
+ // copy(text: string){
+   // this._clipboardService.copy(text);
+    // let listener = (e: ClipboardEvent) => {
+    //   e.clipboardData.setData('text/plain', (text));
+    //   e.preventDefault();
+    // };
+    // document.addEventListener('copy', listener);
+    // document.execCommand('copy');
+    // document.removeEventListener('copy', listener);
+ //}
+
+  
+  
+  ngOnInit(): void  {
+    this.selectedList = this.tabLists[0];
+    
+    
   }
+ 
+
+ 
+  openTabList(tabList:any){
+    this.selectedList = tabList;
+    //this.prismjsService.highlightAll();
+    
+  }
+  
 
   loadTabComponent(value: any) {
 
@@ -66,3 +99,5 @@ enum Theme{
   Green="green",
   Dark="dark"
   }
+
+ 

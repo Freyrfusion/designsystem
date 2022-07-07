@@ -6,7 +6,7 @@
         }
         &[disabled]{
             pointer-events: none;
-            opacity: .65;
+            opacity: 0.35;
         }
         &.active{
             background-color: darken($val, 10%) ; 
@@ -21,7 +21,7 @@
         }
         &[disabled]{
             pointer-events: none;
-            opacity: .65;
+            opacity: 0.35;
         }
         &.active{
             color: darken($val, 20%) ; 
@@ -38,7 +38,7 @@
         }
         &[disabled]{
             pointer-events: none;
-            opacity: .65;
+            opacity: 0.35;
         }
         &.active{
             background-color:$val ;
@@ -50,17 +50,17 @@
     @include box-shadow(1px, 1px, 3px, 1px, $gray-400);
 }
 .btn-lg{
-   padding: $btn-padding-x * 2 $btn-padding-y * 2 $imp;
+   padding: $btn-padding-x-lg $btn-padding-y-lg $imp;
    font-size: $font-size-base; 
 }
 .btn-sm{
     line-height: 20px; 
-    padding:  $btn-padding-x / 2.2 $btn-padding-y / 1.4 $imp;
+    padding:   $btn-padding-x-sm $btn-padding-y-sm $imp;
     font-size: $font-size-base / 1.4;  
    
 }
 .btn-xs{
-    padding:  $btn-padding-x / 3 $btn-padding-y / 2 $imp;
+    padding:  $btn-padding-x-xs $btn-padding-y-xs $imp;
     font-size: $font-size-base / 1.6; 
     line-height: 16px;
 }
@@ -69,7 +69,12 @@
         position: relative;
         display: inline-flex;
         vertical-align: middle;
-   
+    >.btn + .btn{
+        margin-left: 0;
+    }
+    + .btn-group{
+        margin-left: 10px;
+    }
     >.btn:not(:last-child):not(.dropdown-toggle) {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;

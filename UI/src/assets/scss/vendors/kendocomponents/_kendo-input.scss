@@ -1,0 +1,28 @@
+.k-input {
+    display: block;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    color: #424242;
+    background-color: #fff;
+    font-size: 13px;
+}
+.k-input:focus-within {
+    border-color: #0084d1 !important;
+    box-shadow: none !important;
+}
+
+.k-input-md,
+.k-picker-md {
+    font-size: 13px;
+    line-height: 1.4285714286;
+}
+.k-input-inner {
+    padding: 0.375rem 0.75rem !important;
+}

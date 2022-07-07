@@ -1,0 +1,137 @@
+.kendo-custom-grid {
+    .k-grid-header {
+        background: #f5f8fa;
+        font-weight: 500;
+        border-width: 0;
+        .k-grid-header-wrap {
+            table {
+                thead {
+                    th {
+                        &:last-child {
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .k-grid-content {
+        background-color: $white;
+        overflow: auto;
+        .k-grid-table {
+            tbody {
+                tr > td {
+                    color: #283252;
+                    border-color: #f5f8fa;
+                }
+            }
+        }
+        .k-alt {
+            background-color: #f8f9fa;
+            .k-state-selected:hover {
+                background: pink;
+            }
+        }
+        .k-state-selected > td {
+            background-color: #f8f9fa;
+        }
+        .k-grid-status-list {
+            .badge {
+              display: inline-block;
+              font-weight: normal;
+              padding: 5px;
+              line-height: 1;
+              color: $white;
+              text-align: center;
+              white-space: nowrap;
+              vertical-align: baseline;
+              border-radius: 0.25rem;
+            }
+            .badge-primary {
+              color: #009ef7 !important;
+              background-color: #f1faff;
+            }
+            .badge-secondary {
+              color: #7e8299;
+              background-color: #f5f8fa;
+            }
+            .badge-success {
+              color: #50cd89 !important;
+              background-color:#e8fff3;
+            }
+            .badge-danger {
+              color: #f1416c !important;
+              background-color: #fff5f8;
+            }
+            .badge-warning {
+              color: #d7a922 !important;
+              background-color: #fff8dd;
+            }
+            .badge-info {
+              color: #7239ea!important;
+              background-color: #f8f5ff;
+            }
+            .badge-light {
+              color: #7e8299 !important;
+              background-color: #f5f8fa;
+            }
+            .badge-text-wrapper {
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              width: 90px !important;
+              overflow: hidden;
+            }
+          }
+        .k-grid-icons {
+
+            button {
+                margin-right: 10px;
+                .icon-ban {
+                    padding: 5px;
+                    background: #e6e9eb;
+                    border-radius: 4px;
+                }
+              
+                .icon-delete-button-lines {
+                    padding: 5px;
+                    background: #e6e9eb;
+                    border-radius: 4px;
+                }
+                .icon-download-file {
+                    padding: 5px;
+                    background: #e6e9eb;
+                    border-radius: 4px;
+                }
+            }
+                
+            
+           
+        } 
+    }
+    .k-grid-pager {
+      background: #f5f8fa;
+      &:focus {
+        box-shadow: none;
+      }
+      .k-pager-numbers-wrap {
+        .k-pager-numbers { 
+          .k-link {
+            color: #283252;
+            &:hover {
+              background: #ebf0ff;
+              color: #0084d1;
+              &:focus {
+                box-shadow: inset 0 0 0 2px #cbe8f9;
+              }
+            }
+
+          }
+          .k-state-selected {
+              background: #0084d1;
+              color: #ebf0ff;
+            }
+          }
+        }
+      }
+    }
+

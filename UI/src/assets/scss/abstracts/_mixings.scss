@@ -77,12 +77,28 @@ box-sizing: border-box;
   border-radius: $base-border-radius;
   background-color: $bg-color;
   color: $white;
-  font-size: $font-size-sm - .03;
+  font-size: $font-size-base;
   text-transform: capitalize;
- 
+ + .btn{
+   margin-left: 4px;
+ }
   
 }
 
+// Toast Message Mixings
+@mixin toast($bg-color) {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border:0;
+  padding:calc($btn-padding-x-lg * 1.2) $btn-padding-y-lg ;
+  border-radius: $base-border-radius;
+  background-color:lighten($bg-color, 42%) ;
+  border:1px solid lighten($bg-color, 10%) ;
+  color: $bg-color;
+  font-size: $font-size-base;
+  text-transform: capitalize;
+}
 // ******************************** Mixins tooltip's *****************************/
  
 @mixin applyColor($color:$tooltipColor, $textColor:$tooltipTextColor) {
