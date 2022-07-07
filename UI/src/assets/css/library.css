@@ -5028,7 +5028,8 @@ p {
   display: inline-block;
 }
 
-.customdropdown-overlay {
+.customdropdown-overlay,
+input[type=checkbox] + label.customdropdown-overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -5059,7 +5060,7 @@ p {
   background-color: #e9ecef;
 }
 .customdropdown-inner ul li a {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #343a40;
   text-decoration: none;
 }
@@ -5160,7 +5161,7 @@ p {
   text-align: center;
   cursor: pointer;
   color: #343a40;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .dropdown-container li:hover {
@@ -5989,6 +5990,37 @@ p {
 .btn-group > .btn:nth-child(n+3), .btn-group > :not(.btn-check) + .btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.badge-label {
+  padding: 0.25rem 0.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+.badge-label.semirounded {
+  border-radius: 0.25rem;
+}
+.badge-label.rounded {
+  border-radius: 1rem;
+}
+.badge-label.badge-danger {
+  background-color: #feb2b2;
+}
+.badge-label.badge-success {
+  background-color: #c6f6d5;
+}
+.badge-label.badge-info {
+  background-color: #63b3ed;
+}
+.badge-label.badge-warning {
+  background-color: #ffbb33;
+}
+.badge-label.badge-secondary {
+  background-color: #2d3748;
+}
+.badge-label.badge-semiwhite {
+  background-color: #e2e8f0;
 }
 
 .card {
