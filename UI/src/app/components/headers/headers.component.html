@@ -1,77 +1,208 @@
-<div class="header-top">
-    <div class="header-brand-section">
-        <img class="header-logo" src="https://i.im.ge/2022/06/09/rksDSa.png">
-        <img class="header-brand-name" src="https://i.im.ge/2022/06/09/rksmE9.png">
+<div class="ngtabs">
+    <ul>
+        <li id="tab1" *ngFor="let tab of commontablist; index as i; first as isFirst">
+            <a (click)="openTabList(i)" [ngClass]="{'active': selectedList === i }" href="javascript:void(0)">
+                {{tab}}</a>
+        </li>
+    </ul>
+
+    <div class="ng-tabcontent">
+        <ng-container *ngIf="selectedList === 0">
+            <div class="header-top">
+                <div class="header-brand-section">
+                    <img class="header-logo" src="https://i.im.ge/2022/06/09/rksDSa.png">
+                    <img class="header-brand-name" src="https://i.im.ge/2022/06/09/rksmE9.png">
+                </div>
+                <div class="right-section">
+                    <div class="header-profile-section">
+                        <div class="profile-img">
+                            <img src="https://i.im.ge/2022/06/28/u1YUZ4.jpg" width="30">
+
+                        </div>
+                        <div class="profile-name">
+                            <p> Michael Clarke <i class="icon-down-open"></i> </p>
+                            <span> Sr.Manager </span>
+                        </div>
+
+                        <div class="profile-dropdown-content">
+                            <ul>
+                                <li> <a> <i class="icon-user-check"></i> Profile </a></li>
+                                <li> <a> <i class="icon-user-check"></i> Inbox </a></li>
+                                <li> <a> <i class="icon-user-check"></i> Task </a></li>
+                                <li> <a> <i class="icon-user-check"></i> Chart </a></li>
+                                <li> <a> <i class="icon-user-check"></i> Setting </a></li>
+                                <li> <a> <i class="icon-user-check"></i> Logout </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="header-notification-section">
+                        <div class="notification-icon">
+                            <span class="badge"> 3 </span>
+                            <i class="icon-notifications-outline"> </i>
+
+                        </div>
+                        <div class="notification-dropdown-content">
+                            <ul>
+                                <div class="ntf-list">
+                                    <div class="ntf-profile">
+                                        <img src="https://i.im.ge/2022/06/28/u1YUZ4.jpg" width="30">
+                                    </div>
+                                    <div class="ntf-heading">
+                                        <span> Congratulation Sam <p class="ntf-time"> 2 min ago</p> </span>
+                                        <p class="ntf-sub-heading">Won the monthly best seller badge</p>
+
+                                    </div>
+                                </div>
+                                <div class="ntf-list">
+                                    <div class="ntf-profile">
+                                        <img src="https://i.im.ge/2022/06/28/u1YUZ4.jpg" width="30">
+                                    </div>
+                                    <div class="ntf-heading">
+                                        <span> New message received <p class="ntf-time"> 5 min ago</p></span>
+                                        <p class="ntf-sub-heading"> You have 10 unread messages</p>
+
+                                    </div>
+                                </div>
+                                <div class="ntf-list">
+                                    <div class="ntf-profile">
+                                        <img src="https://i.im.ge/2022/06/28/u1YUZ4.jpg" width="30">
+                                    </div>
+                                    <div class="ntf-heading">
+                                        <span> Revised Order <p class="ntf-time"> 12 min ago</p> </span>
+                                        <p class="ntf-sub-heading"> MD Inc. order updated</p>
+
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </ng-container>
+        <ng-container *ngIf="selectedList === 1">
+            <button ngxClipboard (click)='copyToClipboard(headercopy, $event)' class="copybutton"
+                [innerHTML]="copytxt"></button>
+            <pre prism language="html" class="language-html">
+                <code #headercopy>
+                    //HTML
+                    <![CDATA[
+                    <div class="header-top">
+                        <div class="header-brand-section">
+                            <img class="header-logo" src="https://i.im.ge/2022/06/09/rksDSa.png">
+                            <img class="header-brand-name" src="https://i.im.ge/2022/06/09/rksmE9.png">
+                        </div>
+                        <div class="right-section">
+                            <div class="header-profile-section">
+                                <div class="profile-img">
+                                    <img src="https://i.im.ge/2022/06/28/u1YUZ4.jpg" width="30">
+                                </div>
+                                <div class="profile-name">
+                                    <p> Michael Clarke <i class="icon-down-open"></i> </p>
+                                    <span> Sr.Manager </span>
+                                </div>
+                                <div class="profile-dropdown-content">
+                                    <ul>
+                                        <li> <a> <i class="icon-user-check"></i> Profile </a></li>
+                                        <li> <a> <i class="icon-user-check"></i> Inbox </a></li>
+                                        <li> <a> <i class="icon-user-check"></i> Task </a></li>
+                                        <li> <a> <i class="icon-user-check"></i> Chart </a></li>
+                                        <li> <a> <i class="icon-user-check"></i> Setting </a></li>
+                                        <li> <a> <i class="icon-user-check"></i> Logout </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-notification-section">
+                                <div class="notification-icon">
+                                    <span class="badge"> 3 </span>
+                                    <i class="icon-notifications-outline"> </i>
+                                </div>
+                                <div class="notification-dropdown-content">
+                                    <ul>
+                                         <div class="ntf-list">
+                                            <div class="ntf-profile">
+                                                <img src="https://i.im.ge/2022/06/28/u1YUZ4.jpg" width="30">
+                                            </div> 
+                                          <div class="ntf-heading">
+                                            <span>  Congratulation Sam <p class="ntf-time"> 2 min ago</p> </span>
+                                            <p class="ntf-sub-heading">Won the monthly best seller badge</p>
+                                          </div>
+                                        </div>
+                                        <div class="ntf-list">
+                                            <div class="ntf-profile">
+                                                <img src="https://i.im.ge/2022/06/28/u1YUZ4.jpg" width="30">
+                                            </div> 
+                                          <div class="ntf-heading">
+                                            <span>   New message received   <p class="ntf-time"> 5 min ago</p></span>
+                                            <p class="ntf-sub-heading"> You have 10 unread messages</p>
+                                          </div>
+                                        </div>
+                                        <div class="ntf-list">
+                                            <div class="ntf-profile">
+                                                <img src="https://i.im.ge/2022/06/28/u1YUZ4.jpg" width="30">
+                                            </div> 
+                                          <div class="ntf-heading">
+                                            <span>   Revised Order <p class="ntf-time"> 12 min ago</p> </span>
+                                            <p class="ntf-sub-heading"> MD Inc. order updated</p>
+                                          </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    ]]>
+                </code>
+            </pre>
+            <button ngxClipboard (click)='copyToClipboard(headerscriptcopy, $event)' class="copybutton"
+            [innerHTML]="copytxt"></button>
+            <pre prism language="javascript" class="language-js">
+                <code #headerscriptcopy>
+                    //SCRIPTS
+                    <![CDATA[
+                   
+                    $(document).ready(function(){
+                        $('.header-profile-section').click(function() {
+                          $('.profile-dropdown-content').slideToggle('slow');
+                        });
+                      });
+                      $(document).ready(function(){
+                        $('.header-notification-section').click(function() {
+                          $('.notification-dropdown-content').slideToggle('slow');
+                        });
+                      });
+                      $(document).ready(function(){
+                        $('.header-notification-section').click(function() {
+                          // alert("test1");
+                          $('.profile-dropdown-content').hide();
+                        });
+                        $('.header-profile-section').click(function() {
+                          // alert("test2");
+                          $('.notification-dropdown-content').hide();
+                        });
+                      });
+                      $(document).on("click", function(event){
+                        var $trigger = $(".header-notification-section,.header-profile-section");
+                        if($trigger !== event.target && !$trigger.has(event.target).length){
+                            $(".profile-dropdown-content, .notification-dropdown-content").slideUp("fast");
+                        }            
+                    });
+
+                    ]]>
+                </code>
+            </pre>
+
+
+        </ng-container>
+        <ng-container *ngIf="selectedList === 2">
+            We will add content soon!
+        </ng-container>
     </div>
-    <div class="right-section">
-        <div class="header-profile-section">
-            <div class="profile-img">
-                <img src="https://i.im.ge/2022/06/28/u1YUZ4.jpg" width="30">
-
-            </div>
-            <div class="profile-name">
-                <p> Michael Clarke <i class="icon-down-open"></i> </p>
-                <span> Sr.Manager </span>
-            </div>
-
-            <div class="profile-dropdown-content">
-                <ul>
-                    <li> <a> <i class="icon-user-check"></i> Profile </a></li>
-                    <li> <a> <i class="icon-user-check"></i> Inbox </a></li>
-                    <li> <a> <i class="icon-user-check"></i> Task </a></li>
-                    <li> <a> <i class="icon-user-check"></i> Chart </a></li>
-                    <li> <a> <i class="icon-user-check"></i> Setting </a></li>
-                    <li> <a> <i class="icon-user-check"></i> Logout </a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="header-notification-section">
-            <div class="notification-icon">
-                <span class="badge"> 3 </span>
-                <i class="icon-notifications-outline"> </i>
-
-            </div>
-            <div class="notification-dropdown-content">
-                <ul>
-                     <div class="ntf-list">
-                        <div class="ntf-profile">
-                            <img src="https://i.im.ge/2022/06/28/u1YUZ4.jpg" width="30">
-                        </div> 
-                      <div class="ntf-heading">
-                        <span>  Congratulation Sam <p class="ntf-time"> 2 min ago</p> </span>
-                        <p class="ntf-sub-heading">Won the monthly best seller badge</p>
-                        
-                      </div>
-                    </div>
-                    <div class="ntf-list">
-                        <div class="ntf-profile">
-                            <img src="https://i.im.ge/2022/06/28/u1YUZ4.jpg" width="30">
-                        </div> 
-                      <div class="ntf-heading">
-                        <span>   New message received   <p class="ntf-time"> 5 min ago</p></span>
-                        <p class="ntf-sub-heading"> You have 10 unread messages</p>
-                        
-                      </div>
-                    </div>
-                    <div class="ntf-list">
-                        <div class="ntf-profile">
-                            <img src="https://i.im.ge/2022/06/28/u1YUZ4.jpg" width="30">
-                        </div> 
-                      <div class="ntf-heading">
-                        <span>   Revised Order <p class="ntf-time"> 12 min ago</p> </span>
-                        <p class="ntf-sub-heading"> MD Inc. order updated</p>
-                        
-                      </div>
-                    </div>
-
-                </ul>
-            </div>
-        </div>
-
-
-
-
-
-
-    </div>
+</div>
