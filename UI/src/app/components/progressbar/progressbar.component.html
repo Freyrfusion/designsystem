@@ -1,1 +1,143 @@
-<p>progressbar works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0">
+            <h2 class="m-b-10 display-b">Progress-bar</h2>
+            <p class="m-b-30">Progress-bar will show the status of an action.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="ngtabs">
+                <ul>
+                    <li id="tab1" *ngFor="let tab of commontablist; index as i; first as isFirst">
+                        <a (click)="openTabList(i)" [ngClass]="{'active': selectedList === i }"
+                            href="javascript:void(0)"> {{tab}} </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ng-tabcontent">
+                <ng-container *ngIf="selectedList === 0">
+                    
+
+    <div class="row">
+        <div class="col-md-12 p-0">
+
+            <section>
+
+                  <div class="bars m-b-30">
+                    <div>
+                      <p>.progress-bar-10</p>
+                      <div class="progress-bar progress-bar-10"></div>
+                    </div>
+                    <div>
+                      <p>.progress-bar-20</p>
+                      <div class="progress-bar progress-bar-20"></div>
+                    </div>
+                    <div>
+                      <p>.progress-bar-30</p>
+                      <div class="progress-bar progress-bar-30"></div>
+                    </div>
+                    <div>
+                      <p>.progress-bar-40</p>
+                      <div class="progress-bar progress-bar-40"></div>
+                    </div>
+                   
+                    </div>
+                    <div class="bars m-b-30">
+                        <div>
+                            <p>.progress-bar-50</p>
+                            <div class="progress-bar progress-bar-50"></div>
+                          </div> 
+                    <div>
+                      <p>.progress-bar-60</p>
+                      <div class="progress-bar progress-bar-60"></div>
+                    </div>
+                    <div>
+                      <p>.progress-bar-70</p>
+                      <div class="progress-bar progress-bar-70"></div>
+                    </div>
+                    <div>
+                      <p>.progress-bar-80</p>
+                      <div class="progress-bar progress-bar-80"></div>
+                    </div>
+                </div>
+                <div class="bars">
+                      <div>
+                      <p>.progress-bar-90</p>
+                      <div class="progress-bar progress-bar-90"></div>
+                    </div>
+                      <div>
+                      <p>.progress-bar-100</p>
+                      <div class="progress-bar progress-bar-100"></div>
+                    </div>
+                  </div>  
+              </section>
+        </div>
+    </div>
+                </ng-container>
+                <ng-container *ngIf="selectedList === 1">
+                    <button ngxClipboard (click)='copyToClipboard(htmlContentToCopy, $event)' class="copybutton" [innerHTML]="copytxt"></button>
+                    <pre prism language="html" class="language-html">
+                       <code  #htmlContentToCopy>
+                        <![CDATA[
+                        <div class="bars m-b-30">
+                            <div>
+                              <p>.progress-bar-10</p>
+                              <div class="progress-bar progress-bar-10"></div>
+                            </div>
+                            <div>
+                              <p>.progress-bar-20</p>
+                              <div class="progress-bar progress-bar-20"></div>
+                            </div>
+                            <div>
+                              <p>.progress-bar-30</p>
+                              <div class="progress-bar progress-bar-30"></div>
+                            </div>
+                            <div>
+                              <p>.progress-bar-40</p>
+                              <div class="progress-bar progress-bar-40"></div>
+                            </div>
+                           
+                            </div>
+                            <div class="bars">
+                                <div>
+                                    <p>.progress-bar-50</p>
+                                    <div class="progress-bar progress-bar-50"></div>
+                                  </div> 
+                            <div>
+                              <p>.progress-bar-60</p>
+                              <div class="progress-bar progress-bar-60"></div>
+                            </div>
+                            <div>
+                              <p>.progress-bar-70</p>
+                              <div class="progress-bar progress-bar-70"></div>
+                            </div>
+                            <div>
+                              <p>.progress-bar-80</p>
+                              <div class="progress-bar progress-bar-80"></div>
+                            </div>
+                        </div>
+                        <div class="bars">
+                              <div>
+                              <p>.progress-bar-90</p>
+                              <div class="progress-bar progress-bar-90"></div>
+                            </div>
+                              <div>
+                              <p>.progress-bar-100</p>
+                              <div class="progress-bar progress-bar-100"></div>
+                            </div>
+                          </div>  
+                        ]]>
+                           </code>
+                           </pre>
+                
+                                </ng-container>
+                                <ng-container *ngIf="selectedList === 2">
+                                    <div class="col-12 p-30">
+                                        <h5> We will add content soon!</h5>
+                                    </div>
+                                </ng-container>
+        </div>
+    </div>
+    </div>
+

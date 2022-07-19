@@ -1,0 +1,210 @@
+ <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+ 
+<div class="pc-tab">
+  <input checked="checked" id="tab1" type="radio" name="pct" />
+  <input id="tab2" type="radio" name="pct" />
+  <!-- <input id="tab3" type="radio" name="pct" /> -->
+  <div class="row">
+      <div class="col-md-12 p-l-0 m-t-10 ">
+          <h5 class="m-b-10">Fileupload</h5>
+      </div>
+  </div>
+  <nav>
+      <ul>
+          <li class="tab1">
+              <label for="tab1">Details</label>
+          </li>
+          <li class="tab2">
+              <label for="tab2">Source Code</label>
+          </li>
+          <!-- <li class="tab3">
+          <label for="tab3">Third Tab</label>
+        </li> -->
+      </ul>
+  </nav>
+
+
+  <section class="tabsection">
+      <div class="tab1">
+         
+<section class="m-b-10">
+  <div class="row m-t-10">
+      <div class="col-12 ">
+          <form class="form">
+          <div class="file-upload-wrapper" data-text="Select your file!">
+              <input name="file-upload-field" type="file" class="file-upload-field" value="">
+            </div></form>
+          </div>
+          
+          <div class="col-sm-12 m-t-50">
+              <div class="upload-btn-wrapper">
+                  <button class="btn">Upload a file</button>
+                  <input type="file" name="myfile" />
+                </div>
+          </div>
+           </div>
+          </section>
+
+
+
+               </div>
+      <div class="tab2">
+       
+           
+          <div class="row">
+            <div class="col-md-12 p-0">
+              <h6 class="m-t-20 m-b-0">HTML</h6>
+            </div>
+          </div>
+          
+          <div class="html-content m-t-10">
+              <pre>
+      <![CDATA[
+               
+      <section class="m-b-10">
+        <div class="row m-t-10">
+            <div class="col-12 ">
+                <form class="form">
+                <div class="file-upload-wrapper" data-text="Select your file!">
+                    <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                  </div></form>
+                </div>
+                
+                <div class="col-sm-12 m-t-50">
+                    <div class="upload-btn-wrapper">
+                        <button class="btn">Upload a file</button>
+                        <input type="file" name="myfile" />
+                      </div>
+                </div>
+                 </div>
+                </section>
+  ]]>
+
+  </pre>
+          </div>
+      </div>
+
+  </section>
+
+</div>
+
+
+<div class="pc-tab1 m-t-20">
+  <input checked="checked" id="pctab1" type="radio" name="pcpct" />
+  <input id="pctab2" type="radio" name="pcpct" />
+  <!-- <input id="tab3" type="radio" name="pct" /> -->
+  <nav>
+      <ul>
+          <li class="pctab1">
+              <label for="pctab1"> Details</label>
+          </li>
+          <li class="pctab2">
+              <label for="pctab2">Source Code</label>
+          </li>
+          <!-- <li class="tab3">
+          <label for="tab3">Third Tab</label>
+        </li> -->
+      </ul>
+  </nav>
+  <section class="tabsection">
+      <div class="pctab1">
+         
+        <section>
+            <div class="file-upload">
+            <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+            <div class="image-upload-wrap">
+              <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+              <div class="drag-text">
+                <h3>Drag and drop a file or select add Image</h3>
+              </div>
+            </div>
+            <div class="file-upload-content">
+              <img class="file-upload-image" src="#" alt="your image" />
+              <div class="image-title-wrap">
+                <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+              </div>
+            </div>
+          </div></section>
+           </div>
+      <div class="pctab2">
+        
+        <div class="row">
+          <div class="col-md-12">
+            <h6 class="">HTML</h6>
+          </div>
+        </div>
+          <div class="html-content">
+              <pre>
+
+      <![CDATA[
+    
+      <section>
+        <div class="file-upload">
+        <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+        <div class="image-upload-wrap">
+          <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+          <div class="drag-text">
+            <h3>Drag and drop a file or select add Image</h3>
+          </div>
+        </div>
+        <div class="file-upload-content">
+          <img class="file-upload-image" src="#" alt="your image" />
+          <div class="image-title-wrap">
+            <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+          </div>
+        </div>
+      </div></section>
+  ]]> 
+
+  </pre>
+          </div>
+      </div>
+
+  </section>
+</div>
+
+
+ 
+
+            
+<script>
+    $("form").on("change", ".file-upload-field", function(){ 
+    $(this).parent(".file-upload-wrapper").attr("data-text",         $(this).val().replace(/.*(\/|\\)/, '') );
+});
+</script>
+<script>
+    function readURL(input) {
+  if (input.files && input.files[0]) {
+
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      $('.image-upload-wrap').hide();
+
+      $('.file-upload-image').attr('src', e.target.result);
+      $('.file-upload-content').show();
+
+      $('.image-title').html(input.files[0].name);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+
+  } else {
+    removeUpload();
+  }
+}
+
+function removeUpload() {
+  $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+  $('.file-upload-content').hide();
+  $('.image-upload-wrap').show();
+}
+$('.image-upload-wrap').bind('dragover', function () {
+    $('.image-upload-wrap').addClass('image-dropping');
+  });
+  $('.image-upload-wrap').bind('dragleave', function () {
+    $('.image-upload-wrap').removeClass('image-dropping');
+});
+</script>
+            

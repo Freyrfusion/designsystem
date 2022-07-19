@@ -1,1 +1,149 @@
-<p>dropdowns works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0">
+            <h2 class="m-b-10 display-b">Dropdowns</h2>
+            <p class="m-b-30">The Dropdown is a graphical control element, similar to a list box, that allows the user to choose one value from a list</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="ngtabs">
+                <ul>
+                    <li id="tab1" *ngFor="let tab of commontablist; index as i; first as isFirst">
+                        <a (click)="openTabList(i)" [ngClass]="{'active': selectedList === i }"
+                            href="javascript:void(0)"> {{tab}} </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ng-tabcontent">
+                <ng-container *ngIf="selectedList === 0">
+
+
+                    <div class="row">
+                        <div class="col-md-12 p-0">
+
+                          
+                            <section class="m-b-10">
+                                <h6 class="text-dark weight-500 m-b-30">Dropdown Option 1</h6>
+                            <div class="row m-t-10">
+                                <div class="col-12 p-0">
+                                  <!-- Dropdown -->
+                            <div class="customdropdown">
+                                <label for="dropdown-1" class="btn btn-primary">Click Dropdown <i class="icon-caret-down-two"></i> </label>
+                                <input class="customdropdown-open" type="checkbox" id="dropdown-1" aria-hidden="true" hidden />
+                                <label for="dropdown-1" class="customdropdown-overlay"></label>
+                                <div class="customdropdown-inner animate__fadeInDown">
+                                 <ul>
+                                    <li><a href="javascript:void(0)">Dropdown Item 1</a></li>
+                                    <li><a href="javascript:void(0)">Dropdown Item 3</a></li>
+                                    <li><a href="javascript:void(0)">Dropdown Item 2</a></li>
+                                    <li class="customdropdown-divider"><a href="javascript:void(0)">Dropdown Item 4</a></li>
+                                 </ul>
+                                </div>
+                              </div>
+                            
+                                </div>
+                            </div>
+                            
+                            </section>
+                    
+ 
+                        </div>
+                    </div>
+                </ng-container>
+                <ng-container *ngIf="selectedList === 1">
+
+
+                    <button ngxClipboard (click)='copyToClipboard(htmlContentToCopy, $event)' class="copybutton"
+                        [innerHTML]="copytxt"></button>
+                    <pre prism language="html" class="language-html">
+    <code  #htmlContentToCopy>
+     <![CDATA[
+     <section class="m-b-10">
+        <h6 class="text-dark weight-500 m-b-30">Dropdown Option 1</h6>
+    <div class="row m-t-10">
+        <div class="col-12 p-0">
+          <!-- Dropdown -->
+    <div class="customdropdown">
+        <label for="dropdown-1" class="btn btn-primary">Click Dropdown <i class="icon-caret-down-two"></i> </label>
+        <input class="customdropdown-open" type="checkbox" id="dropdown-1" aria-hidden="true" hidden />
+        <label for="dropdown-1" class="customdropdown-overlay"></label>
+        <div class="customdropdown-inner animate__fadeInDown">
+         <ul>
+            <li><a href="javascript:void(0)">Dropdown Item 1</a></li>
+            <li><a href="javascript:void(0)">Dropdown Item 3</a></li>
+            <li><a href="javascript:void(0)">Dropdown Item 2</a></li>
+            <li class="customdropdown-divider"><a href="javascript:void(0)">Dropdown Item 4</a></li>
+         </ul>
+        </div>
+      </div>
+    
+        </div>
+    </div>
+    
+    </section>
+    <section class="m-b-10">
+        <h6 class="text-dark weight-500 m-b-30">Dropdown Option 2</h6>
+    <div class="row m-t-10">
+        <div class="col-4 p-0">
+            <div class="dropdown-header btn btn-primary" data-toggle="dropdown-container1">Dropdown Menu Animated<i class="icon-angle-down"></i></div>
+            <div class="dropdown-container" id="dropdown-container1">
+              <div class="dropdown-carousel">
+                    <div class="dropdown-cell">
+                        <ul>
+                        <li>Manage Permissions</li>
+                        <li>Manage Metadata</li>
+                        <li>Rename</li>
+                        <li>Move To Folder</li>
+                        <li>Quick Share</li>
+                        <li>Download</li>
+                        <li>Delete </li>
+                        </ul>
+                    </div>
+                </div> 
+            </div> <!-- end dropdown-container -->
+        </div>
+    
+    </div>
+    
+    </section>
+     ]]>
+        </code>
+        </pre>
+
+                </ng-container>
+                <ng-container *ngIf="selectedList === 2">
+                    <div class="col-12 p-0">
+                        <h5> We will add content soon!</h5>
+                    </div>
+                </ng-container>
+            </div>
+
+        </div>
+    </div>
+</div>
+<section class="m-b-10">
+    <h6 class="text-dark weight-500 m-b-30">Dropdown Option 2</h6>
+<div class="row m-t-10">
+    <div class="col-4 p-0">
+        <div class="dropdown-header btn btn-primary" data-toggle="dropdown-container1">Dropdown Menu Animated<i class="icon-angle-down"></i></div>
+        <div class="dropdown-container" id="dropdown-container1">
+          <div class="dropdown-carousel">
+                <div class="dropdown-cell">
+                    <ul>
+                    <li>Manage Permissions</li>
+                    <li>Manage Metadata</li>
+                    <li>Rename</li>
+                    <li>Move To Folder</li>
+                    <li>Quick Share</li>
+                    <li>Download</li>
+                    <li>Delete </li>
+                    </ul>
+                </div>
+            </div> 
+        </div> <!-- end dropdown-container -->
+    </div>
+
+</div>
+
+</section>

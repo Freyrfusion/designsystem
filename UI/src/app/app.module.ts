@@ -130,6 +130,17 @@ import { TooltipModule } from '@progress/kendo-angular-tooltip';
     KendodatepickerComponent,
     KendocheckboxComponent,
     KendoradiobuttonComponent,
+    CheckboxsComponent,
+    ColorsComponent,
+    NavigationsComponent,
+    TypographyComponent,
+    IconsComponent,
+    PrimitivesComponent,
+    AlertsComponent,
+    ModalsComponent,
+    TabsComponent,
+    FormsComponent,
+    TooltipsComponent, 
   
   ],
   imports: [
@@ -153,18 +164,7 @@ import { TooltipModule } from '@progress/kendo-angular-tooltip';
     // DynamicSample2Component,
     // UnknownDynamicComponent,
    
-    ColorsComponent,
-    NavigationsComponent,
-    
-    TypographyComponent,
-    IconsComponent,
-    PrimitivesComponent,
-    AlertsComponent,
-    ModalsComponent,
-    TabsComponent,
-    FormsComponent,
-    CheckboxsComponent,
-    TooltipsComponent,     
+       
 
   ],
   providers: [

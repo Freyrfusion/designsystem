@@ -1,13 +1,7 @@
 
 import { Router } from '@angular/router';
-import { Component, Injectable, OnInit } from "@angular/core";import {
-  HttpInterceptor,
-  HttpRequest,
-  HttpHandler,
-  HttpEvent,
-  HttpProgressEvent,
-  HttpEventType,
-  HttpResponse,} from "@angular/common/http";import { Observable, of, concat } from "rxjs";import { delay } from "rxjs/operators";
+import { Component, Injectable, OnInit } from "@angular/core";
+
 
 @Component({
   selector: 'app-root',
@@ -19,8 +13,7 @@ export class AppComponent implements OnInit {
   searchedKeyword: string;
 
   blogPost: AppComponent;
-  tabLists = ['Details','Source Code','How to Use']
-  selectedList:any;
+ 
 
   constructor(private router: Router) { 
     let theme = Theme.Green;
@@ -39,18 +32,14 @@ export class AppComponent implements OnInit {
   
   
   ngOnInit(): void  {
-    this.selectedList = this.tabLists[0];
+   
     
     
   }
  
 
  
-  openTabList(tabList:any){
-    this.selectedList = tabList;
-    //this.prismjsService.highlightAll();
-    
-  }
+  
   
 
   loadTabComponent(value: any) {
