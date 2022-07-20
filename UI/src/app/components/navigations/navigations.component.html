@@ -7,69 +7,70 @@
     </ul>
 
     <div class="ng-tabcontent">
-        <ng-container *ngIf="selectedList === 0">
-            <div class="main-content">
-                <div class="sidebar-navigation">
-                    <div class="sidebar-header">
-                        <img class="sidebar-logo" src="https://i.im.ge/2022/06/09/rksDSa.png">
-                        <img src="https://i.im.ge/2022/06/09/rksmE9.png" width="100">
-                    </div>
-                    <ul class="sidebar-menu">
-                        <span> <i class="icon-right-open menu-arrow menuSticky"></i> </span>
-                        <li>
-                            <a><i class="icon-chart2 sidebar-icon"></i>
-                                <span class="sidebar-label">Dashboard</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <i class="icon-chart2 sidebar-icon"></i>
-                                <span class="sidebar-label">Formulations</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <i class="icon-chart2 sidebar-icon"></i>
-                                <span class="sidebar-label">Raw Materials</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-collapse arrow">
-                            <div class="fas-link">
-                                <a>
-                                    <i class="icon-chart2 sidebar-icon"></i>
-                                    <span class="sidebar-label">Master Data</span>
-                                    <i class="icon-open-right sub-menu-arrow-rotate" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                            <ul class="sub-menu">
-                                <li><a> Products </a></li>
-                                <li><a> Markets </a></li>
-                                <li><a> Raw Materials </a></li>
-                                <li><a> Sub-component </a></li>
-                                <li><a>Regulations </a></li>
-                                <li><a> Functions </a></li>
-                                <li><a> Status </a></li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-collapse arrow">
-                            <div class="fas-link">
-                                <a>
-                                    <i class="icon-cog sidebar-icon"></i>
-                                    <span class="sidebar-label">Administration</span>
-                                    <i class="icon-open-left sub-menu-arrow-rotate" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                            <ul class="sub-menu">
-                                <li><a> Users & Roles </a>
-                                </li>
-                                <!-- <li><a href="#!"> Roles </a></li>
-                            <li><a href="#!"> Privileges </a></li>
-                            <li><a href="#!"> Notifications </a></li> -->
-                            </ul>
-                        </li>
-                    </ul>
+        <div class="main-content">
+            <div class="sidebar-navigation">
+                <div class="sidebar-header">
+                    <img class="sidebar-logo" src="https://i.im.ge/2022/06/09/rksDSa.png">
+                    <img src="https://i.im.ge/2022/06/09/rksmE9.png" width="100">
                 </div>
+                <ul class="sidebar-menu">
+                    <span> <i class="icon-right-open menu-arrow menuSticky"></i> </span>
+                    <li>
+                        <a><i class="icon-chart2 sidebar-icon"></i>
+                            <span class="sidebar-label">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <i class="icon-chart2 sidebar-icon"></i>
+                            <span class="sidebar-label">Formulations</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <i class="icon-chart2 sidebar-icon"></i>
+                            <span class="sidebar-label">Raw Materials</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-collapse arrow">
+                        <div class="fas-link">
+                            <a>
+                                <i class="icon-chart2 sidebar-icon"></i>
+                                <span class="sidebar-label">Master Data</span>
+                                <i class="icon-open-right sub-menu-arrow-rotate" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <ul class="sub-menu">
+                            <li><a> Products </a></li>
+                            <li><a> Markets </a></li>
+                            <li><a> Raw Materials </a></li>
+                            <li><a> Sub-component </a></li>
+                            <li><a>Regulations </a></li>
+                            <li><a> Functions </a></li>
+                            <li><a> Status </a></li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-collapse arrow">
+                        <div class="fas-link">
+                            <a>
+                                <i class="icon-cog sidebar-icon"></i>
+                                <span class="sidebar-label">Administration</span>
+                                <i class="icon-open-left sub-menu-arrow-rotate" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <ul class="sub-menu">
+                            <li><a> Users & Roles </a>
+                            </li>
+                            <!-- <li><a href="#!"> Roles </a></li>
+                        <li><a href="#!"> Privileges </a></li>
+                        <li><a href="#!"> Notifications </a></li> -->
+                        </ul>
+                    </li>
+                </ul>
             </div>
+        </div>
+        <ng-container *ngIf="selectedList === 0">
+           
 
         </ng-container>
         <ng-container *ngIf="selectedList === 1">
