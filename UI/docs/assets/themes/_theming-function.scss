@@ -1,0 +1,78 @@
+
+@function map-get-value($map, $key) {
+    @if map-has-key($map, $key) {
+        @return map-get($map, $key);
+    }
+    @else {
+        @error "ERROR: Specified key #{$key} does not exist in the mapping #{map-get($map,name)}";
+    }
+}
+
+@mixin set-theme($map) { 
+    background-color: map-get-value($map, background-color) !important;
+    color: map-get-value($map, text-color) !important;
+    header{
+        background-color: map-get-value($map, background-color) !important;
+    }
+    .tab-content{
+        background-color: map-get-value($map, background-color) !important;
+    }
+    nav{
+        ul li{
+            a{
+                color:darken(map-get-value($map, text-color), 25%)  !important;
+                &.active{
+                    background-color:map-get-value($map, hover-color) !important;
+                    color: map-get-value($map,  active-color) !important;
+                }
+                &:hover{
+                    color:  map-get-value($map, text-color) !important;
+                }
+            }
+        }
+    }
+    .code{
+        color:  map-get-value($map, code-color);  
+    }
+    p{
+        color:  map-get-value($map, text-color);  
+    }
+    h1, h2, h3, h4, h5, h6{
+        color:  map-get-value($map, text-color);  
+    }
+    .sidebar{
+        background-color: map-get-value($map, sidebar-color) !important;
+        ul li{
+            &.activetab, &:hover{
+                background-color: map-get-value($map, hover-color) !important;
+                color: map-get-value($map, button-color) !important;
+            }
+            a{
+                color: map-get-value($map, text-color) !important;
+               
+            }
+        } 
+    }
+
+    .button{
+        background-color: map-get-value($map, button-color) !important;
+        color: map-get-value($map, button-text-color) !important;
+    }
+}
+
+
+//set theme
+.dark {
+    @include set-theme($dark-value-map);
+}
+
+.blue {
+    @include set-theme($blue-value-map);
+}
+
+.green {
+    @include set-theme($green-value-map);
+}
+.light {
+    @include set-theme($light-value-map);
+}

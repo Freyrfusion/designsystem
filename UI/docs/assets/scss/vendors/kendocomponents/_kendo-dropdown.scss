@@ -1,0 +1,27 @@
+.k-picker {
+    border-color: #ced4da !important;
+    background-color: #fff !important;
+    background-image: none !important;
+}
+.k-chip-solid-base:hover, .k-chip-solid-base.k-hover {
+    background-color: #ebf0ff;
+    font-weight: 500;
+}
+.k-chip-solid-base {
+    border-color: #c6c6c6;
+    color: #343a40;
+    background-color: #ebf0ff;
+}
+.k-picker:focus, .k-picker.k-focus {
+    box-shadow: none !important;
+}
+.k-picker:focus-within {
+    box-shadow: none !important;
+}
+
+.k-list-item.k-selected, .k-selected.k-list-optionlabel {
+    color: #0084d1 !important;
+    background-color: #ebf0ff !important;
+    border-width:0px;
+    font-weight: 500px;
+}

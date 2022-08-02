@@ -1,0 +1,159 @@
+
+@mixin border-box {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box; 
+}
+
+
+// Creating Media Queries  
+
+@mixin create-mq($colbreakpoint) {
+  @if($colbreakpoint == 0) {
+    @content;
+  } @else {
+    @media screen and (min-width: $colbreakpoint * 1) {
+      @content;
+    }
+  }
+}
+// Creating Cols With Query
+
+@mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
+  @include create-mq($breakpoint) {
+    @for $i from 1 through $grid-cols {
+      .col-#{$i} {
+        flex-basis: (100 / ($grid-cols / $i ) ) * 1% ;
+        padding-left: $grid-gap;
+        padding-right: $grid-gap;
+      }
+      .col#{$modifier}-#{$i} {
+        flex-basis: (100 / ($grid-cols / $i ) ) * 1% ;
+        padding-left: $grid-gap;
+        padding-right: $grid-gap;
+      }
+      .col#{$modifier}-offset-#{$i} {
+        margin-left: (100 / ($grid-cols / $i) ) * 1%;
+      }
+    }
+  }
+}
+
+// Box Shadow
+@mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 3px, $size: 1px, $color: $default) {
+  box-shadow: $x-axis $y-axis $blur $size $color;
+  -webkit-box-shadow: $x-axis $y-axis $blur $size $color;
+    -moz-box-shadow: $x-axis $y-axis $blur $size $color;
+}
+// Border
+@mixin border( $coordinates: 0 0 0 0, $colour: #000000, $style: solid ) {
+  $top: nth($coordinates, 1);
+  $right: nth($coordinates, 2);
+  $bottom: nth($coordinates, 3);
+  $left: nth($coordinates, 4);
+
+  @if not(unitless($top)) {
+    border-top: $top $style $colour;
+  }
+  @if not(unitless($right)) {
+    border-right: $right $style $colour;
+  }
+  @if not(unitless($bottom)) {
+    border-bottom: $bottom $style $colour;
+  }
+  @if not(unitless($left)) {
+    border-left: $left $style $colour;
+  }
+
+}
+
+// Button Mixings
+@mixin btn($bg-color) {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border:0;
+  padding:$btn-padding-x $btn-padding-y ;
+  border-radius: $base-border-radius;
+  background-color: $bg-color;
+  color: $white;
+  font-size: $font-size-base;
+  text-transform: capitalize;
+ + .btn{
+   margin-left: 4px;
+ }
+  
+}
+
+// Toast Message Mixings
+@mixin toast($bg-color) {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border:0;
+  padding:calc($btn-padding-x-lg * 1.2) $btn-padding-y-lg ;
+  border-radius: $base-border-radius;
+  background-color:lighten($bg-color, 42%) ;
+  border:1px solid lighten($bg-color, 10%) ;
+  color: $bg-color;
+  font-size: $font-size-base;
+  text-transform: capitalize;
+}
+// ******************************** Mixins tooltip's *****************************/
+ 
+@mixin applyColor($color:$tooltipColor, $textColor:$tooltipTextColor) {
+  @each $position in top, bottom, left, right {
+    &.simptip-position-#{$position}{
+      &:before{border-#{$position}-color: $color;}
+      &:after{background-color: $color; color: $textColor;}
+    }
+  }
+  @each $position in top, bottom {
+    &.simptip-position-#{$position} {
+      &.half-arrow {
+        &:before {border-right: $arrowSize+1px solid $color;}
+      }
+    }
+  }
+}
+
+@mixin border-radius($radius: 4px) {
+  -webkit-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model;
+     -moz-box-sizing: $box-model;
+          box-sizing: $box-model;
+}
+
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+     -moz-transition: $transition;
+       -o-transition: $transition;
+      -ms-transition: $transition;
+          transition: $transition;
+}
+
+@mixin fade ($duration: 0.2s) {
+  @include transition(opacity $duration linear, visibility $duration linear);
+}
+
+@mixin transform($string){
+  -webkit-transform: $string;
+     -moz-transform: $string;
+      -ms-transform: $string;
+       -o-transform: $string;
+          transform: $string;
+}
+
+//generate multiline tooltips
+@mixin multiline ($width: 150px, $align: left) {
+  height: auto;
+  width: $width;
+  padding: $tooltipHeight/2;
+  line-height: $tooltipHeight - 3px;
+  white-space: normal;
+  text-align: $align;
+}

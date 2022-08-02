@@ -1,0 +1,35 @@
+.badge-label{
+    padding:0.25rem 0.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: $font-size-sm;
+    
+    &.semirounded{
+        border-radius: 0.25rem;
+    }
+    &.rounded{
+        border-radius: 1rem;
+    }
+    &.badge-danger{
+      
+        background-color: #feb2b2;
+    }
+    &.badge-success{
+      
+        background-color: #c6f6d5;
+    }
+    &.badge-info{
+        background-color: #63b3ed;
+    
+    }
+    &.badge-warning{
+        background-color: #ffbb33;
+    }
+    &.badge-secondary{
+        background-color: #2d3748;
+    }
+    &.badge-semiwhite{
+        background-color: #e2e8f0;
+    }
+   
+}

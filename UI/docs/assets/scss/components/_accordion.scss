@@ -1,0 +1,115 @@
+.accordion {
+	background-color: $gray-200;
+	color: $gray-700;
+  font-weight: 500;
+	cursor: pointer;
+	padding: 8px 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: $font-size-sm;
+	transition: 0.4s;
+  color: $gray-900;
+	&:hover {
+		background-color: $gray-300;
+	}
+	&:after {
+		content: '\002B';
+		color: $gray-800;
+		font-weight: $font-weight-bold;
+		float: right;
+		margin-left: 5px;
+	}
+  &.active {
+    background-color: $gray-200;
+    &:after {
+      content: "\2212";
+    }
+  }
+}
+
+.panel {
+	padding: 0 18px;
+	background-color: $white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	p {
+		padding: 18px 0px;
+        line-height: $line-height-sm;
+	}
+}
+   
+/* Accordion styles */
+.tabs {
+  border-radius: 0px;
+  overflow: hidden;
+  
+}
+.tab {
+  width: 100%;
+  color: $black;
+  overflow: hidden;
+  input.hiddentab-check{
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  }
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    color: $gray-900;
+    width: 100%;
+    background: $gray-200;
+    font-weight: $font-weight-bold;
+    cursor: pointer;
+    /* Icon */
+    &:hover {
+      background: darken($gray-300, 10%);
+    }
+    &::after {
+      font-family: "icons" !important;
+      content: "\e004";
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      transition: all .35s;
+      float:right;
+      color: $gray-800;
+    }
+  }
+  &-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: $black;
+    background: $white;
+    transition: all .35s;
+  }
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: $font-size-base;
+    background: $gray-200;
+    cursor: pointer;
+    &:hover {
+      background: darken($gray-200, 10%);
+    }
+  }
+}
+
+// :checked
+input:checked {
+  + .tab-label {
+    background: darken($gray-300, 10%);
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+  ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+  }
+}

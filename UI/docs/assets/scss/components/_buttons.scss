@@ -1,0 +1,91 @@
+@each $key, $val in $theme-colors {
+    .btn-#{$key}{
+        @include btn($val);
+        &:hover{
+            background-color: darken($val, 10%) ; 
+        }
+        &[disabled]{
+            pointer-events: none;
+            opacity: 0.35;
+        }
+        &.active{
+            background-color: darken($val, 10%) ; 
+        }
+    }
+    .btn-#{$key}-link{
+        @include btn($transparent);
+        color: $val;
+        text-decoration: underline;
+        &:hover{
+            color: darken($val, 20%) ; 
+        }
+        &[disabled]{
+            pointer-events: none;
+            opacity: 0.35;
+        }
+        &.active{
+            color: darken($val, 20%) ; 
+        }
+    }
+   .btn-outlined-#{$key}{
+        @include btn($white);
+        border: $base-border-thickness solid $val;
+        color: $val;
+        &:hover{
+            background-color:$val ; 
+            color: $white;
+         
+        }
+        &[disabled]{
+            pointer-events: none;
+            opacity: 0.35;
+        }
+        &.active{
+            background-color:$val ;
+            color: $white;
+        }
+   }
+}
+.btn-shadow{
+    @include box-shadow(1px, 1px, 3px, 1px, $gray-400);
+}
+.btn-lg{
+   padding: $btn-padding-x-lg $btn-padding-y-lg $imp;
+   font-size: $font-size-base; 
+}
+.btn-sm{
+    line-height: 20px; 
+    padding:   $btn-padding-x-sm $btn-padding-y-sm $imp;
+    font-size: $font-size-base / 1.4;  
+   
+}
+.btn-xs{
+    padding:  $btn-padding-x-xs $btn-padding-y-xs $imp;
+    font-size: $font-size-base / 1.6; 
+    line-height: 16px;
+}
+.btn-group{
+
+        position: relative;
+        display: inline-flex;
+        vertical-align: middle;
+    >.btn + .btn{
+        margin-left: 0;
+    }
+    + .btn-group{
+        margin-left: 10px;
+    }
+    >.btn:not(:last-child):not(.dropdown-toggle) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      
+    }
+    >.btn +.btn:not(:last-child),  >.btn:not(:first-child) {
+        border-left: $transparent;
+    }
+    >.btn:nth-child(n+3), >:not(.btn-check)+.btn {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      
+    }
+}

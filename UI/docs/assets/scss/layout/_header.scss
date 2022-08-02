@@ -1,0 +1,170 @@
+.header-top {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.03);
+    float: left;
+    border: solid 1px #f5f0f0;
+    border-radius: 0.25rem;
+    font-size: 13px;
+    .header-brand-section {
+        padding: 0px 10px;
+        float: left;
+        .header-logo {
+            width: 40px;
+        }
+        .header-brand-name {
+            width: 120px;
+            padding: 0 10px;
+        }
+    }
+    .right-section {
+        float: right;
+        .header-profile-section {
+            position: relative;
+            cursor: pointer;
+            display: block;
+            padding: 10px 15px;
+            float: left;
+            .profile-img {
+                float: left;
+                padding: 0px 10px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                    background: #f6f6f6;
+                    border-radius: 50%;
+                }
+            }
+            .profile-name {
+                display: initial;
+                float: left;
+                p {
+                    color: #6e6b7b;
+                    height: 20px;
+                    font-weight: 500;
+                }
+                span {
+                    display: flex;
+                    color: #9d9a9a;
+                }
+            }
+            .profile-dropdown-content {
+                position: absolute;
+                right: 0px;
+                top: 65px;
+                background: #fff;
+                width: 100%;
+                display: none;
+                box-shadow: 0 5px 25px rgb(34 41 47 / 10%);
+                border-radius: 4px;
+                li {
+                    padding: 0.5rem 1rem 0.1rem;
+
+                    &:hover {
+                        background: #ebf0ff;
+                    }
+                    a {
+                        i {
+                            margin: 0 10px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+        .header-notification-section {
+            position: relative;
+            cursor: pointer;
+            .notification-icon {
+                padding: 10px;
+                text-align: center;
+                float: left;
+                position: absolute;
+                right: 180px;
+                top: 10px;
+                font-size: 20px;
+                color: #6e6b7b;
+            }
+            .badge {
+                width: 17px;
+                height: 17px;
+                background: #2686d1;
+                color: #fff;
+                border-radius: 50%;
+                top: 0px;
+                position: absolute;
+                right: 0px;
+                font-size: 13px;
+                line-height: 1.4;
+            }
+            .notification-dropdown-content {
+                position: absolute;
+                right: 180px;
+                top: 65px;
+                background: #fff;
+                width: 100%;
+                display: none;
+                box-shadow: 0 5px 25px rgb(34 41 47 / 10%);
+                border-radius: 4px;
+                width: 350px;
+                li {
+                    padding: 15px;
+                    border-bottom: solid 1px #f1f0f0;
+
+                    &:hover {
+                        background: #ebf0ff;
+                    }
+                    a {
+                        i {
+                            margin: 0 10px 0 0;
+                        }
+                        .new-notification-badge {
+                            background: #2686d1;
+                            color: #fff;
+                            text-align: center;
+                            border-radius: 20px;
+                            padding: 0px 10px;
+                            float: right;
+                        }
+                    }
+                }
+                .ntf-list {
+                    width: 100%;
+                    float: left;
+                    border-bottom: solid 1px #f1f0f0;
+                    .ntf-profile {
+                        padding: 15px 10px 15px 15px;
+                        float: left;
+                    }
+                    .ntf-profile img {
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 100px;
+                        float: left;
+                    }
+                    .ntf-heading {
+                        padding: 15px 0;
+                        line-height: 1.5;
+                        span {
+                            position: relative;
+                            display: contents;
+                        }
+                    }
+                    .ntf-sub-heading {
+                        color: #b9b9c3;
+                    }
+                    .ntf-time {
+                        float: right;
+                        position: relative;
+                        color: #979797;
+                        text-align: right;
+                        top: 0;
+                        right: 15px;
+                    }
+                    &:hover {
+                        background: #ebf0ff;
+                    }
+                }
+            }
+        }
+    }
+}

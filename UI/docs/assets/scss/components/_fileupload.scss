@@ -1,0 +1,198 @@
+ 
+
+.file-upload-wrapper {
+    $defaultColor: $primary;
+    $height: 35px;
+    
+    position: relative;
+    width: 100%;
+    height: $height;
+    
+    &:after {
+      content: attr(data-text);
+      font-size: $font-size-base;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $gray-200;
+      padding: 10px 15px;
+      display: block;
+      width: calc(100% - 40px);
+      pointer-events: none;
+      z-index: 20;
+      line-height: $height - 20px;
+      color: $gray-700;
+      border-radius: 5px 10px 10px 5px;
+      font-weight: $font-weight-bold;
+    }
+    
+    &:before {
+      content: 'Upload';
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      height: 35px;
+      background: $defaultColor;
+      color: $white;
+      font-weight: $font-weight-bold;
+      z-index: 25;
+      font-size: $font-size-base;
+      line-height: $height;
+      padding: 0 15px;
+      text-transform: uppercase;
+      pointer-events: none;
+      border-radius: 0 5px 5px 0;
+    }
+    
+    &:hover {
+      &:before {
+        background: darken($defaultColor, 10%);
+      }
+    }
+     input {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 99;
+      height: $height - 10px;
+      margin: 0;
+      padding: 0;
+      display: block;
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+  
+  /********** Fileupload **********************/
+  .file-upload {
+      background-color: $white;
+      width: 300px;
+      margin: 0 auto;
+      padding: $base-padding;
+  }
+  .file-upload-btn {
+      width: 100%;
+      margin: 0;
+      color: #fff;
+      background: $info;
+      border: none;
+      font-size:$font-size-base;
+      padding:$btn-padding-y;
+      border-radius: 4px;
+       transition: all .2s ease;
+      outline: none;
+      text-transform: uppercase;
+      font-weight: $font-weight-base;
+      &:hover {
+          background: darken($info, 10%);
+          color: $white;
+          transition: all .2s ease;
+          cursor: pointer;
+      }
+      &:active {
+          border: 0;
+          transition: all .2s ease;
+      }
+  }
+  .file-upload-content {
+      display: none;
+      text-align: center;
+  }
+  .file-upload-input {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      outline: none;
+      opacity: 0;
+      cursor: pointer;
+  }
+  .image-upload-wrap {
+      margin-top: 20px;
+      border: 2px dashed $gray-300;
+      position: relative;
+      &:hover {
+          background-color: $gray-300;
+          border: 2px dashed $white;
+      }
+  }
+  .image-dropping {
+      background-color: $info;
+      border: 4px dashed $white;
+  }
+  .image-title-wrap {
+      padding: 0 15px 15px 15px;
+      color: $gray-800;
+  }
+  .drag-text {
+      text-align: center;
+      h3 {
+          font-weight: $font-weight-bold;
+          text-transform: uppercase;
+          color: $info;
+          font-size: $font-size-base;
+          padding: 20px;
+      }
+  }
+  .file-upload-image {
+      max-height: 200px;
+      max-width: 200px;
+      margin: auto;
+      padding: 20px;
+  }
+  .remove-image {
+      width: auto;
+      margin: 0;
+      color: #fff;
+      background: $danger;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+       transition: all .2s ease;
+      outline: none;
+      text-transform: uppercase;
+      font-size:12px;
+      font-weight: 300;
+      display: block;
+      &:hover {
+          background: darken($danger, 10%);
+          color: $white;
+          transition: all .2s ease;
+          cursor: pointer;
+      }
+      &:active {
+          border: 0;
+          transition: all .2s ease;
+      }
+  }
+  
+  /**************uploadbutton*************/
+  .upload-btn-wrapper {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      .btn {
+          border: 2px solid  $gray-800;
+          color: $white;
+          background-color: $gray-800;
+          padding: 8px 20px;
+          border-radius: 4px;
+          font-size: $font-size-base;
+          font-weight: $font-weight-bold ;
+      }
+      input[type=file] {
+          font-size: $font-size-base;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+      }
+  }
+  
+  /**********************************/
+   
