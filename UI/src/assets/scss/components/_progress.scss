@@ -39,3 +39,78 @@ $end: 10;
   $i: 10 * $i;
   .progress-bar-#{$i}::before { width: $i * 1% }
 }
+ 
+/******************** wizard-progress  **********************/
+
+.wizard-progress {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	position: relative;
+	margin-top: 20px; margin-bottom: 20px;
+	.step {
+		display: table-cell;
+		text-align: center;
+		vertical-align: top;
+		overflow: visible;
+		position: relative;
+		font-size: 14px;
+		color: $gray-600;
+		font-weight: 500;
+		&:not(:last-child) {
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 50%;
+				top: 0px;
+				background-color: $gray-400;
+				height: 3px;
+				width: 100%;
+			}
+		}
+		.node {
+			display: inline-block;
+			border: 2px solid  $gray-600;
+			background-color: $white;
+			border-radius: 18px;
+			height: 15px;
+			width: 15px;
+			position: absolute;
+			top: -5px;
+			left: 50%;
+			margin-left: -7px;
+			line-height: 8px;
+		}
+		.status {
+			position: relative;
+			top: 15px;
+			text-align: center;
+			font-size: 12px;
+		}
+	}
+	.step.complete {
+		&:before {
+			background-color: $primary;
+		}
+		.node {
+			border-color: $success;
+			background-color:  $success;
+			&:before {
+				font-family: FontAwesome;
+				content: "\f00c";
+				font-size: 7px;
+				color: $white;
+			}
+		}
+	}
+	.step.in-progress {
+		&:before {
+			background-color: $gray-400;
+		}
+		.node {
+			border-color: $primary;
+		}
+	}
+}
+/******************** wizard-progress  **********************/

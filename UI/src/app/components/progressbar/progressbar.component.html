@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+ 
 <div class="container">
     <div class="row">
         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0">
@@ -17,7 +19,7 @@
             </div>
             <div class="ng-tabcontent">
                 <ng-container *ngIf="selectedList === 0">
-                    
+                  <h6>Example One</h6>
 
     <div class="row">
         <div class="col-md-12 p-0">
@@ -72,14 +74,66 @@
                     </div>
                   </div>  
               </section>
+
+              <section>
+                <h6>Example TWO</h6>
+                <div class="wizard-progress">
+                  <div class="step complete">
+                      <div class="node"></div>
+                      <div class="status"> One </div>
+                  </div>
+                  <div class="step complete">
+                      <div class="node"></div>
+                      <div class="status">
+                          Two
+                      </div>
+                  </div>
+                  <div class="step in-progress">
+                      <div class="node"></div>
+                      <div class="status">
+                          Three
+                      </div>
+                  </div>
+                  <div class="step">
+                      <div class="node"></div>
+                      <div class="status">  Complete</div>
+                  </div>
+                  <div class="step">
+                      <div class="node"></div>
+                      <div class="status">  Complete </div>
+                  </div>
+                  <div class="step">
+                      <div class="node"></div>
+                      <div class="status">  Complete CMC  </div>
+                  </div>
+                  <div class="step">
+                      <div class="node"></div>
+                      <div class="status">  Complete </div>
+                  </div>
+                  <div class="step">
+                      <div class="node"></div>
+                      <div class="status">  Complete  </div>
+                  </div>
+                  <div class="step">
+                      <div class="node"></div>
+                      <div class="status">  Complete </div>
+                  </div>
+                  <div class="step">
+                      <div class="node"></div>
+                      <div class="status">  Complete  </div>
+                  </div>
+              </div>
+              </section>
         </div>
     </div>
                 </ng-container>
                 <ng-container *ngIf="selectedList === 1">
+                 
                     <button ngxClipboard (click)='copyToClipboard(htmlContentToCopy, $event)' class="copybutton" [innerHTML]="copytxt"></button>
                     <pre prism language="html" class="language-html">
                        <code  #htmlContentToCopy>
                         <![CDATA[
+                        <h6>Example One</h6>
                         <div class="bars m-b-30">
                             <div>
                               <p>.progress-bar-10</p>
@@ -126,9 +180,58 @@
                               <p>.progress-bar-100</p>
                               <div class="progress-bar progress-bar-100"></div>
                             </div>
-                          </div>  
+                          </div> 
+                          
+                          
+                          <h6>Example TWO</h6>
+                          <div class="wizard-progress">
+                            <div class="step complete">
+                                <div class="node"></div>
+                                <div class="status"> One </div>
+                            </div>
+                            <div class="step complete">
+                                <div class="node"></div>
+                                <div class="status">
+                                    Two
+                                </div>
+                            </div>
+                            <div class="step in-progress">
+                                <div class="node"></div>
+                                <div class="status">
+                                    Three
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="node"></div>
+                                <div class="status">  Complete</div>
+                            </div>
+                            <div class="step">
+                                <div class="node"></div>
+                                <div class="status">  Complete </div>
+                            </div>
+                            <div class="step">
+                                <div class="node"></div>
+                                <div class="status">  Complete CMC  </div>
+                            </div>
+                            <div class="step">
+                                <div class="node"></div>
+                                <div class="status">  Complete </div>
+                            </div>
+                            <div class="step">
+                                <div class="node"></div>
+                                <div class="status">  Complete  </div>
+                            </div>
+                            <div class="step">
+                                <div class="node"></div>
+                                <div class="status">  Complete </div>
+                            </div>
+                            <div class="step">
+                                <div class="node"></div>
+                                <div class="status">  Complete  </div>
+                            </div>
+                        </div>
                         ]]>
-                           </code>
+                      </code>
                            </pre>
                 
                                 </ng-container>

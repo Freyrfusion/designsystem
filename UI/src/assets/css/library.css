@@ -6741,6 +6741,75 @@ input[type=radio] + label {
   width: 100%;
 }
 
+/******************** wizard-progress  **********************/
+.wizard-progress {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.wizard-progress .step {
+  display: table-cell;
+  text-align: center;
+  vertical-align: top;
+  overflow: visible;
+  position: relative;
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: 500;
+}
+.wizard-progress .step:not(:last-child):before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  background-color: #ced4da;
+  height: 3px;
+  width: 100%;
+}
+.wizard-progress .step .node {
+  display: inline-block;
+  border: 2px solid #6c757d;
+  background-color: #fff;
+  border-radius: 18px;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  margin-left: -7px;
+  line-height: 8px;
+}
+.wizard-progress .step .status {
+  position: relative;
+  top: 15px;
+  text-align: center;
+  font-size: 12px;
+}
+.wizard-progress .step.complete:before {
+  background-color: #0d6efd;
+}
+.wizard-progress .step.complete .node {
+  border-color: #198754;
+  background-color: #198754;
+}
+.wizard-progress .step.complete .node:before {
+  font-family: FontAwesome;
+  content: "\f00c";
+  font-size: 7px;
+  color: #fff;
+}
+.wizard-progress .step.in-progress:before {
+  background-color: #ced4da;
+}
+.wizard-progress .step.in-progress .node {
+  border-color: #0d6efd;
+}
+
+/******************** wizard-progress  **********************/
 /********************************* Core ******************************/
 [data-tooltip] {
   position: relative;
@@ -8569,6 +8638,208 @@ input:checked ~ .tab-content {
   background-color: #333;
 }
 
+.file-upload-wrapper {
+  position: relative;
+  width: 100%;
+  height: 35px;
+}
+.file-upload-wrapper:after {
+  content: attr(data-text);
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e9ecef;
+  padding: 10px 15px;
+  display: block;
+  width: calc(100% - 40px);
+  pointer-events: none;
+  z-index: 20;
+  line-height: 15px;
+  color: #495057;
+  border-radius: 5px 10px 10px 5px;
+  font-weight: 500;
+}
+.file-upload-wrapper:before {
+  content: "Upload";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  height: 35px;
+  background: #0d6efd;
+  color: #fff;
+  font-weight: 500;
+  z-index: 25;
+  font-size: 0.8rem;
+  line-height: 35px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  pointer-events: none;
+  border-radius: 0 5px 5px 0;
+}
+.file-upload-wrapper:hover:before {
+  background: #0257d5;
+}
+.file-upload-wrapper input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+
+/********** Fileupload **********************/
+.file-upload {
+  background-color: #fff;
+  width: 300px;
+  margin: 0 auto;
+  padding: 0.75rem;
+}
+
+.file-upload-btn {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #0dcaf0;
+  border: none;
+  font-size: 0.8rem;
+  padding: 0.7rem;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.file-upload-btn:hover {
+  background: #0aa1c0;
+  color: #fff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.file-upload-btn:active {
+  border: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  margin-top: 20px;
+  border: 2px dashed #dee2e6;
+  position: relative;
+}
+.image-upload-wrap:hover {
+  background-color: #dee2e6;
+  border: 2px dashed #fff;
+}
+
+.image-dropping {
+  background-color: #0dcaf0;
+  border: 4px dashed #fff;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #343a40;
+}
+
+.drag-text {
+  text-align: center;
+}
+.drag-text h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #0dcaf0;
+  font-size: 0.8rem;
+  padding: 20px;
+}
+
+.file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.remove-image {
+  width: auto;
+  margin: 0;
+  color: #fff;
+  background: #D14343;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 300;
+  display: block;
+}
+.remove-image:hover {
+  background: #b52c2c;
+  color: #fff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.remove-image:active {
+  border: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+/**************uploadbutton*************/
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.upload-btn-wrapper .btn {
+  border: 2px solid #343a40;
+  color: #fff;
+  background-color: #343a40;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.upload-btn-wrapper input[type=file] {
+  font-size: 0.8rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+/**********************************/
 .header-top {
   width: 100%;
   background: #fff;
