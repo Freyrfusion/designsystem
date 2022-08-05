@@ -67,7 +67,33 @@
                     <code #kendodatepickerhtml>
                         // HTML
                         <![CDATA[
+                        Date picker
                         <kendo-datepicker [(value)]="value"></kendo-datepicker>
+
+                        DateInput
+                        <kendo-dateinput [value]="value"></kendo-dateinput>
+
+                        TimePicker
+                        <kendo-timepicker [value]="value"></kendo-timepicker>
+
+                        DateTimePicker
+                        <kendo-datetimepicker [value]="value"> </kendo-datetimepicker>
+
+                        Start & End
+                        <kendo-daterange>
+                            <kendo-floatinglabel text="Start">
+                                <kendo-dateinput kendoDateRangeStartInput [(value)]="range.start"></kendo-dateinput>
+                            </kendo-floatinglabel>
+                            <kendo-floatinglabel text="End" style="margin-left: 10px;">
+                                <kendo-dateinput kendoDateRangeEndInput [(value)]="range.end"></kendo-dateinput>
+                            </kendo-floatinglabel>
+                        </kendo-daterange>
+
+                        Classic Calendar
+                        <kendo-calendar type="classic"></kendo-calendar>
+
+                        Calendar Disabled
+                        <kendo-calendar [disabled]="true"></kendo-calendar>
                         ]]>
                     </code>
                 </pre>

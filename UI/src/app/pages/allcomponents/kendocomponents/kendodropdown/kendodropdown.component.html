@@ -30,8 +30,8 @@
                 </div>
                 <div class="col-md-4">
                     <p> Disabled Items </p>
-                    <kendo-autocomplete placeholder="Type to search..." [itemDisabled]="itemDisabled" [data]="listItems1"
-                        valueField="text">
+                    <kendo-autocomplete placeholder="Type to search..." [itemDisabled]="itemDisabled"
+                        [data]="listItems1" valueField="text">
                     </kendo-autocomplete>
                 </div>
             </div>
@@ -43,10 +43,22 @@
                 <code #kendodropdownhtmlcopy>
                  <![CDATA[
         // HTML 
-        
+        Dropdown
         <kendo-dropdownlist class="kendo-custom-dropdown" [data]="impurities" textField="Name" valueField="Id"
             [valuePrimitive]="true" [(ngModel)]="modal" [defaultItem]="defaultItem" [ngClass]="">
         </kendo-dropdownlist>
+
+        Type the name of a European country:
+        <kendo-autocomplete [data]="listItems" placeholder="e.g. Denmark" class="countries">
+        </kendo-autocomplete>
+
+        Disabled Items
+        <kendo-autocomplete placeholder="Type to search..." [itemDisabled]="itemDisabled" [data]="listItems1"
+                        valueField="text">
+                    </kendo-autocomplete>
+
+
+
                 ]]>
                 </code>
             </pre>
