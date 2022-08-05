@@ -1,15 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { CommonService } from 'src/app/services/common.service';
+import { CopyserviceService } from 'src/app/services/copy/copyservice.service';
 @Component({
   selector: 'app-navigations',
   templateUrl: './navigations.component.html',
   styleUrls: ['./navigations.component.scss']
 })
 export class NavigationsComponent implements OnInit {
+  commontablist:any;
+  commontablist1:any;
+  selectedList:any;
+  selectedList1:any;
+  copyToClipboard:any;
+  copytxt: any;
 
-  constructor() { }
+  constructor(public _common:CommonService, public _copy:CopyserviceService) { }
 
   ngOnInit(): void {
+    this.commontablist=this._common.ngtabList();
+    this.commontablist1=this._common.ngtabList1();
+    this.selectedList = 0;
+    this.selectedList1 = 0;
+    this.copyToClipboard=this._copy.copyToClipboard;
+    this.copytxt = this._copy.copytxt;
+
     $('.sidebar-menu').on('mouseover', function (event) {
       event.preventDefault();
       event.stopPropagation();
@@ -68,6 +83,13 @@ export class NavigationsComponent implements OnInit {
     
     
   }
+  openTabList(commontablist:any){ 
+    this.selectedList = commontablist; 
+   }
+   openTabList1(commontablist1:any){ 
+    this.selectedList1 = commontablist1; 
+   }
+   
   menustate(): any {
     var menustatu: any = localStorage.getItem('menustate');
     console.log("menustatu: " + menustatu);
