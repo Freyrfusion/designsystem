@@ -31,7 +31,14 @@
             <code #kendocheckboxhtml>
                 <![CDATA[
                 //HTML
-                <input type="checkbox" #notification kendoCheckBox />     
+                Check & Uncheckbox
+                <input type="checkbox" #notification kendoCheckBox />   
+                
+                Checkbox disabled with the disabled attribute
+                <input type="checkbox" disabled kendoCheckBox />
+
+                Accept Terms&Conditions
+                <input type="checkbox" kendoCheckBox [(ngModel)]="model.terms" />
                 ]]>
             </code>
                
