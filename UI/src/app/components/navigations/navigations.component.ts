@@ -103,9 +103,4 @@ export class NavigationsComponent implements OnInit {
     }
 
   }
-
- 
-   
-  
-  
 }

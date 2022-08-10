@@ -1,12 +1,50 @@
-<p>notificationlist works!</p>
----------------------------------
-<h1>Capitalize of text</h1>
-<p>Should be used capital letter for the first letter in entire applications</p>
+<div class="ngtabs">
+    <ul>
+        <li id="tab1" *ngFor="let tab of commontablist; index as i; first as isFirst">
+          <a (click)="openTabList(i)" [ngClass]="{'active': selectedList === i }" href="javascript:void(0)">
+            {{tab}}</a>
+        </li>
+      </ul>
 
-<h2>When to use</h2>
-<ul>
-    <li>Always names should start with capital letter </li>
-    <li>In table header use only first letter has a capital</li>
-</ul>
+      <div class="ng-tabcontent">
+        <ng-container *ngIf="selectedList === 0">  
+            <p>notificationlist works!</p>
+            <!-- ---------------------------------
+            <h1>Capitalize of text</h1>
+            <p>Should be used capital letter for the first letter in entire applications</p> -->
+            
+            <!-- <h2>When to use</h2> -->
+            <!-- <ul>
+                <li>Always names should start with capital letter </li>
+                <li>In table header use only first letter has a capital</li>
+            </ul> -->
+        </ng-container>
+        <ng-container *ngIf="selectedList === 1"> 
+            <button ngxClipboard (click)='copyToClipboard(notificationlisthtmlcopy, $event)' class="copybutton"
+            [innerHTML]="copytxt"></button>
+            <pre prism language="javascript" class="language-js">
+                <code #notificationlisthtmlcopy>
+                    <![CDATA[
+                   
+                    ]]>
+                </code>
+            </pre>
+        </ng-container>
+        <ng-container *ngIf="selectedList === 2">  
+            <h5> We will add content soon!</h5></ng-container>
+      </div>
+</div>
+    
+
+
+
+
+
+
+
+
+
+
+
 
 
