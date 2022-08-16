@@ -21,6 +21,7 @@ export class FormsComponent implements OnInit {
     this.copyToClipboard = this._copy.copyToClipboard;
     this.copytxt = this._copy.copytxt;
   }
+
   openTabList(commontablist: any) {
     this.selectedList = commontablist;
   }

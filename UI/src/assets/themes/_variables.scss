@@ -8,6 +8,7 @@ $font-family: 'Roboto', sans-serif;
 $font-size-root:              null !default;
 $font-size-base:              0.8rem !default; // Assumes the browser default, typically `14px`
 $font-size-sm:                $font-size-base * .875 !default;
+$font-size-xsm:               $font-size-base * .625 !default;
 $font-size-lg:                $font-size-base * 1.25 !default;
 
 $font-weight-lighter:         lighter !default;

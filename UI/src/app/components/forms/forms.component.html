@@ -1,31 +1,416 @@
 <div class="ngtabs">
     <ul>
         <li id="tab1" *ngFor="let tab of commontablist; index as i; first as isFirst">
-          <a (click)="openTabList(i)" [ngClass]="{'active': selectedList === i }" href="javascript:void(0)">
-            {{tab}}</a>
+            <a (click)="openTabList(i)" [ngClass]="{'active': selectedList === i }" href="javascript:void(0)">
+                {{tab}}</a>
         </li>
-      </ul>
+    </ul>
 
-      <div class="ng-tabcontent">
-        <ng-container *ngIf="selectedList === 0">  
-            <p>forms works!</p>
+    <div class="ng-tabcontent">
+        <ng-container *ngIf="selectedList === 0">
+
+            <div class="row">
+                <!-- Horizontal Form Start-->
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-section">
+                            <h6 class="m-l-26 m-b-10"> Horizontal Forms </h6>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label class="form-label"> Email address </label>
+                                        <input type="text" class="form-control">
+                                        <!-- <span class="valid-feedback"> Invalid Email Address</span> -->
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label class="form-label"> Full Name </label>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Last Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label class="form-label"> Address </label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="Street Address">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="Office, Suite, Apt">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="City">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="State">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="Zip">
+                                    </div>
+                                </div>
+
+                                <!-- <div class="row">
+                                    <div class="col-md-1">
+                                        <a onclick="submit()" href="#" class="btn btn-primary"> Submit </a>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                 <!-- Horizontal Form End -->
+
+                 <!-- Vertical Forms Start -->
+                <div class="col-md-6">
+                    <form class="inline-form">
+                        <div class="form-section">
+                            <h6 class="m-l-26 m-b-10"> Vertical Forms </h6>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="inline-lable"> Full Name </label>
+                                    <input type="text" class="inline-form-control" placeholder="First Name">
+                                    <input type="text" class="inline-form-control" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="inline-lable"> Email </label>
+                                    <input type="text" class="inline-form-control full-width-input">
+                                    <!-- <span class="inline-valid-feedback"> Invalid Email Address</span> -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="inline-lable"> Address </label>
+                                    <input type="text" class="inline-form-control full-width-input"
+                                        placeholder="Street, Apt/Suite">
+                                    <!-- <span class="inline-valid-feedback"> Invalid Email Address</span> -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="inline-lable"> City </label>
+                                    <input type="text" class="inline-form-control full-width-input" placeholder="">
+                                    <!-- <span class="inline-valid-feedback"> Invalid Email Address</span> -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="inline-lable"> State </label>
+                                    <input type="text" class="inline-form-control full-width-input" placeholder="">
+                                    <!-- <span class="inline-valid-feedback"> Invalid Email Address</span> -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="inline-lable"> Zip </label>
+                                    <input type="text" class="inline-form-control full-width-input" placeholder="">
+                                    <!-- <span class="inline-valid-feedback"> Invalid Email Address</span> -->
+                                </div>
+                            </div>
+
+                            <!-- <div class="row">
+                                <div class="col-md-1">
+                                    <a href="#" class="btn btn-primary m-l-10 m-t-26"> Submit </a>
+                                </div>
+                            </div> -->
+                        </div>
+                    </form>
+                </div>
+                <!-- Vertical Forms End -->
+            </div>
+
+            <div class="row">
+                <!-- Outlined Text Fields Start -->
+                <div class="col-md-6">
+                    <form class="inline-form">
+                        <div class="form-section">
+                            <h6 class="m-b-16 m-l-16"> Outlined Text Fields</h6>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="outlined-textfield-default">
+                                        <input placeholder=" " type="text">
+                                        <label>Your Name</label>
+                                        <span class="icon-cancel-circle icon"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="outlined-textfield-sucess">
+                                        <input placeholder=" " type="text">
+                                        <label>Confirmed User</label>
+                                        <span class="icon-user-check icon"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="outlined-textfield-error">
+                                        <input placeholder=" " type="text">
+                                        <label>Error Name</label>
+                                        <span class="icon-cross-mark icon"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Outlined Text Fields End -->
+                <!-- Singal Border Fields Start -->
+                <div class="col-md-6">
+                    <div class="form-section">
+                        <form class="singal-input">
+                            <h6 class="m-b-16 m-l-16"> Singal Border Fields</h6>
+                            <div class="group">
+                                <input type="text" required="required"><span class="highlight"></span><span
+                                    class="bar"></span>
+                                <label>Full Name</label>
+                            </div>
+                            <div class="group">
+                                <input type="text" required="required"><span class="highlight"></span><span
+                                    class="bar"></span>
+                                <label>Email Address </label>
+                            </div>
+                            <div class="group">
+                                <input type="number" required="required"><span class="highlight"></span><span
+                                    class="bar"></span>
+                                <label>Phone Number</label>
+                            </div>
+                            <div class="group">
+                                <input type="text" rows="5" required="required"><span class="highlight"></span><span
+                                    class="bar"></span>
+                                <label>Post Code</label>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <!-- Singal Border Fields End -->
+            </div>
+
         </ng-container>
-        <ng-container *ngIf="selectedList === 1"> 
+        <ng-container *ngIf="selectedList === 1">
             <button ngxClipboard (click)='copyToClipboard(formhtmlcopy, $event)' class="copybutton"
-            [innerHTML]="copytxt"></button>
+                [innerHTML]="copytxt"></button>
             <pre prism language="javascript" class="language-js">
                 <code #formhtmlcopy>
                     <![CDATA[
-                   
+                    <div class="row">
+                        <!-- Horizontal Form Start-->
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-section">
+                                    <h6 class="m-l-26 m-b-10"> Horizontal Forms </h6>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label class="form-label"> Email address </label>
+                                                <input type="text" class="form-control">
+                                                <!-- <span class="valid-feedback"> Invalid Email Address</span> -->
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-md-12">
+                                            <label class="form-label"> Full Name </label>
+                                        </div>
+        
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="First Name">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="Last Name">
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-md-12">
+                                            <label class="form-label"> Address </label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control" placeholder="Street Address">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control" placeholder="Office, Suite, Apt">
+                                            </div>
+                                        </div>
+        
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" placeholder="City">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" placeholder="State">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" placeholder="Zip">
+                                            </div>
+                                        </div>
+        
+                                        <!-- <div class="row">
+                                            <div class="col-md-1">
+                                                <a onclick="submit()" href="#" class="btn btn-primary"> Submit </a>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                         <!-- Horizontal Form End -->
+        
+                         <!-- Vertical Forms Start -->
+                        <div class="col-md-6">
+                            <form class="inline-form">
+                                <div class="form-section">
+                                    <h6 class="m-l-26 m-b-10"> Vertical Forms </h6>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label class="inline-lable"> Full Name </label>
+                                            <input type="text" class="inline-form-control" placeholder="First Name">
+                                            <input type="text" class="inline-form-control" placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label class="inline-lable"> Email </label>
+                                            <input type="text" class="inline-form-control full-width-input">
+                                            <!-- <span class="inline-valid-feedback"> Invalid Email Address</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label class="inline-lable"> Address </label>
+                                            <input type="text" class="inline-form-control full-width-input"
+                                                placeholder="Street, Apt/Suite">
+                                            <!-- <span class="inline-valid-feedback"> Invalid Email Address</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label class="inline-lable"> City </label>
+                                            <input type="text" class="inline-form-control full-width-input" placeholder="">
+                                            <!-- <span class="inline-valid-feedback"> Invalid Email Address</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label class="inline-lable"> State </label>
+                                            <input type="text" class="inline-form-control full-width-input" placeholder="">
+                                            <!-- <span class="inline-valid-feedback"> Invalid Email Address</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label class="inline-lable"> Zip </label>
+                                            <input type="text" class="inline-form-control full-width-input" placeholder="">
+                                            <!-- <span class="inline-valid-feedback"> Invalid Email Address</span> -->
+                                        </div>
+                                    </div>
+                                    <!-- <div class="row">
+                                        <div class="col-md-1">
+                                            <a href="#" class="btn btn-primary m-l-10 m-t-26"> Submit </a>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Vertical Forms End -->
+                    </div>
+        
+                    <div class="row">
+                        <!-- Outlined Text Fields Start -->
+                        <div class="col-md-6">
+                            <form class="inline-form">
+                                <div class="form-section">
+                                    <h6 class="m-b-16 m-l-16"> Outlined Text Fields</h6>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="outlined-textfield-default">
+                                                <input placeholder=" " type="text">
+                                                <label>Your Name</label>
+                                                <span class="icon-cancel-circle icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="outlined-textfield-sucess">
+                                                <input placeholder=" " type="text">
+                                                <label>Confirmed User</label>
+                                                <span class="icon-user-check icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="outlined-textfield-error">
+                                                <input placeholder=" " type="text">
+                                                <label>Error Name</label>
+                                                <span class="icon-cross-mark icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Outlined Text Fields End -->
+                        <!-- Singal Border Fields Start -->
+                        <div class="col-md-6">
+                            <div class="form-section">
+                                <form class="singal-input">
+                                    <h6 class="m-b-16 m-l-16"> Singal Border Fields</h6>
+                                    <div class="group">
+                                        <input type="text" required="required"><span class="highlight"></span><span
+                                            class="bar"></span>
+                                        <label>Full Name</label>
+                                    </div>
+                                    <div class="group">
+                                        <input type="text" required="required"><span class="highlight"></span><span
+                                            class="bar"></span>
+                                        <label>Email Address </label>
+                                    </div>
+                                    <div class="group">
+                                        <input type="number" required="required"><span class="highlight"></span><span
+                                            class="bar"></span>
+                                        <label>Phone Number</label>
+                                    </div>
+                                    <div class="group">
+                                        <input type="text" rows="5" required="required"><span class="highlight"></span><span
+                                            class="bar"></span>
+                                        <label>Post Code</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Singal Border Fields End -->
+                    </div>
                     ]]>
                 </code>
             </pre>
         </ng-container>
-        <ng-container *ngIf="selectedList === 2">  
-            <h5> We will add content soon!</h5></ng-container>
-      </div>
+        <ng-container *ngIf="selectedList === 2">
+            <h5> We will add content soon!</h5>
+        </ng-container>
+    </div>
 </div>
-    
 
+<script>
 
-
+</script>
