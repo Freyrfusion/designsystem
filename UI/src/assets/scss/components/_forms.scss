@@ -1,24 +1,27 @@
 .form-section {
     background-color: $white;
-    background-color: #f9fafc;
-    border-radius: 0.625rem;
+    background-color: $gray-100;
+    border-radius: $base-border-radius;
     max-width: 66.6666rem;
-    padding: 1rem 0;
+    padding: $padding-l 0;
     // height: calc(100vh - 265px);
     margin: 0 0 0.938rem 0;
 
     .row {
-        margin: 0 0 0.75rem 0;
+        margin: 0 0 $base-margin 0;
     }
     .valid-feedback {
         color: $red;
-        font-size: 0.625rem;
+        font-size: $font-size-xsm;
     }
+}
+p.sub-text {
+    color: $gray-600 !important;
 }
 // Horizontal Forms Start
 .form-label {
     font-size: $font-size-base;
-    padding: 0 0 0.375rem 0;
+    padding: 0 0 $base-padding 0;
     font-weight: $font-weight-bold;
     color: $gray-600;
 }
@@ -28,7 +31,7 @@
 .form-control {
     display: block;
     width: 100%;
-    padding: 0.625rem 0.875rem;
+    padding: $base-padding-xsm $base-padding-m;
     font-size: $font-size-base;
     color: $gray-900;
     background-color: $white;
@@ -37,7 +40,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border-radius: 0.25rem;
+    border-radius: $base-border-radius;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
     &:focus {
@@ -54,14 +57,14 @@
 .inline-form {
     .inline-lable {
         font-size: $font-size-base;
-        padding: 0 0.75rem 0;
+        padding: 0 $base-padding 0;
         font-weight: $font-weight-bold;
         color: $gray-600;
     }
     .inline-form-control {
         width: 166px;
         display: inline-block;
-        padding: 0.625rem 0.875rem;
+        padding: $base-padding-xsm $base-padding-m;
         margin: 0 0.938rem 0 0;
         font-size: $font-size-base;
         color: $gray-900;
@@ -71,7 +74,7 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        border-radius: 0.25rem;
+        border-radius: $base-border-radius;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
         &:focus {
@@ -88,26 +91,23 @@
     }
     .inline-valid-feedback {
         color: $red;
-        font-size: 0.625rem;
+        font-size: $font-size-xsm;
         display: block;
         margin-left: 5.625rem;
     }
 }
 // Vertical Forms End
 
-// Outlined Text Fields Default Start
-
-.outlined-textfield-default {
+.outlined-textfield-email {
     position: relative;
-    margin: 0 0 0.625rem 0;
     label {
         position: absolute;
-        font-size: 0.8rem;
+        font-size:$font-size-base;
         left: 0;
         top: 50%;
         transform: translateY(-50%);
         background-color: white;
-        color: gray;
+        color: $gray-600;
         padding: 0 0.3rem;
         margin: 0 0.5rem;
         transition: 0.1s ease-out;
@@ -123,15 +123,74 @@
     input {
         width: 100%;
         padding: 0.625rem 2.2rem 0.625rem 0.875rem;
-        font-size: 0.8rem;
-        color: #212529;
-        background-color: #fff;
+        font-size:$font-size-base;
+        color: $gray-900;
+        background-color: $white;
         background-clip: padding-box;
-        border: 1px solid #ced4da;
+        border: 1px solid $gray-400;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        border-radius: 0.25rem;
+        border-radius: $base-border-radius;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        &:focus {
+            border-color: $purple;
+        }
+    }
+    input:focus + label {
+        color: $purple;
+        top: 0;
+        transform: translateY(-50%) scale(0.9);
+    }
+    input:not(:placeholder-shown) + label {
+        top: 0;
+        transform: translateY(-50%) scale(0.9);
+    }
+}
+.outlined-error-email-msg {
+    position: relative;
+    font-size: $font-size-xxsm;
+    padding: 0 $base-padding-xsm;
+    color: $gray-600;
+}
+
+// Outlined Text Fields Default Start
+
+.outlined-textfield-default {
+    position: relative;
+    margin: 0 0 0.625rem 0;
+    label {
+        position: absolute;
+        font-size:$font-size-base;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $white;
+        color: $gray-600;
+        padding: 0 0.3rem;
+        margin: 0 0.5rem;
+        transition: 0.1s ease-out;
+        transform-origin: left top;
+        pointer-events: none;
+    }
+    .icon {
+        position: absolute;
+        right: 10px;
+        top: 0.7rem;
+        color: $purple;
+    }
+    input {
+        width: 100%;
+        padding: 0.625rem 2.2rem 0.625rem 0.875rem;
+        font-size:$font-size-base;
+        color: $gray-900;
+        background-color: $white;
+        background-clip: padding-box;
+        border: 1px solid $gray-400;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: $base-border-radius;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         &:focus {
             border-color: $purple;
@@ -156,12 +215,12 @@
     margin: 0 0 0.625rem 0;
     label {
         position: absolute;
-        font-size: 0.8rem;
+        font-size:$font-size-base;
         left: 0;
         top: 50%;
         transform: translateY(-50%);
         background-color: white;
-        color: gray;
+        color: $gray-600;
         padding: 0 0.3rem;
         margin: 0 0.5rem;
         transition: 0.1s ease-out;
@@ -177,15 +236,15 @@
     input {
         width: 100%;
         padding: 0.625rem 2.2rem 0.625rem 0.875rem;
-        font-size: 0.8rem;
-        color: #212529;
-        background-color: #fff;
+        font-size:$font-size-base;
+        color: $gray-900;
+        background-color: $white;
         background-clip: padding-box;
-        border: 1px solid #ced4da;
+        border: 1px solid $gray-400;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        border-radius: 0.25rem;
+        border-radius: $base-border-radius;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         &:focus {
             border-color: $teal;
@@ -207,15 +266,14 @@
 
 .outlined-textfield-error {
     position: relative;
-    margin: 0 0 0.625rem 0;
     label {
         position: absolute;
-        font-size: 0.8rem;
+        font-size:$font-size-base;
         left: 0;
         top: 50%;
         transform: translateY(-50%);
         background-color: white;
-        color: gray;
+        color: $gray-600;
         padding: 0 0.3rem;
         margin: 0 0.5rem;
         transition: 0.1s ease-out;
@@ -231,15 +289,15 @@
     input {
         width: 100%;
         padding: 0.625rem 2.2rem 0.625rem 0.875rem;
-        font-size: 0.8rem;
-        color: #212529;
-        background-color: #fff;
+        font-size:$font-size-base;
+        color: $gray-900;
+        background-color: $white;
         background-clip: padding-box;
-        border: 1px solid #ced4da;
+        border: 1px solid $gray-400;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        border-radius: 0.25rem;
+        border-radius: $base-border-radius;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         &:focus {
             border-color: $red;
@@ -254,6 +312,12 @@
         top: 0;
         transform: translateY(-50%) scale(0.9);
     }
+}
+.outlined-error-msg {
+    position: relative;
+    font-size: $font-size-xxsm;
+    padding: 0 $font-size-xsm;
+    color: $red;
 }
 // Outlined Text Fields error End
 
@@ -273,8 +337,8 @@
     textarea {
         background: none;
         color: $gray-900;
-        font-size: 0.8rem;
-        padding: 10px 10px 10px 5px;
+        font-size:$font-size-base;
+        padding: $base-padding-xsm $base-padding-xsm $base-padding-xsm $base-padding-sm;
         display: block;
         border: none;
         border-radius: 0;
@@ -287,7 +351,7 @@
         &:focus ~ label,
         &:valid ~ label {
             top: -14px;
-            font-size: 0.8rem;
+            font-size:$font-size-base;
             color: $blue;
         }
     }
@@ -298,8 +362,8 @@
 
     label {
         color: $gray-600;
-        font-size: 0.8rem;
-        font-weight: normal;
+        font-size:$font-size-base;
+        font-weight: $font-weight-base;
         position: absolute;
         pointer-events: none;
         left: 5px;
