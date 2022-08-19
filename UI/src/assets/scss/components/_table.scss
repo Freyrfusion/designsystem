@@ -1,0 +1,106 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: $font-size-base;
+    th {
+        background: $gray-100;
+    }
+    tr,
+    td {
+        color: $gray-600;
+        background: $white;
+        border-bottom: solid 2px #eeeeee;
+    }
+
+    td:nth-child(1) {
+        color: $gray-600;
+    }
+    td:nth-child(2) {
+        color: $black;
+    }
+    td:nth-child(3) {
+        color: $gray-600;
+    }
+    td:nth-child(4) {
+        color: $gray-600;
+    }
+    td:nth-child(5) {
+        color: $gray-600;
+    }
+    .default-bg {
+        background: #eee;
+        border-radius: 4px;
+        padding: 2px 5px;
+    }
+    .active {
+        color: $success !important;
+        background: #eaf5ea;
+        padding: 2px 5px;
+        border-radius: 4px;
+    }
+    .blocked {
+        color: $danger !important;
+        background: #f1e9e9;
+        padding: 2px 5px;
+        border-radius: 4px;
+    }
+    .notveryfied {
+        color: $gray-600 !important;
+        background: $gray-200;
+        padding: 2px 5px;
+        border-radius: 4px;
+    }
+    .veryfied {
+        color: $gray-700 !important;
+        background: $gray-300;
+        padding: 2px 5px;
+        border-radius: 4px;
+    }
+    .my-table-drp {
+        .dropbtn-1 {
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            padding: 0 16px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 0 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .show {
+            display: block;
+        }
+    }
+}
+
+th,
+td {
+    text-align: left;
+    padding: $base-padding-xsm;
+}
+
+//   tr:nth-child(even) {
+//     color: $gray-500;
+//   }

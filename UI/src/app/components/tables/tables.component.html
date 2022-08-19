@@ -1,44 +1,224 @@
 <div class="ngtabs">
     <ul>
         <li id="tab1" *ngFor="let tab of commontablist; index as i; first as isFirst">
-          <a (click)="openTabList(i)" [ngClass]="{'active': selectedList === i }" href="javascript:void(0)">
-            {{tab}}</a>
+            <a (click)="openTabList(i)" [ngClass]="{'active': selectedList === i }" href="javascript:void(0)">
+                {{tab}}</a>
         </li>
-      </ul>
+    </ul>
 
-      <div class="ng-tabcontent">
-        <ng-container *ngIf="selectedList === 0">  
-            <p>tables works!</p>
+    <div class="ng-tabcontent">
+        <ng-container *ngIf="selectedList === 0">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Tax Number</th>
+                    <th>Token</th>
+                    <th>Status</th>
+                    <th>&nbsp;</th>
+                </tr>
+
+
+
+                <tr>
+                    <td>1</td>
+                    <td>Kracher Installationen und hasustechnik</td>
+                    <td>Kracher@rehan.com</td>
+                    <td>AT 69954893</td>
+                    <td> <span class="default-bg"> Used </span></td>
+                    <td> <span class="active"> Active </span></td>
+                    <td> 
+                        <div class="my-table-drp"> 
+                        <div class="dropdown">
+                        <button id="myBtn" class="dropbtn-1">...</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a>Setup preview</a>
+                          <a>Block</a>
+                          <a>Edit</a>
+                          <a>Delete</a>
+                          <a>Verify</a>
+                          <a>Renew token</a>
+                        </div>
+                      </div> 
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Kracher Installationen und hasustechnik</td>
+                    <td>Kracher@rehan.com</td>
+                    <td>AT 69954893</td>
+                    <td> <span class="default-bg"> Used </span></td>
+                    <td> <span class="blocked"> Blocked </span></td>
+                    <td>
+                        <div class="my-table-drp"> 
+                            <div class="dropdown">
+                            <button id="myBtn" class="dropbtn-1">...</button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a>Setup preview</a>
+                              <a>Block</a>
+                              <a>Edit</a>
+                              <a>Delete</a>
+                              <a>Verify</a>
+                              <a>Renew token</a>
+                            </div>
+                          </div> 
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Kracher Installationen und hasustechnik</td>
+                    <td>Kracher@rehan.com</td>
+                    <td>AT 69954893</td>
+                    <td> <span class="default-bg"> Used </span></td>
+                    <td> <span class="notveryfied"> Not veryfied </span></td>
+                    <td> <div class="my-table-drp"> 
+                        <div class="dropdown">
+                        <button id="myBtn" class="dropbtn-1">...</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a>Setup preview</a>
+                          <a>Block</a>
+                          <a>Edit</a>
+                          <a>Delete</a>
+                          <a>Verify</a>
+                          <a>Renew token</a>
+                        </div>
+                      </div> 
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Kracher Installationen und hasustechnik</td>
+                    <td>Kracher@rehan.com</td>
+                    <td>AT 69954893</td>
+                    <td> <span class="default-bg"> Used </span></td>
+                    <td> <span class="veryfied"> verified </span></td>
+                    <td> <div class="my-table-drp"> 
+                        <div class="dropdown">
+                        <button id="myBtn" class="dropbtn-1">...</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a>Setup preview</a>
+                          <a>Block</a>
+                          <a>Edit</a>
+                          <a>Delete</a>
+                          <a>Verify</a>
+                          <a>Renew token</a>
+                        </div>
+                      </div> 
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Kracher Installationen und hasustechnik</td>
+                    <td>Kracher@rehan.com</td>
+                    <td>AT 69954893</td>
+                    <td> <span class="default-bg"> Used </span></td>
+                    <td> <span class="active"> Active </span></td>
+                    <td><div class="my-table-drp"> 
+                        <div class="dropdown">
+                        <button id="myBtn" class="dropbtn-1">...</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a>Setup preview</a>
+                          <a>Block</a>
+                          <a>Edit</a>
+                          <a>Delete</a>
+                          <a>Verify</a>
+                          <a>Renew token</a>
+                        </div>
+                      </div> 
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Kracher Installationen und hasustechnik</td>
+                    <td>Kracher@rehan.com</td>
+                    <td>AT 69954893</td>
+                    <td> <span class="default-bg"> Used </span></td>
+                    <td> <span class="blocked"> Blocked </span></td>
+                    <td><div class="my-table-drp"> 
+                        <div class="dropdown">
+                        <button id="myBtn" class="dropbtn-1">...</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a>Setup preview</a>
+                          <a>Block</a>
+                          <a>Edit</a>
+                          <a>Delete</a>
+                          <a>Verify</a>
+                          <a>Renew token</a>
+                        </div>
+                      </div> 
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Kracher Installationen und hasustechnik</td>
+                    <td>Kracher@rehan.com</td>
+                    <td>AT 69954893</td>
+                    <td> <span class="default-bg"> Used </span></td>
+                    <td> <span class="notveryfied"> Not veryfied </span></td>
+                    <td><div class="my-table-drp"> 
+                        <div class="dropdown">
+                        <button id="myBtn" class="dropbtn-1">...</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a>Setup preview</a>
+                          <a>Block</a>
+                          <a>Edit</a>
+                          <a>Delete</a>
+                          <a>Verify</a>
+                          <a>Renew token</a>
+                        </div>
+                      </div> 
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Kracher Installationen und hasustechnik</td>
+                    <td>Kracher@rehan.com</td>
+                    <td>AT 69954893</td>
+                    <td> <span class="default-bg"> Used </span></td>
+                    <td> <span class="veryfied"> verified </span></td>
+                    <td><div class="my-table-drp"> 
+                        <div class="dropdown">
+                        <button id="myBtn" class="dropbtn-1">...</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a>Setup preview</a>
+                          <a>Block</a>
+                          <a>Edit</a>
+                          <a>Delete</a>
+                          <a>Verify</a>
+                          <a>Renew token</a>
+                        </div>
+                      </div> 
+                    </div></td>
+                </tr>
+            </table>
         </ng-container>
-        <ng-container *ngIf="selectedList === 1"> 
-            <button ngxClipboard (click)='copyToClipboard(tabshtmlcopy, $event)' class="copybutton"
-            [innerHTML]="copytxt"></button>
+        <ng-container *ngIf="selectedList === 1">
+            <button ngxClipboard (click)='copyToClipboard(sweethtmlcopy, $event)' class="copybutton"
+                [innerHTML]="copytxt"></button>
             <pre prism language="javascript" class="language-js">
-                <code #tabshtmlcopy>
+                <code #sweethtmlcopy>
                     <![CDATA[
                    
                     ]]>
                 </code>
             </pre>
         </ng-container>
-        <ng-container *ngIf="selectedList === 2">  
-            <h5> We will add content soon!</h5></ng-container>
-      </div>
+        <ng-container *ngIf="selectedList === 2">
+            <h5> We will add content soon!</h5>
+        </ng-container>
+    </div>
 </div>
-    
 
 
+<script>
+    // Get the button, and when the user clicks on it, execute myFunction
+    document.getElementById("myBtn").onclick = function () { myFunction() };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+</script>

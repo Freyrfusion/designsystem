@@ -9514,6 +9514,102 @@ p.sub-text {
   left: 0%;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.8rem;
+}
+table th {
+  background: #f8f9fa;
+}
+table tr,
+table td {
+  color: #6c757d;
+  background: #fff;
+  border-bottom: solid 2px #eeeeee;
+}
+table td:nth-child(1) {
+  color: #6c757d;
+}
+table td:nth-child(2) {
+  color: #000;
+}
+table td:nth-child(3) {
+  color: #6c757d;
+}
+table td:nth-child(4) {
+  color: #6c757d;
+}
+table td:nth-child(5) {
+  color: #6c757d;
+}
+table .default-bg {
+  background: #eee;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+table .active {
+  color: #198754 !important;
+  background: #eaf5ea;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+table .blocked {
+  color: #D14343 !important;
+  background: #f1e9e9;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+table .notveryfied {
+  color: #6c757d !important;
+  background: #e9ecef;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+table .veryfied {
+  color: #495057 !important;
+  background: #dee2e6;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+table .my-table-drp .dropbtn-1 {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  padding: 0 16px;
+}
+table .my-table-drp .dropdown {
+  position: relative;
+  display: inline-block;
+}
+table .my-table-drp .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  overflow: auto;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+table .my-table-drp .dropdown-content a {
+  color: black;
+  padding: 0 16px;
+  text-decoration: none;
+  display: block;
+}
+table .my-table-drp .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+table .my-table-drp .show {
+  display: block;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.625rem;
+}
+
 .header-top {
   width: 100%;
   background: #fff;

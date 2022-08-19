@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 import { CommonService } from 'src/app/services/common.service';
 import { CopyserviceService } from 'src/app/services/copy/copyservice.service';
 
@@ -19,6 +20,11 @@ export class TablesComponent implements OnInit {
     this.selectedList = 0;
     this.copyToClipboard = this._copy.copyToClipboard;
     this.copytxt = this._copy.copytxt;
+
+    document.getElementById("myBtn").onclick = function () { myFunction() };
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
   }
   openTabList(commontablist: any) {
     this.selectedList = commontablist;
