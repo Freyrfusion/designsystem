@@ -9514,75 +9514,83 @@ p.sub-text {
   left: 0%;
 }
 
-table {
+.table1 {
   border-collapse: collapse;
   width: 100%;
   font-size: 0.8rem;
 }
-table th {
+.table1 tr,
+.table1 th {
   background: #f8f9fa;
+  text-align: left;
+  padding: 0.625rem;
 }
-table tr,
-table td {
+.table1 tr {
+  border: solid 2px #f5f5f5;
+}
+.table1 tr,
+.table1 td {
   color: #6c757d;
   background: #fff;
-  border-bottom: solid 2px #eeeeee;
+  border-bottom: solid 1px #f5f5f5;
+  text-align: left;
+  padding: 0.625rem;
 }
-table td:nth-child(1) {
+.table1 td:nth-child(1) {
   color: #6c757d;
 }
-table td:nth-child(2) {
+.table1 td:nth-child(2) {
   color: #000;
 }
-table td:nth-child(3) {
+.table1 td:nth-child(3) {
   color: #6c757d;
 }
-table td:nth-child(4) {
+.table1 td:nth-child(4) {
   color: #6c757d;
 }
-table td:nth-child(5) {
+.table1 td:nth-child(5) {
   color: #6c757d;
 }
-table .default-bg {
+.table1 .default-bg {
   background: #eee;
   border-radius: 4px;
   padding: 2px 5px;
 }
-table .active {
+.table1 .active {
   color: #198754 !important;
   background: #eaf5ea;
   padding: 2px 5px;
   border-radius: 4px;
 }
-table .blocked {
+.table1 .blocked {
   color: #D14343 !important;
   background: #f1e9e9;
   padding: 2px 5px;
   border-radius: 4px;
 }
-table .notveryfied {
+.table1 .notveryfied {
   color: #6c757d !important;
   background: #e9ecef;
   padding: 2px 5px;
   border-radius: 4px;
 }
-table .veryfied {
+.table1 .veryfied {
   color: #495057 !important;
   background: #dee2e6;
   padding: 2px 5px;
   border-radius: 4px;
 }
-table .my-table-drp .dropbtn-1 {
+.table1 .my-table-drp .dropbtn-1 {
   font-size: 16px;
   border: none;
   cursor: pointer;
   padding: 0 16px;
 }
-table .my-table-drp .dropdown {
+.table1 .my-table-drp .dropdown {
   position: relative;
   display: inline-block;
 }
-table .my-table-drp .dropdown-content {
+.table1 .my-table-drp .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -9591,23 +9599,130 @@ table .my-table-drp .dropdown-content {
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-table .my-table-drp .dropdown-content a {
+.table1 .my-table-drp .dropdown-content a {
   color: black;
   padding: 0 16px;
   text-decoration: none;
   display: block;
 }
-table .my-table-drp .dropdown-content a:hover {
+.table1 .my-table-drp .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
-table .my-table-drp .show {
+.table1 .my-table-drp .show {
   display: block;
 }
 
-th,
-td {
+.table2 {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.8rem;
+  border: solid 1px #f5f5f5;
+}
+.table2 tr,
+.table2 th {
+  background: #f8f9fa;
   text-align: left;
   padding: 0.625rem;
+}
+.table2 tr,
+.table2 td {
+  color: #6c757d;
+  background: #fff;
+  border-bottom: solid 2px #f5f5f5;
+  text-align: left;
+  padding: 0.625rem;
+}
+.table2 td:nth-child(1) {
+  color: #6c757d;
+  width: 190px;
+}
+.table2 td:nth-child(2) {
+  color: #000;
+}
+.table2 td:nth-child(3) {
+  color: #6c757d;
+}
+.table2 td:nth-child(4) {
+  color: #6c757d;
+}
+.table2 td:nth-child(5) {
+  color: #6c757d;
+}
+.table2 .cmp-section .check-lt {
+  float: left;
+  margin: 10px 5px 0 0;
+}
+.table2 .cmp-section .cmp-logo {
+  width: 40px;
+  height: 40px;
+  float: left;
+  background: #f5f5f5;
+  border-radius: 50%;
+  margin: 0 10px 0 5px;
+  padding: 6px;
+}
+.table2 .usrimg-section .user-img {
+  width: 20px;
+  height: 20px;
+  float: left;
+  background: #dee2e6;
+  border-radius: 50%;
+  margin: 0 2px 0 2px;
+}
+.table2 .active {
+  color: #198754 !important;
+  background: #eaf5ea;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+.table2 .blocked {
+  color: #D14343 !important;
+  background: #f1e9e9;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+.table2 .notveryfied {
+  color: #6c757d !important;
+  background: #e9ecef;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+.table2 .veryfied {
+  color: #495057 !important;
+  background: #dee2e6;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+.table2 .my-table-drp .dropbtn-1 {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  padding: 0 16px;
+}
+.table2 .my-table-drp .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.table2 .my-table-drp .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  overflow: auto;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.table2 .my-table-drp .dropdown-content a {
+  color: black;
+  padding: 0 16px;
+  text-decoration: none;
+  display: block;
+}
+.table2 .my-table-drp .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.table2 .my-table-drp .show {
+  display: block;
 }
 
 .header-top {
