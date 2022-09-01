@@ -1,18 +1,44 @@
 <div class="ngtabs">
     <ul>
         <li id="tab1" *ngFor="let tab of commontablist; index as i; first as isFirst">
-          <a (click)="openTabList(i)" [ngClass]="{'active': selectedList === i }" href="javascript:void(0)">
-            {{tab}}</a>
+            <a (click)="openTabList(i)" [ngClass]="{'active': selectedList === i }" href="javascript:void(0)">
+                {{tab}}</a>
         </li>
-      </ul>
+    </ul>
 
-      <div class="ng-tabcontent">
-        <ng-container *ngIf="selectedList === 0">  
-            <p>tooltips works!</p>
+    <div class="ng-tabcontent">
+        <ng-container *ngIf="selectedList === 0">
+            
+                    <div class="tooltip-top">
+                        <span class="hoverme"> Top </span>
+                        <span class="tooltiptext-content-top">Tooltip text</span>
+                    </div>
+                
+             
+                    <div class="tooltip-bottom">
+                        <span class="hoverme"> Bottom </span>
+                        <span class="tooltiptext-content-bottom">Tooltip text</span>
+                      </div>
+               
+               
+                    <div class="tooltip-right">
+                        <span class="hoverme"> Right </span>
+                        <span class="tooltiptext-content-right">Tooltip text</span>
+                      </div>  
+                
+                
+                    <div class="tooltip-left">
+                        <span class="hoverme"> Left </span>
+                        <span class="tooltiptext-content-left">Tooltip text</span>
+                      </div>
+                      
+               
+           
+
         </ng-container>
-        <ng-container *ngIf="selectedList === 1"> 
+        <ng-container *ngIf="selectedList === 1">
             <button ngxClipboard (click)='copyToClipboard(tooltipshtmlcopy, $event)' class="copybutton"
-            [innerHTML]="copytxt"></button>
+                [innerHTML]="copytxt"></button>
             <pre prism language="javascript" class="language-js">
                 <code #tooltipshtmlcopy>
                     <![CDATA[
@@ -21,18 +47,8 @@
                 </code>
             </pre>
         </ng-container>
-        <ng-container *ngIf="selectedList === 2">  
-            <h5> We will add content soon!</h5></ng-container>
-      </div>
+        <ng-container *ngIf="selectedList === 2">
+            <h5> We will add content soon!</h5>
+        </ng-container>
+    </div>
 </div>
-    
-
-
-
-
-
-
-
-
-
-
