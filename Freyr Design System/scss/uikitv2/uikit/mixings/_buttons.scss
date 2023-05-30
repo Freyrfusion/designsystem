@@ -1,0 +1,105 @@
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+@mixin button-variant($background, $border, $active-background: darken($background, 7.5%), $active-border: darken($border, 10%)) {
+  @include color-yiq($background);
+  background-color: $background;
+  border-color: $border;
+  box-shadow:$btn-shadow-top rgba($border, .15), $btn-shadow-round rgba($border, .2), $btn-shadow-bottom rgba($border, .12);
+
+  &:hover {
+    @include color-yiq($background);
+    background-color: $active-background;
+    border-color: $active-border;
+    box-shadow:$btn-hover-shadow-top rgba($border, .42), $btn-hover-shadow-round rgba($border, .12), $btn-hover-shadow-bottom rgba($border, .2);
+  }
+
+  &:focus,
+  &.focus {
+    // Avoid using mixin so we can pass custom focus shadow properly
+    @if $enable-shadows {
+     box-shadow:$btn-hover-shadow-top rgba($border, .42), $btn-hover-shadow-round rgba($border, .12), $btn-hover-shadow-bottom rgba($border, .2);
+    } @else {
+      box-shadow: 0 0 0 3px rgba($border, .5);
+    }
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    background-color: $background;
+    border-color: $border;
+  }
+
+  &:active,
+  &.active,
+  .show > &.dropdown-toggle {
+    background-color: $active-background;
+    background-image: none; // Remove the gradient for the pressed/active state
+    border-color: $active-border;
+     box-shadow:$btn-hover-shadow-top rgba($border, .42), $btn-hover-shadow-round rgba($border, .12), $btn-hover-shadow-bottom rgba($border, .2);
+  }
+    .btn-label {
+        @include color-yiq($background);
+         background-color:darken( $background,4%);
+        //background: rgba(0, 0, 0, 0.05);
+        display: inline;
+        margin: 0px 10px 0px -10px;
+        padding: 6px 14px;
+    }
+}
+
+
+
+@mixin button-outline-variant($color,$color-hover: #fff) {
+  color: $color;
+  background-color: transparent;
+  background-image: none;
+  border-color: $color;
+   box-shadow:$btn-shadow-top rgba($color, .15), $btn-shadow-round rgba($color, .2), $btn-shadow-bottom rgba($color, .12);
+
+  @include hover {
+    color: $color-hover;
+    background-color: $color;
+    border-color: $color;
+       box-shadow:$btn-hover-shadow-top rgba($color, .42), $btn-hover-shadow-round rgba($color, .12), $btn-hover-shadow-bottom rgba($color, .2);
+  }
+
+  &:focus,
+  &.focus {
+      //box-shadow: 0 0 0 3px rgba($color, .5);
+       box-shadow:$btn-hover-shadow-top rgba($color, .42), $btn-hover-shadow-round rgba($color, .12), $btn-hover-shadow-bottom rgba($color, .2);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $color;
+    background-color: transparent;
+  }
+
+  &:active,
+  &.active,
+  .show > &.dropdown-toggle {
+    color: $color-hover;
+    background-color: $color;
+    border-color: $color;
+  }
+    .btn-label {
+    
+         background-color:darken( $white,4%);
+        //background: rgba(0, 0, 0, 0.05);
+        display: inline;
+        margin: 0px 10px 0px -10px;
+        padding: 5px 14px;
+    }
+}
+
+// Button sizes
+@mixin button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
+  padding: $padding-y $padding-x;
+  font-size: $font-size;
+  line-height: $line-height;
+  @include border-radius($border-radius);
+}

@@ -1,0 +1,18 @@
+.card[data-widget=dropzone] .card-body .dropzone{/* margin:50px; */background:#f0f6ff;transition:all .3s ease;}
+.card[data-widget=dropzone] .card-body .dropzone#singleFileUpload{border:2px dashed #7468bd;}
+.card[data-widget=dropzone] .card-body .dropzone#multiFileUpload{border:2px dashed #F64A91}
+.card[data-widget=dropzone] .card-body .dropzone#fileTypeValidation{border:2px dashed #42a4f4}
+/*.card[data-widget=dropzone] .card-body .dropzone:hover{margin:20px;cursor:pointer}
+.card[data-widget=dropzone] .card-body .dropzone:hover .btn{margin-top:0}*/
+.card[data-widget=dropzone] .card-body .dz-message{background:#f0f6ff;padding:20px;transition:all .3s ease;border-radius:5px;    margin: 2em 0;}
+.card[data-widget=dropzone] .card-body .dz-message .btn{margin-top:15px}
+.card[data-widget=dropzone] .card-body .dz-message i.gradient-1:before{background:#5c84e8;background:linear-gradient(135deg,#5c84e8 1%,#7468bd 65%);background-clip:text;text-fill-color:transparent;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.card[data-widget=dropzone] .card-body .dz-message i.gradient-2:before{background:#640aef;background:linear-gradient(135deg,#640aef 0,#f64a91 82%);background-clip:text;text-fill-color:transparent;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.card[data-widget=dropzone] .card-body .dz-message i.gradient-3:before{background:#2ec7b1;background:linear-gradient(135deg,#2ec7b1 1%,#42a4f4 65%);background-clip:text;text-fill-color:transparent;-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+
+.card[data-widget=dropzone] .card-body .dz-message i.icon-dropzone{
+    font-size: 60px;
+    display: block;
+    text-align: center;
+        margin: 100px 0;
+}

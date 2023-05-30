@@ -1,0 +1,354 @@
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<div class="uikit-section transparent">
+    <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card m-b-20">
+                                        <h5 class="card-header">Basic Example</h5>
+                                        <div class="card-body">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                                </div>
+                                            </div>
+                                            <label for="basic-url">Your vanity URL</label>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                                                </div>
+                                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                            </div>
+
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">$</span>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">.00</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">With textarea</span>
+                                                </div>
+                                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card m-b-20">
+                                        <h5 class="card-header">Sizing</h5>
+                                        <div class="card-body">
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                            </div>
+
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                                            </div>
+
+                                            <div class="input-group input-group-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card m-b-20">
+                                        <h5 class="card-header">Checkboxes and radios</h5>
+                                        <div class="card-body">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">
+                                                        <label class="control control-outline control-secondary control--checkbox">
+                                                            <input type="checkbox">
+                                                            <div class="control__indicator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                            </div>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">
+                                                        <label class="control control-outline control-secondary control--radio">
+                                                            <input type="radio" name="stateRadio8" id="stateRadio8">
+                                                            <div class="control__indicator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Text input with radio button">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card m-b-20">
+                                        <h5 class="card-header">Multiple inputs</h5>
+                                        <div class="card-body">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="">First and last name</span>
+                                                </div>
+                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card m-b-20">
+                                        <h5 class="card-header">Multiple addons</h5>
+                                        <div class="card-body">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">$</span>
+                                                    <span class="input-group-text">0.00</span>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                            </div>
+
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">$</span>
+                                                    <span class="input-group-text">0.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card m-b-20">
+                                        <h5 class="card-header">Custom file input</h5>
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="validatedCustomLabel">File Upload</label>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" multiple="" id="validatedCustomFile" required="">
+                                                        <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                                                        <div class="invalid-feedback">Example custom file feedback</div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" multiple="" id="validatedCustomIconLabel" required="">
+                                                        <label class="custom-file-label btn-icon" for="validatedCustomIconLabel">Choose file...</label>
+                                                        <div class="invalid-feedback">Example custom file feedback</div>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Upload</span>
+                                                    </div>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-group mb-3">
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                                        <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                                                    </div>
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text" id="">Upload</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <button class="btn btn-primary" type="button">Button</button>
+                                                    </div>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" id="inputGroupFile03">
+                                                        <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" id="inputGroupFile04">
+                                                        <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+                                                    </div>
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary" type="button">Button</button>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="card m-b-20">
+                                        <h5 class="card-header">Buttons with dropdowns</h5>
+                                        <div class="card-body">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div role="separator" class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                            </div>
+
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div role="separator" class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card m-b-20">
+                                        <h5 class="card-header">Segmented buttons</h5>
+                                        <div class="card-body">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <button type="button" class="btn btn-primary">Action</button>
+                                                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div role="separator" class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                                            </div>
+
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                                                <div class="input-group-append">
+                                                    <button type="button" class="btn btn-primary">Action</button>
+                                                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div role="separator" class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card m-b-20">
+                                        <h5 class="card-header">Button addons</h5>
+                                        <div class="card-body">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-primary" type="button">Button</button>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-primary" type="button">Button</button>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-primary" type="button">Button</button>
+                                                    <button class="btn btn-outline-primary" type="button">Button</button>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-primary" type="button">Button</button>
+                                                    <button class="btn btn-primary" type="button">Button</button>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary btn-icon" type="button"><i class="zmdi zmdi-search"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <h5 class="card-header">With Icons</h5>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text" id="basic-icon-addon1"><i class="icon icon-pie-chart2"></i></span>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="Icon Left" aria-label="Icon Left" aria-describedby="basic-icon-addon1">
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="icon icon-pie-chart2"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="icon icon-pie-chart2"></i></span>
+                                                </div>
+                                            </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" placeholder="Icon Right" aria-label="Icon Right" aria-describedby="basic-addon2">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text" id="basic-addon2"><i class="icon icon-pie-chart2"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="icon icon-pie-chart2"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="icon icon-pie-chart2"></i></span>
+                                                </div>
+                                            </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+</div>

@@ -1,0 +1,145 @@
+//@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+$zero:0;
+$imp:!important;
+
+
+//
+// Color system
+//
+
+$white:  #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:  #000 !default;
+
+
+//$blue:    #1976d2 !default;
+
+$purple:   #5c4ac7 !default;
+$indigo:  #6610f2 !default;
+$pink:    #e83e8c !default;
+$darkred: #dc3545 !default;
+$red:     #ef5350 !default;
+$orange:  #fd7e14 !default;
+$warning: #ffb22b !default;
+$yellows: #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+$cyangreen :#26dad2   !default;
+
+$blue: $primary  !default;
+$blue-oppo:#10B5E8  !default;
+
+// Theme Colors
+
+
+
+$colors: (
+  blue: $blue,
+  blueoppo:$blue-oppo,
+  indigo: $indigo,
+  purple: $purple,
+  pink: $pink,
+  red: $red,
+  orange: $orange,
+  yellow: $yellows,
+  green: $green,
+  teal: $teal,
+  cyan: $cyan,
+  white: $white,
+  gray: $gray-600,
+  gray-dark: $gray-800
+) !default;
+
+$theme-colors: (
+  primary: $primary,
+  blue:$blue-oppo,
+  secondary: $gray-600,
+  semiwhite:$white,
+  success: $green,
+  info: $cyan,
+  warning: $yellows,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800
+) !default;
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval: 8% !default;
+
+
+
+// Borders
+$border-width:1px;
+$border-width2:2px;
+$border-width3:3px;
+
+$border-solid:solid;
+$border-dashed:dashed;
+$border-dotted:dotted;
+
+$border-lightgrey:#E0E0E0;
+$border-grey:#ccc;
+
+$border-light:1px solid #E0E0E0;
+$border-form:1px solid #f7f7f7;
+
+$border-radius:          .25rem !default;
+$border-radius-lg:       .3rem !default;
+$border-radius-sm:       .2rem !default;
+
+// Shadows
+$light-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+
+// Text related
+$font-family: 'Roboto', sans-serif;
+//$font-family:  'Open Sans', sans-serif;
+//$font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+//$font-family: 'Montserrat', sans-serif;
+
+$font-11:11px; //.8vw
+$font-size-small:12px; //0.9vw
+$font-size-base:13px; //0.95vw
+$font-size-medium:14px; //1.18vw
+$font-size-large:18px; //1.32vw
+$font-size-xlarge:21px; //1.46vw
+$font-size-xxlarge:24px !default; //2vw
+$font-size-xxxlarge:36px !default; //3vw
+
+// Roboto Default font
+/*$font-size-base:      13px !default;
+
+$font-size-medium:    16px !default; 
+$font-size-large:     18px !default;
+$font-size-xlarge:    21px !default;
+$font-size-xxlarge:   24px !default;
+$font-size-xxxlarge:  36px !default;
+    */
+$input-font:      13px !default;
+$input-label-font:      12px !default;
+//$button-font:      16px !default;
+
+//$input-font:      12px !default;
+$button-font:      12px !default;
+
+$weight-300:300;
+$weight-400:400;
+$weight-500:500;
+$weight-600:600;
+$weight-700:700;
+
+
+// Paddings
+$p-15:15px;
+
+

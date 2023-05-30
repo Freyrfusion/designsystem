@@ -1,0 +1,146 @@
+
+// Material Forms
+
+.form-material .form-group {
+    overflow: hidden
+}
+.form-material .form-control {
+    background-color: transparent;
+    background-position: center bottom, center calc(100% - 1px);
+    background-repeat: no-repeat;
+    background-size: 0 2px, 100% 1px;
+    padding: 0;
+    -webkit-transition: background 0s ease-out 0s;
+    -o-transition: background 0s ease-out 0s;
+    transition: background 0s ease-out 0s
+}
+.form-material .form-control,
+.form-material .form-control.focus,
+.form-material .form-control:focus {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1976d2), to(#1976d2)), -webkit-gradient(linear, left top, left bottom, from(rgba(120, 130, 140, 0.13)), to(rgba(120, 130, 140, 0.13)));
+    background-image: -webkit-linear-gradient(#1976d2, #1976d2), -webkit-linear-gradient(rgba(120, 130, 140, 0.13), rgba(120, 130, 140, 0.13));
+    background-image: -o-linear-gradient(#1976d2, #1976d2), -o-linear-gradient(rgba(120, 130, 140, 0.13), rgba(120, 130, 140, 0.13));
+    background-image: linear-gradient(#1976d2, #1976d2), linear-gradient(rgba(120, 130, 140, 0.13), rgba(120, 130, 140, 0.13));
+    border: 0 none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    float: none
+}
+.form-material .form-control.focus,
+.form-material .form-control:focus {
+    background-size: 100% 2px, 100% 1px;
+    outline: 0 none;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s
+}
+.form-control-line .form-group {
+    overflow: hidden
+}
+.form-control-line .form-control {
+    border: 0px;
+    border-radius: 0px;
+    padding-left: 0px;
+    border-bottom: $input-border-material
+}
+.form-control-line .form-control:focus {
+    border-bottom: 1px solid #1976d2
+}
+.floating-labels .form-group {
+    position: relative
+}
+.floating-labels .form-control {
+    padding: 10px 10px 10px 0;
+    display: block;
+    border: none;
+    border-radius: 0px;
+    border-bottom: $input-border-material;
+    box-shadow: none;
+    &:focus{
+        border: none;
+        box-shadow: none;
+    }
+}
+
+.floating-labels select.form-control>option {
+    font-size: $font-size-base;
+}
+.floating-labels .has-error .form-control {
+    border-bottom: 1px solid #ef5350
+}
+.floating-labels .has-warning .form-control {
+    border-bottom: 1px solid #ffb22b
+}
+.floating-labels .has-success .form-control {
+    border-bottom: 1px solid #26dad2
+}
+.floating-labels .form-control:focus {
+    outline: none;
+    border: none
+}
+.floating-labels label {
+    color: $gray-600;
+    position: absolute;
+    cursor: auto;
+    top: 5px;
+    -o-transition: 0.2s ease all;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all
+}
+
+.floating-labels .focused label {
+    top: -20px;
+    font-size: $font-size-small;
+    color: $gray-700;
+}
+.floating-labels .bar {
+    position: relative;
+    display: block
+}
+.floating-labels .bar:after,
+.floating-labels .bar:before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #1976d2;
+    -o-transition: 0.2s ease all;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all
+}
+.floating-labels .bar:before {
+    left: 50%
+}
+.floating-labels .bar:after {
+    right: 50%
+}
+.floating-labels .form-control:focus~.bar:after,
+.floating-labels .form-control:focus~.bar:before {
+    width: 50%
+}
+.floating-labels .form-control:focus~label{
+  top: -20px;
+    font-size: $font-size-small;
+    color: $gray-700;
+}
+.floating-labels .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5
+}
+.floating-labels .input-lg,
+.floating-labels .input-lg~label {
+    font-size: $font-size-xxlarge;
+}
+.floating-labels .input-sm,
+.floating-labels .input-sm~label {
+    font-size:$font-size-medium;
+}

@@ -1,0 +1,33 @@
+
+@import "uikit/demo";
+@import "vendor/bootstrap";
+// Base
+@import "helpers/variables";
+@import "uikit/variables";
+
+@import "base/reset";
+@import "base/typography";
+@import "helpers/icons";
+@import "helpers/tabs";
+@import "helpers/purecsstabs";
+@import "helpers/treeview";
+@import "helpers/animations";
+@import "helpers/scrollbar";
+@import "helpers/tooltips";
+@import "helpers/notifications";
+@import "helpers/dropzone";
+
+
+/* Custom Css*/
+@import "layout/layout";
+
+
+/* Components */
+@import "components/forms";
+@import "components/modal";
+
+// UI Kit Related Files Below
+// Reset and dependencies
+//@import "uikit/normalize";
+@import "uikit/functions";
+@import "uikit/margins";

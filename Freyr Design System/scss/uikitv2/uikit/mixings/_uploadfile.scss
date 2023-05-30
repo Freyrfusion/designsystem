@@ -1,0 +1,130 @@
+
+// Upload File
+.form-file {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    height:$select-input-height;
+    margin-bottom: 0;
+}
+.form-file-input {
+    min-width: 14rem;
+    max-width: 100%;
+    height: $select-input-height;
+    margin: 0;
+    opacity: 0;
+}
+.form-file-control {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    height: $select-input-height;
+   padding: $input-btn-padding-y $input-btn-padding-x;
+    line-height: $select-input-btn-line-height;
+    color: $gray-600;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: $white;
+    border: $input-border;
+    border-radius:$input-border-radius;
+}
+.form-file-control::before {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    z-index: 6;
+    display: block;
+    height:$select-input-height;
+   padding: $input-btn-padding-y $input-btn-padding-x;
+    line-height: $select-input-btn-line-height;
+    color: $gray-800;
+    background-color: $gray-200;
+    border: $input-border;
+    border-radius: $input-border-radius;
+  
+}
+.form-file-control::before {
+    content: "Browse";
+}
+.form-file-control:empty::after {
+    content: "Choose file...";
+     font-weight: $weight-400;
+}
+
+
+.btn-file {
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    
+}
+.btn-file>input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    font-size: 23px;
+    height: 100%;
+    width: 100%;
+    direction: ltr;
+    cursor: pointer;
+    border-radius: 0px
+}
+.fileinput .input-group-addon {
+    border: none;
+    border-bottom: $input-border-material;
+    background: #ffffff;
+    margin-bottom: 1px;
+     font-size: $font-size-medium;
+}
+.fileinput .form-control {
+    padding-top: 7px;
+    padding-bottom: 5px;
+    display: inline-block;
+    margin-bottom: 0px;
+    vertical-align: middle;
+    cursor: text
+}
+.fileinput .thumbnail {
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    text-align: center
+}
+.fileinput .thumbnail>img {
+    max-height: 100%
+}
+.fileinput .btn {
+    vertical-align: middle
+}
+.fileinput-exists .fileinput-new,
+.fileinput-new .fileinput-exists {
+    display: none
+}
+.fileinput-inline .fileinput-controls {
+    display: inline
+}
+.fileinput-filename {
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden
+}
+.form-control .fileinput-filename {
+    vertical-align: bottom
+}
+.fileinput.input-group>* {
+    position: relative;
+    z-index: 2
+}
+.fileinput.input-group>.btn-file {
+    z-index: 1
+}

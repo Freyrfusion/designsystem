@@ -1,0 +1,231 @@
+.form-style1{
+    h3{
+        border-bottom: 1px solid #eee;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        line-height: 20px;
+    }
+    .form-group{
+        margin-bottom:0;
+        label{
+            font-size: $font-size-base;
+            font-weight: 600;
+            color: $gray-800;
+            line-height:30px;
+            .color-red{
+                padding-left:3px;
+            }
+        }
+        .form-control{
+            border-width: 2px;
+            border-color: #eaeaea;
+            box-shadow: none;
+            height: 38px $imp;
+            min-height: 32px $imp;
+            &.k-widget{
+                 height: 38px $imp;
+                 min-height: 32px $imp;
+                 .form-control{
+                    height: 34px $imp;
+                 min-height: 32px $imp;
+                 }
+            }
+        }
+
+        textarea{
+             &.form-control{
+                 height:auto $imp;
+                 min-height:60px $imp; 
+             }
+        }
+        select.multiselect{
+             &.form-control{
+                 height:200px $imp;
+                 border-width: 1px;
+                 border-color: #eaeaea;
+                 option{
+                     line-height:25px;
+                     font-size:$font-size-base;
+                     padding:5px 0;
+                 }
+               
+             }
+        }
+        &.has-danger .form-control {
+            border-color: #ef5350; 
+        }
+         &.has-warning .form-control {
+            border-color: #ffb22b; 
+        }
+        &.has-success .form-control {
+            border-color: #26dad2;
+        }
+        .k-multiselect.k-header {
+            background:$white;
+            height: auto !important;
+            min-height: 38px $imp;
+        }
+        .k-datepicker{
+           span.k-picker-wrap {
+                height: 28px;
+                background:$white;
+                box-shadow: none;
+                border:0 $imp;
+            }
+             .form-control{
+                background:$white;
+                line-height: 32px;
+                 height: 32px $imp;
+            min-height: 32px $imp;
+             }
+             span.k-select{
+                background:$white;
+                   line-height: 32px;
+                 height: 32px $imp;
+            min-height: 32px $imp
+             }
+        }
+        input[type="radio"] + label{
+            padding-left: 30px;
+            line-height: 26px;
+        }
+      
+    }
+    .input-group .form-control.k-widget{
+     height: 38px $imp;
+            min-height: 32px $imp;
+    }
+}
+.k-multiselect.select-multiline-breakall  {
+    white-space: pre-line;
+    word-break: break-all;
+}
+.form-style2{
+    h3{
+        border-bottom: 1px solid #eee;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        line-height: 20px;
+    }
+    .form-group{
+        
+        .form-control{
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+            height: 40px;
+            border-color: #eee;
+        }
+        &.has-danger .form-control {
+            border-color: #ef5350; 
+        }
+         &.has-warning .form-control {
+            border-color: #ffb22b; 
+        }
+        &.has-success .form-control {
+            border-color: #26dad2; }
+        
+      
+    }
+}
+
+    h3.form-title, h4.form-title, h5.form-title{
+        border-bottom: 1px solid #eee;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        line-height: 20px;
+    }
+.form-display{
+    .form-group{
+        margin-bottom:25px;
+    }
+    label{
+        display: inline-block;
+        margin-bottom: .5rem;
+    }
+    span{
+        padding-top: 0px;
+        text-align: left;
+        margin: 0;
+        font-weight: 600 !important;
+    }
+}
+.to-close-search + .search-clear{
+  
+    i{
+  opacity:0;
+        top: -0px;
+    right: -2px;
+    }
+}
+.to-close-search:focus + .search-clear{
+    &:after{
+        opacity:0;
+    }
+    i{opacity:1;  top: -4px;
+    position: relative;}
+}
+.manage-sequence-search{
+.to-close-search:focus + .search-clear{
+    &:after{
+        opacity:0;
+    }
+    i{opacity:1;  top: 0px;
+    position: relative;}
+}
+   .search-clear{
+          &:after{
+            content: "\50";
+            font-family: "submitpro-icon" !important;
+            font-style: normal !important;
+            font-weight: normal !important;
+            font-variant: normal !important;
+            text-transform: none !important;
+            speak: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: absolute;
+            right: 10px;
+            top: 6px;
+            color:$gray-600 $imp;
+        }
+ &:hover{
+       &:after{
+           color:$gray-600 $imp;
+           }
+ }
+    }
+}
+.required-note{
+    color:$gray-500;
+    font-size:$font-size-small;
+    float:right;
+    span{
+        color:$red;
+         font-size:$font-16;
+    }
+}
+// Kendo
+.kendo-custom-inline-table.k-editable .k-grid-content, .kendo-custom-inline-table.k-editable td {
+    overflow: visible !important;
+}
+.form-separation{
+    padding: 5px 10px 0;
+    background: #e7f4fb;
+    float: left;
+    width: 100%;
+    border: 1px solid #cbdde6;
+}
+.form-view{
+        label {
+            font-size: 13px;
+            font-weight: 600;
+            color: #343a40;
+            line-height: 25px;
+        }
+       span {
+            font-size: 13px;
+            font-weight: 400;
+            color: #495057;
+            line-height: 25px;
+        }
+}

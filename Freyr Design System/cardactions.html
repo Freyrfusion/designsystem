@@ -1,0 +1,73 @@
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $(".maximizecard").click(function(){
+            var expandparent = $(this).closest(".accordion");
+            expandparent.addClass("fullscreen");
+            debugger;
+            $(".shrink-btn").css("display","inline-block");
+             $(".enlarge-btn").css("display","none");
+        });
+        $(".minimizecard").click(function(){
+            var expandparent = $(this).closest(".accordion");
+            expandparent.removeClass("fullscreen");
+            debugger;
+            $(".shrink-btn").css("display","none");
+             $(".enlarge-btn").css("display","inline-block");
+        });
+    });
+</script>
+
+<div class="uikit-section transparent">
+        <div class="row">
+        <div class="col-md-6 m-b-10">
+            
+                                <div class="accordion action-accordion" id="accordionExample">
+  <div class="card card-white action-cards">
+    <div class="card-header" id="headingOne">
+      Card Title
+  
+     <ul class="card-actionbtns">
+        <li><a href="javascript:void(0);"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="icon-chevron-down-1"></i></a></li>
+          <li class="enlarge-btn"><a href="javascript:void(0);" class="maximizecard"><i class="icon-enlarge2"></i></a></li>
+         <li class="shrink-btn"><a href="javascript:void(0);"  class="minimizecard"><i class="icon-shrink2"></i></a></li>
+        </ul>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+                                    
+            </div>
+    
+            </div>
+               <div class="col-md-6 m-b-10">
+                    <div class="accordion action-accordion" id="accordionExample1">
+  <div class="card text-white bg-secondary card-text-white action-cards">
+    <div class="card-header" id="headingOne">
+      Card Title
+  
+     <ul class="card-actionbtns">
+        <li><a href="javascript:void(0);"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><i class="icon-chevron-down-1"></i></a></li>
+          <li class="enlarge-btn"><a href="javascript:void(0);" class="maximizecard"><i class="icon-enlarge2"></i></a></li>
+         <li class="shrink-btn"><a href="javascript:void(0);"  class="minimizecard"><i class="icon-shrink2"></i></a></li>
+        </ul>
+    </div>
+
+    <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample1">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+                                    
+            </div>
+            </div>
+    </div>
+</div>

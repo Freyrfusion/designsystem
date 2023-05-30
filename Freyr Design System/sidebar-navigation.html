@@ -1,0 +1,174 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        
+            //IFrame action
+        var pageloadbtn = $('#loadpage li a');
+        var otherpages =   $('#loadpage li');;
+        var iframetarget = document.getElementById('pagecontents').src;
+        var gridspage = "grids.html";
+        var welcomepage = "welcome.html";
+        pageloadbtn.click(function(e){
+           
+          //     pageloadbtn.parent().removeAttr('class'); 
+            var linkid = $(this).attr("id");
+            var linkparent = $(this).attr("aria-label");
+            var targetpage = linkid + ".html" ;
+            var thisparent = $(this).parent("");
+            //  var thisparentto = $(this).parent().parent().parent().parent();
+            var changehead = $("#pageheading");
+            var parentpage = $("#parentpage");
+            var currentpage = $("#currentpage");
+            if(linkid!=""){
+             if(otherpages.hasClass("active")){
+                 otherpages.removeClass("active");
+             }
+                else{
+                    
+                };
+                document.getElementById('pagecontents').src = targetpage;
+                
+                 var parented = $(this).attr('aria-label');
+                if( parented == "UI Elements" || parented == "Forms"){
+                    $(this).closest('li.has-submenu').addClass("active").siblings().removeClass("active");
+                   // $(this).siblings().removeClass("active");
+                }
+                else{
+                    $('li.has-submenu').removeClass("active");
+                }
+               
+                //('#loadpage li').removeClass("active");
+             //   thisparentto.addClass("active");
+                thisparent.addClass('active'); 
+               
+                
+                if(linkparent=="UI Elements"  || linkparent == "Forms"){
+                   parentpage.text(linkparent);
+                    currentpage.text(linkid);
+                }
+                else{
+                    
+                }
+                changehead.text(linkid);
+            }
+            else{
+                
+            }
+            
+  
+          
+        });
+         // Menu Function
+			$(".menu-toggle").click(function(){
+				var totalbody = $("body");
+				if(totalbody.hasClass("menu-collapsed")){
+					totalbody.removeClass("menu-collapsed");
+				}
+				else{
+					totalbody.addClass("menu-collapsed");
+				}
+			});
+        // Submenu
+        $(".icon-down-open").click(function(){
+            //var submenu = $(".has-submenu"); 
+               var submenu = $(this).parent(".has-submenu");
+            if(submenu.hasClass("open")){
+                submenu.removeClass("open");
+            }
+            else{
+                submenu.addClass("open");
+                submenu.siblings().removeClass("open");
+            }
+        });
+        // More Menu
+        
+        $(".more-menu").click(function(){
+            var moremenu = $(".more-dropdown"); 
+            var thisone = $(".more-menu")
+            if(moremenu.hasClass("open")){
+                moremenu.removeClass("open");
+                 thisone.removeClass("opened");
+            }
+            else{
+                moremenu.addClass("open animated faster fadeInUp");
+                  thisone.addClass("opened");
+            }
+        });
+        
+        // Search display
+        $(".search-action").click(function(){
+            var headersearch = $(".header-searchbox"); 
+            if(headersearch.hasClass("showsearch")){
+               //  headersearch.addClass("slideOutUp");
+              //  headersearch.removeClass("showsearch").delay(15000);
+                headersearch.addClass("slideOutUp").delay(1500).queue(function(){
+                    headersearch.removeClass("showsearch").dequeue();
+                });
+            }
+            else{
+                 headersearch.removeClass("slideOutUp");
+                headersearch.addClass("showsearch animated faster slideInDown");
+                 
+                  $("#headersearch").focus();
+            }
+        });
+        // Tabs
+        $('#myTab a').on('click', function (e) {
+          e.preventDefault()
+          $(this).tab('show')
+        })
+    })
+
+</script>
+<nav> 
+ 
+    <ul class="main-menu" id="loadpage">
+        <!-- <li  class="active"><a href="javascript:void(0)" id="dashboard"><i class="icon icon-pie-chart2"></i> <span>Dashboard</span><small>Dashboard</small></a></li> -->
+        <li class="has-submenu">
+            <a href="javascript:void(0)" id="colors"><i class="icon icon-hash"></i> <span>Foundations</span> 
+            <small>Foundations</small></a>   <i class="icon-down-open"></i>
+            <div class="divsubmenu">
+            <ul class="submenu animated faster slideInDown">
+                <li><a href="javascript:void(0)" id="colors" aria-label="UI Elements">Colors</a></li>
+                <li><a href="#" id="icons" aria-label="UI Elements">Icons</a></li>
+                <li><a href="#" id="layout" aria-label="UI Elements">Layout's</a></li>
+                <li><a href="#" id="typography" aria-label="UI Elements">Typography</a></li>       
+   
+                
+            </ul>
+                </div>
+        </li>
+        <li class="has-submenu"><a href="javascript:void(0)" id="gridsystem"><i class="icon icon-text-file2"></i> <span>UI Elements</span> 
+            <small>UI Elements</small></a>   <i class="icon-down-open"></i>
+            <div class="divsubmenu">
+            <ul class="submenu animated faster slideInDown">
+                <li><a href="javascript:void(0)" id="gridsystem" aria-label="UI Elements">Grid System</a></li>
+                <li><a href="#" id="cards" aria-label="UI Elements">Cards</a></li>
+                <li><a href="#" id="cardactions" aria-label="UI Elements">Card actions</a></li>
+                <li><a href="#" id="buttons" aria-label="UI Elements">Buttons</a></li>       
+                <li><a href="#" id="tooltips" aria-label="UI Elements">Tooltips & Popovers</a></li>   
+                <li><a href="#" id="tabs" aria-label="UI Elements">Tabs</a></li>  
+                <li><a href="#" id="dropdowns" aria-label="UI Elements">Dropdowns</a></li>  
+                <li><a href="#" id="modalsfull" aria-label="UI Elements">Modals</a></li>  
+                <li><a href="#" id="collapse" aria-label="UI Elements">Collapse</a></li>  
+                
+            </ul>
+                </div>
+        </li>
+        <li class="has-submenu"><a href="javascript:void(0)" id="basicinputs"><i class="icon icon-hash"></i> <span>Forms</span>
+            <small>Identifiers</small></a>   <i class="icon-down-open"></i>
+          <div class="divsubmenu">
+            <ul class="submenu animated faster slideInDown">
+                <li><a href="javascript:void(0)" id="basic inputs" aria-label="Forms">Basic Inputs</a></li>
+                <li><a href="#" id="inputgroups" aria-label="Forms">Input Groups</a></li>
+                <li><a href="#" id="checkboxradio" aria-label="Forms">Checkbox & Radio</a></li>
+                <li><a href="#" id="form groups" aria-label="Forms">Form Groups</a></li>
+                <li><a href="#" id="auto textarea" aria-label="Forms">Auto Textarea</a></li>
+                <li><a href="#" id="dropzone" aria-label="Forms">Dropzone</a></li>
+            </ul>
+                </div>
+        </li>
+        
+    </ul>
+<a href="javascript:void(0)" class="menu-toggle"><i class="icon-chevron-left-1"></i> <span>Collapse panel</span></a>
+</nav>

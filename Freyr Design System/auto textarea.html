@@ -1,0 +1,51 @@
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<div class="uikit-section transparent">
+      <div class="row m-b-20">
+							<div class="col-md-12">
+								<div class="card">
+									<h5 class="card-header">Auto Textarea Control</h5>
+									<form>
+										<div class="card-body">
+                                            <div class="row">
+                                            <div class="col-md-12">
+                                                <h2 class="kit-h2">Textarea auto-expand</h2>
+                                                <p class="kit-p">Just add <code>autoexpand</code>class to the textarea.</p>
+                                                </div>
+                                                 </div>
+											<div class="form-group">
+												<label>Textarea</label>
+												  <textarea class="form-control autoexpand"></textarea>
+											</div>
+											
+										
+										</div>
+										
+									</form>
+								</div>
+							</div>
+							
+						</div>
+    
+   
+</div>
+<script>
+var textarea = document.querySelector('.autoexpand');
+
+textarea.addEventListener('keydown', autosize);
+             
+function autosize(){
+  var el = this;
+  setTimeout(function(){
+    el.style.cssText = 'height:auto;min-height:55px; padding:0';
+    // for box-sizing other than "content-box" use:
+    // el.style.cssText = '-moz-box-sizing:content-box';
+    el.style.cssText = 'height:' + el.scrollHeight + 'px';
+      if(el.scrollHeight >= 160){
+         el.style.cssText = 'overflow-y:auto;height:'+ el.scrollHeight + 'px';
+      }
+  },0);
+}
+</script>
