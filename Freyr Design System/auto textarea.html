@@ -3,18 +3,33 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <div class="uikit-section transparent">
+
+  <div class="page-header">
+    <h1>Text area</h1>
+    <p>
+        A <strong> text area</strong> component is used for entering a paragraph of text that is longer than one line.
+    </p>
+    <ul class="nav nav-tabs page-default-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Preview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">HTML Code</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Design Guide</a>
+        </li>
+      </ul>
+
+</div>
+<div class="innerpage-content">
       <div class="row m-b-20">
 							<div class="col-md-12">
 								<div class="card">
-									<h5 class="card-header">Auto Textarea Control</h5>
+								
 									<form>
 										<div class="card-body">
-                                            <div class="row">
-                                            <div class="col-md-12">
-                                                <h2 class="kit-h2">Textarea auto-expand</h2>
-                                                <p class="kit-p">Just add <code>autoexpand</code>class to the textarea.</p>
-                                                </div>
-                                                 </div>
+                                     
 											<div class="form-group">
 												<label>Textarea</label>
 												  <textarea class="form-control autoexpand"></textarea>
@@ -28,7 +43,7 @@
 							</div>
 							
 						</div>
-    
+          </div>
    
 </div>
 <script>
@@ -39,12 +54,12 @@ textarea.addEventListener('keydown', autosize);
 function autosize(){
   var el = this;
   setTimeout(function(){
-    el.style.cssText = 'height:auto;min-height:55px; padding:0';
+    el.style.cssText = 'height:auto;min-height:55px;overflow:hidden; padding:0';
     // for box-sizing other than "content-box" use:
     // el.style.cssText = '-moz-box-sizing:content-box';
-    el.style.cssText = 'height:' + el.scrollHeight + 'px';
+    el.style.cssText = 'height:' + el.scrollHeight + 'px;overflow:hidden;';
       if(el.scrollHeight >= 160){
-         el.style.cssText = 'overflow-y:auto;height:'+ el.scrollHeight + 'px';
+         el.style.cssText = 'max-height:160px;height:'+ el.scrollHeight + 'px';
       }
   },0);
 }

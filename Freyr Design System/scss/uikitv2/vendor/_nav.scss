@@ -80,8 +80,11 @@
 
   .nav-link.active,
   .show > .nav-link {
+    $nav-pills-link-active-color :#0066cc;
+    $nav-pills-link-active-bg: #E0E7FF;
     color: $nav-pills-link-active-color;
     background-color: $nav-pills-link-active-bg;
+    font-weight: 500;
   }
 }
 

@@ -1,245 +1,258 @@
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
-		$(document).ready(function(){
-  $('[data-toggle="popover"]').popover();
-})
+  $(document).ready(function () {
+    $('[data-toggle="popover"]').popover();
+  })
 </script>
 <div class="uikit-section transparent p-t-0">
-<div class="row m-b-20">
-                    <div class="col-md-12 m-t-10">
-                      
-                         <div class="card">
-                                <div class="card-body">
-                                    
-                        <div class="row">
-                              <div class="col-md-9">
-                                    <h2 class="kit-h2">CSS tooltips</h2>
-                                  <p class="kit-p">For positioning, use <code>data-balloon-pos</code> attribute with one of the values: <code>up, down, left or right</code></p>
-                                <figure class="highlight">
-                              <code class="language-html" data-lang="html">
-                                <span class="nt">&lt;button</span> <span class="na"> data-balloon=</span><span class="s">"Whats up!"</span> <span class="na"> data-balloon-pos=</span><span class="s">"up"</span><span class="nt">&gt;</span>Hover me!<span class="nt">&lt;/button&gt;</span>
-                                </code>
-                                <br/>   <br/>
-                                <code class="language-html" data-lang="html">
-                                <span class="nt">&lt;button</span> <span class="na"> data-balloon=</span><span class="s">"Whats up!"</span> <span class="na"> data-balloon-pos=</span><span class="s">"down"</span><span class="nt">&gt;</span>Hover me!<span class="nt">&lt;/button&gt;</span>
-                                </code>
-                                   <br/>   <br/>
-                                <code class="language-html" data-lang="html">
-                                <span class="nt">&lt;button</span> <span class="na"> data-balloon=</span><span class="s">"Whats up!"</span> <span class="na"> data-balloon-pos=</span><span class="s">"left"</span><span class="nt">&gt;</span>Hover me!<span class="nt">&lt;/button&gt;</span>
-                                </code>
-                                   <br/>   <br/>
-                                <code class="language-html" data-lang="html">
-                                <span class="nt">&lt;button</span> <span class="na"> data-balloon=</span><span class="s">"Whats up!"</span> <span class="na"> data-balloon-pos=</span><span class="s">"right"</span><span class="nt">&gt;</span>Hover me!<span class="nt">&lt;/button&gt;</span>
-                                </code>
-                                </figure>
-                            </div>
-                            <div class="col-md-3">
-                               
-                                <div class="row">
-                                <div class="col-md-12 m-b-20">
-                                <h2 class="kit-h2">Top</h2>
-                                <button class="btn btn-primary" data-balloon="Whats up!" data-balloon-pos="up">Hover me!</button>
-                                </div>
-                                <div class="col-md-12 m-b-20">
-                                <h2 class="kit-h2">Bottom</h2>
-                                <button class="btn btn-primary" data-balloon="Whats up!" data-balloon-pos="down">Hover me!</button>
-                                </div>
-                                </div>
 
+  <div class="page-header">
+    <h1>Tooltips & Popovers</h1>
+    <p>
+      A <strong> tooltip </strong> is in-app messaging used to identify elements on a page with short, clarifying text.
+    </p>
+    <ul class="nav nav-tabs page-default-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+          aria-selected="true">Preview</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+          aria-selected="false">HTML Code</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+          aria-selected="false">Design Guide</a>
+      </li>
+    </ul>
 
-                                <div class="row">
-                                <div class="col-md-12 m-b-20">
-                                <h2 class="kit-h2">Left</h2>
-                                <button class="btn btn-primary" data-balloon="Whats up!" data-balloon-pos="left">Hover me!</button>
-                                </div>
-                                <div class="col-md-12 m-b-20">
-                                <h2 class="kit-h2">Right</h2>
-                                <button class="btn btn-primary" data-balloon="Whats up!" data-balloon-pos="right">Hover me!</button>
-                                </div>
-                                </div>
-
-
-
-
-                              
-                            </div>
-                          
-                        </div>
-                         </div>
-                                </div>
-                    </div>
-    
- 
-    </div>
- <div class="row m-b-20">
-                    <div class="col-md-12 m-t-10">
-                      
-                         <div class="card">
-                                <div class="card-body">
-                                     
-                        <div class="row">
-                              <div class="col-md-9">
-                                    <h2 class="kit-h2">CSS Length tooltips</h2>
-                                  <p class="kit-p">By default, tooltips will always remain single-line no matter their length. You can change this behavior by using the attribute <code>data-balloon-length</code> with one of the values: <code>small, medium, large or fit</code>.</p>
-                                <figure class="highlight">
-                              <code class="language-html" data-lang="html">
-                                <span class="nt">&lt;button</span> <span class="na"> data-balloon=</span><span class="s">"Hi"</span> <span class="na"> data-balloon-length=</span><span class="s">"small"</span> <span class="na"> data-balloon-pos=</span><span class="s">"up"</span><span class="nt">&gt;</span>Hover me!<span class="nt">&lt;/button&gt;</span>
-                                </code>
-                                <br/>   <br/>
-                                 <code class="language-html" data-lang="html">
-                                <span class="nt">&lt;button</span> <span class="na"> data-balloon=</span><span class="s">"Now that's a super big text we have over here right? Lorem ipsum dolor sit I'm done."</span> <span class="na"> data-balloon-length=</span><span class="s">"medium"</span> <span class="na"> data-balloon-pos=</span><span class="s">"up"</span><span class="nt">&gt;</span>Hover me!<span class="nt">&lt;/button&gt;</span>
-                                </code>
-                                   <br/>   <br/>
-                                 <code class="language-html" data-lang="html">
-                                <span class="nt">&lt;button</span> <span class="na"> data-balloon=</span><span class="s">"Content!"</span> <span class="na"> data-balloon-length=</span><span class="s">"large"</span> <span class="na"> data-balloon-pos=</span><span class="s">"up"</span><span class="nt">&gt;</span>Hover me!<span class="nt">&lt;/button&gt;</span>
-                                </code>
-                                   <br/>   <br/>
-                                   <code class="language-html" data-lang="html">
-                                <span class="nt">&lt;button</span> <span class="na"> data-balloon=</span><span class="s">"Content!"</span> <span class="na"> data-balloon-length=</span><span class="s">"xlarge"</span> <span class="na"> data-balloon-pos=</span><span class="s">"up"</span><span class="nt">&gt;</span>Hover me!<span class="nt">&lt;/button&gt;</span>
-                                </code>
-                                      <br/>   <br/>
-                                      <code class="language-html" data-lang="html">
-                                <span class="nt">&lt;button</span> <span class="na"> data-balloon=</span><span class="s">"Content!"</span> <span class="na"> data-balloon-length=</span><span class="s">"fit"</span> <span class="na"> data-balloon-pos=</span><span class="s">"up"</span><span class="nt">&gt;</span>Hover me!<span class="nt">&lt;/button&gt;</span>
-                                </code>
-                                </figure>
-                            </div>
-                            <div class="col-md-3">
-                               
-                                <div class="row">
-                                <div class="col-md-12 m-b-20">
-                                <h2 class="kit-h2">Small</h2>
-                                <button class="btn btn-primary" data-balloon="Hi" data-balloon-pos="up" data-balloon-length="small">I'm a small tooltip</button>
-                                </div>
-                                <div class="col-md-12 m-b-20">
-                                <h2 class="kit-h2">Medium</h2>
-                               <button class="btn btn-primary" data-balloon="Now that's a super big text we have over here right? Lorem ipsum dolor sit I'm done." data-balloon-pos="up" data-balloon-length="medium">I'm a medium tooltip.</button>
-                                </div>
-                           
-                                <div class="col-md-12 m-b-20">
-                                <h2 class="kit-h2">Large</h2>
-                               <button class="btn btn-primary" data-balloon="What about something really big? This may surpass your window dimensions. Imagine you're on that boring class with that boring teacher and you didn't slept so well last night. Suddenly you're sleeping in class. Can you believe it?!" data-balloon-pos="up" data-balloon-length="large">I'm a large tooltip</button>
-                                </div>
-                                <div class="col-md-12 m-b-20">
-                                <h2 class="kit-h2">Xlarge</h2>
-                               <button class="btn btn-primary" data-balloon="What about something really big? This may surpass your window dimensions. Imagine you're on that boring class with that boring teacher and you didn't slept so well last night. Suddenly you're sleeping in class. Can you believe it?!" data-balloon-pos="up" data-balloon-length="xlarge">I'm a Xlarge tooltip</button>
-                                </div>
-                                    <br/>
-                                        <div class="col-md-12 m-b-20">
-                                <h2 class="kit-h2">Fit</h2>
-                             <button class="btn btn-primary" data-balloon-length="fit" data-balloon="What about something really big? This may surpass your window dimensions. Imagine you're on that boring class with that boring teacher and you didn't slept so well last night. Suddenly you're sleeping in class. Can you believe it?!" data-balloon-pos="up">My width will fit to element</button>
-                                </div>
-                                </div>
-
-
-
-
-                              
-                            </div>
-                          
-                        </div>
-                         </div>
-                                </div>
-                    </div>
-    
- 
-    </div>   
-   
-    
-    <div class="row m-b-20">
-                    <div class="col-md-12 m-t-10">
-                      
-                         <div class="card">
-                                <div class="card-body">
-                             <div class="row">
-                              <div class="col-md-12">
-                                    <h2 class="kit-h2">Popovers</h2>
-                                  <h6>Enable popovers everywhere</h4>
-                                  <p class="kit-p">One way to initialize all popovers on a page would be to select them by their <code>data-toggle</code> attribute:</p>
-                                  
-                                  <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-  <span class="nx">$</span><span class="p">(</span><span class="s1">'[data-toggle="popover"]'</span><span class="p">).</span><span class="nx">popover</span><span class="p">()</span>
-<span class="p">})</span></code></pre></figure>
-                                 </div>
-                                    </div>
-                        <div class="row">
-                              <div class="col-md-12">
-                                   <h2 class="kit-h2  m-t-20">Example</h2>
-                                  <div class="bd-example">
-<button type="button" class="btn btn-danger" data-toggle="popover" title=""  data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Popover title" aria-describedby="popover683440">Click to toggle popover</button>
-</div>
-                                  <figure class="highlight m-b-20"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-danger"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span> <span class="na">title=</span><span class="s">"Popover title"</span> <span class="na">data-content=</span><span class="s">"And here's some amazing content. It's very engaging. Right?"</span><span class="nt">&gt;</span>Click to toggle popover<span class="nt">&lt;/button&gt;</span></code></pre></figure>
-                                     </div>
-                            
-                          
-                        </div>
-                                      </div>
-                                </div>
-                        
-                                  </div>
-    </div>  
-        <div class="row m-b-20">
-                    <div class="col-md-12 m-t-10">
-                          <div class="card">
-                                <div class="card-body">
-                                      <h2 class="kit-h2">Popover Four directions</h2>
-                                  
-                                  <div class="bd-example popover-demo">
-  <div class="bd-example-popovers">
-    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">
-      Popover on top
-    </button>
-    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">
-      Popover on right
-    </button>
-    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">
-      Popover on bottom
-    </button>
-    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">
-      Popover on left
-    </button>
   </div>
-</div>
-                                  
-                                  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-container=</span><span class="s">"body"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">data-content=</span><span class="s">"Vivamus sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</span>
-  Popover on top
-<span class="nt">&lt;/button&gt;</span>
 
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-container=</span><span class="s">"body"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span> <span class="na">data-placement=</span><span class="s">"right"</span> <span class="na">data-content=</span><span class="s">"Vivamus sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</span>
-  Popover on right
-<span class="nt">&lt;/button&gt;</span>
+  <div class="innerpage-content">
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-container=</span><span class="s">"body"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span> <span class="na">data-placement=</span><span class="s">"bottom"</span> <span class="na">data-content=</span><span class="s">"Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</span>
-  Popover on bottom
-<span class="nt">&lt;/button&gt;</span>
+        <div class="row m-b-20">
+          <div class="col-md-12 m-t-10">
 
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-container=</span><span class="s">"body"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span> <span class="na">data-placement=</span><span class="s">"left"</span> <span class="na">data-content=</span><span class="s">"Vivamus sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</span>
-  Popover on left
-<span class="nt">&lt;/button&gt;</span></code></pre></figure>
-                              </div>
-                                </div>
-                         
-                                                  </div>
-    </div>
-    
-            <div class="row m-b-20">
-                    <div class="col-md-12 m-t-10">
-                          <div class="card">
-                                <div class="card-body">
-                                      <h2 class="kit-h2">Popover Dismiss on next click</h2>
-                                  <div class="bd-example">
-<button type="button"  class="btn btn-danger" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?" >Dismissible popover</button>
-</div>
-                                    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span>  <span class="na">data-toggle=</span><span class="s">"popover"</span> <span class="na">data-trigger=</span><span class="s">"focus"</span> <span class="na">title=</span><span class="s">"Dismissible popover"</span><span class="na">data-content=</span><span class="s">"And here's some amazing content. It's very   <br/>engaging. Right?"</span><span class="nt">&gt;</span>Dismissible popover<span class="nt">&lt;/button&gt;</span></code></pre></figure>
-                              </div>
-                        </div>
+            <div class="card">
+              <div class="card-body">
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <h4 class="card-title m-b-30">Basic tooltips</h4>
+
+                  </div>
+                  <div class="col-md-12">
+
+                    <div class="row">
+                      <div class="col-md-3 m-b-20">
+                        <h6 class="kit-h2">Top</h6>
+                        <button class="btn btn-primary" data-balloon="Whats up!" data-balloon-pos="up">Hover
+                          me!</button>
+                      </div>
+                      <div class="col-md-3 m-b-20">
+                        <h6 class="kit-h2">Bottom</h6>
+                        <button class="btn btn-primary" data-balloon="Whats up!" data-balloon-pos="down">Hover
+                          me!</button>
+                      </div>
+
+                      <div class="col-md-3 m-b-20">
+                        <h6 class="kit-h2">Left</h6>
+                        <button class="btn btn-primary" data-balloon="Whats up!" data-balloon-pos="left">Hover
+                          me!</button>
+                      </div>
+                      <div class="col-md-3 m-b-20">
+                        <h6 class="kit-h2">Right</h6>
+                        <button class="btn btn-primary" data-balloon="Whats up!" data-balloon-pos="right">Hover
+                          me!</button>
+                      </div>
+                    </div>
+
+
+
+
+
+                  </div>
+
                 </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="row m-b-20">
+          <div class="col-md-12 m-t-10">
+
+            <div class="card">
+              <div class="card-body">
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <h4 class="card-title m-b-30">Different length tooltips</h4>
+
+                  </div>
+
+                  <div class="col-md-12">
+
+                    <div class="row">
+                      <div class="col-md-2 m-b-20">
+                        <h6 class="kit-h2">Small</h6>
+                        <button class="btn btn-primary" data-balloon="Hi" data-balloon-pos="up"
+                          data-balloon-length="small">I'm a small tooltip</button>
+                      </div>
+                      <div class="col-md-3 m-b-20">
+                        <h6 class="kit-h2">Medium</h6>
+                        <button class="btn btn-primary"
+                          data-balloon="Now that's a super big text we have over here right? Lorem ipsum dolor sit I'm done."
+                          data-balloon-pos="up" data-balloon-length="medium">I'm a medium tooltip.</button>
+                      </div>
+
+                      <div class="col-md-2 m-b-20">
+                        <h6 class="kit-h2">Large</h6>
+                        <button class="btn btn-primary"
+                          data-balloon="What about something really big? This may surpass your window dimensions. Imagine you're on that boring class with that boring teacher and you didn't slept so well last night. Suddenly you're sleeping in class. Can you believe it?!"
+                          data-balloon-pos="up" data-balloon-length="large">I'm a large tooltip</button>
+                      </div>
+                      <div class="col-md-2 m-b-20">
+                        <h6 class="kit-h2">Xlarge</h6>
+                        <button class="btn btn-primary"
+                          data-balloon="What about something really big? This may surpass your window dimensions. Imagine you're on that boring class with that boring teacher and you didn't slept so well last night. Suddenly you're sleeping in class. Can you believe it?!"
+                          data-balloon-pos="up" data-balloon-length="xlarge">I'm a Xlarge tooltip</button>
+                      </div>
+                      <br />
+                      <div class="col-md-3 m-b-20">
+                        <h6 class="kit-h2">Fit</h6>
+                        <button class="btn btn-primary" data-balloon-length="fit"
+                          data-balloon="What about something really big? This may surpass your window dimensions. Imagine you're on that boring class with that boring teacher and you didn't slept so well last night. Suddenly you're sleeping in class. Can you believe it?!"
+                          data-balloon-pos="up">My width will fit to element</button>
+                      </div>
+                    </div>
+
+
+
+
+
+                  </div>
+
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <hr class="layout-hr" />
+                  </div>
+                </div>
+
+                <div class="row m-b-20">
+                  <div class="col-md-12 m-t-10">
+
+                    <div class="card">
+                      <div class="card-body">
+
+                        <div class="row">
+                          <div class="col-md-12 p-0">
+                            <h4 class="card-title">Popovers</h4>
+                            <h6 class="kit-h2  m-t-40">Example</h6>
+                            <div class="bd-example">
+                              <button type="button" class="btn btn-danger" data-toggle="popover" title=""
+                                data-content="And here's some amazing content. It's very engaging. Right?"
+                                data-original-title="Popover title" aria-describedby="popover683440">Click to toggle
+                                popover</button>
+                            </div>
+
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="row m-b-20">
+                  <div class="col-md-12  p-0 m-t-10">
+                    <div class="card">
+                      <div class="card-body">
+                        <h6>Popover Four directions</h6>
+
+                        <div class="bd-example popover-demo">
+                          <div class="bd-example-popovers">
+                            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                              data-placement="top"
+                              data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                              data-original-title="" title="">
+                              Popover on top
+                            </button>
+                            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                              data-placement="right"
+                              data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                              data-original-title="" title="">
+                              Popover on right
+                            </button>
+                            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                              data-placement="bottom"
+                              data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                              data-original-title="" title="">
+                              Popover on bottom
+                            </button>
+                            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                              data-placement="left"
+                              data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                              data-original-title="" title="">
+                              Popover on left
+                            </button>
+                          </div>
+                        </div>
+
+                       
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="row m-b-20">
+                  <div class="col-md-12  p-0 m-t-10">
+                    <div class="card">
+                      <div class="card-body">
+                        <h6>Popover Dismiss on next click</h6>
+                        <div class="bd-example">
+                          <button type="button" class="btn btn-danger" data-toggle="popover" data-trigger="focus"
+                            title="Dismissible popover"
+                            data-content="And here's some amazing content. It's very engaging. Right?">Dismissible
+                            popover</button>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <p>We are currently working on this, we will update soon!</p>
+      </div>
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        <p>We are currently working on this, we will update soon!</p>
+      </div>
+
     </div>
-           
+  </div>
+  <!-- end Innerpage content   -->
 </div>
-     

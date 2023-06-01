@@ -1,7 +1,12 @@
 //
 // Base styles
 //
-
+.cards-page{
+  .card{
+    border: $card-border-width solid $card-border-color;
+    box-shadow: 0 10px 40px 0 rgba(18,106,211,.07), 0 2px 9px 0 rgba(18,106,211,.06);
+  }
+}
 .card {
   position: relative;
   display: flex;
@@ -10,8 +15,10 @@
   word-wrap: break-word;
   background-color: $card-bg;
   background-clip: border-box;
-  //border: $card-border-width solid $card-border-color;
-// box-shadow: 0 10px 40px 0 rgba(18,106,211,.07), 0 2px 9px 0 rgba(18,106,211,.06);
+  &.card-shadow{
+    border: $card-border-width solid $card-border-color;
+    box-shadow: 0 10px 40px 0 rgba(18,106,211,.07), 0 2px 9px 0 rgba(18,106,211,.06);
+  }
   @include border-radius($card-border-radius);
    
     h4{
@@ -309,7 +316,8 @@
     .card-header {
         margin-bottom: -$card-border-width;
         padding: 4px 6px;
-       
+        background: transparent;
+        font-weight: 400;
         &:hover{
             background: rgba(0, 0, 0, 0.03)
         }
@@ -319,7 +327,7 @@
             text-align: left;
             color: #666;
             font-size: 15px;
-            font-weight: 300;
+            font-weight: 400;
             &:hover, &:focus{
                 text-decoration: none;
             }

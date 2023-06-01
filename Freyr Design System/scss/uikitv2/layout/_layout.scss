@@ -1,11 +1,18 @@
 //@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600');
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600&display=swap');
-$font-family:'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+//$font-family:'Poppins', sans-serif;
 //$font-family: 'Red Hat Text', sans-serif;
+//$font-family:'Lexend', sans-serif;
+//$font-family:'Outfit', sans-serif;
+$font-family:'Inter', sans-serif;
 *{
 	//font-family: 'Rubik', sans-serif;
 	font-family: $font-family;
+    font-weight: 400;
     &:hover{
         transition:all .2s ease-in-out;
         -webkit-transition:all .2s ease-in-out;
@@ -289,7 +296,8 @@ ul.main-menu {
             
 		}
         &.has-submenu{
-               max-height: 400px;
+               max-height: 500px;
+               overflow-y:auto;
                 &.open{
                     // &.active{
                       
@@ -656,7 +664,7 @@ float: right;
             }
             span {
                 color: #333;
-                font-size: $font-base;;
+                font-size: $font-base;
                 font-style: normal;
             }
         }
@@ -755,7 +763,7 @@ hr.dashed {
 
 .page-header {
     background: #fff;
-    padding: 10px 20px 0;
+    padding: 15px 25px 0;
     // box-shadow: 0 0.125rem 0.25rem -0.0625rem rgba(3, 3, 3, 0.16);
     border-bottom: 1px solid #f5f5f5;
     
@@ -763,9 +771,14 @@ hr.dashed {
 
 .page-header h1 {
     margin: 10px 0;
+    font-size: 24px;
 }
 .page-header p {
-    font-size: $font-base - 1;
+    font-size: $font-base;
+    color: #333;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 10px;
 }
 
 .innerpage-content{
@@ -778,17 +791,23 @@ hr.dashed {
     border: none;
 }
 .page-default-tabs li.nav-item a{
+    font-size: 14px;
     border: none;
     border-bottom: 3px solid transparent;  
+    padding: 0.5rem 0.6rem;
+    font-weight: 300;
 }
 .page-default-tabs li.nav-item a:hover{
     border: none;
     border-bottom: 3px solid #999;
+    padding: 0.5rem 0.6rem;
 }
 .page-default-tabs li.nav-item a.active {
     border: none;
     border-bottom: 3px solid #0066cc;
     color: #151515;
+    font-weight:400;
+    padding: 0.5rem 0.6rem;
 }
 
 .page-default-tabs li.nav-item a {
@@ -819,3 +838,19 @@ hr.dashed {
     margin: 12px 0 0;
     font-size: 20px;
 }
+.card-header-mark > .row .col-md-12 > .card > .card-header{
+    border: none;
+    background: no-repeat;
+    margin: 30px 0 0;
+    border-bottom: 1px solid #dedede;
+    font-weight: 500;
+    padding: 10px 0;
+    color: #333;
+}
+b, strong {
+    font-weight: 500;
+}
+
+.layout-hr{
+    margin: 60px 0;
+  }
