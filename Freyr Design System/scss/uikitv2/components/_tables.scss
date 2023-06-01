@@ -1,0 +1,163 @@
+
+.m-t-30{
+    margin-top: 30px;
+}
+.m-t-0{
+    margin-top: 0px;
+}
+.p-t-0{
+    padding-top: 0px !important;
+}
+.m-t-030{
+  
+    margin-top: -30px !important;
+}
+
+.m-t-30 {
+    margin-top: 30px;
+}
+
+.m-t-0 {
+    margin-top: 0px;
+}
+
+.p-t-0 {
+    padding-top: 0px !important;
+}
+
+.m-t-030 {
+    margin-top: -30px !important;
+}
+.m-b-50{
+    margin-bottom: 50px;
+}
+.f-w-500 {
+    font-weight: 500;
+}
+
+.table th,
+.table td {
+	font-size: 13px;
+}
+.table {
+	tr {
+		th {
+			font-weight: 500;
+            font-size: 12px;
+		}
+	}
+	thead {
+		th {
+			border-bottom: none !important;
+		}
+		tr {
+			.check-box {
+				vertical-align: middle !important;
+				padding-bottom: 9px !important;
+			}
+		}
+	}
+}
+.table-border-line {
+	border: 1px solid #dee2e6;
+}
+.table-border {
+	border: 1px solid #dee2e6;
+	thead {
+		background-color: #f9fafb;
+	}
+}
+.table-alternate-color {
+	tr {
+		&:nth-child(even) {
+			background-color: #f9fafb;
+		}
+	}
+}
+
+.check-box input[type="checkbox"] {
+position: relative;
+top: 2px;
+} 
+.success-badge{
+    background-color: #f0fdf4;
+    border: 1px solid #c4ebd2;
+    padding: 4px 5px;
+    color: #15803d;
+    border-radius: 8px !important;
+    font-size: 12px;
+}
+.failed-badge{
+    background-color: #FEF2F2;
+    border: 1px solid #FADDDD;
+    padding: 4px 5px;
+    color: #BD5554;
+    border-radius: 8px !important;
+    font-size: 12px;
+}
+.active-badge{
+    background-color: #eff6ff;
+    border: 1px solid #dae5fb;
+    padding: 4px 5px;
+    color: #1d66de;
+    border-radius: 8px !important;
+    font-size: 12px;
+}
+.inprogress-badge{
+    background-color: #f9fafb;
+    border: 1px solid #eff1f2;
+    padding: 4px 5px;
+    color: #4b99ca;
+    border-radius: 8px !important;
+    font-size: 12px;
+}
+.paused-badge{
+    background-color: #fefce8;
+    border: 1px solid #f3e6bb;
+    padding: 4px 5px;
+    color: #95660e;
+    border-radius: 8px !important;
+    font-size: 12px;
+}
+.badge-plain-red {
+    font-size: 12px;
+    border: 1px solid #e1e1e1;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.badge-plain-red svg {
+    width: 7px;
+    fill:#ef4444;
+    margin-right: 6px;
+    position: relative;
+    top: -1px;
+}
+.badge-warning svg{
+    width: 7px;
+    fill:#eab308;
+    margin-right: 6px;
+    position: relative;
+    top: -1px;
+}
+.badge-active svg{
+    width: 7px;
+    fill:#6366f1;
+    margin-right: 6px;
+    position: relative;
+    top: -1px;
+}
+.badge-inprogress svg{
+    width: 7px;
+    fill:#3b82f6;
+    margin-right: 6px;
+    position: relative;
+    top: -1px;
+}
+.badge-success svg{
+    width: 7px;
+    fill:#22c55e;
+    margin-right: 6px;
+    position: relative;
+    top: -1px;
+}
