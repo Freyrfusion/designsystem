@@ -1,0 +1,345 @@
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+ 
+$('.dropdown-toggle').dropdown()
+        });
+</script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+
+
+
+
+
+<!--Only Mobile and Tablets
+    <div class="mobile-menu">
+        <i class="icon-menu"></i>
+        <img src="images/logo.png">
+        
+    </div>-->
+<!--Only Mobile and Tablets-->
+
+<style>
+    /* .table-font{
+    line-height: 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+} */
+</style>
+
+
+
+<div class="uikit-section transparent">
+    <div class="page-header">
+        <h1>Alert group</h1>
+        <p>
+            The <strong>Alert</strong> component is used to show feedback to the user about an action or state.
+     
+        </p>
+        <ul class="nav nav-tabs page-default-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                    aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                    aria-controls="profile" aria-selected="false">HTML Code</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                    aria-controls="contact" aria-selected="false">Design Guide</a>
+            </li>
+        </ul>
+
+    </div>
+
+
+    <div class="innerpage-content">
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+             
+                <div class="row">
+                    <div class="col-md-12 m-b-10">
+                        <div class="card">
+
+                            <div class="card-body p-t-0">
+                                <div class="row m-t-20">
+                                    <div class="col-md-12">
+                                        <h4 class="table-font">Alerts</h4>
+                                        <span class="table-font">The Alert component can have a title and description</span>
+                                    </div>
+                              
+                                </div>
+
+                                <div class="row m-t-30 m-b-40">
+                                    <div class="col-12">
+                                <div  class="toast__container m-b-40">
+                                    <div  class="toast__cell">
+                                        <div  class="toast toast--success m-20">
+                                            <div  class="toast__icon"><svg  version="1.1"
+                                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 512 512" xml:space="preserve" class="toast__svg"
+                                                    style="enable-background: new 0 0 512 512;">
+                                                    <g >
+                                                        <g >
+                                                            <path 
+                                                                d="M504.502,75.496c-9.997-9.998-26.205-9.998-36.204,0L161.594,382.203L43.702,264.311c-9.997-9.998-26.205-9.997-36.204,0    c-9.998,9.997-9.998,26.205,0,36.203l135.994,135.992c9.994,9.997,26.214,9.99,36.204,0L504.502,111.7    C514.5,101.703,514.499,85.494,504.502,75.496z">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </svg></div>
+                                            <div  class="toast__content">
+                                                <p  class="toast__type">Success</p>
+                                                <p  class="toast__message">Anyone with access can view your invited visitors.</p>
+                                            </div>
+                                            <div  class="toast__close"><svg  version="1.1"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.642 15.642"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 15.642 15.642">
+                                                    <path  fill-rule="evenodd"
+                                                        d="M8.882,7.821l6.541-6.541c0.293-0.293,0.293-0.768,0-1.061  c-0.293-0.293-0.768-0.293-1.061,0L7.821,6.76L1.28,0.22c-0.293-0.293-0.768-0.293-1.061,0c-0.293,0.293-0.293,0.768,0,1.061  l6.541,6.541L0.22,14.362c-0.293,0.293-0.293,0.768,0,1.061c0.147,0.146,0.338,0.22,0.53,0.22s0.384-0.073,0.53-0.22l6.541-6.541  l6.541,6.541c0.147,0.146,0.338,0.22,0.53,0.22c0.192,0,0.384-0.073,0.53-0.22c0.293-0.293,0.293-0.768,0-1.061L8.882,7.821z">
+                                                    </path>
+                                                </svg></div>
+                                        </div>
+                                        <div  class="toast toast--primary m-20">
+                                            <div  class="toast__icon"><svg  version="1.1"
+                                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 32 32" xml:space="preserve" class="toast__svg"
+                                                    style="enable-background: new 0 0 32 32;">
+                                                    <g >
+                                                        <g  id="info">
+                                                            <g >
+                                                                <path 
+                                                                    d="M10,16c1.105,0,2,0.895,2,2v8c0,1.105-0.895,2-2,2H8v4h16v-4h-1.992c-1.102,0-2-0.895-2-2L20,12H8     v4H10z">
+                                                                </path>
+                                                                <circle  cx="16" cy="4" r="4"></circle>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg></div>
+                                            <div  class="toast__content">
+                                                <p  class="toast__type">Info</p>
+                                                <p  class="toast__message">Anyone with access can view your invited visitors.</p>
+                                            </div>
+                                            <div  class="toast__close"><svg  version="1.1"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.642 15.642"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 15.642 15.642">
+                                                    <path  fill-rule="evenodd"
+                                                        d="M8.882,7.821l6.541-6.541c0.293-0.293,0.293-0.768,0-1.061  c-0.293-0.293-0.768-0.293-1.061,0L7.821,6.76L1.28,0.22c-0.293-0.293-0.768-0.293-1.061,0c-0.293,0.293-0.293,0.768,0,1.061  l6.541,6.541L0.22,14.362c-0.293,0.293-0.293,0.768,0,1.061c0.147,0.146,0.338,0.22,0.53,0.22s0.384-0.073,0.53-0.22l6.541-6.541  l6.541,6.541c0.147,0.146,0.338,0.22,0.53,0.22c0.192,0,0.384-0.073,0.53-0.22c0.293-0.293,0.293-0.768,0-1.061L8.882,7.821z">
+                                                    </path>
+                                                </svg></div>
+                                        </div>
+                                        <div  class="toast toast--warning m-20">
+                                            <div  class="toast__icon"><svg  version="1.1"
+                                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 301.691 301.691" xml:space="preserve" class="toast__svg"
+                                                    style="enable-background: new 0 0 301.691 301.691;">
+                                                    <g >
+                                                        <polygon  points="119.151,0 129.6,218.406 172.06,218.406 182.54,0  ">
+                                                        </polygon>
+                                                        <rect  x="130.563" y="261.168" width="40.525" height="40.523"></rect>
+                                                    </g>
+                                                </svg></div>
+                                            <div  class="toast__content">
+                                                <p  class="toast__type">Warning</p>
+                                                <p  class="toast__message">Anyone with access can view your invited visitors.</p>
+                                            </div>
+                                            <div  class="toast__close"><svg  version="1.1"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.642 15.642"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 15.642 15.642">
+                                                    <path  fill-rule="evenodd"
+                                                        d="M8.882,7.821l6.541-6.541c0.293-0.293,0.293-0.768,0-1.061  c-0.293-0.293-0.768-0.293-1.061,0L7.821,6.76L1.28,0.22c-0.293-0.293-0.768-0.293-1.061,0c-0.293,0.293-0.293,0.768,0,1.061  l6.541,6.541L0.22,14.362c-0.293,0.293-0.293,0.768,0,1.061c0.147,0.146,0.338,0.22,0.53,0.22s0.384-0.073,0.53-0.22l6.541-6.541  l6.541,6.541c0.147,0.146,0.338,0.22,0.53,0.22c0.192,0,0.384-0.073,0.53-0.22c0.293-0.293,0.293-0.768,0-1.061L8.882,7.821z">
+                                                    </path>
+                                                </svg></div>
+                                        </div>
+                                        
+                                        <div class="toast toast--danger m-20">
+                                            <div class="toast__icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 301.691 301.691"
+                                                    xml:space="preserve" class="toast__svg" style="enable-background: new 0 0 301.691 301.691;">
+                                                    <g>
+                                                        <polygon points="119.151,0 129.6,218.406 172.06,218.406 182.54,0  "></polygon>
+                                                        <rect x="130.563" y="261.168" width="40.525" height="40.523"></rect>
+                                                    </g>
+                                                </svg></div>
+                                            <div class="toast__content">
+                                                <p class="toast__type">Alert</p>
+                                                <p class="toast__message">Anyone with access can view your invited visitors.</p>
+                                            </div>
+                                            <div class="toast__close"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.642 15.642"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 15.642 15.642">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8.882,7.821l6.541-6.541c0.293-0.293,0.293-0.768,0-1.061  c-0.293-0.293-0.768-0.293-1.061,0L7.821,6.76L1.28,0.22c-0.293-0.293-0.768-0.293-1.061,0c-0.293,0.293-0.293,0.768,0,1.061  l6.541,6.541L0.22,14.362c-0.293,0.293-0.293,0.768,0,1.061c0.147,0.146,0.338,0.22,0.53,0.22s0.384-0.073,0.53-0.22l6.541-6.541  l6.541,6.541c0.147,0.146,0.338,0.22,0.53,0.22c0.192,0,0.384-0.073,0.53-0.22c0.293-0.293,0.293-0.768,0-1.061L8.882,7.821z">
+                                                    </path>
+                                                </svg></div>
+                                        </div>
+                                        <div class="toast toast--danger m-20">
+                                            <div class="toast__icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 301.691 301.691"
+                                                    xml:space="preserve" class="toast__svg" style="enable-background: new 0 0 301.691 301.691;">
+                                                    <g>
+                                                        <polygon points="119.151,0 129.6,218.406 172.06,218.406 182.54,0  "></polygon>
+                                                        <rect x="130.563" y="261.168" width="40.525" height="40.523"></rect>
+                                                    </g>
+                                                </svg></div>
+                                            <div class="toast__content">
+                                                <p class="toast__type">Alert</p>
+                                                <p class="toast__message">Anyone with access can view your invited visitors.</p>
+                                            </div>
+                                            <div class="toast__close"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.642 15.642"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 15.642 15.642">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8.882,7.821l6.541-6.541c0.293-0.293,0.293-0.768,0-1.061  c-0.293-0.293-0.768-0.293-1.061,0L7.821,6.76L1.28,0.22c-0.293-0.293-0.768-0.293-1.061,0c-0.293,0.293-0.293,0.768,0,1.061  l6.541,6.541L0.22,14.362c-0.293,0.293-0.293,0.768,0,1.061c0.147,0.146,0.338,0.22,0.53,0.22s0.384-0.073,0.53-0.22l6.541-6.541  l6.541,6.541c0.147,0.146,0.338,0.22,0.53,0.22c0.192,0,0.384-0.073,0.53-0.22c0.293-0.293,0.293-0.768,0-1.061L8.882,7.821z">
+                                                    </path>
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr class="m-b-50">
+                <div class="row">
+                    <div class="col-md-12 m-b-10">
+                        <div class="card">
+
+                            <div class="card-body p-t-0">
+                                <div class="row  m-t-20">
+                                    <div class="col-md-8">
+                                        <h4 class="table-font m-t--030">Users</h4>
+                                        <span class="table-font">A list of all the users in your account including their
+                                            nama,title email and role. </span>
+                                    </div>
+                                    <div class="col-md-4 text-right">
+                                        <button type="button" class="btn btn-primary table-font m-t-10">Add User</button>
+                                    </div>
+                                </div>
+
+                                <div class="row m-t-30">
+                                    <div class="col-12">
+                                        <table class="table table-alternate-color table-border-line">
+                                            <thead>
+                                                <tr>
+
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Title</th>
+                                                    <th scope="col">Email</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col"></th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+
+                                                    <td scope="row">Lindsay Walton</td>
+                                                    <td>Font-end-Developer</td>
+                                                    <td>lindsay.walton@example.com</td>
+                                                    <td>
+                                                        <span class="active-badge">
+                                                            Active
+                                                        </span>
+                                                    </td>
+                                                    <td> <a href="#">Edit</a></td>
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td scope="row">Courtney Henry</td>
+                                                    <td>Designer</td>
+                                                    <td>courtney.henry@example.com</td>
+                                                    <td>
+                                                       
+                                                        <span class="failed-badge">
+                                                            Failed
+                                                        </span>
+                                                    </td>
+                                                    <td> <a href="#">Edit</a></td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td scope="row">Tom Cook</td>
+                                                    <td>Director of Product</td>
+                                                    <td>tom.cook@example.com</td>
+                                                    <td>
+                                                        <span class="inprogress-badge">
+                                                            In-progress
+                                                        </span>
+                                                    </td>
+                                                    <td> <a href="#">Edit</a></td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td scope="row"> Francis</td>
+                                                    <td>Copywriter</td>
+                                                    <td>whitney.francis@example.com</td>
+                                                    <td>
+                                                        <span class="success-badge">
+                                                            Suceess
+                                                        </span>
+                                                    </td>
+                                                    <td> <a href="#">Edit</a></td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td scope="row"> Leonard Krasner</td>
+                                                    <td>Senior Designer</td>
+                                                    <td>leonard.krasner@example.com</td>
+                                                    <td> 
+                                                        <span class="paused-badge">
+                                                            Paused
+                                                        </span>
+                                                    </td>
+                                                    <td> <a href="#">Edit</a></td>
+                                                </tr>
+
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+          
+            </div>
+            <hr class="m-b-50">
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <p>We are currently working on this, we will update soon!</p>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <p>We are currently working on this, we will update soon!</p>
+            </div>
+        </div>
+
+    </div>
+
+  
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

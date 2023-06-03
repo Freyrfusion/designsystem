@@ -18,6 +18,11 @@
 @import "helpers/dropzone";
 
 
+
+/* Foundations */
+@import "foundations/colors";
+
+
 /* Custom Css*/
 @import "layout/layout";
 
@@ -28,6 +33,8 @@
 @import "components/toasts";
 @import "components/modal";
 @import "components/tables";
+@import "components/switch";
+@import "components/breadcrumb";
 
 // UI Kit Related Files Below
 // Reset and dependencies

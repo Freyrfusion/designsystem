@@ -17366,6 +17366,129 @@ button[data-balloon] {
   margin: 100px 0;
 }
 
+/* Foundations */
+.color-palette {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  display: inline-block;
+}
+.box.black-pure {
+  background: #000;
+}
+.box.black-900 {
+  background: #1a1a1a;
+}
+.box.black-800 {
+  background: #333333;
+}
+.box.black-700 {
+  background: #666666;
+}
+.box.black-600 {
+  background: #9a9a9a;
+}
+.box.black-500 {
+  background: #aaaaaa;
+}
+.box.black-400 {
+  background: #cccccc;
+}
+.box.black-300 {
+  background: #dddddd;
+}
+.box.black-200 {
+  background: #eeeeee;
+}
+.box.black-100 {
+  background: #fafafa;
+}
+.box.green {
+  background: #1c7530;
+}
+.box.green-900 {
+  background: #165e26;
+}
+.box.green-800 {
+  background: #77ac83;
+}
+.box.green-700 {
+  background: #d2e3d6;
+}
+.box.green-600 {
+  background: #e8f1ea;
+}
+.box.orange {
+  background: #FD7E14;
+}
+.box.orange-900 {
+  background: #ca6510;
+}
+.box.orange-800 {
+  background: #e47112;
+}
+.box.orange-700 {
+  background: #fecba1;
+}
+.box.orange-600 {
+  background: #fff2e8;
+}
+.box.blue {
+  background: #3162BD;
+}
+.box.blue-900 {
+  background: #1d3b71;
+}
+.box.blue-800 {
+  background: #83a1d7;
+}
+.box.blue-700 {
+  background: #c1d0eb;
+}
+.box.blue-600 {
+  background: #eaeff8;
+}
+.box.red {
+  background: #DC3545;
+}
+.box.red-900 {
+  background: #842029;
+}
+.box.red-800 {
+  background: #b02a37;
+}
+.box.red-700 {
+  background: #ea868f;
+}
+.box.red-600 {
+  background: #fcebec;
+}
+
+.color-fontsize {
+  font-size: 14px;
+  font-weight: 600;
+  color: #474d66;
+}
+
+.color-code {
+  background-color: #f4f5f9;
+  color: #6e4d66;
+  padding: 3px 6px;
+  margin-top: 7px;
+  position: relative;
+  top: 6px;
+}
+
+.hr-line {
+  margin: 60px 0px;
+}
+
 /* Custom Css*/
 * {
   font-family: "Inter", sans-serif;
@@ -17646,7 +17769,7 @@ ul.main-menu > li a small {
 }
 ul.main-menu > li.has-submenu {
   max-height: 500px;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 ul.main-menu > li.has-submenu.open {
   padding-bottom: 0px;
@@ -17674,6 +17797,8 @@ ul.main-menu > li.has-submenu.open .divsubmenu {
   padding: 0px 0px 10px 0px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  max-height: 420px;
+  overflow-y: auto;
 }
 ul.main-menu > li.has-submenu.open .divsubmenu ul.submenu {
   display: -webkit-box;
@@ -18470,6 +18595,8 @@ b, strong {
   -webkit-box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.2);
   opacity: 1;
+}
+.toast.forms-toast {
   position: fixed;
   right: 0;
 }
@@ -19072,6 +19199,394 @@ button.copybutton {
   margin-right: 6px;
   position: relative;
   top: -1px;
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  input[type=checkbox],
+  input[type=radio] {
+    --active: #275EFE;
+    --active-inner: #fff;
+    --focus: 2px rgba(39, 94, 254, .3);
+    --border: #BBC1E1;
+    --border-hover: #275EFE;
+    --background: #fff;
+    --disabled: #F6F8FF;
+    --disabled-inner: #E1E6F9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 18px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid #ced4da;
+    background: #f8f9fa;
+    -webkit-transition: background 0.3s, border-color 0.3s, -webkit-box-shadow 0.2s;
+    transition: background 0.3s, border-color 0.3s, -webkit-box-shadow 0.2s;
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  }
+  input[type=checkbox]:after,
+  input[type=radio]:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+  }
+  input[type=checkbox]:checked,
+  input[type=radio]:checked {
+    background: #0d6efd;
+    border: 1px solid #0257d5;
+    --d-o: .3s;
+    --d-t: .6s;
+    --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+  }
+  input[type=checkbox]:disabled,
+  input[type=radio]:disabled {
+    --b: //var(--disabled);
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+  input[type=checkbox]:disabled:checked,
+  input[type=radio]:disabled:checked {
+    --b: var(--disabled-inner);
+    --bc: var(--border);
+  }
+  input[type=checkbox]:disabled + label,
+  input[type=radio]:disabled + label {
+    cursor: not-allowed;
+  }
+  input[type=checkbox]:hover:not(:checked):not(:disabled),
+  input[type=radio]:hover:not(:checked):not(:disabled) {
+    --bc: var(--border-hover);
+  }
+  input[type=checkbox]:focus,
+  input[type=radio]:focus {
+    -webkit-box-shadow: 0 0 0 var(--focus);
+    box-shadow: 0 0 0 var(--focus);
+  }
+  input[type=checkbox]:not(.switch),
+  input[type=radio]:not(.switch) {
+    width: 18px;
+  }
+  input[type=checkbox]:not(.switch):after,
+  input[type=radio]:not(.switch):after {
+    opacity: var(--o, 0);
+  }
+  input[type=checkbox]:not(.switch):checked,
+  input[type=radio]:not(.switch):checked {
+    --o: 1;
+  }
+  input[type=checkbox] + label,
+  input[type=radio] + label {
+    font-size: 0.8rem;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  input[type=checkbox]:not(.switch) {
+    border-radius: 4px;
+  }
+  input[type=checkbox]:not(.switch):after {
+    width: 6px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-top: 0;
+    border-left: 0;
+    left: 5px;
+    top: 2px;
+    -webkit-transform: rotate(var(--r, 20deg));
+    transform: rotate(var(--r, 20deg));
+  }
+  input[type=checkbox]:not(.switch):checked {
+    --r: 43deg;
+  }
+  input[type=checkbox].switch {
+    width: 38px;
+    border-radius: 11px;
+  }
+  input[type=checkbox].switch:after {
+    left: 2px;
+    top: 1px;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background: var(--ab, var(--border));
+    -webkit-transform: translateX(var(--x, 0));
+    transform: translateX(var(--x, 0));
+  }
+  input[type=checkbox].switch:checked {
+    --ab: var(--active-inner);
+    --x: 17px;
+  }
+  input[type=checkbox].switch:disabled:not(:checked):after {
+    opacity: 0.6;
+  }
+  input[type=radio] {
+    border-radius: 50%;
+  }
+  input[type=radio]:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--active-inner);
+    opacity: 0;
+    -webkit-transform: scale(var(--s, 0.7));
+    transform: scale(var(--s, 0.7));
+    left: -2px;
+    top: -2px;
+  }
+  input[type=radio]:checked {
+    --s: .5;
+  }
+}
+.checkbox-div {
+  float: left;
+  padding: 10px 20px 10px 0px;
+}
+
+:root {
+  --switches-bg-color: #0066cc;
+  --switches-label-color: white ;
+  --switch-bg-color: white;
+  --switch-text-color: #0066cc ;
+}
+
+.switches-container {
+  width: 5rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  position: relative;
+  background: var(--switches-bg-color);
+  line-height: 1.8rem;
+  border-radius: 2rem;
+}
+
+/* input (radio) for toggling. hidden - use labels for clicking on */
+.switches-container input {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+
+/* labels for the input (radio) boxes - something to click on */
+.switches-container label {
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle !important;
+  text-align: center;
+  cursor: pointer;
+  color: var(--switches-label-color);
+}
+
+/* switch highlighters wrapper (sliding left / right) 
+    - need wrapper to enable the even margins around the highlight box
+*/
+.switch-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  padding: 0.15rem;
+  z-index: 3;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  /* transition: transform 1s; */
+}
+
+/* switch box highlighter */
+.switch {
+  border-radius: 3rem;
+  background: var(--switch-bg-color);
+  height: 100%;
+}
+
+/* switch box labels
+    - default setup
+    - toggle afterwards based on radio:checked status 
+*/
+.switch div {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0;
+  display: block;
+  color: var(--switch-text-color);
+  -webkit-transition: opacity 0.2s cubic-bezier(0.77, 0, 0.175, 1) 0.125s;
+  transition: opacity 0.2s cubic-bezier(0.77, 0, 0.175, 1) 0.125s;
+  will-change: opacity;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* slide the switch box from right to left */
+.switches-container input:nth-of-type(1):checked ~ .switch-wrapper {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+/* slide the switch box from left to right */
+.switches-container input:nth-of-type(2):checked ~ .switch-wrapper {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+/* toggle the switch box labels - first checkbox:checked - show first switch div */
+.switches-container input:nth-of-type(1):checked ~ .switch-wrapper .switch div:nth-of-type(1) {
+  opacity: 1;
+}
+
+/* toggle the switch box labels - second checkbox:checked - show second switch div */
+.switches-container input:nth-of-type(2):checked ~ .switch-wrapper .switch div:nth-of-type(2) {
+  opacity: 1;
+}
+
+#model-1 .toggle {
+  position: relative;
+}
+
+#model-1 .toggle input[type=checkbox] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#model-1 .toggle input[type=checkbox]:hover + label:after {
+  -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1333333333), 0 3px 8px 0 rgba(0, 0, 0, 0.0666666667);
+          box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1333333333), 0 3px 8px 0 rgba(0, 0, 0, 0.0666666667);
+}
+
+#model-1 .toggle input[type=checkbox]:checked + label:before {
+  background: #376fcb;
+}
+
+#model-1 .toggle input[type=checkbox]:checked + label:after {
+  background: #4285F4;
+  left: 25px;
+}
+
+#model-1 .toggle label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#model-1 .toggle label:before {
+  content: "";
+  width: 45px;
+  height: 20px;
+  background: #ccc;
+  position: relative;
+  display: inline-block;
+  border-radius: 46px;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+#model-1 .toggle label:after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  left: 0;
+  top: -3px;
+  z-index: 2;
+  background: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1333333333);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1333333333);
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+ul.breadcrumb-classic2 {
+  padding: 10px 16px 10px 0px;
+  list-style: none;
+}
+
+ul.breadcrumb-classic2 li {
+  display: inline;
+  font-size: 13px;
+  color: #151515;
+}
+
+.active {
+  color: #151515 !important;
+}
+
+.icon-home-1 {
+  color: #0066cc;
+  padding: 0 5px 0 0;
+}
+
+ul.breadcrumb-classic2 li + li:before {
+  padding: 8px;
+  color: #0066cc;
+  content: "›";
+  font-size: 17px;
+  font-weight: 600;
+}
+
+ul.breadcrumb-classic2 li a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+ul.breadcrumb-classic2 li a:hover {
+  color: #151515;
+  text-decoration: underline !important;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #e9ecef;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 13px;
+}
+
+ul.breadcrumb li a {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 13px !important;
+}
+
+ul.breadcrumb li a:hover {
+  color: #151515;
+  text-decoration: underline !important;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: #000;
+  content: "/ ";
 }
 
 .m-auto {

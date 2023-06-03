@@ -297,7 +297,7 @@ ul.main-menu {
 		}
         &.has-submenu{
                max-height: 500px;
-               overflow-y:auto;
+               overflow-y:hidden;
                 &.open{
                     // &.active{
                       
@@ -324,6 +324,8 @@ ul.main-menu {
                         margin: 0;
                         padding: 0px 0px 10px 0px;
                         transition:all .5s ease-in-out;
+                        max-height: 420px;
+                        overflow-y: auto;
                           ul.submenu{
                                 display: -webkit-box;
                                 display: -ms-flexbox;
