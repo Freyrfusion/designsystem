@@ -1,0 +1,74 @@
+.data-listview{
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12);
+    border-radius: 4px;
+    small{
+        color: $black-700;
+    }
+
+    .list-row{        
+        padding: 14px 20px;
+        border-bottom: 1px solid $black-400;        
+
+        &:last-child{
+            border: none;
+        }
+
+    }
+
+    .list-panel{
+        &:nth-child(even){
+            background:#f6f6f6;
+        }
+    }
+
+}
+
+.bg-none{
+    background: none;
+}
+
+.badge-opacity.badge-primary {
+    background-color: rgba(0,129,255,.17);
+    color: #0081FF;
+}
+
+.badge-opacity.badge-success {
+    background-color: rgba(9,182,109,.17);
+    color: #09B66D;
+}
+
+.badge-opacity.badge-danger {
+    background-color: rgba(255,61,87,.17);
+    color: #FF3D57;
+}
+
+.badge-opacity.badge-info {
+    background-color: rgba(94,92,230,.17);
+    color: #5e5ce6;
+}
+
+.border-none{
+    border: none;
+}
+
+.main-view{
+    .list-panel{
+        // border-bottom: 1px solid $black-300;
+
+        &:last-child{
+            border: none;
+        }
+        .list-row{
+            border: none;
+
+            
+            a{
+                color: #151515;
+            }
+        }
+
+        .panel-inner{
+            border-top: 1px solid $black-300;
+        }
+    }
+}
