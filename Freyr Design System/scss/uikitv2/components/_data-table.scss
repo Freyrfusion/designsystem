@@ -1,0 +1,56 @@
+#example_length{
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    padding: 0 20px 4px;
+}
+
+.datatable-example{
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12);
+    border-radius: 4px;
+}
+
+#example{   
+
+    thead{
+        background: lighten($black, 96.5%); //#f6f6f6
+    }
+
+    tr{
+        th {
+            font-weight: $weight-500;
+        }
+    }
+
+    th, td{
+        color: $black-700;
+        border: none;
+    }
+}
+
+#example.dataTable{
+    thead th, thead td, tbody th, tbody td{
+        padding: 10px 10px;
+        vertical-align: middle;
+    }
+
+    .dropdown{
+        // >a{
+        //     color: currentColor;
+        // }
+        .dropdown-menu{
+            .dropdown-item{
+                border-bottom: 1px solid $black-300;
+
+                &:last-child{
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+#example_info{
+    padding: 10px;
+}
+

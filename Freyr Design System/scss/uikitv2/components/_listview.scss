@@ -1,12 +1,13 @@
 .data-listview{
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12);
     border-radius: 4px;
+    
     small{
         color: $black-700;
     }
 
-    .list-row{        
-        padding: 14px 20px;
+    .list-row {        
+        padding: 10px 15px;
         border-bottom: 1px solid $black-400;        
 
         &:last-child{
@@ -15,9 +16,14 @@
 
     }
 
-    .list-panel{
+    .list-panel {        
+
         &:nth-child(even){
             background:#f6f6f6;
+        }
+
+        .list-header{
+            padding: 10px 15px;
         }
     }
 
@@ -45,6 +51,11 @@
 .badge-opacity.badge-info {
     background-color: rgba(94,92,230,.17);
     color: #5e5ce6;
+}
+
+.badge-opacity.badge-warning {
+    background-color: #fff8dd;
+    color: #ffc700;
 }
 
 .border-none{

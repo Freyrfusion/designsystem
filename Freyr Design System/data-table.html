@@ -1,0 +1,318 @@
+
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"> -->
+
+
+
+<div class="uikit-section transparent">
+    <div class="page-header">
+        <h1>Data Table</h1>
+        <p>
+            Data Table View organizes data into rows (of items) and columns (of item attributes). Data Tables make structured data easy to scan, compare, sort, and analyze. Data Tables can be embedded into other design patterns. Data Tables are familiar to users and often the correct choice for structured data.
+        </p>
+        <ul class="nav nav-tabs page-default-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">HTML Code</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Design Guide</a>
+            </li>
+          </ul>
+
+    </div>
+
+    <div class="innerpage-content">
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="datatable-example">
+                            <table id="example" class="table data-example" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="checkall">
+                                            </div>
+                                        </th>
+                                        <th>Record ID</th>
+                                        <th>Document Type ID</th>
+                                        <th>Record Name</th>
+                                        <th>Status</th>
+                                        <th>Delivery Status</th>
+                                        <th>Create Date</th>
+                                        <th>Deadline</th>
+                                        <th class="text-center">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input checkId" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>47</td>
+                                        <td>197</td>
+                                        <td class="weight-500">Document Record -WF</td>
+                                        <td><span class="badge badge-opacity badge-success px-3 py-1 rounded-pill">Completed</span></td>
+                                        <td class="text-primary">Received</td>
+                                        <td>
+                                            <div class="mb-1">Mar 13, 2012</div>
+                                            <div>
+                                                <small>08:15 AM</small>
+                                            </div>
+                                        </td>
+                                        <td>Jan 1, 2021</td>
+                                        <td class="text-center">
+                                            <div class="dropdown">
+                                                <a href="#" role="button" class="dropdown-toggle btn btn-md btn-outline-light border-secondary text-primary rounded-pill py-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                </a>
+                                                <div class="dropdown-menu animated faster fadeInUp animate-top-initial" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">View</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Disable</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input checkId" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>107</td>
+                                        <td>197</td>
+                                        <td  class="weight-500">SMPC for Paracetamol</td>
+                                        <td><span class="badge badge-opacity badge-warning px-3 py-1 rounded-pill">Pending</span></td>
+                                        <td>draft</td>
+                                        <td>
+                                            <div class="mb-1">Mar 13, 2012</div>
+                                            <div>
+                                                <small>08:15 AM</small>
+                                            </div>
+                                        </td>
+                                        <td>Jan 1, 2021</td>
+                                        
+                                        <td class="text-center">
+                                            <div class="dropdown">
+                                                <a href="#" role="button" class="dropdown-toggle btn btn-md btn-outline-light border-secondary text-primary rounded-pill py-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                </a>
+                                                <div class="dropdown-menu animated faster fadeInUp animate-top-initial" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">View</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Disable</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input checkId" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>107</td>
+                                        <td>197</td>
+                                        <td  class="weight-500">SMPC for Paracetamol</td>
+                                        <td><span class="badge badge-opacity badge-danger px-3 py-1 rounded-pill">Rejected</span></td>
+                                        <td class="text-primary">Received</td>
+                                        <td>
+                                            <div class="mb-1">Mar 13, 2012</div>
+                                            <div>
+                                                <small>08:15 AM</small>
+                                            </div>
+                                        </td>
+                                        <td>Jan 1, 2021</td>
+                                        
+                                        <td class="text-center">
+                                            <div class="dropdown">
+                                                <a href="#" role="button" class="dropdown-toggle btn btn-md btn-outline-light border-secondary text-primary rounded-pill py-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                </a>
+                                                <div class="dropdown-menu animated faster fadeInUp animate-top-initial" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">View</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Disable</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input checkId" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>107</td>
+                                        <td>197</td>
+                                        <td  class="weight-500">SMPC for Paracetamol</td>
+                                        <td><span class="badge badge-opacity badge-primary px-3 py-1 rounded-pill">To Ship</span></td>
+                                        <td class="text-danger">Rejected</td>
+                                        <td>
+                                            <div class="mb-1">Mar 13, 2012</div>
+                                            <div>
+                                                <small>08:15 AM</small>
+                                            </div>
+                                        </td>
+                                        <td>Jan 1, 2021</td>
+                                        
+                                        <td class="text-center">
+                                            <div class="dropdown">
+                                                <a href="#" role="button" class="dropdown-toggle btn btn-md btn-outline-light border-secondary text-primary rounded-pill py-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                </a>
+                                                <div class="dropdown-menu animated faster fadeInUp animate-top-initial" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">View</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Disable</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input checkId" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>107</td>
+                                        <td>197</td>
+                                        <td  class="weight-500">SMPC for Paracetamol</td>
+                                        <td><span class="badge badge-opacity badge-info px-3 py-1 rounded-pill">Shipping</span></td>
+                                        <td class="text-success">Completed</td>
+                                        <td>
+                                            <div class="mb-1">Mar 13, 2012</div>
+                                            <div>
+                                                <small>08:15 AM</small>
+                                            </div>
+                                        </td>
+                                        <td>Jan 1, 2021</td>
+                                        <td class="text-center">
+                                            <div class="dropdown">
+                                                <a href="#" role="button" class="dropdown-toggle btn btn-md btn-outline-light border-secondary text-primary rounded-pill py-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                </a>
+                                                <div class="dropdown-menu animated faster fadeInUp animate-top-initial" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">View</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Disable</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input checkId" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>47</td>
+                                        <td>197</td>
+                                        <td class="weight-500">Document Record -WF</td>
+                                        <td><span class="badge badge-opacity badge-success px-3 py-1 rounded-pill">Completed</span></td>
+                                        <td class="text-primary">Received</td>
+                                        <td>
+                                            <div class="mb-1">Mar 13, 2012</div>
+                                            <div>
+                                                <small>08:15 AM</small>
+                                            </div>
+                                        </td>
+                                        <td>Jan 1, 2021</td>
+                                        <td class="text-center">
+                                            <div class="dropdown">
+                                                <a href="#" role="button" class="dropdown-toggle btn btn-md btn-outline-light border-secondary text-primary rounded-pill py-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                </a>
+                                                <div class="dropdown-menu animated faster fadeInUp animate-top-initial" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">View</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Disable</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <p>We are currently working on this, we will update soon!</p>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <p>We are currently working on this, we will update soon!</p>
+            </div>
+          </div>
+       
+    </div>
+</div>      
+ 
+	
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js" ></script>
+<!-- <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap4.min.js"></script> -->
+
+<script>
+    $('#myTab a').on('click', function (e) {        
+        e.preventDefault()
+        $(this).tab('show')
+    })
+
+    $('[data-toggle="dropdown"]').dropdown()
+
+
+    $(document).ready(function () {
+        $('#example').DataTable({
+            "searching": false,
+
+            language: {
+                paginate: {
+                next: '<i class="icon-angle-right subheading">',
+                previous: '<i class="icon-angle-left subheading">'  
+                }
+            },
+
+            "columns": [
+                { width: '5%' },
+                { width: '10%' },
+                { width: '10%' },
+                { width: '15%' },
+                { width: '10%' },
+                { width: '13%' },
+                { width: '13%' },
+                { width: '10%' },
+                { width: '8%' },
+            ],
+            
+            order: [],
+            columnDefs: [{
+                'targets': [0, 1, 2, 3, 4, 8],
+                'orderable': false,
+            }]
+        });
+    });
+
+
+    // select checkbox
+    $('#checkall').click(function(){
+        $('.checkId').prop('checked', this.checked);
+    })
+
+    $('.checkId').change(function(){
+        var check = ($('.checkId').filter(":checked").length == $('.checkId').length);
+        $('#checkall').prop('checked', check);
+    })
+</script>

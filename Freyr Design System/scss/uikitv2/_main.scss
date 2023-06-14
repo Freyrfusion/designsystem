@@ -1,6 +1,7 @@
 
 @import "uikit/demo";
 @import "vendor/bootstrap";
+@import "vendor/data-table";
 // Base
 @import "helpers/variables";
 @import "uikit/variables";
@@ -21,6 +22,7 @@
 
 /* Foundations */
 @import "foundations/colors";
+@import "foundations/typography";
 
 
 /* Custom Css*/
@@ -39,6 +41,8 @@
 @import "components/forms2";
 
 @import "components/materialforms";
+@import "components/listview";
+@import "components/data-table";
 
 // UI Kit Related Files Below
 // Reset and dependencies

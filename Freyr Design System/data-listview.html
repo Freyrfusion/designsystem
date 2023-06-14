@@ -71,40 +71,71 @@
                             <div class="card-body px-2 pt-0">
                                 <div class="data-listview main-view">
                                     <div class="list-panel">
-                                        <div class="list-row d-flex align-items-center justify-content-between">
-                                            <div>
-                                                <a href="javascript:;" class="expand-panel collapse-icon">
-                                                    <em class="icon-angle-right subheading "></em>
-                                                </a>
+                                        <div class="list-header">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-1">
+                                                    <label class="mb-0"></label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="weight-500 mb-0">Date</label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="weight-500 mb-0">Company</label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="weight-500 mb-0">Invoice Value</label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="weight-500 mb-0">Tax</label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="weight-500 mb-0">Payment</label>
+                                                </div>
+                                                <div class="col-md-1 text-center">
+                                                    <label class=" weight-500 mb-0">Action</label>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <p class="weight-500 mb-0">2018-04-07</p>
-                                                <small>ABIS 0001</small>
-                                            </div>
-                                            <div>
-                                                <p class="mb-0">UAB Microsoft</p>
-                                            </div>
-                                            <div>
-                                                <p class="weight-500 mb-0">1.24716</p>
-                                                <small>Invoice Value</small>
-                                            </div>
-                                            <div>
-                                                <p class="weight-500 mb-0">1.24716</p>
-                                                <small>After Tax</small>
-                                            </div>
-                                            <div>
-                                                <button type="button" class="btn btn-primary btn-md">
-                                                    <em class="icon-plus-1 subheading"></em> Fix Payment
-                                                </button>
-                                            </div>
-                                            <div class="dropdown dropleft">
-                                                <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <svg  width="24" height="24" fill="none" viewBox="0 0 32 25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><path d="M11.534 3.057C10.657 3.269 10 4.102 10 5c0 1.08.92 2 2 2s2-.92 2-2c0-1.096-.934-2.013-2.032-1.997a2.342 2.342 0 0 0-.434.054m0 7C10.657 10.269 10 11.102 10 12c0 1.08.92 2 2 2s2-.92 2-2c0-1.096-.934-2.013-2.032-1.997a2.342 2.342 0 0 0-.434.054m0 7C10.657 17.269 10 18.102 10 19c0 1.08.92 2 2 2 .92 0 1.768-.69 1.956-1.592a1.954 1.954 0 0 0-.552-1.812 1.969 1.969 0 0 0-1.87-.539" fill="#000" fill-rule="evenodd" stroke="none"/></svg>
-                                                </a>
-                                                <div class="dropdown-menu animated faster fadeInUp animate-top-initial" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <div class="list-panel">
+                                        <div class="list-row">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-1">
+                                                    <a href="javascript:;" class="expand-panel collapse-icon">
+                                                        <em class="icon-angle-right subheading "></em>
+                                                    </a>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <p class="weight-500 mb-0">2018-04-07</p>
+                                                    <small>ABIS 0001</small>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <p class="mb-0">UAB Microsoft</p>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <p class="weight-500 mb-0">1.24716</p>
+                                                    <small>Invoice Value</small>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <p class="weight-500 mb-0">1.24716</p>
+                                                    <small>After Tax</small>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <button type="button" class="btn btn-primary btn-md rounded-pill">
+                                                        <em class="icon-plus-1 subheading1"></em> Fix Payment
+                                                    </button>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <div class="dropdown dropleft text-center text-center">
+                                                        <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <svg  width="24" height="24" fill="none" viewBox="0 0 32 25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><path d="M11.534 3.057C10.657 3.269 10 4.102 10 5c0 1.08.92 2 2 2s2-.92 2-2c0-1.096-.934-2.013-2.032-1.997a2.342 2.342 0 0 0-.434.054m0 7C10.657 10.269 10 11.102 10 12c0 1.08.92 2 2 2s2-.92 2-2c0-1.096-.934-2.013-2.032-1.997a2.342 2.342 0 0 0-.434.054m0 7C10.657 17.269 10 18.102 10 19c0 1.08.92 2 2 2 .92 0 1.768-.69 1.956-1.592a1.954 1.954 0 0 0-.552-1.812 1.969 1.969 0 0 0-1.87-.539" fill="#000" fill-rule="evenodd" stroke="none"/></svg>
+                                                        </a>
+                                                        <div class="dropdown-menu animated faster fadeInUp animate-top-initial" aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -130,40 +161,44 @@
                                         </div>
                                     </div>
                                     <div class="list-panel">
-                                        <div class="list-row d-flex align-items-center justify-content-between">
-                                            <div>
-                                                <a href="javascript:;" class="expand-panel1 collapse-icon">
-                                                    <em class="icon-angle-right subheading "></em>
-                                                </a>
-                                            </div>
-                                            <div>
-                                                <p class="weight-500 mb-0">2018-04-07</p>
-                                                <small>ABIS 0001</small>
-                                            </div>
-                                            <div>
-                                                <p class="mb-0">UAB Microsoft</p>
-                                            </div>
-                                            <div>
-                                                <p class="weight-500 mb-0">1.24716</p>
-                                                <small>Invoice Value</small>
-                                            </div>
-                                            <div>
-                                                <p class="weight-500 mb-0">1.24716</p>
-                                                <small>After Tax</small>
-                                            </div>
-                                            <div>
-                                                <button type="button" class="btn btn-primary btn-md">
-                                                    <em class="icon-plus-1 subheading"></em> Fix Payment
-                                                </button>
-                                            </div>
-                                            <div class="dropdown dropleft">
-                                                <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <svg  width="24" height="24" fill="none" viewBox="0 0 32 25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><path d="M11.534 3.057C10.657 3.269 10 4.102 10 5c0 1.08.92 2 2 2s2-.92 2-2c0-1.096-.934-2.013-2.032-1.997a2.342 2.342 0 0 0-.434.054m0 7C10.657 10.269 10 11.102 10 12c0 1.08.92 2 2 2s2-.92 2-2c0-1.096-.934-2.013-2.032-1.997a2.342 2.342 0 0 0-.434.054m0 7C10.657 17.269 10 18.102 10 19c0 1.08.92 2 2 2 .92 0 1.768-.69 1.956-1.592a1.954 1.954 0 0 0-.552-1.812 1.969 1.969 0 0 0-1.87-.539" fill="#000" fill-rule="evenodd" stroke="none"/></svg>
-                                                </a>
-                                                <div class="dropdown-menu animated faster fadeInUp animate-top-initial" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="list-row">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-1">
+                                                    <a href="javascript:;" class="expand-panel1 collapse-icon">
+                                                        <em class="icon-angle-right subheading "></em>
+                                                    </a>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <p class="weight-500 mb-0">2018-04-07</p>
+                                                    <small>ABIS 0001</small>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <p class="mb-0">UAB Microsoft</p>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <p class="weight-500 mb-0">1.24716</p>
+                                                    <small>Invoice Value</small>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <p class="weight-500 mb-0">1.24716</p>
+                                                    <small>After Tax</small>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <button type="button" class="btn btn-primary btn-md rounded-pill">
+                                                        <em class="icon-plus-1 subheading1"></em> Fix Payment
+                                                    </button>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <div class="dropdown dropleft text-center">
+                                                        <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <svg  width="24" height="24" fill="none" viewBox="0 0 32 25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><path d="M11.534 3.057C10.657 3.269 10 4.102 10 5c0 1.08.92 2 2 2s2-.92 2-2c0-1.096-.934-2.013-2.032-1.997a2.342 2.342 0 0 0-.434.054m0 7C10.657 10.269 10 11.102 10 12c0 1.08.92 2 2 2s2-.92 2-2c0-1.096-.934-2.013-2.032-1.997a2.342 2.342 0 0 0-.434.054m0 7C10.657 17.269 10 18.102 10 19c0 1.08.92 2 2 2 .92 0 1.768-.69 1.956-1.592a1.954 1.954 0 0 0-.552-1.812 1.969 1.969 0 0 0-1.87-.539" fill="#000" fill-rule="evenodd" stroke="none"/></svg>
+                                                        </a>
+                                                        <div class="dropdown-menu animated faster fadeInUp animate-top-initial" aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -189,40 +224,44 @@
                                         </div>
                                     </div>
                                     <div class="list-panel">
-                                        <div class="list-row d-flex align-items-center justify-content-between">
-                                            <div>
-                                                <a href="javascript:;" class="expand-panel2 collapse-icon">
-                                                    <em class="icon-angle-right subheading "></em>
-                                                </a>
-                                            </div>
-                                            <div>
-                                                <p class="weight-500 mb-0">2018-04-07</p>
-                                                <small>ABIS 0001</small>
-                                            </div>
-                                            <div>
-                                                <p class="mb-0">UAB Microsoft</p>
-                                            </div>
-                                            <div>
-                                                <p class="weight-500 mb-0">1.24716</p>
-                                                <small>Invoice Value</small>
-                                            </div>
-                                            <div>
-                                                <p class="weight-500 mb-0">1.24716</p>
-                                                <small>After Tax</small>
-                                            </div>
-                                            <div>
-                                                <button type="button" class="btn btn-primary btn-md">
-                                                    <em class="icon-plus-1 subheading"></em> Fix Payment
-                                                </button>
-                                            </div>
-                                            <div class="dropdown dropleft">
-                                                <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <svg  width="24" height="24" fill="none" viewBox="0 0 32 25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><path d="M11.534 3.057C10.657 3.269 10 4.102 10 5c0 1.08.92 2 2 2s2-.92 2-2c0-1.096-.934-2.013-2.032-1.997a2.342 2.342 0 0 0-.434.054m0 7C10.657 10.269 10 11.102 10 12c0 1.08.92 2 2 2s2-.92 2-2c0-1.096-.934-2.013-2.032-1.997a2.342 2.342 0 0 0-.434.054m0 7C10.657 17.269 10 18.102 10 19c0 1.08.92 2 2 2 .92 0 1.768-.69 1.956-1.592a1.954 1.954 0 0 0-.552-1.812 1.969 1.969 0 0 0-1.87-.539" fill="#000" fill-rule="evenodd" stroke="none"/></svg>
-                                                </a>
-                                                <div class="dropdown-menu animated faster fadeInUp animate-top-initial" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="list-row">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-1">
+                                                    <a href="javascript:;" class="expand-panel2 collapse-icon">
+                                                        <em class="icon-angle-right subheading "></em>
+                                                    </a>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <p class="weight-500 mb-0">2018-04-07</p>
+                                                    <small>ABIS 0001</small>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <p class="mb-0">UAB Microsoft</p>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <p class="weight-500 mb-0">1.24716</p>
+                                                    <small>Invoice Value</small>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <p class="weight-500 mb-0">1.24716</p>
+                                                    <small>After Tax</small>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <button type="button" class="btn btn-primary btn-md rounded-pill">
+                                                        <em class="icon-plus-1 subheading1"></em> Fix Payment
+                                                    </button>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <div class="dropdown dropleft text-center">
+                                                        <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <svg  width="24" height="24" fill="none" viewBox="0 0 32 25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><path d="M11.534 3.057C10.657 3.269 10 4.102 10 5c0 1.08.92 2 2 2s2-.92 2-2c0-1.096-.934-2.013-2.032-1.997a2.342 2.342 0 0 0-.434.054m0 7C10.657 10.269 10 11.102 10 12c0 1.08.92 2 2 2s2-.92 2-2c0-1.096-.934-2.013-2.032-1.997a2.342 2.342 0 0 0-.434.054m0 7C10.657 17.269 10 18.102 10 19c0 1.08.92 2 2 2 .92 0 1.768-.69 1.956-1.592a1.954 1.954 0 0 0-.552-1.812 1.969 1.969 0 0 0-1.87-.539" fill="#000" fill-rule="evenodd" stroke="none"/></svg>
+                                                        </a>
+                                                        <div class="dropdown-menu animated faster fadeInUp animate-top-initial" aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -248,40 +287,44 @@
                                         </div>
                                     </div>
                                     <div class="list-panel">
-                                        <div class="list-row d-flex align-items-center justify-content-between">
-                                            <div>
-                                                <a href="javascript:;" class="expand-panel3 collapse-icon">
-                                                    <em class="icon-angle-right subheading "></em>
-                                                </a>
-                                            </div>
-                                            <div>
-                                                <p class="weight-500 mb-0">2018-04-07</p>
-                                                <small>ABIS 0001</small>
-                                            </div>
-                                            <div>
-                                                <p class="mb-0">UAB Microsoft</p>
-                                            </div>
-                                            <div>
-                                                <p class="weight-500 mb-0">1.24716</p>
-                                                <small>Invoice Value</small>
-                                            </div>
-                                            <div>
-                                                <p class="weight-500 mb-0">1.24716</p>
-                                                <small>After Tax</small>
-                                            </div>
-                                            <div>
-                                                <button type="button" class="btn btn-primary btn-md">
-                                                    <em class="icon-plus-1 subheading"></em> Fix Payment
-                                                </button>
-                                            </div>
-                                            <div class="dropdown dropleft">
-                                                <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <svg  width="24" height="24" fill="none" viewBox="0 0 32 25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><path d="M11.534 3.057C10.657 3.269 10 4.102 10 5c0 1.08.92 2 2 2s2-.92 2-2c0-1.096-.934-2.013-2.032-1.997a2.342 2.342 0 0 0-.434.054m0 7C10.657 10.269 10 11.102 10 12c0 1.08.92 2 2 2s2-.92 2-2c0-1.096-.934-2.013-2.032-1.997a2.342 2.342 0 0 0-.434.054m0 7C10.657 17.269 10 18.102 10 19c0 1.08.92 2 2 2 .92 0 1.768-.69 1.956-1.592a1.954 1.954 0 0 0-.552-1.812 1.969 1.969 0 0 0-1.87-.539" fill="#000" fill-rule="evenodd" stroke="none"/></svg>
-                                                </a>
-                                                <div class="dropdown-menu animated faster fadeInUp animate-top-initial" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="list-row">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-1">
+                                                    <a href="javascript:;" class="expand-panel3 collapse-icon">
+                                                        <em class="icon-angle-right subheading "></em>
+                                                    </a>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <p class="weight-500 mb-0">2018-04-07</p>
+                                                    <small>ABIS 0001</small>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <p class="mb-0">UAB Microsoft</p>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <p class="weight-500 mb-0">1.24716</p>
+                                                    <small>Invoice Value</small>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <p class="weight-500 mb-0">1.24716</p>
+                                                    <small>After Tax</small>
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <button type="button" class="btn btn-primary btn-md rounded-pill">
+                                                        <em class="icon-plus-1 subheading1"></em> Fix Payment
+                                                    </button>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <div class="dropdown dropleft text-center">
+                                                        <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <svg  width="24" height="24" fill="none" viewBox="0 0 32 25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><path d="M11.534 3.057C10.657 3.269 10 4.102 10 5c0 1.08.92 2 2 2s2-.92 2-2c0-1.096-.934-2.013-2.032-1.997a2.342 2.342 0 0 0-.434.054m0 7C10.657 10.269 10 11.102 10 12c0 1.08.92 2 2 2s2-.92 2-2c0-1.096-.934-2.013-2.032-1.997a2.342 2.342 0 0 0-.434.054m0 7C10.657 17.269 10 18.102 10 19c0 1.08.92 2 2 2 .92 0 1.768-.69 1.956-1.592a1.954 1.954 0 0 0-.552-1.812 1.969 1.969 0 0 0-1.87-.539" fill="#000" fill-rule="evenodd" stroke="none"/></svg>
+                                                        </a>
+                                                        <div class="dropdown-menu animated faster fadeInUp animate-top-initial" aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
