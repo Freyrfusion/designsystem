@@ -20443,6 +20443,411 @@ ul.breadcrumb li + li:before {
   content: "/ ";
 }
 
+.card2 {
+  -webkit-box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07), 0 2px 9px 0 rgba(18, 106, 211, 0.06);
+  box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07), 0 2px 9px 0 rgba(18, 106, 211, 0.06);
+}
+
+.product-show {
+  left: 22px;
+}
+
+.translate-middle-y {
+  -webkit-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
+}
+
+.top-50 {
+  top: 50% !important;
+}
+
+.search-control {
+  padding: 0.4rem 1.8rem;
+}
+
+.width-10 {
+  width: 10%;
+}
+
+.width-30 {
+  width: 30%;
+}
+
+.width-20 {
+  width: 20%;
+}
+
+.table-filter {
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-top: 17px;
+  border-radius: 3px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 12px;
+}
+
+.filter-text a {
+  color: #495057;
+}
+
+.m-r-12 {
+  margin-right: 12px;
+}
+
+.thead-font {
+  color: #a4a4a6;
+}
+
+.dropdown-item-columns.active, .dropdown-item-columns:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #ffffff !important;
+}
+
+.alt-color-table tbody tr:nth-child(odd) {
+  background-color: #f9fafe;
+}
+
+.alt-color-table td {
+  border: none;
+}
+
+.alt-color-table .btn + .btn {
+  margin-left: 3px;
+}
+
+.form-control2 {
+  border-radius: 20px;
+  -webkit-box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07), 0 2px 9px 0 rgba(18, 106, 211, 0.06);
+          box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07), 0 2px 9px 0 rgba(18, 106, 211, 0.06);
+}
+
+.p-r-0 {
+  padding-right: 0px;
+}
+
+/* table2 start */
+.table2-text h5 {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.table2-text p {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+.table2-button {
+  color: #6c757d;
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+  border-radius: 24px;
+  height: 40px;
+}
+
+.table2-button-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #e5e5e5;
+  border-radius: 24px;
+  height: 40px;
+}
+
+.table2-button-green {
+  color: #4d9379;
+  background-color: #e5f6ee;
+  border-color: #e5e5e5;
+  border-radius: 24px;
+  height: 40px;
+}
+
+.table2-button-icon {
+  color: #6c757d;
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+  border-radius: 45px;
+  height: 40px;
+  width: 40px;
+}
+
+.bg-back {
+  background: #f3f3f9;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #58595b;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.registration-form {
+  background-color: #fff;
+}
+.registration-form > h3 {
+  font-size: 19.5px;
+  font-weight: 700;
+  margin: 0;
+}
+.registration-form hr {
+  margin-bottom: 1.5rem;
+  border-top: 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.c-button {
+  position: relative;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  vertical-align: middle;
+  overflow: hidden;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.c-button:hover, .c-button:focus {
+  outline: none;
+}
+.c-button:not(:disabled) {
+  cursor: pointer;
+}
+
+.form-floating {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.form-floating:last-of-type {
+  margin-bottom: 0;
+}
+.form-floating > .form-controls,
+.form-floating > .form-select {
+  padding: 18px 18px;
+}
+.form-floating > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 700;
+  height: 100%;
+  padding: 22px 18px;
+  border: 1px solid transparent;
+  pointer-events: none;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  -webkit-transition: opacity 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  color: #b8b6bb;
+  font-weight: 500;
+}
+.form-floating > .form-controls::-webkit-input-placeholder {
+  color: transparent;
+}
+.form-floating > .form-controls::-moz-placeholder {
+  color: transparent;
+}
+.form-floating > .form-controls:-ms-input-placeholder {
+  color: transparent;
+}
+.form-floating > .form-controls::-ms-input-placeholder {
+  color: transparent;
+}
+.form-floating > .form-controls::placeholder {
+  color: transparent;
+}
+.form-floating > .form-controls:not(:-moz-placeholder-shown) {
+  padding-top: 26px;
+  padding-bottom: 10px;
+  position: relative;
+  top: 3px;
+  font-weight: 500;
+}
+.form-floating > .form-controls:not(:-ms-input-placeholder) {
+  padding-top: 26px;
+  padding-bottom: 10px;
+  position: relative;
+  top: 3px;
+  font-weight: 500;
+}
+.form-floating > .form-controls:focus, .form-floating > .form-controls:not(:placeholder-shown) {
+  padding-top: 26px;
+  padding-bottom: 10px;
+  position: relative;
+  top: 3px;
+  font-weight: 500;
+}
+.form-floating > .form-controls:-webkit-autofill {
+  padding-top: 26px;
+  padding-bottom: 10px;
+}
+.form-floating > .form-controls:not(:-moz-placeholder-shown) ~ label {
+  opacity: 10px;
+  transform: scale(0.75) translateY(-0.5rem) translateX(0.15rem);
+}
+.form-floating > .form-controls:not(:-ms-input-placeholder) ~ label {
+  opacity: 10px;
+  transform: scale(0.75) translateY(-0.5rem) translateX(0.15rem);
+}
+.form-floating > .form-controls:focus ~ label,
+.form-floating > .form-controls:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  opacity: 10px;
+  -webkit-transform: scale(0.75) translateY(-0.5rem) translateX(0.15rem);
+          transform: scale(0.75) translateY(-0.5rem) translateX(0.15rem);
+}
+.form-floating > .form-controls:-webkit-autofill ~ label {
+  opacity: 10px;
+  -webkit-transform: scale(0.75) translateY(-0.5rem) translateX(0.15rem);
+          transform: scale(0.75) translateY(-0.5rem) translateX(0.15rem);
+}
+
+.form-controls {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  width: 100%;
+  height: calc(1.5em + 0.8rem + 2px);
+  padding: 0.4rem 0.8rem;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.form-controls:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.form-floating > .form-controls, .form-floating > .form-select {
+  padding: 32px 22px 17px 15px !important;
+  position: relative;
+  top: 6px;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 54px;
+  font-weight: 400 !important;
+  font-size: 16px;
+  color: #333;
+}
+
+.b-th-cancel {
+  color: black;
+}
+
+.min-height-60 {
+  min-height: 60px !important;
+}
+
+.floating-label {
+  position: relative;
+  margin-bottom: 20px;
+}
+.floating-label label {
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 5px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.floating-select {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 16px 0px 16px;
+  display: block;
+  width: 100%;
+  height: 54px;
+  background-color: transparent;
+  border: none;
+  border: 1px solid #dfdfdf;
+  border-radius: 16px;
+  color: #333;
+  position: relative;
+  top: -6px;
+}
+.floating-select:focus {
+  outline: none;
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+}
+.floating-select:focus ~ label, .floating-select:not([value=""]):valid ~ label {
+  top: 0px;
+  font-size: 10px;
+  color: #b8b6bb;
+  left: 7px;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.m-t-30 {
+  margin-top: 30px;
+}
+
+.m-l-14 {
+  margin-left: 14px;
+}
+
+.f-13 {
+  font-size: 13px;
+}
+
 .data-listview {
   -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -20541,6 +20946,7 @@ ul.breadcrumb li + li:before {
 }
 #example.dataTable .dropdown .dropdown-menu .dropdown-item {
   border-bottom: 1px solid #dddddd;
+  width: auto;
 }
 #example.dataTable .dropdown .dropdown-menu .dropdown-item:last-child {
   border: none;
@@ -20548,6 +20954,27 @@ ul.breadcrumb li + li:before {
 
 #example_info {
   padding: 10px;
+}
+
+.view-card {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.view-card .card-header {
+  padding: 15px 20px;
+  background: none;
+}
+.view-card .card-body .view-list {
+  border-bottom: 1px dashed #e7e7e7;
+  padding: 15px 20px;
+}
+.view-card .card-body .view-list:last-child {
+  border: none;
+}
+.view-card .card-body .view-list .text-muted {
+  color: #878a99 !important;
 }
 
 .m-auto {

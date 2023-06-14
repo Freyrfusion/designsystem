@@ -41,6 +41,7 @@
         .dropdown-menu{
             .dropdown-item{
                 border-bottom: 1px solid $black-300;
+                width: auto;
 
                 &:last-child{
                     border: none;
