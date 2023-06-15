@@ -12,11 +12,11 @@
     .card-body{
         .view-list{
             border-bottom: 1px dashed #e7e7e7;
-            padding: 15px 20px;
+            padding: 20px;
 
-            // label, div>div>div{
-            //     font-size: 13px;
-            // }
+            label, div>div>div{
+                font-size: 13px;
+            }
 
             &:last-child{
                 border: none;
