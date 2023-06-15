@@ -1,0 +1,78 @@
+.bg-back{
+    background: #F3F3F9;
+}
+.h-55{
+    height: 55px;
+}
+.f-c-16{
+    font-size: 16px !important;
+    color:#495057 !important;
+}
+.form-sub-text{
+    color: #878a99 !important;
+    font-size: 13px !important;
+    font-weight: 400;
+    line-height: 21px;
+}
+.sub-font-bold{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.danger-text{
+    font-size: 12px !important;
+    color: #f672a7;
+
+}
+
+.label-header-text{
+    color: #212529;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+}
+.h-39{
+    height: 39px !important;
+}
+.p-l-0{
+    padding-left: 0px;
+}
+
+.form-labels-f .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #9ebcf1 !important;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.25);
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.25) !important;
+}
+.card-shadows{
+    -webkit-box-shadow: 0 1px 2px rgba(56,65,74,.15);
+    box-shadow: 0 1px 2px rgba(56,65,74,.15);
+}
+
+.m-l-16{
+    margin-left: 16spx !important;
+}
+.m-l-2{
+    margin-left: 2px;
+}
+// .no-checkbox-align-{
+//     margin: -28px 0px 0px 54px;
+// }
+.m-t-10{
+    margin-top: 10px !important;
+}
+.alert-primary-forms {
+    color: #4a738f;
+    background-color: #dff5fa;
+    border-color: #bfeaf4 !important;
+}
+
+.alert-forms {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
