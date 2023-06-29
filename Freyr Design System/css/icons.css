@@ -147,6 +147,9 @@
 .icon-chart22:before {
   content: "\48";
 }
+.icon-share:before {
+  content: "\e905";
+}
 .icon-flow-tree2:before {
   content: "\49";
 }
@@ -695,6 +698,12 @@
 }
 .icon-site-map:before {
   content: "\e922";
+}
+.icon-site-map:before {
+  content: "\e959";
+}
+.icon-share-square-o:before {
+  content: "\e902";
 }
 .icon-alarm-clock:before {
   content: "\e923";

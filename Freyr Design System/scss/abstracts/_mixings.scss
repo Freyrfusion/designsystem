@@ -1,0 +1,18 @@
+$transition-all: all .2s ease-in-out !default;
+$transition-all-5ms: all .5s ease-in-out !default;
+
+@mixin transition-all-ease {
+	transition:$transition-all;
+	-webkit-transition:$transition-all;
+	-moz-transition:$transition-all;
+	-o-transition:$transition-all;
+	-ms-transition:$transition-all;
+}
+
+@mixin transition-all-easeinout-5ms {
+	transition:$transition-all-5ms;
+	-webkit-transition:$transition-all-5ms;
+	-moz-transition:$transition-all-5ms;
+	-o-transition:$transition-all-5ms;
+	-ms-transition:$transition-all-5ms;
+}

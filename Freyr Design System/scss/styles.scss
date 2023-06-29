@@ -1,10 +1,27 @@
-//@import "bootstrap/bootstrap";
+// Abstracts : Var's, Colors, mixings
+@import "abstracts/all";
 
-/* Custom Css*/
-@import "uikitv2/main";
-//@import "layout/layout";
-//@import "layout/forms";
+// Base
+@import "base/all";
 
 
-//@import "layout/modal";
+
+// Layout : header, footer, navbar / sidebar
+@import "layout/all";
+
+// Components : buttons, tabs, forms
+
+
+// Pages : dashboard, admin
+@import "pages/all";
+
+// Themes : default, dark, light, color's
+
+
+// Vendors
+@import "vendors/all";
+
+
+
+
 

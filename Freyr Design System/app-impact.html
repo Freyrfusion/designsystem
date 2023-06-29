@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Unified RIMS | Freyr</title>
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script>
+    $(document).ready(function () {
+      var menutoggle = $(".nav-toggleicon");
+      var bodyelement = $("body");
+      menutoggle.click(function(){
+        if(bodyelement.hasClass("menu-mini")){
+          bodyelement.removeClass("menu-mini");
+        }
+        else{
+          bodyelement.addClass("menu-mini");
+        }
+      })
+
+      // App Switch Code
+      var appswitchopenbtn = $(".app-switch-btn");
+      var appswitchclosebtn = $(".app-switch-closebtn");
+      var apppanel = $(".app-switchpanel");
+
+      appswitchopenbtn.click(function(){
+        apppanel.addClass("show-appswitch");
+      });
+      appswitchclosebtn.click(function(){
+        apppanel.removeClass("show-appswitch");
+      });
+
+      // User Menu 
+        $(".user-dropdown").click(function(){  
+                var menubtn = $(".user-dropdown"); 
+                if(menubtn.hasClass("open")){
+                    menubtn.removeClass("open");
+                }
+                else{
+                    menubtn.addClass("open");
+                }
+            });
+
+             // language
+        $(".lang-selector").click(function(){  
+                var langlist = $(".lang-selector ul"); 
+                if(langlist.hasClass("showlang")){
+                  langlist.removeClass("showlang");
+                }
+                else{
+                  langlist.addClass("showlang");
+                }
+            });
+
+                // language
+        $(".domain-selector").click(function(){  
+                var langlist = $(".domain-selector ul"); 
+                if(langlist.hasClass("showdomains")){
+                  langlist.removeClass("showdomains");
+                }
+                else{
+                  langlist.addClass("showdomains");
+                }
+            });
+
+            $(".has-submenu").click(function(){  
+                var submenulist = $(".has-submenu"); 
+                if(submenulist.hasClass("open")){
+                  submenulist.removeClass("open");
+                }
+                else{
+                  submenulist.addClass("open");
+                }
+            });
+            
+            
+    })
+  </script>
+</head>
+
+<body>
+  <div class="layout-wrapper">
+    <div class="sidebar-menu">
+     
+      <ul class="main-menu">
+        <li class="active"><a href="javascript:void(0)"> <em class="icon-pie-chart2"></em> <span>Dashboard</span> </a> </li>
+        <li><a href="javascript:void(0)"> <em class="icon-text-file2"></em> <span>Global Regulations</span> </a> </li>
+        <li><a href="javascript:void(0)"> <em class="icon-refresh-file"></em> <span>Regulatory Requirements</span> </a> </li>
+        <li><a href="javascript:void(0)"> <em class="icon-stats"></em> <span>Regulatory Analytics</span> </a> </li>
+        <li><a href="javascript:void(0)"> <em class="icon-bot-2"></em> <span>BOTS</span> </a> </li>
+        <li><a href="javascript:void(0)"> <em class="icon-paper"></em> <span>News</span> </a> </li>
+        <li><a href="javascript:void(0)"> <em class="icon-chat_bubble_outline"></em> <span>HA Communications</span> </a> </li>
+       
+        <li><a href="javascript:void(0)"> <em class="icon-envelope-open-o"></em> <span>Newsletter</span> </a> </li>
+        <li><a href="javascript:void(0)"> <em class="icon-flow-chart-dots"></em> <span>Structured RI Reports</span> </a> </li>
+        <li><a href="javascript:void(0)"> <em class="icon-clipboard"></em> <span>On Demand RI Reports</span> </a> </li>
+        <li class="has-submenu"><a href="javascript:void(0)"> <em class="icon-leadership"></em> <span>Impact Access</span> </a> 
+          <ul class="main-submenu">
+            <li><a href="javascript:void(0)"> <em class="icon-search-icon"></em> <span>Search</span> </a> 
+              <li><a href="javascript:void(0)"> <em class="icon-help"></em> <span>Chat Bot</span> </a> 
+          </ul>
+      </li>
+      </ul>
+      <div class="menu-toggle">
+        <!-- <span>Collapse here</span>
+        <span class="menu-border"></span> -->
+        <div class="nav-toggleicon">
+        <em class="icon-left-and-right"></em>
+      </div>
+      </div>
+    </div>
+
+    <!-- End of Navigation -->
+    <div class="page-header">
+      <div class="app-branding">
+      <a href="javascript:void(0)" class="app-switch-btn">
+        <em class="icon-dots-menu"></em>
+      </a>
+      <div class="app-logo">
+        <a href="javascript:void(0)" class="app-logo-btn">
+          <img src="images/Freyr-impact.png">
+        </a>
+      </div>
+       </div>
+      
+       <div class="user-dropdown pull-right">
+        <!-- <div class="menu-fade"></div> -->
+          <span><img src="images/profile.png"> <i class="icon-down-open"></i></span>
+        <ul>
+            <li><i class="icon-user2"></i>My Profile</li>
+            <!-- <li><i class="icon-cog"></i>Settings</li> -->
+            <li onclick="window.location.href='index.html'"><i class="icon-power-1"></i>Logout</li>
+        </ul>
+    </div>
+    <div class="header-divider"></div>
+    <ul class="header-icons-holder">
+      <li  class="lang-selector"><a href="javascript:void(0)" > <img src="images/language.png" /> </a>
+        <ul>
+          <li> <img src="images/arabic.png"> Arabic</li>
+          <li> <img src="images/china-Mandarin.png"> Mandarin</li>
+          <li> <img src="images/francais.png"> Francais</li>
+          <li> <img src="images/germany-Deutsche.png"> Deutsche</li>
+          <li> <img src="images/italiana.png"> Italiana</li>
+
+      </ul>
+      </li>
+      <!-- <li><a href="javascript:void(0)" > <em class="icon-theme"></em> </a></li> -->
+      <li><a href="javascript:void(0)" > <em class="icon-notification"></em> </a></li>
+    </ul>
+    <div class="header-divider"></div>
+    <ul class="domains-holder">
+      <li  class="domain-selector">
+        <a href="javascript:void(0)" > 
+          <img src="images/mdv-domain.png" /> MDV <em class="icon-money"></em>
+        </a>
+        <ul>
+          <li class="heading">Domains</li>
+          <li> <img src="images/mpr-domain.png"> MPR</li>
+          <li> <img src="images/consumer-domain.png"> Consumer</li>
+      
+      </ul>
+      </li>
+    </ul>
+    <div class="header-divider"></div>
+    </div>
+    <!-- End of Page Header -->
+    <div class="main-content">
+      <div class="page-content">
+        <div class="page-title">
+          <h1>Dashboard</h1>
+          <ul class="breadcrumbs">
+            <li><a href="javascript:void(0)" class="breadcrumb-link">Dashboard</a></li>
+            <li>Custom Dashboard</li>
+          </ul>
+        </div>
+        <div class="page-innercontent">
+          <img src="images/impact-dashboard.png">
+        </div>
+      </div>
+    </div>
+    <!-- End of Main Content -->
+<div class="app-switchpanel">
+  <div class="app-switchpanel-header">
+    <a href="javascript:void(0)" class="app-switch-closebtn">
+      <em class="icon-close-round"></em>
+    </a>
+    <a href="landing-page.html" class="freyr-urims-link">Freyr uRIMS<em class="icon-arrow-right2"></em></a>
+    <!-- <img src="images/freyr-digital.png"> -->
+  </div>
+  <div class="app-switchpanel-body">
+    <h2>Apps</h2>
+    <ul class="app-switchpanel-applist  pull-left">
+      <li>
+        <a href="app-impact.html">
+            <img src="images/app-switch-logos/impact.png">
+            <span>Impact</span>
+        </a>
+    </li>
+    <li>
+        <a href="app-submitpro.html">
+            <img src="images/app-switch-logos/submitpro.png">
+            <span>SubmitPro</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="app-label360.html">
+            <img src="images/app-switch-logos/label360.png">
+            <span>Label360</span>
+        </a>
+    </li>
+    <li>
+        <a href="app-artwork360.html">
+            <img src="images/app-switch-logos/artwork.png">
+            <span>Artwork360</span>
+        </a>
+    </li>
+   <li>
+        <a href="app-spar.html">
+            <img src="images/app-switch-logos/spar.png">
+            <span>SPAR</span>
+        </a>
+    </li>
+    <li>
+        <a href="app-rai.html">
+            <img src="images/app-switch-logos/Rai.png">
+            <span>R.Ai</span>
+        </a>
+    </li>
+    <li>
+      <a href="javascript:void(0)">
+          <img src="images/app-switch-logos/submittrack.png">
+          <span>SubmitTrack</span>
+      </a>
+  </li>
+ 
+  <li>
+      <a href="javascript:void(0)">
+          <img src="images/app-switch-logos/splspm.png">
+          <span>SPL-SPM</span>
+      </a>
+  </li>
+  <li>
+      <a href="javascript:void(0)">
+          <img src="images/app-switch-logos/iready.png">
+          <span>iReady</span>
+      </a>
+  </li>
+  <li>
+      <a href="javascript:void(0)">
+          <img src="images/app-switch-logos/identity.png">
+          <span>Identity</span>
+      </a>
+  </li>
+  <li>
+      <a href="javascript:void(0)">
+          <img src="images/app-switch-logos/rdms.png">
+          <span>rDMS</span>
+      </a>
+  </li>
+  <li>
+      <a href="javascript:void(0)">
+          <img src="images/app-switch-logos/sccm.png">
+          <span>SCCM</span>
+      </a>
+  </li>
+    </ul>
+    <a href="landing-page.html" class="link-text m-t-14 pull-left">All Apps <em class="icon-arrow-right2"></em></a>
+
+    <ul class="app-switchpanel-otherapps pull-left m-t-40">
+      <li>
+        <a href="javascript:void(0)">
+          <img src="images/app-switch-logos/admin.png">
+          <span>Admin Manager</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="images/app-switch-logos/dashboard.png">
+          <span>Analytics Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="images/app-switch-logos/chatbot.png">
+          <span>Chat Bot</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="images/app-switch-logos/knowledge.png">
+          <span>Knowledge Manager</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="images/app-switch-logos/search.png">
+          <span>Search</span>
+        </a>
+      </li>
+     
+      
+    </ul>
+  </div>
+</div>
+    <!-- End of App Switch Panel -->
+  </div>
+</body>
+
+</html>

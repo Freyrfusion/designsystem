@@ -1,0 +1,84 @@
+.login-wrapper{
+    background: url(../images/login-bg.png) #f2f3f6 no-repeat;
+    width: 100%;
+    display: block;
+    height: 100vh;
+    background-size: 90%;
+    background-position: 40px -10px;
+}
+.login-form-bg{
+    float: right;
+    width:680px;
+    height: 100vh;
+    background:$default-bg-color;
+}
+.login-form{
+    background: $white;
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    width:64%;
+    height: 70vh;
+    margin:0 auto;
+    border-radius: 6px;
+    padding: 20px;
+    h4{
+        font-size: $font-md;
+        font-weight: 500;
+    }
+    h6{
+        font-size: $font-base;
+    }
+    .form-group{
+        max-width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+        label{
+            font-weight: 400;
+            font-size: $font-base;
+            margin-bottom:4px;
+            display: inline-block;
+        }
+        .form-control{
+            width:100%;
+            height: 32px;
+            padding: 10px;
+            border:1px solid $default-header-border-color;
+            outline:1px solid transparent;
+           // border-radius: 3px;
+           &:focus{
+            outline:1px solid $default-primary;
+           }
+
+        }
+    }
+    .link-text{
+        font-size: $font-sm;
+    }
+    .btn-primary-block{
+        padding: 10px;
+        color:$white;
+        display: block;
+        font-size: $font-base;
+        background-color: $default-primary;
+        text-align: center;
+        max-width: 86%;
+        margin:0 auto;
+        -webkit-transition: background-color 83ms linear;
+        transition: background-color 83ms linear;
+        &:hover{
+            background-color: #005da6;
+            -webkit-transition: background-color 83ms linear;
+            transition: background-color 83ms linear;
+        }
+    }
+    .captcha-img{
+        max-width: 91%;
+        margin: 0 auto;
+    }
+}
+.login-footer-text{
+    max-width: 64%;
+    margin: 0 auto;
+    text-align: center;
+}
