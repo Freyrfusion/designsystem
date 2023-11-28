@@ -1,0 +1,144 @@
+{
+  "Foundations": {
+    "font": {
+      "size": {
+        "xsm": "11px",
+        "lg": "22px",
+        "md": "16px",
+        "sm": "13px",
+        "xl": "30px"
+      },
+      "weight": {
+        "400": "400",
+        "500": "500",
+        "600": "600"
+      },
+      "lineheight": {
+        "auto": "100%",
+        "sm": "120%",
+        "md": "140%",
+        "large": "180%"
+      },
+      "icon": {
+        "xsm": "11",
+        "lg": "22",
+        "md": "16px",
+        "sm": "13px",
+        "xl": "30px"
+      }
+    },
+    "border": {
+      "width": {
+        "no-border": "0",
+        "thin": "1",
+        "sm": "2",
+        "medium": "4"
+      },
+      "radius": {
+        "square": "0",
+        "sm": "4px",
+        "md": "8px"
+      }
+    },
+    "color": {
+      "primary": {
+        "100": "#1642C1",
+        "200": "#2f5bda",
+        "300": "#5d80e2",
+        "400": "#bac8f3",
+        "500": "#d1dbf7",
+        "600": "#e8edfb",
+        "100-copy": "#1642C1"
+      },
+      "success": {
+        "100": "#00b876",
+        "200": "#1ad18f",
+        "300": "#4ddba8",
+        "400": "#b3f0da",
+        "500": "#ccf5e6",
+        "600": "#e6faf3"
+      },
+      "black": {
+        "100": "#1f1f1f",
+        "200": "#626262",
+        "300": "#797979",
+        "400": "#8f8f8f",
+        "500": "#a5a5a5",
+        "600": "#bcbcbc",
+        "700": "#d2d2d2",
+        "800": "#e9e9e9",
+        "900": "#fafafa",
+        "1000": "#ffffff"
+      }
+    },
+    "space": {
+      "no-space": "0",
+      "xxs": "4px",
+      "xs": "8px",
+      "sm": "16px",
+      "md": "24px",
+      "lg": "32px",
+      "xl": "48px",
+      "xxl": "64px"
+    },
+    "boxshadow": {
+      "sm": {
+        "x": "1",
+        "y": "2",
+        "blur": "2",
+        "spread": "0",
+        "color": "#757575",
+        "type": "dropShadow"
+      }
+    },
+    "opacity": {
+      "default": "1",
+      "high": "0.8",
+      "md": "0.5",
+      "sm": "0.3",
+      "zero": "0"
+    },
+    "zindex": {
+      "under": "-9999",
+      "first-level": "1",
+      "second-level": "100",
+      "third-level": "500",
+      "fourth-level": "1000",
+      "fifth-level": "3000",
+      "sixth-level": "5000",
+      "seventh-level": "7000",
+      "eight-level": "9000",
+      "outer-space": "10000"
+    },
+    "paragraph": {
+      "small": "24px",
+      "regular": "32px",
+      "large": "64px",
+      "xlarge": "80px"
+    },
+    "mediaquery": {
+      "mobile": "only screen and (max width: 360px)",
+      "tablet": "only screen and (min-width: 361px) and (max-width: 768px) ",
+      "small-screens": "only screen and (min-width: 769px) and (max-width: 1200px) ",
+      "default-screens": "only screen and (min-width: 1201px)"
+    }
+  },
+  "Light": {
+    "frs": {
+      "global": {
+        "color": {
+          "primary": {
+            "100-copy": "#4c597f"
+          }
+        }
+      }
+    }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "Foundations",
+      "Light"
+    ]
+  }
+}
