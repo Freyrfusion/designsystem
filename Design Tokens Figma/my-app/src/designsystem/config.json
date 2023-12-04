@@ -1,13 +1,13 @@
 {
-  "source": ["tokens/tokens.json"],
+  "source": ["figmatokens/tokens.json"],
   "platforms": {
     "scss": {
       "transformGroup": "scss",
-      "buildPath": "src/tokens/",
+      "buildPath": "scss/",
       "files": [
         {
           "destination": "fonts/_sizes.scss",
-          "format": "scss/variables", 
+          "format": "scss/variables ", 
           "filter": {
             "type": "fontSizes"
           }
@@ -30,7 +30,7 @@
     },
     "json": {
       "transformGroup": "scss",
-      "buildPath": "src/tokens/",
+      "buildPath": "json/",
       "files": [
         {
           "destination": "fonts/_sizes.json",
