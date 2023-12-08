@@ -1,0 +1,46 @@
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-base ;
+    margin-bottom: $foundations-size-medium; color: $foundations-black-300;
+}
+
+strong, b {font-weight: $foundations-font-weight-500;}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: $foundations-black-300;
+}
+
+p {
+    font-size: $text-base;
+    line-height: $lineheight-base;
+    text-align: left;
+}
+
+small {
+    font-size: $text-small;
+    line-height: $lineheight-small;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+ 
+
+.link-color {
+    color: $foundations-primary-100;
+
+    &:hover {
+        color: $foundations-black-800
+    }
+
+    &:visited {
+        color: $foundations-black-900
+    }
+}
