@@ -1,11 +1,74 @@
-.container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 200px 1fr 1fr;
-    grid-template-rows: 80px 1fr 1fr 100px;
-    grid-gap: 1rem;
-}
+.list-view__main {
+    .action {
+        float: inline-end;
+    }
 
-h1 {
-    color: $primary-base;
+    .action1 {
+        float: none;
+        display: inline;
+
+        a {
+            cursor: pointer;
+        }
+    }
+
+    border: $border-thin solid $black-200;
+    border-radius: $border-radius-base;
+    padding: $space-compact;
+    background-color: $white;
+    width: 300px;
+    box-shadow: none !important;
+    margin-bottom: $space-default;
+
+    .list-view__content {
+        padding: $space-nospace !important;
+
+        h5 {
+            color: $primary-base;
+            margin: $space-nospace;
+            font-size: $font-medium;
+        }
+
+        p {
+            color: $black-600;
+            font-size: $font-small;
+            line-height: $lineheight-small;
+            margin-bottom: $space-compact;
+
+        }
+
+        .list-view__badge {
+            border-radius: $border-radius-secondary;
+            background-color: $black-100;
+            color: $black-800;
+            font-size: $font-small;
+            padding: $space-micro $space-compact;
+            display: inline;
+            margin-right: $space-micro;
+        }
+
+        .list-view__more--items {
+            border-radius: $border-radius-rounded;
+            background-color: $black-100;
+            color: $black-800;
+            font-size: $font-small;
+            margin-right: $space-micro;
+            width: $size-medium - 8;
+            height: $size-medium - 8;
+            display: inline-block;
+            line-height: $lineheight-base;
+            text-align: center;
+
+        }
+
+        .list-view__footer {
+            border-top: $border-thin solid $black-200;
+            padding-top: $space-condensed;
+            margin-top: $space-default;
+            color: $black-800;
+            font-size: $font-small;
+        }
+
+    }
+
 }
