@@ -3,46 +3,72 @@
 /****** font sizes start ******/
 /****** font sizes end ******/
 /****** font bold start ******/
-/****** font bold end ******/
-/******font line-height start ******/
-/******font line-height end ******/
+/****font line-height start ****/
 /******font letter spacing start ******/
-/******font letter spacing end ******/
-/******primary colors start ******/
-/*#0c66e4*/
-/*#e4eefc*/
-/*#aeccf6*/
-/*#93bbf3*/
-/*#5d99ed*/
-/*#2777e7*/
-/*#0c66e4*/
-/*#084498*/
-/*#07397f*/
-/*#052d65*/
-/******primary colors end ******/
+/***primary colors start ****/
 /******black colors start ******/
-/*#f2f2f2*/
-/*#d9d9d9*/
-/*#bfbfbf*/
-/*#a6a6a6*/
-/*#8c8c8c*/
-/*#737373*/
-/*#595959*/
-/*#404040*/
-/*#262626*/
-/*#0d0d0d*/
-/******black colors end ******/
-/********colors*************/
-/*#000000;*/
-/********colors*************/
-.container {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 200px 1fr 1fr;
-  grid-template-rows: 80px 1fr 1fr 100px;
-  grid-gap: 1rem;
+/*****border*******/
+/***space***/
+/***size***/
+.list-view__main {
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  padding: 12px;
+  background-color: #ffffff;
+  width: 300px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  margin-bottom: 16px;
 }
-
-h1 {
+.list-view__main .action {
+  float: inline-end;
+}
+.list-view__main .action1 {
+  float: none;
+  display: inline;
+}
+.list-view__main .action1 a {
+  cursor: pointer;
+}
+.list-view__main .list-view__content {
+  padding: 0 !important;
+}
+.list-view__main .list-view__content h5 {
   color: #0c66e4;
+  margin: 0;
+  font-size: 15px;
+}
+.list-view__main .list-view__content p {
+  color: #737373;
+  font-size: 11px;
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+.list-view__main .list-view__content .list-view__badge {
+  border-radius: 6px;
+  background-color: #f2f2f2;
+  color: #404040;
+  font-size: 11px;
+  padding: 4px 12px;
+  display: inline;
+  margin-right: 4px;
+}
+.list-view__main .list-view__content .list-view__more--items {
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  color: #404040;
+  font-size: 11px;
+  margin-right: 4px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  line-height: 24px;
+  text-align: center;
+}
+.list-view__main .list-view__content .list-view__footer {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 8px;
+  margin-top: 16px;
+  color: #404040;
+  font-size: 11px;
 }
