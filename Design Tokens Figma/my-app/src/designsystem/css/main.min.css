@@ -1,0 +1,1 @@
+.container{display:grid;width:100%;grid-template-columns:200px 1fr 1fr;grid-template-rows:80px 1fr 1fr 100px;grid-gap:1rem}h1{color:#0c66e4}

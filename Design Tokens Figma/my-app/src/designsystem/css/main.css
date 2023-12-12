@@ -1,0 +1,48 @@
+/****** header's start ******/
+/****** header's start ******/
+/****** font sizes start ******/
+/****** font sizes end ******/
+/****** font bold start ******/
+/****** font bold end ******/
+/******font line-height start ******/
+/******font line-height end ******/
+/******font letter spacing start ******/
+/******font letter spacing end ******/
+/******primary colors start ******/
+/*#0c66e4*/
+/*#e4eefc*/
+/*#aeccf6*/
+/*#93bbf3*/
+/*#5d99ed*/
+/*#2777e7*/
+/*#0c66e4*/
+/*#084498*/
+/*#07397f*/
+/*#052d65*/
+/******primary colors end ******/
+/******black colors start ******/
+/*#f2f2f2*/
+/*#d9d9d9*/
+/*#bfbfbf*/
+/*#a6a6a6*/
+/*#8c8c8c*/
+/*#737373*/
+/*#595959*/
+/*#404040*/
+/*#262626*/
+/*#0d0d0d*/
+/******black colors end ******/
+/********colors*************/
+/*#000000;*/
+/********colors*************/
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: 80px 1fr 1fr 100px;
+  grid-gap: 1rem;
+}
+
+h1 {
+  color: #0c66e4;
+}

@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import './designsystem/scss/main.scss';
+import React, { Component } from 'react';
+
 
 export default class Listview extends Component {
    
