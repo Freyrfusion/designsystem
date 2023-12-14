@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Foundations from './pages/foundations';
 import Icons from './pages/icons';
 
@@ -15,15 +15,10 @@ function App() {
     <Router>
     <div>
   <Header></Header>
-      {/* <Routes>
-      <Route path="foundations" element={<Foundations />} />
-      <Route path="icons" element={<Icons />} />
-   </Routes> */}
-
 
    <Routes>
-        <Route path="/foundations" element={<Foundations/>} />
-        <Route path="/icons" element={<Icons/>} />
+        <Route path="uRIMS-Library/foundations" element={<Foundations/>} />
+        <Route path="uRIMS-Library/icons" element={<Icons/>} />
         </Routes>
   
     </div>

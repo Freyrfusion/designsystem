@@ -16,8 +16,8 @@ const Header = () => {
         <ul>
             
 
-            <li><Link to="foundations">Foundations</Link></li> 
-            <li>  <Link to="icons">Icons</Link></li> 
+            <li><Link to="uRIMS-Library/foundations">Foundations</Link></li> 
+            <li>  <Link to="uRIMS-Library/icons">Icons</Link></li> 
         </ul>
     </nav>
     
