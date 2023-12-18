@@ -89,6 +89,7 @@
     "renamer": "^4.0.0",
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
+    "sass-resources-loader": "^2.2.5",
     "style-dictionary": "^3.9.0"
   },
   "jest": {
