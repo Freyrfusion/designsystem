@@ -1,0 +1,100 @@
+// Container
+$display-flex: flex;
+$flex-start: flex-start;
+$flex-center: flex-center;
+$flex-end: flex-end;
+$flex-stretch: flex-stretch;
+$flex-nowrap: flex-wrap;
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.row {
+    display: $display-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    // margin-left: - $grid-gap;
+    // margin-right: - $grid-gap;
+}
+
+.col {
+    display: $display-flex;
+    flex-wrap: wrap;
+
+}
+
+.col-3 {
+    display: $display-flex;
+    flex-grow: 4;
+}
+
+.col-4 {
+    display: $display-flex;
+    flex-grow: 3;
+}
+
+.col-6 {
+    display: $display-flex;
+    flex-grow: 2;
+}
+
+.col-12 {
+    display: $display-flex;
+    flex-grow: 12;
+}
+
+// // Creating Cols Media Query
+// @each $modifier , $colbreakpoint in $grid-columnsset {
+//   @include create-col-classes($modifier, $grid__cols, $colbreakpoint);
+
+// }
+
+
+
+.box {
+    background-color: $black-100;
+    padding: $space-compact;
+    justify-content: left;
+    border: $border-thin solid $black-200;
+
+    .item {
+        display: $display-flex;
+    }
+
+}
+
+.flex-start {
+    justify-content: $flex-start;
+}
+
+.flex-center {
+    justify-content: $flex-center;
+}
+
+.flex-end {
+    justify-content: $flex-end;
+}
+
+.flex-stretch {
+    height: 100px;
+    display: $display-flex;
+    align-items: $flex-stretch;
+}
+
+.flex-nowrap {
+    display: $display-flex;
+    flex-wrap: $flex-nowrap;
+}
+
+.flex-shrink {
+    flex-shrink: 3;
+}
+
+.wrap-box {
+    width: 300px
+}

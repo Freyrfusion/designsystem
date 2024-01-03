@@ -19,6 +19,11 @@ const Header = () => {
             <li><Link to="foundations">Foundations</Link></li> 
             <li>  <Link to="icons">Icons</Link></li> 
             <li>  <Link to="buttons">Buttons</Link></li> 
+            <li>  <Link to="checkbox">checkbox</Link></li> 
+            <li>  <Link to="form">Form</Link></li> 
+            <li>  <Link to="popover">Popover</Link></li> 
+            <li>  <Link to="toaster">Toaster</Link></li> 
+            <li>  <Link to="uRIMS-Library/grid">Grid</Link></li> 
             <li>  <Link to="badges">Badges</Link></li> 
             <li>  <Link to="breadcrumbs">Breadcrumbs</Link></li> 
             

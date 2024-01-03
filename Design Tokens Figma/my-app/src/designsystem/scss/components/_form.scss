@@ -1,0 +1,141 @@
+// Horizontal Forms Start
+.form-section_main {
+    span {
+        font-size: $font-base;
+        color: $black-600;
+    }
+
+    .form-group {
+        margin-bottom: $space-comfortable;
+
+        .form-label {
+            font-size: $font-base;
+            padding: 0 0 $space-micro 0;
+            font-weight: $text-bold;
+            color: $black-800;
+            display: block;
+
+            span {
+                margin: 0px $space-condensed;
+                color: $danger-700;
+            }
+
+            em {
+                font-size: $font-small;
+                color: $black-500;
+            }
+        }
+
+        .form-line {
+            display: flex;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: $space-condensed $space-compact ;
+            font-size: $font-base;
+            color: $black-1000;
+            background-color: $white;
+            background-clip: padding-box;
+            border: 1px solid $black-200;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+            &:hover {
+                color: $black-1000;
+                background-color: $white;
+                border: 2px solid $black-300;
+                outline: 0;
+                box-shadow: none;
+            }
+
+            &:focus {
+                color: $black-900;
+                background-color: $white;
+                border: 2px solid $primary-500;
+                outline: 0;
+                box-shadow: none;
+            }
+
+
+
+
+        }
+    }
+}
+
+.input-error {
+    .form-control {
+        border-color: $danger-700 !important;
+
+        &:hover {
+            border-color: $danger-700 !important;
+        }
+    }
+
+    div {
+        color: $danger-700;
+        margin-top: $space-condensed;
+        font-size: $font-base;
+    }
+
+}
+
+.input-success {
+    .form-control {
+        border-color: $success-700 !important;
+
+        &:hover {
+            border-color: $success-700 !important;
+        }
+    }
+
+    div {
+        color: $success-700;
+        font-size: $font-base;
+        margin-top: $space-condensed;
+    }
+
+}
+
+.search-main {
+
+
+    em {
+        position: relative;
+        top: -49px;
+        z-index: 1;
+        color: $black-400;
+        font-size: $foundations-icon-size-base;
+
+        &.icon-search2 {
+
+            left: 12px;
+
+        }
+
+        &.icon-close-round {
+            left: 584px !important;
+            color: $black-500;
+        }
+    }
+
+
+
+
+}
+
+
+
+
+
+
+input[type="text"]:disabled {
+    background-color: $black-100 !important;
+
+}
+
+/***********/
