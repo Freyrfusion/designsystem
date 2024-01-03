@@ -15,13 +15,13 @@ $f-14:14px;
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
-    border:0;
-    padding: 8px 10px;
+    border:$no-border;
+    padding: $space-condensed 10px;
     border-radius: $border-radius-base;
     background-color: $bg-color;
     color: $white;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: $font-base;
+    font-weight: $text-bolder;
     font-family: $font-family;
     text-transform: capitalize;
    + .btn{

@@ -19,6 +19,9 @@ const Header = () => {
             <li><Link to="foundations">Foundations</Link></li> 
             <li>  <Link to="icons">Icons</Link></li> 
             <li>  <Link to="buttons">Buttons</Link></li> 
+            <li>  <Link to="badges">Badges</Link></li> 
+            <li>  <Link to="breadcrumbs">Breadcrumbs</Link></li> 
+            
             <li>  <Link to="muicomponents">MUI Components</Link></li> 
         </ul>
     </nav>

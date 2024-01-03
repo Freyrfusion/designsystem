@@ -1,0 +1,62 @@
+$badges-colors: (
+  "primary":$primary-300,
+  "success":$success-300,
+  "danger":$danger-300,
+  "warning":$warning-300,
+  "secondary":$black-600,
+  "inactive":$black-200,
+
+) !default;
+
+
+@mixin badge-label($bg-color) {
+    padding:$space-micro $space-condensed;
+    line-height: $lineheight-base;
+    font-weight: $text-bold;
+    font-size: $font-small;
+    margin-right: $space-condensed;
+    background-color: $bg-color;
+   + .badge-label{
+     margin-left: 4px;
+   }
+
+  }
+
+  @each $key, $val in $badges-colors {
+    .badge-label-#{$key}{
+        @include badge-label($val);
+
+        &.semirounded{
+            border-radius: 4px;
+        }
+        
+        &.rounded{
+            border-radius: 16px;
+        }
+      
+    }
+    @if $key == 'secondary'{
+        .badge-label-#{$key}{
+        color:  $foundations-neutral-white;
+        }
+    }
+   
+   
+}
+.components-height {
+	width: 80%;
+	float: left;
+	padding: $space-generous;
+	height: calc(100vh - 54px);
+	max-height: 100vh;
+	.heading {
+		font-size: $font-large;
+	}
+	.sub-heading {
+		font-size: $font-medium;
+	}
+	.text {
+		font-size: $font-base;
+        font-weight: $text-bold;
+	}
+}

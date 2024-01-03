@@ -4,6 +4,8 @@ import Foundations from './pages/foundations';
 import Icons from './pages/icons';
 import MuiComponents from './pages/muicomponents';
 import Buttons from './pages/buttons';
+import Badges from './pages/badges';
+import Breadcrumbs from './pages/breadcrumbs';
 import logo from './logo.svg';
 import './App.scss';
 import Header from './layout/header';
@@ -22,6 +24,8 @@ function App() {
         <Route path="foundations" element={<Foundations/>} />
         <Route path="icons" element={<Icons/>} />
         <Route path="/buttons" element={<Buttons/>} />
+        <Route path="/badges" element={<Badges/>} />
+        <Route path="/breadcrumbs" element={<Breadcrumbs/>} />
         <Route path="muicomponents" element={<MuiComponents/>} />
         </Routes>
   
