@@ -8,7 +8,7 @@ const IconList = () => {
 
   useEffect(() => {
     const getAllCSSRules = () => {
-      const styleSheet = document.styleSheets[3]; // Server :1, Local :3
+      const styleSheet = document.styleSheets[1]; // Server :1, Local :3
       console.log(styleSheet);
       try {
         const rules = styleSheet.cssRules;

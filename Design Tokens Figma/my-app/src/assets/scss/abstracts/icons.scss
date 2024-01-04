@@ -14,6 +14,30 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-recent:before {
+    content: "\e959";
+}
+
+.icon-hierarchy-structure:before {
+    content: "\e95a";
+}
+
+.icon-user2:before {
+    content: "\e966";
+}
+
+.icon-bell1:before {
+    content: "\e967";
+}
+
+.icon-setting1:before {
+    content: "\e968";
+}
+
+.icon-chat:before {
+    content: "\e969";
+}
+
 .icon-thumbnail:before {
     content: "\e903";
 }
@@ -198,7 +222,7 @@
     content: "\e906";
 }
 
-.icon-user:before {
+.icon-user1:before {
     content: "\e907";
 }
 
@@ -414,7 +438,7 @@
     content: "\e93c";
 }
 
-.icon-user1:before {
+.icon-user11:before {
     content: "\e93d";
 }
 
@@ -494,7 +518,7 @@
     content: "\e952";
 }
 
-.icon-chat:before {
+.icon-chat2:before {
     content: "\e953";
 }
 
@@ -580,6 +604,50 @@
 
 .icon-arrow-left2:before {
     content: "\ea40";
+}
+
+.icon-history_toggle_off:before {
+    content: "\e95b";
+}
+
+.icon-history:before {
+    content: "\e95c";
+}
+
+.icon-edit-3:before {
+    content: "\e95d";
+}
+
+.icon-edit-2:before {
+    content: "\e95e";
+}
+
+.icon-edit:before {
+    content: "\e95f";
+}
+
+.icon-eye:before {
+    content: "\e960";
+}
+
+.icon-file-text:before {
+    content: "\e961";
+}
+
+.icon-user:before {
+    content: "\e962";
+}
+
+.icon-file:before {
+    content: "\e963";
+}
+
+.icon-download:before {
+    content: "\e964";
+}
+
+.icon-external-link:before {
+    content: "\e965";
 }
 
 .icon-rotate:before {
