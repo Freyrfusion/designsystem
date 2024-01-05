@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
  
 const Grid = () => {
       return (
-        <div>
+        <div className='content-area'>
             <center>
               <div className='container'>
                 <br></br> <br></br>

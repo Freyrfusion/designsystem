@@ -27,7 +27,7 @@ const MuiComponents = () => {
   return (
     <div>
 
-<div class="sidebar" >
+<div className="sidebar" >
 
   
 <h5>MUI Components</h5>

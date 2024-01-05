@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 
 const checkbox = () => {
       return (
-        <div className='container'>
+        <div className='content-area'>
           <section>
            
-            <h1 className='main-heading'>Checkbox's & Radio</h1>
+            <h2 className='main-heading'>Checkbox's & Radio</h2>
 
              <p> The checkbox is a component used to allow a user to make multiple choices that are broadly used in forms and surveys. Checkboxes are used to select one or several options in a list, while radio (option) buttons are for selecting one option from many.</p>
              </section>

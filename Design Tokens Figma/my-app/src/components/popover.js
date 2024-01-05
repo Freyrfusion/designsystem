@@ -2,10 +2,9 @@ import React, { useEffect } from 'react';
  
 const Popover = () => {
       return (
-        <div className="container">
+        <div className='content-area'>
             <section>
-                <h1 className="main-heading">Tooltip</h1>
-           
+                <h2 className="main-heading">Tooltip</h2>
             <div className='popover-main'>
             <div className='col-4'>
             <h2 className="sub-heading m-t-0 m-r-5">Tooltip Top </h2>

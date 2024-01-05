@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 const Toaster = () => {
       return (
-        <div className='container'>
+        <div className='content-area'>
           
            
           <div className="row">

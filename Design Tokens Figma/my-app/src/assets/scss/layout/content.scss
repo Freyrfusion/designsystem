@@ -13,3 +13,76 @@
     height: calc(100vh - 54px);
     max-height: 100vh;
 }
+
+.content-area,
+.content-area-fullwidth {
+
+    .heading,
+    .main-heading {
+        font-size: 24px;
+    }
+
+    .sub-heading {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 24px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.m-l-10 {
+    margin-left: 10px;
+}
+
+.m-t-10 {
+    margin-top: 10px !important;
+}
+
+.m-b-0 {
+    margin-bottom: 0px !important;
+}
+
+.m-b-10 {
+    margin-bottom: 10px !important;
+}

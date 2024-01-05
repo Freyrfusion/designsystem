@@ -2,17 +2,17 @@ import React, { useEffect } from 'react';
 
 const Form = () => {
       return (
-        <div className='container'>
+        <div className='content-area'>
           <section>
            
           <div className="row">
           <div className="col-6 display-inline_block">
                     <form>
                         <div className="form-section_main">
-                            <h1 className="m-l-26 m-b-10"> Horizontal Forms 
-                                <p className="sub-text"> Used for shipping orders </p>
-                            </h1>
-                            
+                            <h2 className="m-l-26"> Horizontal Forms 
+                               
+                            </h2>
+                            <p className="sub-text"> Used for shipping orders </p>
                             <div className="col-6 display-inline_block m-t-20">
                                 <div className="row">
                                     <div className="col-12 display-inline_block form-group">
