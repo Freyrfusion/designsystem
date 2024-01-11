@@ -10,8 +10,7 @@
     height: 100vh;
     float: left;
     border-right: 1px solid #eaeaea;
-    padding: 10px;
-    background: #fafafa;
+    background: #fff;
 
     // &:hover,
     // &.expanded {
@@ -34,24 +33,28 @@
 
         li {
             position: relative;
-            display: block;
-            width: 250px;
-            height: 45px;
-            border-radius: 6px;
-            padding: 6px 10px;
+            width: 82%;
+            padding: 5px 20px;
+            border-left: 3px solid transparent;
+            float: left;
+            color: $gray-900;
+            font-size: $font-size-base;
+            font-weight: 400;
+            line-height: 26px;
 
             >a {
                 position: relative;
                 display: table;
                 border-collapse: collapse;
                 border-spacing: 0;
-                color: $gray-500;
-                font-size: $font-size-sm;
+                color: $gray-900;
+                font-size: $font-size-base;
                 text-decoration: none;
                 -webkit-transform: translateZ(0) scale(1, 1);
                 -webkit-transition: all .1s linear;
                 transition: all .1s linear;
                 font-weight: 400;
+                line-height: 26px;
 
                 &:hover {
                     color: #000;
@@ -73,10 +76,12 @@
             }
 
             &.activetab {
-                background: #EBF0FF;
+                background: #E9F2FF;
+                border-left: 3px solid #0C66E4;
+                color: #3366FF;
+                font-weight: 600;
 
                 a {
-                    font-weight: 500;
                     color: #3366FF;
                 }
             }

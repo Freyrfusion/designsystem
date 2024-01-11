@@ -4,3 +4,52 @@
 }
 
 // https://codepen.io/jason-kinney/pen/mdLmqv
+
+
+$spacing: $foundations-space-nospace, $foundations-space-nano, $foundations-space-micro, $foundations-space-condensed, $foundations-space-compact, $foundations-space-default, $foundations-space-comfortable, $foundations-space-spacious, $foundations-space-generous, $foundations-space-vast; // Modify this to generate your spacing classes
+// $unit: px; //Modify this to specify your unit eg: em, pt, %.
+$spacings: (
+    0:$foundations-space-nospace,
+    2: $foundations-space-nano,
+    4:$foundations-space-micro,
+    8:$foundations-space-condensed,
+    12:$foundations-space-compact,
+    16:$foundations-space-default,
+    24:$foundations-space-comfortable,
+    32:$foundations-space-spacious,
+    40:$foundations-space-generous,
+    48:$foundations-space-vast
+);
+$directions: (
+    l: left,
+    t: top,
+    r: right,
+    b: bottom,
+    v: top,
+    h: left
+);
+
+@mixin generateSpacing($prop, $short ) {
+    @each $sname, $svalue in $spacings {
+        .#{$short}a-#{$sname} {
+            #{$prop}: $svalue
+        }
+
+        @each $key, $val in $directions {
+            .#{$short}#{$key}-#{$sname} {
+                #{$prop}-#{$val}: $svalue;
+
+                @if $key ==v {
+                    #{$prop}-bottom: $svalue;
+                }
+
+                @if $key ==h {
+                    #{$prop}-right: $svalue;
+                }
+            }
+        }
+    }
+}
+
+@include generateSpacing(padding, p);
+@include generateSpacing(margin, m);
