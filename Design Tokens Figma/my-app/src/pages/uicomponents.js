@@ -9,6 +9,8 @@ import Checkbox from '../components/checkbox.js';
 import Form from '../components/form.js';
 import Popover from '../components/popover.js';
 import Toaster from '../components/toaster.js';
+import Tabs from '../components/tabs.js';
+import Muibuttons from '../components/muibuttons.js';
 
 
 
@@ -33,6 +35,10 @@ const UiComponents = () => {
               return <Popover />;
               case 'toaster':
                 return <Toaster />;     
+                case 'tabs':
+                  return <Tabs />; 
+                  case 'muibuttons':
+                    return <Muibuttons />;
       default:
         return <Badges />;
     }
@@ -54,6 +60,8 @@ const UiComponents = () => {
     <li className={currentPage==="form" && 'activetab'} onClick={() => setCurrentPage('form')}>Form</li>
     <li className={currentPage==="popover" && 'activetab'} onClick={() => setCurrentPage('popover')}>Popover</li>
     <li className={currentPage==="toaster" && 'activetab'} onClick={() => setCurrentPage('toaster')}>Toaster</li>
+    <li className={currentPage==="tabs" && 'activetab'} onClick={() => setCurrentPage('tabs')}>Tabs </li>
+    <li className={currentPage==="muibuttons" && 'activetab'} onClick={() => setCurrentPage('muibuttons')}>MUI Buttons </li>
 
 </ul>
 

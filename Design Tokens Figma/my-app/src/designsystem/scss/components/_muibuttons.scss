@@ -1,0 +1,141 @@
+$border-muibutton-none:$no-border;
+$border-radius-muibutton-base:$border-radius-base;
+
+$space-padding-muibutton-y:$space-condensed;  
+$space-padding-muibutton-x:$space-default;
+
+$color-text-muibutton:$white;
+$color-text-muibutton-secondary:$black-900;
+
+$font-size-muibutton-base:$font-base;
+$font-weight-muibutton-bolder:$text-bolder;
+
+$line-height-muibutton-small:$lineheight-small;
+
+
+$mui-buttons: (
+  "containedprimary":$primary-600,
+  "containedsuccess":$success-700,
+  "containeddanger":$danger-800,
+  "containedwarning":$warning-400,
+  "containedsecondary":$black-200,
+
+) !default;
+
+
+// Button Mixings
+@mixin MuiButton-contained($bg-color) {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    border:$border-muibutton-none;
+    padding:$space-padding-muibutton-y  $space-padding-muibutton-x;
+    border-radius: $border-radius-muibutton-base;
+    background-color: $bg-color;
+    color: $color-text-muibutton;
+    font-size: $font-size-muibutton-base;
+    font-weight: $font-weight-muibutton-bolder;
+    line-height: $line-height-muibutton-small;
+   + .btn{
+     margin-left: 14px;
+   }
+
+  }
+
+
+
+  @each $key, $val in $mui-buttons {
+    .MuiButton-#{$key}{
+        @include MuiButton-contained($val);
+        &:hover{
+            background-color: darken($val, 10%) ;
+        }
+        &[disabled]{
+            pointer-events: none;
+            opacity: 0.35;
+        }
+        &:active{
+            background-color: darken($val, 20%) ;
+        }
+        &:focus {
+            border: 1px solid darken($val, 20%) ;
+        }
+    }
+    @if $key == 'containedsecondary'{
+        .MuiButton-#{$key}{
+        color:  $color-text-button-secondary;
+        }
+    }
+
+}
+$mui-outlinedbuttons: (
+  "outlinedPrimary":$primary-600,
+  "outlinedSuccess":$success-700,
+  "outlinedError":$danger-800,
+
+) !default; 
+
+@mixin mui-outlinedbuttons($border-color) {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    border:2px solid $border-color;
+    padding:$space-padding-muibutton-y  $space-padding-muibutton-x;
+    border-radius: $border-radius-button-base;
+    background-color: transparent;
+    color:$border-color;
+    font-size: $font-size-muibutton-base;
+    font-weight: $font-weight-muibutton-bolder;
+    line-height: $line-height-muibutton-small;
+   + .btn{
+     margin-left: 14px;
+   }
+
+  }
+
+@each $key, $val in $mui-outlinedbuttons {
+    .MuiButton-#{$key}{
+        @include mui-outlinedbuttons($val);
+        &:hover{
+            background-color: lighten($val, 50%) ;
+        }
+        &[disabled]{
+            pointer-events: none;
+            opacity: 0.35;
+        }
+        &:active{
+            background-color: lighten($val, 50%) ;
+        }
+        &:focus {
+            border: 1px solid lighten($val, 50%) ;
+        }
+    }
+    @if $key == 'containedsuccess'{
+        .btn-#{$key}{
+        color:  $color-text-muibutton-secondary;
+        }
+    }
+}
+
+
+.MuiButton-textPrimary {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    padding:$space-padding-muibutton-y  $space-padding-muibutton-x;
+    border-radius: $border-radius-button-base;
+    background-color: transparent;
+    color:$primary-600;
+    font-size: $font-size-muibutton-base;
+    font-weight: $font-weight-muibutton-bolder;
+    line-height: $line-height-muibutton-small;
+	&:hover {
+        background-color: #d5e2f4;
+        background-color: lighten($primary-600, 50%) ;
+        text-decoration: none;
+	}
+}
+.MuiButton-textPrimary[disabled] {
+	pointer-events: none;
+	opacity: 0.35;
+}
