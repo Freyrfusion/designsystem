@@ -1,3 +1,15 @@
+$space-padding-badge-y:$space-micro;  
+$space-padding-badge-x:$space-condensed;  
+
+$line-height-badge-base:$lineheight-base;
+
+$font-weight-badge-bold:$text-bold;
+$font-size-badge-small:$font-small;
+
+$border-radius-badge-base:$border-radius-base;
+
+$color-text-badge-secondary:$white;
+
 $badges-colors: (
   "primary":$primary-300,
   "success":$success-300,
@@ -10,14 +22,13 @@ $badges-colors: (
 
 
 @mixin badge-label($bg-color) {
-    padding:$space-micro $space-condensed;
-    line-height: $lineheight-base;
-    font-weight: $text-bold;
-    font-size: $font-small;
-    margin-right: $space-condensed;
+    padding:$space-padding-badge-y $space-padding-badge-x;
+    line-height:$line-height-badge-base ;
+    font-weight: $font-weight-badge-bold;
+    font-size: $font-size-badge-small;
     background-color: $bg-color;
-   + .badge-label{
-     margin-left: 4px;
+   + .badge{
+    margin-left: 10px;
    }
 
   }
@@ -27,7 +38,7 @@ $badges-colors: (
         @include badge-label($val);
 
         &.semirounded{
-            border-radius: 4px;
+            border-radius: $border-radius-badge-base;
         }
         
         &.rounded{
@@ -37,26 +48,9 @@ $badges-colors: (
     }
     @if $key == 'secondary'{
         .badge-label-#{$key}{
-        color:  $foundations-neutral-white;
+        color:  $color-text-badge-secondary;
         }
     }
    
    
-}
-.components-height {
-	width: 80%;
-	float: left;
-	padding: $space-generous;
-	height: calc(100vh - 54px);
-	max-height: 100vh;
-	.heading {
-		font-size: $font-large;
-	}
-	.sub-heading {
-		font-size: $font-medium;
-	}
-	.text {
-		font-size: $font-base;
-        font-weight: $text-bold;
-	}
 }

@@ -1,4 +1,18 @@
-$font-family: 'Open Sans', sans-serif;
+$border-button-none:$no-border;
+$border-radius-button-base:$border-radius-base;
+
+$space-padding-button-y:$space-condensed;  
+$space-padding-button-x:$space-default;
+
+$color-text-button:$white;
+$color-text-button-secondary:$black-900;
+
+$font-size-button-base:$font-base;
+$font-weight-button-bolder:$text-bolder;
+
+$line-height-tabs-small:$lineheight-small;
+
+
 
 $theme-colors: (
   "primary":$primary-600,
@@ -9,23 +23,23 @@ $theme-colors: (
 
 ) !default;
 
-$f-14:14px;
+
+
 // Button Mixings
 @mixin btn($bg-color) {
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
-    border:$no-border;
-    padding: $space-condensed 10px;
-    border-radius: $border-radius-base;
+    border:$border-button-none;
+    padding:$space-padding-button-y  $space-padding-button-x;
+    border-radius: $border-radius-button-base;
     background-color: $bg-color;
-    color: $white;
-    font-size: $font-base;
-    font-weight: $text-bolder;
-    font-family: $font-family;
-    text-transform: capitalize;
+    color: $color-text-button;
+    font-size: $font-size-button-base;
+    font-weight: $font-weight-button-bolder;
+    line-height: $line-height-tabs-small;
    + .btn{
-     margin-left: 4px;
+     margin-left: 14px;
    }
 
   }
@@ -51,15 +65,21 @@ $f-14:14px;
     }
     @if $key == 'secondary'{
         .btn-#{$key}{
-        color:  $black-900;
+        color:  $color-text-button-secondary;
         }
     }
     .btn-#{$key}-link{
         // @include btn($transparent);
         color: $val;
-        text-decoration: underline;
+        text-decoration: none;
+        padding: $space-padding-button-y $space-padding-button-x;
+        font-size: $font-size-button-base;
+        font-weight: $font-weight-button-bolder;
         &:hover{
             color: darken($val, 20%) ;
+            text-decoration: underline;
+            cursor:pointer;
+            
         }
         &[disabled]{
             pointer-events: none;
@@ -69,8 +89,8 @@ $f-14:14px;
             color: darken($val, 40%) ;
         }
         &:focus {
-            background-color: darken($val, 60%) ;
-            border: 1px solid darken($val, 80%) ;
+            background-color: ($val, 60%) ;
+            border: 1px solid ($val, 80%) ;
         }
     }
 
@@ -79,45 +99,45 @@ $f-14:14px;
 // .btn-shadow{
 //      box-shadow(1px, 1px, 3px, 1px, $gray-400);
 // }
-.btn-lg{
-   padding:$space-condensed;
-   font-size: $font-large;
-}
-.btn-sm{
-    line-height: $lineheight-small;
-    padding:$space-nano;
-    font-size: $font-small;
+// .btn-lg{
+//    padding:$space-condensed;
+//    font-size: $font-large;
+// }
+// .btn-sm{
+//     line-height: $lineheight-small;
+//     padding:$space-nano;
+//     font-size: $font-small;
 
-}
-.btn-xs{
-    line-height: $lineheight-small;
-    padding: $space-nano ;
-    font-size: $font-small;
+// }
+// .btn-xs{
+//     line-height: $lineheight-small;
+//     padding: $space-nano ;
+//     font-size: $font-small;
 
-}
-.btn-group{
+// }
+// .btn-group{
 
-        position: relative;
-        display: inline-flex;
-        vertical-align: middle;
-    >.btn + .btn{
-        margin-left: 0;
-    }
-    + .btn-group{
-        margin-left: 10px;
-    }
-    >.btn:not(:last-child):not(.dropdown-toggle) {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
+//         position: relative;
+//         display: inline-flex;
+//         vertical-align: middle;
+//     >.btn + .btn{
+//         margin-left: 0;
+//     }
+//     + .btn-group{
+//         margin-left: 10px;
+//     }
+//     >.btn:not(:last-child):not(.dropdown-toggle) {
+//         border-top-right-radius: 0;
+//         border-bottom-right-radius: 0;
 
-    }
-    // >.btn +.btn:not(:last-child),  >.btn:not(:first-child) {
-    //     border-left: $transparent;
-    // }
-    >.btn:nth-child(n+3), >:not(.btn-check)+.btn {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
+//     }
+//     // >.btn +.btn:not(:last-child),  >.btn:not(:first-child) {
+//     //     border-left: $transparent;
+//     // }
+//     >.btn:nth-child(n+3), >:not(.btn-check)+.btn {
+//         border-top-left-radius: 0;
+//         border-bottom-left-radius: 0;
 
-    }
+//     }
 
-}
+// }
