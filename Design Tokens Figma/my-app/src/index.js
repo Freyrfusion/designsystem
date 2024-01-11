@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import App from './App';
-import Fbc from './Fbc';
-import Cbc from './Cbc';
 import Listview from './Listview';
  
 
@@ -24,17 +22,7 @@ root.render(<App />);
 //   <React.StrictMode>
 //     <div>
 //     <App/>
-//     {/* <Fbc/>
-//     <Cbc/>
-//     <Listview/> */}
-    
-     
-     
-  
-    
 //     </div>
-    
-
 //    </React.StrictMode>
 // );
 

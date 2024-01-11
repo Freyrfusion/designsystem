@@ -32,7 +32,6 @@
     "jest": "^27.4.3",
     "jest-resolve": "^27.4.2",
     "jest-watch-typeahead": "^1.0.0",
-    "mini-css-extract-plugin": "^2.4.5",
     "postcss": "^8.4.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-loader": "^6.2.1",
@@ -47,7 +46,6 @@
     "react-router-dom": "^6.21.0",
     "resolve": "^1.20.0",
     "resolve-url-loader": "^4.0.0",
-    "sass-loader": "^12.3.0",
     "semver": "^7.3.5",
     "source-map-loader": "^3.0.0",
     "style-loader": "^3.3.1",
@@ -64,7 +62,8 @@
     "test": "node scripts/test.js",
     "build": "node scripts/build.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build:custom": "node scripts/build-deploy.js",
+    "deploy": "gh-pages -d designsystem"
   },
   "eslintConfig": {
     "extends": [
@@ -86,9 +85,11 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "node-sass": "^9.0.0",
     "renamer": "^4.0.0",
     "sass": "^1.69.5",
-    "sass-loader": "^13.3.2",
+    "sass-loader": "^13.3.3",
     "sass-resources-loader": "^2.2.5",
     "style-dictionary": "^3.9.0"
   },
