@@ -1,0 +1,99 @@
+// $tab-icon:$icon-base;
+$color-text-tabs:$black;
+$color-border-tabs:$black-200;
+$color-border-tabs-active:$primary-600;
+$color-list-tabs-hover:$black-200;
+$color-background-tabs: $black-100  ;
+
+$space-padding-tabs-x:$space-compact; 
+$space-padding-tabs-y:$space-compact;
+
+$font-size-tabs-medium:$font-medium;
+$font-size-tabs-base:$font-base;
+
+$font-weight-tabs-bold:$text-bold;
+$font-weight-tabs-bolder:$text-bolder;
+
+$line-height-tabs-small:$lineheight-small;
+
+
+
+
+
+
+.tabs-width{
+ float:left;
+	width: 100%;
+}
+
+.container-tabs {
+	@extend .tabs-width;
+	& > ul {
+		@extend .tabs-width;
+        padding-left: 0px;
+		& > li {
+         list-style: none;
+			& > a {
+				text-decoration: none;
+				font-size: $font-size-tabs-medium;
+				color: $color-text-tabs;
+				font-weight: $font-weight-tabs-bold;
+				line-height: $line-height-tabs-small;
+                float: left;
+				padding:$space-padding-tabs-x $space-padding-tabs-y;
+				&:hover {
+					background-color: $color-list-tabs-hover;
+				}
+				&.active {
+					border-bottom: 3px solid $color-border-tabs-active;
+                    color:$color-text-tabs;
+                    font-weight: $font-weight-tabs-bolder;
+				}
+			}
+		}
+	}
+    p {
+        color:$color-text-tabs;
+        font-size: $font-size-tabs-base;
+  
+    }
+}
+
+
+    
+  // vertical tabs//
+  .vertical-tabs {
+	border: 1px solid $color-border-tabs;
+	background-color: $color-background-tabs;
+	width: 20%;
+	height: 250px;
+	ul {
+        padding-left: 0px;
+        margin: 0px 0px;
+    }
+    li {
+		display: block;
+		color: $color-text-tabs;
+        padding:$space-padding-tabs-x $space-padding-tabs-y;
+	    cursor: pointer;
+        font-size: $font-size-tabs-medium;
+        border-left: 3px solid transparent;
+
+        a{
+            text-decoration: none;
+            color:$color-text-tabs;
+        }
+        
+		&:hover {
+			background-color: $color-list-tabs-hover;
+		}
+		&.active {
+			background-color: $color-list-tabs-hover;
+			border-left: 4px solid $color-border-tabs-active;
+			font-weight: $font-weight-tabs-bolder;
+		}
+	}
+    .tab-icons-left{
+        padding-right: $space-padding-tabs-x;
+    }
+}

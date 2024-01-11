@@ -8,8 +8,10 @@ import Checkbox from '../components/checkbox.js';
 import Form from '../components/form.js';
 import Popover from '../components/popover.js';
 import Toaster from '../components/toaster.js';
+import Tabs from '../components/tabs.js';
+import Muibuttons from '../components/muibuttons.js';
 import Grid from '../components/grid.js';
- 
+
 
 
 import '../assets/scss/sitemain.scss';
@@ -36,12 +38,16 @@ const UiComponents = () => {
               return <Popover />;
               case 'toaster':
                 return <Toaster />;     
-                case 'tooltip':
-                return <Tooltip />;  
-                case 'accordion':
-                return <Accordion />;  
-                case 'grid':
-                return <Grid />
+                case 'tabs':
+                  return <Tabs />; 
+                  case 'muibuttons':
+                    return <Muibuttons />;
+                    case 'tooltip':
+                      return <Tooltip />;  
+                      case 'accordion':
+                      return <Accordion />;  
+                      case 'grid':
+                      return <Grid />
       default:
         return <Badges />;
     }
@@ -64,8 +70,8 @@ const UiComponents = () => {
     <li className={currentPage==="popover" && 'activetab'} onClick={() => setCurrentPage('popover')}>Popover</li>
     <li className={currentPage==="tooltip" && 'activetab'} onClick={() => setCurrentPage('tooltip')}>Tooltip</li>
     <li className={currentPage==="toaster" && 'activetab'} onClick={() => setCurrentPage('toaster')}>Toaster</li>
-    <li className={currentPage==="accordion" && 'activetab'} onClick={() => setCurrentPage('accordion')}>Accordion</li>
-    <li className={currentPage==="grid" && 'activetab'} onClick={() => setCurrentPage('grid')}>Grid</li>
+    <li className={currentPage==="tabs" && 'activetab'} onClick={() => setCurrentPage('tabs')}>Tabs </li>
+    <li className={currentPage==="muibuttons" && 'activetab'} onClick={() => setCurrentPage('muibuttons')}>MUI Buttons </li>
 
 </ul>
 
