@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
  
-const Popover = () => {
+const Tooltip = () => {
   
       return (
         <div className='content-area'>
@@ -61,4 +61,4 @@ const Popover = () => {
       );
 };
  
-export default Popover;
+export default Tooltip;

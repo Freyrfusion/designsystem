@@ -5,14 +5,17 @@ import Badges from '../components/badges.js';
 import Breadcrumbs from '../components/breadcrumbs.js';
 import Buttons from '../components/buttons.js';
 import Checkbox from '../components/checkbox.js';
-
 import Form from '../components/form.js';
 import Popover from '../components/popover.js';
 import Toaster from '../components/toaster.js';
-
+import Grid from '../components/grid.js';
+ 
 
 
 import '../assets/scss/sitemain.scss';
+import Tooltip from '../components/tooltip.js';
+import Accordion from '../components/accordion.js';
+ 
 
 const UiComponents = () => {
   const [currentPage, setCurrentPage] = useState('badges');
@@ -33,6 +36,12 @@ const UiComponents = () => {
               return <Popover />;
               case 'toaster':
                 return <Toaster />;     
+                case 'tooltip':
+                return <Tooltip />;  
+                case 'accordion':
+                return <Accordion />;  
+                case 'grid':
+                return <Grid />
       default:
         return <Badges />;
     }
@@ -53,7 +62,10 @@ const UiComponents = () => {
 
     <li className={currentPage==="form" && 'activetab'} onClick={() => setCurrentPage('form')}>Form</li>
     <li className={currentPage==="popover" && 'activetab'} onClick={() => setCurrentPage('popover')}>Popover</li>
+    <li className={currentPage==="tooltip" && 'activetab'} onClick={() => setCurrentPage('tooltip')}>Tooltip</li>
     <li className={currentPage==="toaster" && 'activetab'} onClick={() => setCurrentPage('toaster')}>Toaster</li>
+    <li className={currentPage==="accordion" && 'activetab'} onClick={() => setCurrentPage('accordion')}>Accordion</li>
+    <li className={currentPage==="grid" && 'activetab'} onClick={() => setCurrentPage('grid')}>Grid</li>
 
 </ul>
 

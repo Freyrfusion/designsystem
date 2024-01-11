@@ -9,20 +9,20 @@
         margin-bottom: $space-comfortable;
 
         .form-label {
-            font-size: $font-base;
+            font-size: $size-text-label;
             padding: 0 0 $space-micro 0;
             font-weight: $text-bold;
-            color: $black-800;
+            color: $color-text-label;
             display: block;
 
             span {
                 margin: 0px $space-condensed;
-                color: $danger-700;
+                color: $color-text-required;
             }
 
             em {
-                font-size: $font-small;
-                color: $black-500;
+                font-size: $size-icon-notification;
+                color: $color-icon-notification;
             }
         }
 
@@ -34,18 +34,17 @@
             display: block;
             width: 100%;
             padding: $space-condensed $space-compact ;
+            line-height: $lineheight-small;
             font-size: $font-base;
-            color: $black-1000;
+            color: $color-text-input;
             background-color: $white;
             background-clip: padding-box;
-            border: 1px solid $black-200;
-            -webkit-appearance: none;
-            -moz-appearance: none;
+            border: 2px solid $color-border-input;
             appearance: none;
             transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
             &:hover {
-                color: $black-1000;
+                color: $black-900;
                 background-color: $white;
                 border: 2px solid $black-300;
                 outline: 0;
@@ -53,7 +52,7 @@
             }
 
             &:focus {
-                color: $black-900;
+                color: $black-1000;
                 background-color: $white;
                 border: 2px solid $primary-500;
                 outline: 0;
@@ -102,34 +101,36 @@
 }
 
 .search-main {
-
+    input {
+        padding-left: $space-spacious !important;
+        width: 96% !important;
+    }
 
     em {
         position: relative;
-        top: -49px;
+        top: -56px;
         z-index: 1;
         color: $black-400;
         font-size: $foundations-icon-size-base;
 
         &.icon-search2 {
-
             left: 12px;
-
         }
 
         &.icon-close-round {
-            left: 584px !important;
+            left: 505px !important;
             color: $black-500;
+            cursor: pointer;
+            font-size: $font-medium;
         }
     }
-
-
-
 
 }
 
 
-
+.display-inline_block {
+    display: inline-block;
+}
 
 
 
