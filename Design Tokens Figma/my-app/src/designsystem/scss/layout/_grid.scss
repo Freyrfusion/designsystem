@@ -98,3 +98,18 @@ $flex-nowrap: flex-wrap;
 .wrap-box {
     width: 300px
 }
+
+@media only screen and (max-width: 600px) {
+
+    .col-3 {
+        flex: 0 0 100%;
+    }
+
+    .col-4 {
+        flex: 0 0 100%;
+    }
+    .col-6 {
+        flex: 0 0 100%;
+    }
+
+}
