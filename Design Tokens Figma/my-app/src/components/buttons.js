@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+
 
 const Buttons = () => {
   return (
@@ -8,7 +9,7 @@ const Buttons = () => {
       <h1 className="heading"> We are preparing Buttons</h1>
       <p className="text" > A Button triggers an action or an event.</p>
 
-
+ 
       <div className="row">
         <div className="col-12 ">
           <section>
