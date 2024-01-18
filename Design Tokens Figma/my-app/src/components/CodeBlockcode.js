@@ -1,13 +1,29 @@
-import React from "react";
-import Select from "./checkbox";
-import Toggle from "./badges";
+import React, { useState } from "react";
 
-export default function({ select, toggle, language }) {
+const CollapsibleCode = ({ codeItem }) => {
+  const [isCollapsed, setIsCollapsed] = useState(true);
+
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+  };
+
   return (
-    <div className="list-reset flex flex-wrap items-center justify-between my-2">
-      <Toggle {...toggle} />
-      <Select {...language} />
-      {/* <Select {...select} /> */}
+    // <div
+    //   className={`collapsible-code ${isCollapsed ? "collapsed" : "expanded"}`}>
+    <div>
+      <button className="toggle-btn m-t-10" onClick={toggleCollapse}>
+        {isCollapsed ? "Show Code" : "Hide Code"}
+      </button>
+      {isCollapsed || (
+        <div className="code-container">
+          <pre>
+            <code>{codeItem.code}</code>
+          </pre>
+        </div>
+      )}
     </div>
+    // </div>
   );
-}
+};
+
+export default CollapsibleCode;

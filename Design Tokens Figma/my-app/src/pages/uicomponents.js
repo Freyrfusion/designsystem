@@ -11,6 +11,11 @@ import Toaster from '../components/toaster.js';
 import Tabs from '../components/tabs.js';
 import Muibuttons from '../components/muibuttons.js';
 import Grid from '../components/grid.js';
+import Table from '../components/table.js';
+import Muicheckbox from '../components/muicheckbox.js';
+import Muiautocomplete from '../components/muiautocomplete.js';
+import Textareaautosize from '../components/textareaautosize.js';
+import Muiform from '../components/muiform.js';
 
 
 
@@ -47,7 +52,17 @@ const UiComponents = () => {
                       case 'accordion':
                       return <Accordion />;  
                       case 'grid':
-                      return <Grid />
+                      return <Grid />;
+                      case 'table':
+                      return <Table />;
+                      case 'muicheckbox':
+                        return <Muicheckbox />;
+                          case 'muiautocomplete':
+                            return <Muiautocomplete />;
+                            case 'textareaautosize':
+                              return <Textareaautosize />;
+                              case 'muiform':
+                                return <Muiform />
       default:
         return <Badges />;
     }
@@ -65,13 +80,18 @@ const UiComponents = () => {
     <li className={currentPage==="breadcrumbs" && 'activetab'} onClick={() => setCurrentPage('breadcrumbs')}>Breadcrumbs</li>
     <li className={currentPage==="buttons" && 'activetab'} onClick={() => setCurrentPage('buttons')}>Buttons</li>
     <li className={currentPage==="checkbox" && 'activetab'} onClick={() => setCurrentPage('checkbox')}>Checkbox</li>
-
     <li className={currentPage==="form" && 'activetab'} onClick={() => setCurrentPage('form')}>Form</li>
     <li className={currentPage==="popover" && 'activetab'} onClick={() => setCurrentPage('popover')}>Popover</li>
     <li className={currentPage==="tooltip" && 'activetab'} onClick={() => setCurrentPage('tooltip')}>Tooltip</li>
     <li className={currentPage==="toaster" && 'activetab'} onClick={() => setCurrentPage('toaster')}>Toaster</li>
     <li className={currentPage==="tabs" && 'activetab'} onClick={() => setCurrentPage('tabs')}>Tabs </li>
     <li className={currentPage==="muibuttons" && 'activetab'} onClick={() => setCurrentPage('muibuttons')}>MUI Buttons </li>
+    <li className={currentPage==="muiform" && 'activetab'} onClick={() => setCurrentPage('muiform')}>MUI Form </li>
+    <li className={currentPage==="table" && 'activetab'} onClick={() => setCurrentPage('table')}>Table </li>
+    <li className={currentPage==="grid" && 'activetab'} onClick={() => setCurrentPage('grid')}>Grid </li>
+    <li className={currentPage==="muicheckbox" && 'activetab'} onClick={() => setCurrentPage('muicheckbox')}>Mui checkbox </li>
+    <li className={currentPage==="muiautocomplete" && 'activetab'} onClick={() => setCurrentPage('muiautocomplete')}>Mui Autocomplete </li>
+    <li className={currentPage==="textareaautosize" && 'activetab'} onClick={() => setCurrentPage('textareaautosize')}>Textarea Autosize </li>
 
 </ul>
 
