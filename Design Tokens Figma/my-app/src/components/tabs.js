@@ -40,9 +40,9 @@ const Tabs = () => {
                 <div class="col-12 sapceing">
                     <div class="vertical-tabs">
                         <ul >
-                            <li id="tab1" class="active"><a href="#"><i class="icon-menu3 tab-icons-left"></i> First Tab </a></li>
-                            <li id="tab1"><a href="#" class=""><i class="icon-menu3 tab-icons-left"></i> Second Tab </a></li>
-                            <li id="tab1"><a href="#" class=""><i class="icon-menu3 tab-icons-left"></i> Third Tab </a></li>
+                            <li id="tab1" class="active"><a href="#"><em class="icon-menu3 tab-icons-left"></em> First Tab </a></li>
+                            <li id="tab1"><a href="#" class=""><em class="icon-menu3 tab-icons-left"></em> Second Tab </a></li>
+                            <li id="tab1"><a href="#" class=""><em class="icon-menu3 tab-icons-left"></em> Third Tab </a></li>
                         </ul>
 
                     </div>

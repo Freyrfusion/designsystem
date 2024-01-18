@@ -11,6 +11,9 @@ import Toaster from '../components/toaster.js';
 import Tabs from '../components/tabs.js';
 import Muibuttons from '../components/muibuttons.js';
 import Grid from '../components/grid.js';
+import Muiswich from '../components/muiswitch.js';
+import Muibadge from '../components/muibadge.js';
+import Muitooltip from '../components/muitooltip.js';
 import Table from '../components/table.js';
 import Muicheckbox from '../components/muicheckbox.js';
 import Muiautocomplete from '../components/muiautocomplete.js';
@@ -53,6 +56,14 @@ const UiComponents = () => {
                       return <Accordion />;  
                       case 'grid':
                       return <Grid />;
+                      case 'muiform':
+                        return <Muiform />
+                        case 'muiswich':
+                          return <Muiswich />
+                          case 'muibadge':
+                            return <Muibadge />
+                            case 'muitooltip':
+                              return <Muitooltip />;
                       case 'table':
                       return <Table />;
                       case 'muicheckbox':
@@ -60,9 +71,7 @@ const UiComponents = () => {
                           case 'muiautocomplete':
                             return <Muiautocomplete />;
                             case 'textareaautosize':
-                              return <Textareaautosize />;
-                              case 'muiform':
-                                return <Muiform />
+                              return <Textareaautosize />
       default:
         return <Badges />;
     }
@@ -87,6 +96,9 @@ const UiComponents = () => {
     <li className={currentPage==="tabs" && 'activetab'} onClick={() => setCurrentPage('tabs')}>Tabs </li>
     <li className={currentPage==="muibuttons" && 'activetab'} onClick={() => setCurrentPage('muibuttons')}>MUI Buttons </li>
     <li className={currentPage==="muiform" && 'activetab'} onClick={() => setCurrentPage('muiform')}>MUI Form </li>
+    <li className={currentPage==="muiswich" && 'activetab'} onClick={() => setCurrentPage('muiswich')}>MUI Swich </li>
+    <li className={currentPage==="muibadge" && 'activetab'} onClick={() => setCurrentPage('muibadge')}>MUI Badge </li>
+    <li className={currentPage==="muitooltip" && 'activetab'} onClick={() => setCurrentPage('muitooltip')}>MUI Tooltip </li>
     <li className={currentPage==="table" && 'activetab'} onClick={() => setCurrentPage('table')}>Table </li>
     <li className={currentPage==="grid" && 'activetab'} onClick={() => setCurrentPage('grid')}>Grid </li>
     <li className={currentPage==="muicheckbox" && 'activetab'} onClick={() => setCurrentPage('muicheckbox')}>Mui checkbox </li>
