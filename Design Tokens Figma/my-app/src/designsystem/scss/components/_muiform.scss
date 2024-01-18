@@ -1,0 +1,347 @@
+$font-size-muiform-small: $font-small;
+$font-size-muiform-base: $font-base;
+$icon-size-muiform-base: $icon-base;
+$icon-size-muiform-medium: $icon-medium;
+$font-weight-muiform-bold: $text-bold;
+$color-text-muiform: $black-800;
+$color-text-muimandatory: $danger-700;
+$color-border-muiinput: $black-400;
+$color-text-muiinput: $black-1000;
+$color-text-muiform-danger: $danger-700;
+$color-text-muiform-success: $success-700;
+$line-height-muiform-small: $lineheight-small;
+$color-background-muiinput: $white;
+$color-background-muiinput-black-hover: $black-900;
+$border-color-muiborder-hover: $black-300;
+$border-color-muiborder-focus: $primary-500;
+$color-asterisk-muiform : $danger-700;
+$color-radio-text: $black-700;
+
+// // Horizontal Forms Start
+// .MuiFormControl-root {
+//     margin-bottom: 20px;
+
+//     .MuiInputLabel-root {
+//         font-size: $font-size-muiform-base;
+//         padding: 0 0 $space-micro 0;
+//         font-weight: $font-weight-muiform-bold;
+//         color: $color-text-muiform;
+//         display: block;
+//     }
+
+//     span {
+//         color: $color-text-muimandatory;
+//     }
+
+//     .MuiOutlinedInput-root {
+//         display: block;
+//         width: 100%;
+//         padding: $space-condensed $space-compact ;
+//         line-height: $line-height-muiform-small;
+//         font-size: $font-size-muiform-base;
+//         color: $color-text-muiform;
+//         background-color: $color-background-muiinput;
+//         background-clip: padding-box;
+//         border: 2px solid $color-border-muiinput;
+//         appearance: none;
+//         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+//         &:hover {
+//             color: $color-background-muiinput-black-hover;
+//             background-color: $color-background-muiinput;
+//             border: 2px solid $border-color-muiborder-hover;
+//             outline: 0;
+//             box-shadow: none;
+//         }
+
+//         &:focus {
+//             color: $color-text-muiinput;
+//             background-color: $color-background-muiinput;
+//             border: 2px solid $border-color-muiborder-focus;
+//             outline: 0;
+//             box-shadow: none;
+//         }
+
+//     }
+
+//     .MuiFormHelperText-root {
+//         font-size: $font-size-muiform-small;
+//         color: $color-border-muiinput;
+//     }
+
+//     .MuiFormHelperText-root-count {
+//         float: right;
+//         font-size: $font-size-muiform-small;
+//         color: $color-border-muiinput;
+//     }
+// }
+
+// .Mui-error {
+//     .MuiInputLabel-root {
+//         border-color: $color-text-muiform-danger !important;
+
+//         &:hover {
+//             border-color: $color-text-muiform-danger !important;
+//         }
+//     }
+
+//     div {
+//         color: $color-text-muiform-danger;
+//         margin-top: $space-condensed;
+//         font-size: $font-size-muiform-base;
+//     }
+
+//     span {
+//         font-size: $font-size-muiform-small;
+//     }
+
+// }
+
+// .Mui-success {
+//     .MuiInputLabel-root {
+//         border-color: $color-text-muiform-success !important;
+
+//         &:hover {
+//             border-color: $color-text-muiform-success !important;
+//         }
+//     }
+
+//     div {
+//         color: $color-text-muiform-success;
+//         font-size: $font-size-muiform-base;
+//         margin-top: $space-condensed;
+//     }
+
+//     span {
+//         font-size: $font-size-muiform-small;
+//     }
+// }
+
+// .MuiFormCount-root {
+//     input {
+//         padding-left: $space-spacious !important;
+//         width: 96% !important;
+//     }
+
+//     em {
+//         position: relative;
+//         top: -56px;
+//         z-index: 1;
+//         color: $black-400;
+//         font-size: $icon-size-muiform-base;
+
+//         &.icon-search2 {
+//             left: 12px;
+//         }
+
+//         &.icon-close-round {
+//             left: 505px !important;
+//             color: $black-500;
+//             cursor: pointer;
+//             font-size: $icon-size-muiform-medium;
+//         }
+//     }
+
+// }
+
+
+// input[type="text"]:disabled {
+//     background-color: $black-100 !important;
+
+// }
+
+//Mahalakshmi
+
+
+.MuiCheckbox-root .MuiSvgIcon-root {
+    width: 18px;
+    height: 18px;
+}
+
+.MuiCheckbox-root {
+    span {
+        color: $black-base;
+    }
+}
+
+.MuiRadio-root .MuiSvgIcon-root {
+    width: 16px;
+    height: 16px;
+}
+
+.mui_label {
+    transform: none !important;
+    position: relative;
+    font-size: $size-text-label;
+    padding: 0 0 $space-micro 0;
+    font-weight: $text-bold;
+    color: $color-text-label;
+    left: 0px;
+    max-width: inherit;
+    text-align: left;
+}
+
+.mui_input {
+    padding: $space-condensed $space-compact ;
+    line-height: $lineheight-small;
+    font-size: $font-base;
+    color: $color-text-input;
+    background-color: $white;
+}
+
+//**MuiAutocomplete**//
+.MuiAutocomplete-root {
+    .MuiFormControl-root {
+        .MuiFormLabel-root {
+            @extend .mui_label;
+        }
+
+        .MuiInputBase-root {
+            @extend .mui_input;
+
+            &:hover {
+                .MuiOutlinedInput-notchedOutline {
+                    border: 2px solid $border-color-muiborder-hover !important;
+                }
+            }
+
+            &:focus {
+
+                border: 2px solid $border-color-muiborder-focus !important;
+            }
+
+
+            input {
+                padding: $space-nospace;
+            }
+        }
+
+        .MuiOutlinedInput-notchedOutline {
+            border: 2px solid $color-border-input;
+            border-radius: $no-border;
+
+            &:hover {
+                border: 1px solid $border-color-muiborder-hover !important;
+            }
+
+            span {
+                display: none !important
+            }
+        }
+    }
+
+    transform: none !important
+}
+
+.MuiFormControl-root {
+    .MuiFormLabel-root {
+        @extend .mui_label;
+
+    }
+
+    .MuiInputBase-root {
+        @extend .mui_input;
+
+        .MuiSelect-select {
+            padding: $space-nospace;
+            text-align: left;
+        }
+
+        &:hover {
+            .MuiOutlinedInput-notchedOutline {
+                border: 2px solid $border-color-muiborder-hover!important
+            }
+        }
+
+        &:focus {
+
+            border: 2px solid $border-color-muiborder-focus !important
+        }
+
+
+        input {
+            padding: $space-nospace;
+        }
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+        border: 2px solid $color-border-input;
+        border-radius: $no-border;
+
+        &:hover {
+            border: 1px solid $border-color-muiborder-hover !important;
+        }
+
+        span {
+            display: none !important
+        }
+    }
+}
+
+.MuiPaper-root {
+    ul {
+        li {
+            font-size: $font-base !important;
+        }
+    }
+}
+
+.MuiBox-root {
+
+    .MuiTextField-root {
+        width: 45%;
+    }
+
+}
+
+.MuiAutocomplete-root {
+    width: 45%;
+
+}
+
+.MuiFormControl-root {
+
+
+    .MuiFormLabel-root {
+        .MuiFormLabel-asterisk {
+            color: $color-asterisk-muiform;
+        }
+    }
+
+    .MuiFormControlLabel-root {
+
+        // .MuiRadio-root {
+        //     color: $color-radio-text;
+        //     font-size: 14px;
+        // }
+
+        .MuiTypography-root {
+            color: $color-radio-text;
+        }
+
+    }
+
+    p {
+        margin-left: $space-nospace;
+        font-weight: 100;
+    }
+}
+
+.MuiFormGroup-root {
+    span {
+        font-size: 14px;
+    }
+}
+
+//Autocomplete
+.autocomplete-custom {
+    .MuiFormControl-root {
+        .MuiInputBase-root {
+            padding: $space-nano;
+
+            .MuiChip-root {
+                height: 25px;
+            }
+        }
+    }
+}

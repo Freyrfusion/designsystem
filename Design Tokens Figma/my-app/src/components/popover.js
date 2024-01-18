@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+ 
  
 const Popover = () => {
   
       return (
         <div className='content-area'>
-            <section>
+            {/* <section>
                 <h2 className="main-heading">Tooltip</h2>
             <div className='popover-main'>
             <div className='col-4'>
@@ -55,7 +58,13 @@ const Popover = () => {
   
   
 </div>
-            </section>
+            </section> */}
+            
+          <Stack spacing={2} direction="row">
+      <Button variant="text">Text</Button>
+      <Button variant="contained">Contained</Button>
+      <Button variant="outlined">Outlined</Button>
+    </Stack>
         
         </div>
       );

@@ -2,7 +2,7 @@
     padding: 40px;
     height: calc(100vh - 54px);
     max-height: 100vh;
-    width: 78%;
+    width: 77%;
     float: left;
 }
 
@@ -160,6 +160,22 @@ h6 {
     margin-left: 10px;
 }
 
+.m-l-15 {
+    margin-left: 15px !important;
+}
+
+.m-l-20 {
+    margin-left: 20px !important;
+}
+
+.m-r-20 {
+    margin-right: 20px !important;
+}
+
+.m-l-25 {
+    margin-left: 25px !important;
+}
+
 .m-t-10 {
     margin-top: 10px !important;
 }
@@ -170,4 +186,8 @@ h6 {
 
 .m-b-10 {
     margin-bottom: 10px !important;
+}
+
+.m-b-20 {
+    margin-bottom: 20px !important;
 }
