@@ -115,7 +115,7 @@ const Buttons = () => {
             <p className="text" >Display an icon before the text.</p>
             <div className="row">
               <div className="col-12 ">
-                <button type="button" className="btn btn-primary"> <i className="icon-down-open"></i> Icon before  </button>
+                <button type="button" className="btn btn-primary"> <em className="icon-down-open"></em> Icon before  </button>
               </div>
             </div>
           </section>
@@ -131,7 +131,7 @@ const Buttons = () => {
             <p className="text" > Display an icon after the text.</p>
             <div className="row">
               <div className="col-12 ">
-                <button type="button" className="btn btn-primary"> Icon after <i className="icon-down-open"></i> </button>
+                <button type="button" className="btn btn-primary"> Icon after <em className="icon-down-open"></em> </button>
               </div>
             </div>
           </section>
@@ -148,7 +148,7 @@ const Buttons = () => {
             <p className="text" > Button are clickable elements that are used to trigger actions. They communicate calls to action to the user and allow users to interact with pages in variety of ways. Button labels express what action will occur when the user interacts with it.</p>
             <div className="row">
               <div className="col-12 ">
-                <button type="button" className="btn btn-primary"> <i className="icon-menu3"></i> Primary <i className="icon-down-open"></i></button>
+                <button type="button" className="btn btn-primary"> <em className="icon-menu3"></em> Primary <em className="icon-down-open"></em></button>
               </div>
             </div>
           </section>
@@ -164,7 +164,7 @@ const Buttons = () => {
             <p className="text" > Button are clickable elements that are used to trigger actions. They communicate calls to action to the user and allow users to interact with pages in variety of ways. Button labels express what action will occur when the user interacts with it.</p>
             <div className="row">
               <div className="col-12 ">
-                <button type="button" className="btn btn-primary"> <i className="icon-thumbnail"></i> <i className="icon-down-open"></i></button>
+                <button type="button" className="btn btn-primary"> <em className="icon-thumbnail"></em> <em className="icon-down-open"></em></button>
               </div>
             </div>
           </section>

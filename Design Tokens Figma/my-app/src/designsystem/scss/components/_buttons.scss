@@ -12,6 +12,9 @@ $font-weight-button-bolder:$text-bolder;
 
 $line-height-tabs-small:$lineheight-small;
 
+$icon-padding-muibutton-y:$space-nospace;
+$icon-padding-muibutton-x:$space-micro;
+
 
 
 $theme-colors: (
@@ -38,6 +41,9 @@ $theme-colors: (
     font-size: $font-size-button-base;
     font-weight: $font-weight-button-bolder;
     line-height: $line-height-tabs-small;
+    em{
+        padding:$icon-padding-muibutton-y $icon-padding-muibutton-x;
+    }
    + .btn{
      margin-left: 14px;
    }

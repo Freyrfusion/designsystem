@@ -1,24 +1,35 @@
+@import '../abstract/variables';
+@import '../abstract/component-variables';
 $border-muibutton-none:$no-border;
 $border-radius-muibutton-base:$border-radius-base;
-
+ 
 $space-padding-muibutton-y:$space-condensed;  
 $space-padding-muibutton-x:$space-default;
 
 $color-text-muibutton:$white;
 $color-text-muibutton-secondary:$black-900;
+$color-text-muibutton-primary-link:$primary-600;
+
+$color-background-muibutton-secondary-hover:$success-100;
+$color-background-muibutton-danger-hover:$danger-100;
 
 $font-size-muibutton-base:$font-base;
 $font-weight-muibutton-bolder:$text-bolder;
 
 $line-height-muibutton-small:$lineheight-small;
 
+$icon-padding-muibutton-y:$space-nospace;
+$icon-padding-muibutton-x:$space-micro;
+
+$border-radius-muibutton-base:$border-radius-base;
+
 
 $mui-buttons: (
-  "containedprimary":$primary-600,
-  "containedsuccess":$success-700,
-  "containeddanger":$danger-800,
-  "containedwarning":$warning-400,
-  "containedsecondary":$black-200,
+  "containedPrimary":$primary-600,
+  "containedSuccess":$success-700,
+  "containedDanger":$danger-800,
+  "containedWarning":$warning-400,
+  "containedSecondary":$black-100,
 
 ) !default;
 
@@ -36,19 +47,25 @@ $mui-buttons: (
     font-size: $font-size-muibutton-base;
     font-weight: $font-weight-muibutton-bolder;
     line-height: $line-height-muibutton-small;
+    text-transform: none;
+    box-shadow: none;
+    em{
+        padding:$icon-padding-muibutton-y $icon-padding-muibutton-x;
+    }
    + .btn{
      margin-left: 14px;
    }
 
   }
 
-
+$brandcall : ".freya-fusion";
 
   @each $key, $val in $mui-buttons {
-    .MuiButton-#{$key}{
+    #{$brandcall} .MuiButton-#{$key}{
         @include MuiButton-contained($val);
         &:hover{
             background-color: darken($val, 10%) ;
+            box-shadow: none;
         }
         &[disabled]{
             pointer-events: none;
@@ -61,9 +78,9 @@ $mui-buttons: (
             border: 1px solid darken($val, 20%) ;
         }
     }
-    @if $key == 'containedsecondary'{
-        .MuiButton-#{$key}{
-        color:  $color-text-button-secondary;
+    @if $key == 'containedSecondary'{
+        #{$brandcall}  .MuiButton-#{$key}{
+        color:  $black-900;
         }
     }
 
@@ -79,14 +96,18 @@ $mui-outlinedbuttons: (
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
-    border:2px solid $border-color;
+    border:1px solid $border-color;
     padding:$space-padding-muibutton-y  $space-padding-muibutton-x;
-    border-radius: $border-radius-button-base;
+    border-radius: $border-radius-muibutton-base;
     background-color: transparent;
     color:$border-color;
     font-size: $font-size-muibutton-base;
     font-weight: $font-weight-muibutton-bolder;
     line-height: $line-height-muibutton-small;
+    text-transform: none;
+    em{
+   margin: 0px 4px 0px -4px;
+    }
    + .btn{
      margin-left: 14px;
    }
@@ -94,10 +115,11 @@ $mui-outlinedbuttons: (
   }
 
 @each $key, $val in $mui-outlinedbuttons {
-    .MuiButton-#{$key}{
+    #{$brandcall} .MuiButton-#{$key}{
         @include mui-outlinedbuttons($val);
         &:hover{
             background-color: lighten($val, 50%) ;
+            // border: 2px solid transparent;
         }
         &[disabled]{
             pointer-events: none;
@@ -107,35 +129,53 @@ $mui-outlinedbuttons: (
             background-color: lighten($val, 50%) ;
         }
         &:focus {
-            border: 1px solid lighten($val, 50%) ;
+            // border: 1px solid lighten($val, 40%) ;
+            border:1px solid $color-text-muibutton-primary-link;
         }
     }
-    @if $key == 'containedsuccess'{
-        .btn-#{$key}{
+ 
+    @if $key == 'outlinedSuccess'  {
+      
+        #{$brandcall} .MuiButton-#{$key}{
         color:  $color-text-muibutton-secondary;
+        &:hover{
+            background-color: $color-background-muibutton-secondary-hover;
         }
+        }
+      
+    }
+    @if $key == 'outlinedError'  {
+      
+        #{$brandcall} .MuiButton-#{$key}{
+        color:  $color-text-muibutton-secondary;
+        &:hover{
+            background-color: $color-background-muibutton-danger-hover;
+        }
+        }
+      
     }
 }
 
 
-.MuiButton-textPrimary {
+#{$brandcall} .MuiButton-textPrimary {
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
     padding:$space-padding-muibutton-y  $space-padding-muibutton-x;
-    border-radius: $border-radius-button-base;
+    border-radius: $border-radius-muibutton-base;
     background-color: transparent;
-    color:$primary-600;
+    color:$color-text-muibutton-primary-link;
     font-size: $font-size-muibutton-base;
     font-weight: $font-weight-muibutton-bolder;
     line-height: $line-height-muibutton-small;
+    text-transform: none;
 	&:hover {
-        background-color: #d5e2f4;
+       
         background-color: lighten($primary-600, 50%) ;
         text-decoration: none;
 	}
 }
-.MuiButton-textPrimary[disabled] {
+#{$brandcall} .MuiButton-textPrimary[disabled] {
 	pointer-events: none;
 	opacity: 0.35;
 }
