@@ -1,0 +1,13 @@
+$size-font-muipopover-base : $font-base;
+
+$color-text-muipopover: $black-1000;
+
+.freya-fusion {
+    .MuiPopover-paper {
+        .MuiTypography-root {
+            padding: $space-condensed $space-compact;
+            font-size: $size-font-muipopover-base;
+            color: $color-text-muipopover;
+        }
+    }
+}

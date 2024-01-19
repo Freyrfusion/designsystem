@@ -189,6 +189,25 @@ $color-radio-text: $black-700;
     background-color: $white;
 }
 
+/* Mui Textarea*/
+.textarea-custom {
+    @extend .mui_input;
+    border: 2px solid $color-border-input;
+    border-radius: $no-border;
+    width: 40%;
+
+    &:hover {
+        border: 2px solid $border-color-muiborder-hover;
+    }
+
+
+    &:focus-visible {
+        outline: none;
+        border: 2px solid $border-color-muiborder-hover;
+    }
+}
+
+
 //**MuiAutocomplete**//
 .MuiAutocomplete-root {
     .MuiFormControl-root {

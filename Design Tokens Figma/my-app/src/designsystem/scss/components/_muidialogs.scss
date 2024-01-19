@@ -1,0 +1,61 @@
+$color-background-dialog-button: $primary-600;
+$color-background-dialog-button-hover: $primary-700;
+$color-text-dialog-button: $white;
+$border-none-dialog-button: $no-border;
+$border-color-dialog: $black-100;
+
+.freya-fusion {
+    .MuiDialog-root {
+        .MuiDialog-container {
+            align-items: flex-start;
+
+            .MuiDialog-paper {
+                .MuiDialogTitle-root {
+                    margin: $space-nospace;
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid $border-color-dialog;
+
+                    h5 {
+                        margin: $space-nospace;
+                    }
+
+                    .close {
+                        background-color: transparent;
+                        border: $border-none-dialog-button;
+                        cursor: pointer;
+                        padding: $space-nospace;
+                    }
+                }
+
+                .MuiDialogContent-root {
+                    padding: $space-comfortable;
+                    border-bottom: 1px solid $border-color-dialog;
+
+                    p {
+                        font-size: $font-base;
+                        color: $black-1000;
+                    }
+                }
+
+                .MuiDialogActions-root {
+                    padding: $space-default $space-comfortable;
+
+                    .MuiButtonBase-root {
+                        background-color: $color-background-dialog-button;
+                        color: $color-text-dialog-button;
+                        border: $border-none-dialog-button;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: $color-background-dialog-button-hover;
+                        }
+
+                    }
+
+
+                }
+            }
+        }
+    }
+}
