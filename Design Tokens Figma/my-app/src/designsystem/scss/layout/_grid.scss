@@ -29,22 +29,22 @@ $flex-nowrap: flex-wrap;
 }
 
 .col-3 {
-    display: $display-flex;
+
     flex-grow: 4;
 }
 
 .col-4 {
-    display: $display-flex;
+
     flex-grow: 3;
 }
 
 .col-6 {
-    display: $display-flex;
+
     flex-grow: 2;
 }
 
 .col-12 {
-    display: $display-flex;
+
     flex-grow: 12;
 }
 
@@ -108,6 +108,7 @@ $flex-nowrap: flex-wrap;
     .col-4 {
         flex: 0 0 100%;
     }
+
     .col-6 {
         flex: 0 0 100%;
     }

@@ -1,0 +1,75 @@
+.collapsible-code {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: #f8f8f8;
+    border: 1px solid #e6e6e6;
+    text-align: left;
+    border-radius: 6px;
+    /* Adjust the duration and easing function */
+}
+
+.collapsed {
+    max-height: 90px;
+    /* Set the collapsed height */
+}
+
+.expanded {
+    max-height: auto;
+    /* Allow content to expand to its natural height */
+}
+
+.code-container {
+    max-height: 500px;
+    /* Set a maximum height for the expanded code */
+    overflow-y: auto;
+    text-align: left;
+    /* Add a scrollbar if the content exceeds the maximum height */
+}
+
+.code-container * {
+    font-size: 13px;
+}
+
+.collapsible-code.collapsed .code-container {
+    opacity: 0;
+}
+
+.collapsible-code button.toggle-btn {
+    border: none;
+    background: none;
+    line-height: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #666;
+    font-size: 13px;
+    letter-spacing: 1px;
+    width: 100%;
+    background: #f1f1f1;
+    border: 1px solid #e6e6e6;
+}
+
+.collapsible-code button.toggle-btn:hover {
+    background: #e9e9e9;
+    cursor: pointer;
+}
+
+.collapsible-code h1 {
+    font-size: 16px;
+    float: left;
+    margin: 0;
+    padding: 7px 12px 0;
+    width: 100%;
+    text-align: left;
+    color: #0b5aca;
+}
+
+// .collapsible-code.collapsed .code-container {
+//     max-height: 0px;
+//     overflow: hidden;
+//     transition: max-height 0.5s ease-in-out;
+// }
+
+// .collapsible-code.expanded .code-container {
+//     max-height: auto;
+//     transition: max-height 0.5s ease-in-out;
+// }

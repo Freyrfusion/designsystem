@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Muitable from '../components/muitable.js';
 import Muibuttons from '../components/muibuttons.js';
 import Muicollapse from '../components/muicollapse.js';
+import Muiswich from '../components/muiswitch.js';
 
 import '../assets/scss/sitemain.scss';
 
