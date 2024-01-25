@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 import CollapsibleCode from "./CodeBlockcode";
 
 import "../designsystem/scss/components/_muibuttons.scss";
@@ -126,6 +126,7 @@ const Muibuttons = () => {
           Buttons allow users to take actions, and make choices, with a single
           tap.
         </p>
+
         {/* Primary Section Starts here */}
         <div className="row">
           <div className="col-12 ">
@@ -158,8 +159,7 @@ const Muibuttons = () => {
                 The <code>Button</code> comes with three variants: text
                 (default), contained, and outlined.
               </p>
-              <div
-                className="collapsible-code">
+              <div className="collapsible-code">
                 <div className="row m-t-10 m-l-10">
                   <div className="col-12 ">
                     {/* <button
@@ -169,8 +169,9 @@ const Muibuttons = () => {
                       Default Button{" "}
                     </button> */}
 
-                    <Button variant="contained" color="secondary">Default</Button>
-
+                    <Button variant="contained" color="secondary">
+                      Default
+                    </Button>
                   </div>
                 </div>
                 <CollapsibleCode codeItem={defaultbutton} />
@@ -181,8 +182,6 @@ const Muibuttons = () => {
         {/* Default Section Ends here */}
         <hr></hr>
 
-
-
         {/* MUI Link Buttons Section Starts here */}
         <div className="row" id="Link Button">
           <div className="col-12 ">
@@ -192,18 +191,17 @@ const Muibuttons = () => {
                 The <code>Button</code> comes with three variants: text
                 (default), contained, and outlined.
               </p>
-              <div
-                className="collapsible-code">
+              <div className="collapsible-code">
                 <div className="row m-t-10 m-l-10">
                   <div className="col-12 ">
-
                     {/* <a href="#" class="MuiButton-textPrimary">
                       {" "}
                       Link button{" "}
                     </a> */}
 
-                    <Button variant="outlined" href="#outlined-buttons">Link</Button>
-
+                    <Button variant="outlined" href="#outlined-buttons">
+                      Link
+                    </Button>
                   </div>
                 </div>
                 <CollapsibleCode codeItem={linktbutton} />
@@ -214,11 +212,6 @@ const Muibuttons = () => {
         {/*MUI Link Buttons Section Ends here */}
         <hr></hr>
 
-
-
-
-
-
         {/* MUI Contained Success Section Starts here */}
         <div className="row">
           <div className="col-12 ">
@@ -228,8 +221,7 @@ const Muibuttons = () => {
                 The <code>Button</code> comes with three variants: text
                 (default), contained, and outlined.
               </p>
-              <div
-                className="collapsible-code">
+              <div className="collapsible-code">
                 <div className="row m-t-10 m-l-10">
                   <div className="col-12 ">
                     {/* <button
@@ -239,7 +231,10 @@ const Muibuttons = () => {
                     Success button{" "}
                   </button> */}
 
-                    <Button variant="contained" color="success"> Success</Button>
+                    <Button variant="contained" color="success">
+                      {" "}
+                      Success
+                    </Button>
                   </div>
                 </div>
                 <CollapsibleCode codeItem={successbutton} />
@@ -259,8 +254,7 @@ const Muibuttons = () => {
                 The <code>Button</code> comes with three variants: text
                 (default), contained, and outlined.
               </p>
-              <div
-                className="collapsible-code">
+              <div className="collapsible-code">
                 <div className="row m-t-10 m-l-10">
                   <div className="col-12 ">
                     {/* <button
@@ -271,7 +265,6 @@ const Muibuttons = () => {
                   </button> */}
 
                     <Button variant="outlined">Primary</Button>
-
                   </div>
                 </div>
                 <CollapsibleCode codeItem={outlinedbutton} />
@@ -291,16 +284,15 @@ const Muibuttons = () => {
                 The <code>Button</code> comes with three variants: text
                 (default), contained, and outlined.
               </p>
-              <div
-                className="collapsible-code">
+              <div className="collapsible-code">
                 <div className="row m-t-10 m-l-10">
                   <div className="col-12 ">
                     {/* <button type="button" className="MuiButton-containedPrimary"> <em className="icon-menu3"></em> Primary button </button> */}
 
-                    <Button variant="outlined"> <em className="icon-setting"></em>  Menu  </Button>
-
-
-
+                    <Button variant="outlined">
+                      {" "}
+                      <em className="icon-setting"></em> Menu{" "}
+                    </Button>
                   </div>
                 </div>
                 <CollapsibleCode codeItem={lefticonbutton} />
@@ -320,18 +312,17 @@ const Muibuttons = () => {
                 The <code>Button</code> comes with three variants: text
                 (default), contained, and outlined.
               </p>
-              <div
-                className="collapsible-code">
+              <div className="collapsible-code">
                 <div className="row m-t-10 m-l-10">
                   <div className="col-12 ">
                     {/* <button type="button" className="MuiButton-containedPrimary">  Primary button <em className="icon-down-open"></em> </button> */}
 
                     {/* <Button variant="contained" endIcon={<icon-down-open />}>Send</Button> */}
 
-                    <Button variant="contained" >  Menu <em className="icon-setting"></em>  </Button>
-
-
-
+                    <Button variant="contained">
+                      {" "}
+                      Menu <em className="icon-setting"></em>{" "}
+                    </Button>
                   </div>
                 </div>
                 <CollapsibleCode codeItem={righticonbutton} />
@@ -340,10 +331,7 @@ const Muibuttons = () => {
           </div>
         </div>
         {/* MUI right icon button Section Ends here */}
-
-
       </div>
-
 
       <div className="bookmark-navigator">
         {/* <ul>
@@ -357,7 +345,8 @@ const Muibuttons = () => {
             <li
               key={index}
               onClick={() => handleItemClick(index)}
-              className={activeElement === index ? "active" : ""}>
+              className={activeElement === index ? "active" : ""}
+            >
               <a href={"#" + item}> {item}</a>
             </li>
           ))}

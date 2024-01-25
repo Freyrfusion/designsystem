@@ -1,6 +1,13 @@
 @import "../../tokens/scss/alltokens.scss";
 
 $font-family-base : $foundations-font-familybase;
+
+body {
+    font-family: $font-family-base;
+}
+
+$brandcall : ".freya-fusion";
+
 /****** header's start ******/
 $heading-level1: $foundations-font-size-heading-level1;
 $heading-level2: $foundations-font-size-heading-level2;
@@ -16,11 +23,11 @@ $font-base : $foundations-font-size-body-base;
 $font-medium : $foundations-font-size-body-medium;
 $font-large : $foundations-font-size-body-large;
 
-$icon-small:$foundations-icon-size-small;
-$icon-base:$foundations-icon-size-base;
-$icon-medium:$foundations-icon-size-medium;
-$icon-large:$foundations-icon-size-large;
-$icon-lead:$foundations-icon-size-lead;
+$icon-small: $foundations-icon-size-small;
+$icon-base: $foundations-icon-size-base;
+$icon-medium: $foundations-icon-size-medium;
+$icon-large: $foundations-icon-size-large;
+$icon-lead: $foundations-icon-size-lead;
 
 
 
