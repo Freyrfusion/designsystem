@@ -1,0 +1,62 @@
+.MuiDrawer-root {
+
+    .MuiDrawer-paperAnchorTop,
+    .MuiDrawer-paperAnchorBottom {
+        .MuiBox-root {
+            padding: $space-default;
+
+            .slidebar_header {
+                display: flex;
+                margin: $space-nospace;
+                display: flex;
+                justify-content: space-between;
+
+                h5 {
+                    margin: $space-nospace;
+                }
+
+                .close {
+                    background-color: transparent;
+                    border: 0px;
+                    cursor: pointer;
+                    padding: 0;
+
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .MuiDrawer-paperAnchorLeft,
+    .MuiDrawer-paperAnchorRight {
+        .MuiBox-root {
+            width: 300px;
+            padding: $space-default;
+
+            .slidebar_header {
+                display: flex;
+                margin: $space-nospace;
+                display: flex;
+                justify-content: space-between;
+
+                h5 {
+                    margin: $space-nospace;
+                }
+
+                .close {
+                    background-color: transparent;
+                    border: 0px;
+                    cursor: pointer;
+                    padding: 0;
+
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+}
