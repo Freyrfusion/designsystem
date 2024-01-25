@@ -14,7 +14,7 @@ $font-size-muibadge-small: $font-small;
     font-size: $font-size-muibadge-small;
     text-transform: capitalize;
 }
-.freya-fusion {
+#{$brandcall} {
     .MuiChip-colorPrimary {
         background-color: $color-background-muibadge-primary;  
         @extend .MuiChip-label;

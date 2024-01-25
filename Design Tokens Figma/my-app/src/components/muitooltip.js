@@ -2,7 +2,13 @@ import React, { useEffect, useState } from "react";
 
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
+import Zoom from '@mui/material/Zoom';
 
+
+
+// import Box from '@mui/material/Box';
+// import Grid from '@mui/material/Grid';
+// import Fade from '@mui/material/Fade';
 import CollapsibleCode from "./CodeBlockcode";
 
 import "../designsystem/scss/components/_muibadge.scss";
@@ -20,9 +26,32 @@ const Muibadge = () => {
     // React Code Block Starts
     const [language, changeLanguage] = useState("js");
     const [lineNumbers, toggleLineNumbers] = useState(true);
-    const tooltipCode = ` <Tooltip title="Add" arrow>
-    <Button>Arrow</Button>
-  </Tooltip>`;
+    const tooltipCode = ` // To use mui tooltip import tooltip component from mui // 
+    import Button from '@mui/material/Button';
+    import Tooltip from '@mui/material/Tooltip';
+    import Zoom from '@mui/material/Zoom';
+    
+    // React MUI component code// 
+    export default function BasicTooltip() {
+      return (
+    <Tooltip TransitionComponent={Zoom}
+        title="Tooltip text " >
+        <Button>Tooltip One</Button>
+    </Tooltip>
+    
+    <Tooltip TransitionComponent={Zoom} 
+    title="Lorem Ipsum is simply dummy text of the printing and typesetting industry." >
+    <Button>Tooltip Two</Button>
+    </Tooltip>
+    
+    <Tooltip TransitionComponent={Zoom} followCursor
+    title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text." >
+    <Button>Tooltip Three</Button>
+    </Tooltip>
+      );
+    } 
+      `;
+    
 
     // React Code Block End here
 
@@ -57,7 +86,32 @@ const Muibadge = () => {
                 <p className="text m-b-0">
                     Tooltips display informative text when users hover over, focus on, or tap an element.
                 </p>
-                {/* Switch Section Starts here */}
+                <div className="row">
+        <div className="col-12">
+          <section>
+            <h3 className="sub-heading">Component Usage </h3>
+            <p className="text">
+              To use design system styles, import below file to your App /
+              Component
+            </p>
+ 
+            <div className="code-container-import">
+              <pre>
+                <code>
+                  <div className="m-l-15">
+                    @import url("https://freyadesignsystemurl/design/tooltip.css");
+                   
+                  </div>
+                </code>
+              </pre>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <hr className="section-border-bottom"></hr>
+     
+                {/* Tooltip Section Starts here */}
                 <div className="row">
                     <div className="col-12 ">
                         <section>
@@ -65,13 +119,24 @@ const Muibadge = () => {
                             <p className="text">
                                 Tooltips display informative text when users hover over, focus on, or tap an element.   </p>
                             <div className="collapsible-code">
-                                <div className="row m-t-10 m-l-10">
-                                    <div className="col-12 ">
+                                <div className="row ">
+                                    <div className="col-12 m-t-20 m-l-20 m-b-20 m-r-20">
+
+                                    <Tooltip TransitionComponent={Zoom}
+                                            title="Tooltip text " >
+                                            <Button>Small Tooltip</Button>
+                                        </Tooltip>
+
+                                        <Tooltip TransitionComponent={Zoom} 
+                                            title="Lorem Ipsum is simply dummy text of the printing and typesetting industry." >
+                                            <Button>Length Tooltip </Button>
+                                        </Tooltip>
 
 
-                                    <Tooltip title="Add" arrow>
-      <Button>Arrow</Button>
-    </Tooltip>
+                                        <Tooltip TransitionComponent={Zoom} followCursor
+                                            title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text." >
+                                            <Button>Tooltip Follow Cursor</Button>
+                                        </Tooltip>
 
                                     </div>
 
@@ -82,32 +147,38 @@ const Muibadge = () => {
                         </section>
                     </div>
                 </div>
-                {/* Switch Section Ends here */}
-                <hr></hr>
+                {/* Tooltip Section Ends here */}
+
+              <hr className="section-border-bottom"></hr>
+
+                <div className="row">
+        <div className="col-12 m-t-20">
+          <h3 className="sub-heading">React Material UI Component Library </h3>
+          <p className="text">
+            For more information, you may refer MUI component page by clicking
+            below link.
+          </p>
+ 
+          <div className="notification-main">
+            <div className="notification-content">
+              <a
+                href="https://mui.com/material-ui/react-tooltip/"
+                target="blank">
+                MUI Tooltip
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                
+
 
 
 
             </div>
 
 
-            <div className="bookmark-navigator">
-                {/* <ul>
-            <li><a href="#default">Default</a></li>
-            <li><a href="#primary">Primary</a></li>
-            <li><a href="#outlined">Outlined</a></li>
-            <li><a href="#linkbutton">Link Button</a></li>
-          </ul> */}
-                <ul>
-                    {items.map((item, index) => (
-                        <li
-                            key={index}
-                            onClick={() => handleItemClick(index)}
-                            className={activeElement === index ? "active" : ""}>
-                            <a href={"#" + item}> {item}</a>
-                        </li>
-                    ))}
-                </ul>
-            </div>
         </div>
     );
 };

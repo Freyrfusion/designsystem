@@ -20,11 +20,22 @@ const Muibadge = () => {
     // React Code Block Starts
     const [language, changeLanguage] = useState("js");
     const [lineNumbers, toggleLineNumbers] = useState(true);
-    const badgeCode = `   <Stack direction="row" spacing={1}>
-    <Chip label="primary" color="primary"  size="small" />
-    <Chip label="success" color="success"  size="small" />
-    <Chip label="Small" size="small" />
-</Stack>`;
+    const badgeCode = ` // To use mui chip import chip component from mui // 
+    import Chip from '@mui/material/Chip';
+    import Stack from '@mui/material/Stack';
+    
+    // React MUI component code// 
+    export default function BasicChips() {
+      return (
+     <Stack direction="row" spacing={1}>
+        <Chip label="primary" color="primary"  size="small" />
+        <Chip label="success" color="success"  size="small" />
+        <Chip label="Small" size="small" />
+    </Stack>
+      );
+    } 
+      `;
+
 
     // React Code Block End here
 
@@ -54,27 +65,52 @@ const Muibadge = () => {
     return (
         <div className="content-wrapper" id="Default">
             <div className="content-area">
-                <h1 className="heading"> Badge </h1>
+                <h1 className="heading"> Badges </h1>
 
                 <p className="text m-b-0">
                     Examples of badges containing text, using primary and secondary colors. The badge is applied to its children.
                 </p>
+                <div className="row">
+                    <div className="col-12">
+                        <section>
+                            <h3 className="sub-heading">Component Usage </h3>
+                            <p className="text">
+                                To use design system styles, import below file to your App /
+                                Component
+                            </p>
+
+                            <div className="code-container-import">
+                                <pre>
+                                    <code>
+                                        <div className="m-l-15">
+                                            @import url("https://freyadesignsystemurl/design/badges.css");
+
+                                        </div>
+                                    </code>
+                                </pre>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <hr className="section-border-bottom"></hr>
+              
                 {/* Switch Section Starts here */}
                 <div className="row">
                     <div className="col-12 ">
                         <section>
-                            <h3 className="sub-heading">Basic Badge</h3>
+                            <h3 className="sub-heading">Basic Badges</h3>
                             <p className="text">
-                                Examples of badges containing text, using primary and secondary colors. The badge is applied to its children.
+                                Examples of badges containing text, using primary and secondary colors. The badges is applied to its children.
                             </p>
                             <div className="collapsible-code">
-                                <div className="row m-t-10 m-l-10">
-                                    <div className="col-12 ">
+                                <div className="row ">
+                                    <div className="col-12 m-t-20 m-l-20 m-b-20 m-r-20 ">
 
 
                                         <Stack direction="row" spacing={1}>
-                                            <Chip label="primary" color="primary"  size="small" />
-                                            <Chip label="success" color="success"  size="small" />
+                                            <Chip label="primary" color="primary" size="small" />
+                                            <Chip label="success" color="success" size="small" />
                                             <Chip label="Small" size="small" />
                                         </Stack>
 
@@ -88,31 +124,32 @@ const Muibadge = () => {
                     </div>
                 </div>
                 {/* Switch Section Ends here */}
-                <hr></hr>
 
+                <hr className="section-border-bottom"></hr>
+
+                <div className="row">
+                    <div className="col-12 m-t-20">
+                        <h3 className="sub-heading">React Material UI Component Library </h3>
+                        <p className="text">
+                            For more information, you may refer MUI component page by clicking
+                            below link.
+                        </p>
+
+                        <div className="notification-main">
+                            <div className="notification-content">
+                                <a
+                                    href="https://mui.com/material-ui/react-chip/"
+                                    target="blank">
+                                    MUI Badges
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
             </div>
 
-
-            <div className="bookmark-navigator">
-                {/* <ul>
-            <li><a href="#default">Default</a></li>
-            <li><a href="#primary">Primary</a></li>
-            <li><a href="#outlined">Outlined</a></li>
-            <li><a href="#linkbutton">Link Button</a></li>
-          </ul> */}
-                <ul>
-                    {items.map((item, index) => (
-                        <li
-                            key={index}
-                            onClick={() => handleItemClick(index)}
-                            className={activeElement === index ? "active" : ""}>
-                            <a href={"#" + item}> {item}</a>
-                        </li>
-                    ))}
-                </ul>
-            </div>
         </div>
     );
 };

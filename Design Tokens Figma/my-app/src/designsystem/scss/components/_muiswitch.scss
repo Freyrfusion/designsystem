@@ -13,13 +13,12 @@ $space-padding-muiswitch-y: $space-compact;
 $space-padding-muiswitch-x: $space-compact;
 
 
-.freya-fusion {
-
-    .MuiFormControlLabel-root {
-        // padding:$space-padding-muiswitch-y $space-padding-muiswitch-x;
+#{$brandcall} {
+   
+    .MuiFormControlLabel-root{
+        padding:$space-padding-muiswitch-y $space-padding-muiswitch-x;
     }
-
-    .Mui-checked.MuiSwitch-thumb {
+    .Mui-checked.MuiSwitch-thumb{
         color: $color-switch-muithumb;
     }
 
