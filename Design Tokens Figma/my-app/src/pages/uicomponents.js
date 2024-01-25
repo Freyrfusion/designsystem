@@ -22,18 +22,18 @@ import Muiform from "../components/muiform.js";
 import Muipopover from "../components/muipopover.js";
 import Muidialogs from "../components/muidialogs.js";
 import Muialerts from "../components/muialerts.js";
-
 import "../assets/scss/sitemain.scss";
 import Tooltip from "../components/tooltip.js";
 import Accordion from "../components/accordion.js";
+import Muisidebar from "../components/muisidebar.js";
 
 const UiComponents = () => {
   const [currentPage, setCurrentPage] = useState("badges");
 
   const renderPage = () => {
     switch (currentPage) {
-      case "badges":
-        return <Badges />;
+      // case "badges":
+      //   return <Badges />;
       case "breadcrumbs":
         return <Breadcrumbs />;
       case "buttons":
@@ -78,17 +78,19 @@ const UiComponents = () => {
         return <Muidialogs />;
       case "muialerts":
         return <Muialerts />;
+      case "muisidebar":
+        return <Muisidebar />;
       default:
-        return <Badges />;
+        return <Muibadge />;
     }
   };
 
   return (
     <div>
       <div className="sidebar">
-        <h6 className="m-t-10 m-b-0 m-l-10">Components</h6>
+        <h6 className="m-t-10 m-b-0 m-l-20">Components</h6>
         <ul id="dynamic-tabs">
-          <li
+          {/* <li
             className={currentPage === "badges" && "activetab"}
             onClick={() => setCurrentPage("badges")}
           >
@@ -141,43 +143,7 @@ const UiComponents = () => {
             onClick={() => setCurrentPage("tabs")}
           >
             Tabs{" "}
-          </li>
-          <li
-            className={currentPage === "muibuttons" && "activetab"}
-            onClick={() => setCurrentPage("muibuttons")}
-          >
-            MUI Buttons{" "}
-          </li>
-          <li
-            className={currentPage === "muiform" && "activetab"}
-            onClick={() => setCurrentPage("muiform")}
-          >
-            MUI Form{" "}
-          </li>
-          <li
-            className={currentPage === "muiswich" && "activetab"}
-            onClick={() => setCurrentPage("muiswich")}
-          >
-            MUI Swich{" "}
-          </li>
-          <li
-            className={currentPage === "muibadge" && "activetab"}
-            onClick={() => setCurrentPage("muibadge")}
-          >
-            MUI Badge{" "}
-          </li>
-          <li
-            className={currentPage === "muitooltip" && "activetab"}
-            onClick={() => setCurrentPage("muitooltip")}
-          >
-            MUI Tooltip{" "}
-          </li>
-          <li
-            className={currentPage === "table" && "activetab"}
-            onClick={() => setCurrentPage("table")}
-          >
-            Table{" "}
-          </li>
+          </li> */}
           <li
             className={currentPage === "grid" && "activetab"}
             onClick={() => setCurrentPage("grid")}
@@ -185,40 +151,83 @@ const UiComponents = () => {
             Grid{" "}
           </li>
           <li
+            className={currentPage === "muibuttons" && "activetab"}
+            onClick={() => setCurrentPage("muibuttons")}
+          >
+            Buttons{" "}
+          </li>
+          <li
+            className={currentPage === "muiform" && "activetab"}
+            onClick={() => setCurrentPage("muiform")}
+          >
+            Form{" "}
+          </li>
+          <li
+            className={currentPage === "muiswich" && "activetab"}
+            onClick={() => setCurrentPage("muiswich")}
+          >
+            Swich{" "}
+          </li>
+          <li
+            className={currentPage === "muibadge" && "activetab"}
+            onClick={() => setCurrentPage("muibadge")}
+          >
+            Badge{" "}
+          </li>
+          <li
+            className={currentPage === "muitooltip" && "activetab"}
+            onClick={() => setCurrentPage("muitooltip")}
+          >
+            Tooltip{" "}
+          </li>
+          {/* <li
+            className={currentPage === "table" && "activetab"}
+            onClick={() => setCurrentPage("table")}
+          >
+            Table{" "}
+          </li> */}
+
+          <li
             className={currentPage === "muicheckbox" && "activetab"}
             onClick={() => setCurrentPage("muicheckbox")}
           >
-            Mui checkbox{" "}
+            Checkbox{" "}
           </li>
           <li
             className={currentPage === "muiautocomplete" && "activetab"}
             onClick={() => setCurrentPage("muiautocomplete")}
           >
-            Mui Autocomplete{" "}
+            Autocomplete{" "}
           </li>
           <li
             className={currentPage === "textareaautosize" && "activetab"}
             onClick={() => setCurrentPage("textareaautosize")}
           >
-            Mui Textarea Autosize{" "}
+            Textarea Autosize{" "}
           </li>
           <li
             className={currentPage === "muipopover" && "activetab"}
             onClick={() => setCurrentPage("muipopover")}
           >
-            Mui Popover{" "}
+            Popover{" "}
           </li>
           <li
             className={currentPage === "muialerts" && "activetab"}
             onClick={() => setCurrentPage("muialerts")}
           >
-            Mui Alerts{" "}
+            Alerts{" "}
           </li>
           <li
             className={currentPage === "muidialogs" && "activetab"}
             onClick={() => setCurrentPage("muidialogs")}
           >
-            Mui Dialogs{" "}
+            Dialogs{" "}
+          </li>
+          <li
+            className={currentPage === "muisidebar" && "activetab"}
+            onClick={() => setCurrentPage("muisidebar")}
+          >
+            Sidebar{" "}
           </li>
         </ul>
       </div>

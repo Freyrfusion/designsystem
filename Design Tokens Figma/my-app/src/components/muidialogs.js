@@ -60,7 +60,41 @@ const Muidialogs = () => {
   const exampleCodeBlock = `<Button variant="contained">Contained</Button>`;
 
   // Start small dialog
-  const smalldialog = `<Button variant="outlined" onClick={handleClickOpen1}>
+  const smalldialog = `// To use mui dialog import dialog component from mui
+import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
+
+//React MUI component code
+  export default function MaxWidthDialog() {
+  const [open, setOpen] = React.useState(false);
+  const [fullWidth, setFullWidth] = React.useState(true);
+  const [maxWidth, setMaxWidth] = React.useState('sm');
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const handleMaxWidthChange = (event) => {
+    setMaxWidth(
+      // @ts-expect-error autofill of arbitrary value is not handled.
+      event.target.value,
+    );
+  };
+
+  const handleFullWidthChange = (event) => {
+    setFullWidth(event.target.checked);
+  };
+
+  return (
+  <Button variant="outlined" onClick={handleClickOpen1}>
   Open Small Dialog
 </Button>
 <Dialog
@@ -81,16 +115,51 @@ const Muidialogs = () => {
     </DialogContentText>
   </DialogContent>
   <DialogActions>
-    <Button
-      onClick={handleClose1}
-      className="btn btn-primary">
-      Close
-    </Button>
-  </DialogActions>
-</Dialog>`;
+                      <Button variant="contained" color="secondary">
+                        Cancel
+                      </Button>
+                      <Button variant="contained">Save</Button>
+                    </DialogActions>
+</Dialog>
+);
+}`;
 
   // Start medium dialog
-  const mediumdialog = `<Button variant="outlined" onClick={handleClickOpen2}>
+  const mediumdialog = `// To use mui dialog import dialog component from mui
+  import Button from "@mui/material/Button";
+  import Dialog from "@mui/material/Dialog";
+  import DialogActions from "@mui/material/DialogActions";
+  import DialogContent from "@mui/material/DialogContent";
+  import DialogContentText from "@mui/material/DialogContentText";
+  import DialogTitle from "@mui/material/DialogTitle";
+  
+  //React MUI component code
+    export default function MaxWidthDialog() {
+    const [open, setOpen] = React.useState(false);
+    const [fullWidth, setFullWidth] = React.useState(true);
+    const [maxWidth, setMaxWidth] = React.useState('sm');
+  
+    const handleClickOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleClose = () => {
+      setOpen(false);
+    };
+  
+    const handleMaxWidthChange = (event) => {
+      setMaxWidth(
+        // @ts-expect-error autofill of arbitrary value is not handled.
+        event.target.value,
+      );
+    };
+  
+    const handleFullWidthChange = (event) => {
+      setFullWidth(event.target.checked);
+    };
+  
+    return (
+      <Button variant="outlined" onClick={handleClickOpen2}>
   Open Medium Dialog
 </Button>
 <Dialog
@@ -174,12 +243,51 @@ const Muidialogs = () => {
     </DialogContentText>
   </DialogContent>
   <DialogActions>
-    <Button onClick={handleClose2}>Close</Button>
-  </DialogActions>
-</Dialog>`;
+  <Button variant="contained" color="secondary">
+    Cancel
+  </Button>
+  <Button variant="contained">Save</Button>
+</DialogActions>
+</Dialog>
+);
+}`;
 
   // Start large dialog
-  const largedialog = ` <Button variant="outlined" onClick={handleClickOpen}>
+  const largedialog = `// To use mui dialog import dialog component from mui
+  import Button from "@mui/material/Button";
+  import Dialog from "@mui/material/Dialog";
+  import DialogActions from "@mui/material/DialogActions";
+  import DialogContent from "@mui/material/DialogContent";
+  import DialogContentText from "@mui/material/DialogContentText";
+  import DialogTitle from "@mui/material/DialogTitle";
+  
+  //React MUI component code
+    export default function MaxWidthDialog() {
+    const [open, setOpen] = React.useState(false);
+    const [fullWidth, setFullWidth] = React.useState(true);
+    const [maxWidth, setMaxWidth] = React.useState('sm');
+  
+    const handleClickOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleClose = () => {
+      setOpen(false);
+    };
+  
+    const handleMaxWidthChange = (event) => {
+      setMaxWidth(
+        // @ts-expect-error autofill of arbitrary value is not handled.
+        event.target.value,
+      );
+    };
+  
+    const handleFullWidthChange = (event) => {
+      setFullWidth(event.target.checked);
+    };
+  
+    return (
+       <Button variant="outlined" onClick={handleClickOpen}>
  Open Large Dialog
 </Button>
 <Dialog
@@ -201,12 +309,51 @@ const Muidialogs = () => {
    </DialogContentText>
  </DialogContent>
  <DialogActions>
-   <Button onClick={handleClose}>Close</Button>
- </DialogActions>
-</Dialog>`;
+                      <Button variant="contained" color="secondary">
+                        Cancel
+                      </Button>
+                      <Button variant="contained">Save</Button>
+                    </DialogActions>
+</Dialog>
+);
+}`;
 
   // Start large dialog
-  const fullscreendialog = `  <Button variant="outlined" onClick={handleClickOpen3}>
+  const fullscreendialog = `// To use mui dialog import dialog component from mui
+  import Button from "@mui/material/Button";
+  import Dialog from "@mui/material/Dialog";
+  import DialogActions from "@mui/material/DialogActions";
+  import DialogContent from "@mui/material/DialogContent";
+  import DialogContentText from "@mui/material/DialogContentText";
+  import DialogTitle from "@mui/material/DialogTitle";
+  
+  //React MUI component code
+    export default function MaxWidthDialog() {
+    const [open, setOpen] = React.useState(false);
+    const [fullWidth, setFullWidth] = React.useState(true);
+    const [maxWidth, setMaxWidth] = React.useState('sm');
+  
+    const handleClickOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleClose = () => {
+      setOpen(false);
+    };
+  
+    const handleMaxWidthChange = (event) => {
+      setMaxWidth(
+        // @ts-expect-error autofill of arbitrary value is not handled.
+        event.target.value,
+      );
+    };
+  
+    const handleFullWidthChange = (event) => {
+      setFullWidth(event.target.checked);
+    };
+  
+    return (
+    <Button variant="outlined" onClick={handleClickOpen3}>
   Open Full-screen dialogs
 </Button>
 <Dialog fullScreen open={open3} onClose={handleClose3}>
@@ -223,9 +370,14 @@ const Muidialogs = () => {
     </DialogContentText>
   </DialogContent>
   <DialogActions>
-    <Button onClick={handleClose3}>Close</Button>
-  </DialogActions>
-</Dialog>`;
+                      <Button variant="contained" color="secondary">
+                        Cancel
+                      </Button>
+                      <Button variant="contained">Save</Button>
+                    </DialogActions>
+</Dialog>
+);
+}`;
 
   // React Code Block End here
 
@@ -292,10 +444,35 @@ const Muidialogs = () => {
   return (
     <div className="content-area">
       <h1 className="heading"> Dialog</h1>
-      <p className="text">
+      <p className="text m-b-0">
         Dialogs inform users about a task and can contain critical information,
         require decisions, or involve multiple tasks.
       </p>
+
+      <div className="row">
+        <div className="col-12">
+          <section>
+            <h3 className="sub-heading">Component Usage </h3>
+            <p className="text">
+              To use design system styles, import below file to your App /
+              Component
+            </p>
+
+            <div className="code-container-import">
+              <pre>
+                <code>
+                  <div className="m-l-15">
+                    @import
+                    url("https://freyadesignsystemurl/design/dialog.css");
+                  </div>
+                </code>
+              </pre>
+            </div>
+          </section>
+        </div>
+      </div>
+      <hr className="section-border-bottom"></hr>
+
       <div className="row">
         <div className="col-12">
           <section>
@@ -306,7 +483,7 @@ const Muidialogs = () => {
             <div className="collapsible-code">
               <div className="row m-t-10 m-l-10">
                 <div className="col-12 ">
-                  <Button variant="outlined" onClick={handleClickOpen1}>
+                  <Button variant="contained" onClick={handleClickOpen1}>
                     Open Small Dialog
                   </Button>
                   <Dialog
@@ -328,12 +505,10 @@ const Muidialogs = () => {
                       </DialogContentText>
                     </DialogContent>
                     <DialogActions>
-                      <Button
-                        onClick={handleClose1}
-                        className="btn btn-primary"
-                      >
-                        Close
+                      <Button variant="contained" color="secondary">
+                        Cancel
                       </Button>
+                      <Button variant="contained">Save</Button>
                     </DialogActions>
                   </Dialog>
                 </div>
@@ -355,7 +530,7 @@ const Muidialogs = () => {
             <div className="collapsible-code">
               <div className="row m-t-10 m-l-10">
                 <div className="col-12 ">
-                  <Button variant="outlined" onClick={handleClickOpen2}>
+                  <Button variant="contained" onClick={handleClickOpen2}>
                     Open Medium Dialog
                   </Button>
                   <Dialog
@@ -439,7 +614,10 @@ const Muidialogs = () => {
                       </DialogContentText>
                     </DialogContent>
                     <DialogActions>
-                      <Button onClick={handleClose2}>Close</Button>
+                      <Button variant="contained" color="secondary">
+                        Cancel
+                      </Button>
+                      <Button variant="contained">Save</Button>
                     </DialogActions>
                   </Dialog>
                 </div>
@@ -461,7 +639,7 @@ const Muidialogs = () => {
             <div className="collapsible-code">
               <div className="row m-t-10 m-l-10">
                 <div className="col-12 ">
-                  <Button variant="outlined" onClick={handleClickOpen}>
+                  <Button variant="contained" onClick={handleClickOpen}>
                     Open Large Dialog
                   </Button>
                   <Dialog
@@ -483,7 +661,10 @@ const Muidialogs = () => {
                       </DialogContentText>
                     </DialogContent>
                     <DialogActions>
-                      <Button onClick={handleClose}>Close</Button>
+                      <Button variant="contained" color="secondary">
+                        Cancel
+                      </Button>
+                      <Button variant="contained">Save</Button>
                     </DialogActions>
                   </Dialog>
                 </div>
@@ -491,8 +672,8 @@ const Muidialogs = () => {
 
               <CollapsibleCode codeItem={large_dialog} />
             </div>
-          </section>{" "}
-        </div>{" "}
+          </section>
+        </div>
       </div>
       <div className="row">
         <div className="col-12">
@@ -505,7 +686,7 @@ const Muidialogs = () => {
             <div className="collapsible-code">
               <div className="row m-t-10 m-l-10">
                 <div className="col-12 ">
-                  <Button variant="outlined" onClick={handleClickOpen3}>
+                  <Button variant="contained" onClick={handleClickOpen3}>
                     Open Full-screen dialogs
                   </Button>
                   <Dialog fullScreen open={open3} onClose={handleClose3}>
@@ -522,7 +703,10 @@ const Muidialogs = () => {
                       </DialogContentText>
                     </DialogContent>
                     <DialogActions>
-                      <Button onClick={handleClose3}>Close</Button>
+                      <Button variant="contained" color="secondary">
+                        Cancel
+                      </Button>
+                      <Button variant="contained">Save</Button>
                     </DialogActions>
                   </Dialog>
                 </div>
@@ -530,8 +714,29 @@ const Muidialogs = () => {
 
               <CollapsibleCode codeItem={fullscreen_dialog} />
             </div>
-          </section>{" "}
-        </div>{" "}
+          </section>
+        </div>
+      </div>
+      <hr className="section-border-bottom"></hr>
+      <div className="row">
+        <div className="col-12 m-t-20">
+          <h3 className="sub-heading">React Material UI Component Library </h3>
+          <p className="text">
+            For more information, you may refer MUI component page by clicking
+            below link.
+          </p>
+
+          <div className="notification-main">
+            <div className="notification-content">
+              <a
+                href="https://mui.com/material-ui/react-dialog/"
+                target="blank"
+              >
+                MUI Dialog
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

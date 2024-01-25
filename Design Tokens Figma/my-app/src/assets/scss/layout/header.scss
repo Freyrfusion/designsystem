@@ -5,6 +5,8 @@ header {
     height: $headerheight;
     background-color: #ffffff;
     border-bottom: 1px solid #eaeaea;
+    position: fixed;
+    z-index: 1;
 }
 
 .logospace {
@@ -279,4 +281,49 @@ nav {
         opacity: 1;
         transform: rotateX(0deg);
     }
+}
+
+.code-container-import {
+    font-size: 13px;
+    font-family: inherit;
+    background: rgb(40, 42, 54);
+    color: rgb(248, 248, 242);
+    border-radius: 3px;
+    line-height: 22px;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+.notification-main {
+    background: #F3F6F9;
+    font-size: 14px;
+    padding: 15px;
+    color: #097489;
+    border-radius: 6px;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 12px;
+    border: 1px solid #E5EAF2;
+
+
+
+    .notification-content {
+        flex-direction: column;
+        flex-grow: 1;
+
+
+        a {
+            margin-left: 5px;
+            margin-right: 5px;
+            font-weight: 500;
+            color: #1460ba;
+            font-size: 15px;
+        }
+
+    }
+}
+
+.section-border-bottom {
+    border-top: 1px solid #eee;
+    margin-top: 30px;
 }

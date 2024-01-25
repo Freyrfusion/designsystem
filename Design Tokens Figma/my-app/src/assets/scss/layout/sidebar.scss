@@ -1,22 +1,33 @@
+.sidebar_main {
+    position: fixed;
+}
+
 .sidebar {
-    top: 0;
+    top: 56px;
     bottom: 0;
     left: 0;
     -webkit-transition: width .05s linear;
     transition: width .05s linear;
     -webkit-transform: translateZ(0) scale(1, 1);
     z-index: 1000;
-    width: 16%;
-    height: 100vh;
+    width: 18%;
     float: left;
     border-right: 1px solid #eaeaea;
     background: #fff;
+    height: calc(100vh - 58px);
+    padding-top: 20px;
+    overflow-y: auto;
+    position: fixed;
 
     // &:hover,
     // &.expanded {
     //     width: 250px;
     //     overflow: visible;
     // }
+    h6 {
+        font-size: 15px;
+
+    }
 
     >ul {
         margin: 7px 0;
@@ -33,13 +44,13 @@
 
         li {
             position: relative;
-            width: 82%;
-            padding: 5px 20px;
+            width: 84%;
+            padding: 5px 18px;
             border-left: 3px solid transparent;
             float: left;
             color: $gray-900;
             font-size: $font-size-base;
-            font-weight: 400;
+            font-weight: 500;
             line-height: 26px;
 
             >a {

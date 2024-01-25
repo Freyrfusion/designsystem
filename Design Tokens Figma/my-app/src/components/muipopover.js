@@ -48,26 +48,64 @@ const Muipopover = () => {
   const exampleCodeBlock = `<Button variant="contained">Contained</Button>`;
 
   // Start popover onclick
-  const popoverclick = `<Button aria-describedby={id}
-  variant="contained"
-  onClick={handleClick}
->
+  const popoverclick = `// To use mui popover import popover component from mui
+import Popover from '@mui/material/Popover';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+
+//React MUI component code
+export default function BasicPopover() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popover' : undefined;
+
+  return (
+  <Button aria-describedby={id} variant="contained" onClick={handleClick}>
   Open Popover
 </Button>
-<Popover
-  id={id}
-  open={opens}
-  anchorEl={anchorE}
-  onClose={handleClose}
-  anchorOrigin={{
-    vertical: "bottom",
-    horizontal: "left",
-  }}>
-  <Typography>The content of the Popover.</Typography>
-</Popover>`;
+    <Popover
+      id={id}
+      open={opens}
+      anchorEl={anchorE}
+      onClose={handleClose}
+      anchorOrigin={{
+        vertical: "bottom",
+        horizontal: "left",
+      }}>
+      <Typography>The content of the Popover.</Typography>
+    </Popover>
+    ); }`;
 
   // Start popover hover
-  const popoverhover = `<Typography
+  const popoverhover = `// To use mui popover import popover component from mui
+import Popover from '@mui/material/Popover';
+import Typography from '@mui/material/Typography';
+
+//React MUI component code
+export default function MouseOverPopover() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handlePopoverOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handlePopoverClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+
+  return (
+<Typography
   aria-owns={open ? "mouse-over-popover" : undefined}
   aria-haspopup="true"
   onMouseEnter={handlePopoverOpen}
@@ -93,7 +131,8 @@ const Muipopover = () => {
   onClose={handlePopoverClose}
   disableRestoreFocus>
   <Typography>I use Popover.</Typography>
-</Popover>`;
+</Popover> );
+}`;
 
   // React Code Block End here
 
@@ -134,10 +173,33 @@ const Muipopover = () => {
   return (
     <div className="content-area">
       <h1 className="heading"> Popover</h1>
-      <p className="text">
-        {" "}
+      <p className="text m-b-0">
         A Popover can be used to display some content on top of another.{" "}
       </p>
+      <div className="row">
+        <div className="col-12">
+          <section>
+            <h3 className="sub-heading">Component Usage </h3>
+            <p className="text">
+              To use design system styles, import below file to your App /
+              Component
+            </p>
+
+            <div className="code-container-import">
+              <pre>
+                <code>
+                  <div className="m-l-15">
+                    @import
+                    url("https://freyadesignsystemurl/design/popover.css");
+                  </div>
+                </code>
+              </pre>
+            </div>
+          </section>
+        </div>
+      </div>
+      <hr className="section-border-bottom"></hr>
+
       <div className="row">
         <div className="col-12">
           <section>
@@ -145,6 +207,7 @@ const Muipopover = () => {
             <p className="text">
               The <code>Popover</code>
             </p>
+
             <div className="collapsible-code">
               <div className="row ">
                 <div className="col-12 m-t-20 m-l-20 m-b-10">
@@ -165,7 +228,12 @@ const Muipopover = () => {
                       horizontal: "left",
                     }}
                   >
-                    <Typography>The content of the Popover.</Typography>
+                    <Typography>
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution.
+                    </Typography>
                   </Popover>
                 </div>
               </div>
@@ -183,6 +251,7 @@ const Muipopover = () => {
               This demo demonstrates how to use the Popover component and the
               mouseover event to achieve <code>popover</code> behavior.
             </p>
+
             <div className="collapsible-code">
               <div className="row ">
                 <div className="col-12 m-t-20 m-l-20">
@@ -219,8 +288,29 @@ const Muipopover = () => {
 
               <CollapsibleCode codeItem={popover_hover} />
             </div>
-          </section>{" "}
-        </div>{" "}
+          </section>
+        </div>
+      </div>
+      <hr className="section-border-bottom"></hr>
+      <div className="row">
+        <div className="col-12 m-t-10">
+          <h3 className="sub-heading">React Material UI Component Library</h3>
+          <p className="text">
+            For more information, you may refer MUI component page by clicking
+            below link.
+          </p>
+
+          <div className="notification-main">
+            <div className="notification-content">
+              <a
+                href="https://mui.com/material-ui/react-popover/"
+                target="blank"
+              >
+                MUI Popover
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

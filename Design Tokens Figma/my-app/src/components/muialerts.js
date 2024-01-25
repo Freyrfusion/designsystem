@@ -20,34 +20,44 @@ const Muiform = () => {
   const exampleCodeBlock = `<Button variant="contained">Contained</Button>`;
 
   // Start alert
-  const alerts = ` <Alert severity="success" onClose={() => {}}>
+  const alerts = `// To use mui alerts import button alerts from mui
+import Alert from '@mui/material/Alert';
+
+//React MUI component code
+export default function BasicAlerts() {
+  return (
+   <Alert severity="success" onClose={() => {}}>
   This is a success Alert with an encouraging title.
 </Alert>
 <Alert severity="info" onClose={() => {}}>
   This is an info Alert with an informative title.
 </Alert>
-<Alert
-  severity="warning"
-  action={
+<Alert  severity="warning"  action={
     <Button color="inherit" size="small">
       UNDO
     </Button>
-  }
->
+  }>
   This is a warning Alert with a cautious title.
 </Alert>
-<Alert
-  severity="error"
-  action={
+<Alert  severity="error" action={
     <Button color="inherit" size="small">
       UNDO
     </Button>
   }>
   This is an error Alert with a scary title.
-</Alert>`;
+</Alert>
+);
+}`;
 
   // Start alert with title
-  const alertstitle = ` <Alert severity="success" onClose={() => {}}>
+  const alertstitle = `// To use mui alerts import button alerts from mui 
+import Alert from '@mui/material/Alert';
+import AlertTitle from '@mui/material/AlertTitle';
+
+//React MUI component code
+export default function DescriptionAlerts() {
+  return (
+  <Alert severity="success" onClose={() => {}}>
   <AlertTitle>Success</AlertTitle>
   This is a success Alert with an encouraging title.
 </Alert>
@@ -62,7 +72,9 @@ const Muiform = () => {
 <Alert severity="error" onClose={() => {}}>
   <AlertTitle>Error</AlertTitle>
   This is an error Alert with a scary title.
-</Alert>`;
+</Alert>
+);
+}`;
 
   // React Code Block End here
 
@@ -102,10 +114,34 @@ const Muiform = () => {
   return (
     <div className="content-area">
       <h1 className="heading"> Alert </h1>
-      <p className="text">
+      <p className="text m-b-0">
         Alerts display brief messages for the user without interrupting their
         use of the app.
       </p>
+      <div className="row">
+        <div className="col-12">
+          <section>
+            <h3 className="sub-heading">Component Usage </h3>
+            <p className="text">
+              To use design system styles, import below file to your App /
+              Component
+            </p>
+
+            <div className="code-container-import">
+              <pre>
+                <code>
+                  <div className="m-l-15">
+                    @import
+                    url("https://freyadesignsystemurl/design/alerts.css");
+                  </div>
+                </code>
+              </pre>
+            </div>
+          </section>
+        </div>
+      </div>
+      <hr className="section-border-bottom"></hr>
+
       <div className="row">
         <div className="col-12">
           <section>
@@ -118,13 +154,18 @@ const Muiform = () => {
             <div className="collapsible-code">
               <div className="row ">
                 <div className="col-12 m-t-20 m-l-20 m-r-20 m-b-20">
-                  <Alert severity="success" onClose={() => {}}>
+                  <Alert
+                    className="m-b-10"
+                    severity="success"
+                    onClose={() => {}}
+                  >
                     This is a success Alert with an encouraging title.
                   </Alert>
-                  <Alert severity="info" onClose={() => {}}>
+                  <Alert className="m-b-10" severity="info" onClose={() => {}}>
                     This is an info Alert with an informative title.
                   </Alert>
                   <Alert
+                    className="m-b-10"
                     severity="warning"
                     action={
                       <Button color="inherit" size="small">
@@ -135,6 +176,7 @@ const Muiform = () => {
                     This is a warning Alert with a cautious title.
                   </Alert>
                   <Alert
+                    className="m-b-10"
                     severity="error"
                     action={
                       <Button color="inherit" size="small">
@@ -163,19 +205,27 @@ const Muiform = () => {
             <div className="collapsible-code">
               <div className="row ">
                 <div className="col-12 m-t-20 m-l-20 m-r-20 m-b-20">
-                  <Alert severity="success" onClose={() => {}}>
+                  <Alert
+                    className="m-b-10"
+                    severity="success"
+                    onClose={() => {}}
+                  >
                     <AlertTitle>Success</AlertTitle>
                     This is a success Alert with an encouraging title.
                   </Alert>
-                  <Alert severity="info" onClose={() => {}}>
+                  <Alert className="m-b-10" severity="info" onClose={() => {}}>
                     <AlertTitle>Info</AlertTitle>
                     This is an info Alert with an informative title.
                   </Alert>
-                  <Alert severity="warning" onClose={() => {}}>
+                  <Alert
+                    className="m-b-10"
+                    severity="warning"
+                    onClose={() => {}}
+                  >
                     <AlertTitle>Warning</AlertTitle>
                     This is a warning Alert with a cautious title.
                   </Alert>
-                  <Alert severity="error" onClose={() => {}}>
+                  <Alert className="m-b-10" severity="error" onClose={() => {}}>
                     <AlertTitle>Error</AlertTitle>
                     This is an error Alert with a scary title.
                   </Alert>
@@ -185,6 +235,24 @@ const Muiform = () => {
               <CollapsibleCode codeItem={alerts_title} />
             </div>
           </section>
+        </div>
+      </div>
+      <hr className="section-border-bottom"></hr>
+      <div className="row">
+        <div className="col-12 m-t-20">
+          <h3 className="sub-heading">React Material UI Component Library </h3>
+          <p className="text">
+            For more information, you may refer MUI component page by clicking
+            below link.
+          </p>
+
+          <div className="notification-main">
+            <div className="notification-content">
+              <a href="https://mui.com/material-ui/react-alert/" target="blank">
+                MUI Alerts
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
