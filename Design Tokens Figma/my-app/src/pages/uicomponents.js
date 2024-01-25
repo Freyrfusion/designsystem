@@ -24,6 +24,8 @@ import Muidialogs from "../components/muidialogs.js";
 import Muialerts from "../components/muialerts.js";
 import "../assets/scss/sitemain.scss";
 import Tooltip from "../components/tooltip.js";
+import Muitabs from "../components/muitabs.js";
+import Muiaccordion from "../components/muiaccordion.js";
 import Accordion from "../components/accordion.js";
 import Muisidebar from "../components/muisidebar.js";
 
@@ -79,7 +81,12 @@ const UiComponents = () => {
       case "muialerts":
         return <Muialerts />;
       case "muisidebar":
-        return <Muisidebar />;
+        return <Muisidebar />;;
+                              case 'muitabs':
+                                return <Muitabs />;
+                                case 'muiaccordion':
+                                  return <Muiaccordion />;
+                              
       default:
         return <Muibadge />;
     }
@@ -229,6 +236,8 @@ const UiComponents = () => {
           >
             Sidebar{" "}
           </li>
+          <li className={currentPage==="muitabs" && 'activetab'} onClick={() => setCurrentPage('muitabs')}>MUI Tabs </li>
+    <li className={currentPage==="muiaccordion" && 'activetab'} onClick={() => setCurrentPage('muiaccordion')}>MUI Accordion </li>
         </ul>
       </div>
 

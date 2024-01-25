@@ -1,23 +1,32 @@
 @import '../abstract/variables';
 @import '../abstract/component-variables';
 
-$color-text-muitabs:$black;
+$color-text-muitabs:$black-900;
 $color-border-muitabs:$black-200;
 $color-border-muitabs-active:$primary-600;
 $color-list-muitabs-hover:$black-200;
 $color-background-muitabs: $black-100  ;
 
-$font-size-muitabs-medium:$font-medium;
 $font-size-muitabs-base:$font-base;
-
 
 $font-weight-muitabs-bolder:$text-bolder;
 
+$space-padding-muitabs-y:$space-nano;  
+$space-padding-muitabs-x:$space-micro;
 
-.freya-fusion {
+
+#{$brandcall} {
+    
     .MuiTab-root{
+   
+        color: $color-text-muitabs;
+        text-transform: capitalize;
+        padding: 0px;
+        min-width: auto;
+        font-size: $font-size-muitabs-base;
+        margin-right: 20px;
      &:hover {
-            background-color: $color-list-muitabs-hover;
+            // background-color: $color-list-muitabs-hover;
         }
     }
     .MuiTab-root.Mui-selected{
@@ -26,10 +35,9 @@ $font-weight-muitabs-bolder:$text-bolder;
       
     }
     .MuiTabs-indicator{
-        border-bottom: 1px solid $color-border-muitabs-active;
+        // border-bottom: 1px solid $color-border-muitabs-active;
         color:$color-text-muitabs;
         font-weight: $font-weight-muitabs-bolder;
-
     }
 }
 

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Button from "@mui/material/Button";
+import Button from '@mui/material/Button';
+
+
 import CollapsibleCode from "./CodeBlockcode";
 
 import "../designsystem/scss/components/_muibuttons.scss";
@@ -16,13 +18,77 @@ const Muibuttons = () => {
   // React Code Block Starts
   const [language, changeLanguage] = useState("js");
   const [lineNumbers, toggleLineNumbers] = useState(true);
-  const containedbuttonCode = `<Button variant="contained">Contained</Button>`;
-  const defaultbuttonCode = `<Button variant="contained" color="secondary">Default</Button>`;
-  const linktbuttonCode = `<Button variant="outlined" href="#outlined-buttons">Link</Button>`;
-  const successbuttonCode = `<Button variant="contained" color="success"> Success</Button>`;
-  const outlinedbuttonCode = `<Button variant="outlined">Primary</Button>`;
-  const lefticonbuttonCode = `<Button variant="outlined"> <em className="icon-setting"></em>  Menu  </Button>`;
-  const righticonbuttonCode = `<Button variant="contained" >  Menu <em className="icon-setting"></em>  </Button>`;
+  const containedbuttonCode = ` // To use mui buttons import button component from mui // 
+import Button from '@mui/material/Button';
+  
+// React MUI component code// 
+export default function BasicButtons() {
+  return (
+  <Button variant="contained">Contained</Button>
+  );
+}
+  `;
+
+  const defaultbuttonCode = ` // To use mui buttons import button component from mui // 
+  import Button from '@mui/material/Button';
+
+  // React MUI component code// 
+  export default function BasicButtons() {
+    return (
+  <Button variant="contained" color="secondary">Default</Button>
+  );
+} 
+  `;
+  const linktbuttonCode = ` // To use mui buttons import button component from mui // 
+  import Button from '@mui/material/Button';
+
+  // React MUI component code// 
+  export default function BasicButtons() {
+    return (
+  <Button variant="outlined" href="#outlined-buttons">Link</Button>
+  );
+} 
+  `;
+  const successbuttonCode = ` // To use mui buttons import button component from mui // 
+  import Button from '@mui/material/Button';
+
+  // React MUI component code// 
+  export default function BasicButtons() {
+    return (
+ <Button variant="contained" color="success"> Success</Button>
+  );
+} 
+  `;
+  const outlinedbuttonCode = ` // To use mui buttons import button component from mui // 
+  import Button from '@mui/material/Button';
+
+  // React MUI component code// 
+  export default function BasicButtons() {
+    return (
+ <Button variant="outlined">Primary</Button>
+  );
+} 
+  `;
+  const lefticonbuttonCode = ` // To use mui buttons import button component from mui // 
+  import Button from '@mui/material/Button';
+
+  // React MUI component code// 
+  export default function BasicButtons() {
+    return (
+ <Button variant="outlined"> <em className="icon-setting"></em>  Menu  </Button>
+  );
+} 
+  `;
+  const righticonbuttonCode = ` // To use mui buttons import button component from mui // 
+  import Button from '@mui/material/Button';
+
+  // React MUI component code// 
+  export default function BasicButtons() {
+    return (
+ <Button variant="contained" >  Menu <em className="icon-setting"></em>  </Button>
+  );
+} 
+  `;
   // React Code Block End here
 
   // Code for collapse Starts
@@ -127,18 +193,45 @@ const Muibuttons = () => {
           tap.
         </p>
 
+        <div className="row">
+          <div className="col-12">
+            <section>
+              <h3 className="sub-heading">Component Usage </h3>
+              <p className="text">
+                To use design system styles, import below file to your App /
+                Component
+              </p>
+
+              <div className="code-container-import">
+                <pre>
+                  <code>
+                    <div className="m-l-15">
+                      @import url("https://freyadesignsystemurl/design/buttons.css");
+
+                    </div>
+                  </code>
+                </pre>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <hr className="section-border-bottom"></hr>
+
+       
+
         {/* Primary Section Starts here */}
         <div className="row">
+
           <div className="col-12 ">
             <section>
               <h3 className="sub-heading">Contained primary button </h3>
               <p className="text">
-                The <code>Button</code> comes with three variants: text
-                (default), contained, and outlined.
+              Use a primary button to call attention to an action on a form or to highlight the strongest call to action on a page. Primary buttons should only appear once per container (not including the application header or in a modal dialog). Not every screen requires a primary button.
               </p>
               <div className="collapsible-code">
-                <div className="row m-t-10 m-l-10">
-                  <div className="col-12 ">
+                <div className="row">
+                  <div className="col-12 m-t-20 m-l-20 m-b-20 m-r-20">
                     <Button variant="contained">Contained</Button>
                   </div>
                 </div>
@@ -147,8 +240,9 @@ const Muibuttons = () => {
             </section>
           </div>
         </div>
+
         {/* Primary Section Ends here */}
-        <hr></hr>
+   
 
         {/* Default Section Starts here */}
         <div className="row">
@@ -156,18 +250,12 @@ const Muibuttons = () => {
             <section>
               <h3 className="sub-heading"> Contained default button </h3>
               <p className="text">
-                The <code>Button</code> comes with three variants: text
-                (default), contained, and outlined.
+              Secondary buttons are less visually prominant than primary buttons. Use for general actions on a page that require less emphasis than primary buttons.
               </p>
-              <div className="collapsible-code">
-                <div className="row m-t-10 m-l-10">
-                  <div className="col-12 ">
-                    {/* <button
-                      type="button"
-                      className="MuiButton-containedSecondary">
-                      {" "}
-                      Default Button{" "}
-                    </button> */}
+              <div
+                className="collapsible-code">
+                <div className="row">
+                  <div className="col-12 m-t-20 m-l-20 m-b-20 m-r-20">
 
                     <Button variant="contained" color="secondary">
                       Default
@@ -180,7 +268,9 @@ const Muibuttons = () => {
           </div>
         </div>
         {/* Default Section Ends here */}
-        <hr></hr>
+   
+
+
 
         {/* MUI Link Buttons Section Starts here */}
         <div className="row" id="Link Button">
@@ -188,16 +278,12 @@ const Muibuttons = () => {
             <section>
               <h3 className="sub-heading"> Link button </h3>
               <p className="text">
-                The <code>Button</code> comes with three variants: text
-                (default), contained, and outlined.
+              Links are labeled, but have no background or border. Use for actions that require less emphasis, actions that navigate users to another page within the same window, and/or actions that navigate to external pages in a new window. Links may be placed inline with text using the isInline property.
               </p>
-              <div className="collapsible-code">
-                <div className="row m-t-10 m-l-10">
-                  <div className="col-12 ">
-                    {/* <a href="#" class="MuiButton-textPrimary">
-                      {" "}
-                      Link button{" "}
-                    </a> */}
+              <div
+                className="collapsible-code">
+                <div className="row">
+                  <div className="col-12 m-t-20 m-l-20 m-b-20 m-r-20">
 
                     <Button variant="outlined" href="#outlined-buttons">
                       Link
@@ -210,7 +296,9 @@ const Muibuttons = () => {
           </div>
         </div>
         {/*MUI Link Buttons Section Ends here */}
-        <hr></hr>
+      
+
+
 
         {/* MUI Contained Success Section Starts here */}
         <div className="row">
@@ -221,15 +309,10 @@ const Muibuttons = () => {
                 The <code>Button</code> comes with three variants: text
                 (default), contained, and outlined.
               </p>
-              <div className="collapsible-code">
-                <div className="row m-t-10 m-l-10">
-                  <div className="col-12 ">
-                    {/* <button
-                    type="button"
-                    className="MuiButton-containedSuccess">
-                    {" "}
-                    Success button{" "}
-                  </button> */}
+              <div
+                className="collapsible-code">
+                <div className="row ">
+                  <div className="col-12 m-t-20 m-l-20 m-b-20 m-r-20">
 
                     <Button variant="contained" color="success">
                       {" "}
@@ -243,7 +326,7 @@ const Muibuttons = () => {
           </div>
         </div>
         {/* MUI Contained Success Section Ends here */}
-        <hr></hr>
+       
 
         {/* MUI Outlined Primary Section Starts here */}
         <div className="row">
@@ -251,18 +334,12 @@ const Muibuttons = () => {
             <section>
               <h3 className="sub-heading">Outlined Primary button </h3>
               <p className="text">
-                The <code>Button</code> comes with three variants: text
-                (default), contained, and outlined.
+              Outlined buttons are medium-emphasis buttons. They contain actions that are important but aren't the primary action in an app.Outlined buttons are also a lower emphasis alternative to contained buttons, or a higher emphasis alternative to text buttons.
               </p>
-              <div className="collapsible-code">
-                <div className="row m-t-10 m-l-10">
-                  <div className="col-12 ">
-                    {/* <button
-                    type="button"
-                    className="MuiButton-outlinedPrimary">
-                    {" "}
-                    Primary{" "}
-                  </button> */}
+              <div
+                className="collapsible-code">
+                <div className="row ">
+                  <div className="col-12 m-t-20 m-l-20 m-b-20 m-r-20 ">
 
                     <Button variant="outlined">Primary</Button>
                   </div>
@@ -273,7 +350,7 @@ const Muibuttons = () => {
           </div>
         </div>
         {/* MUI Outlined Primary Section Ends here */}
-        <hr></hr>
+ 
 
         {/* MUI left icon button Section Starts here */}
         <div className="row">
@@ -281,18 +358,15 @@ const Muibuttons = () => {
             <section>
               <h3 className="sub-heading">Button with left icon</h3>
               <p className="text">
-                The <code>Button</code> comes with three variants: text
-                (default), contained, and outlined.
+              Buttons may include an icon before the text.
               </p>
-              <div className="collapsible-code">
-                <div className="row m-t-10 m-l-10">
-                  <div className="col-12 ">
-                    {/* <button type="button" className="MuiButton-containedPrimary"> <em className="icon-menu3"></em> Primary button </button> */}
+              <div
+                className="collapsible-code">
+                <div className="row">
+                  <div className="col-12 m-t-20 m-l-20 m-b-20 m-r-20">
 
-                    <Button variant="outlined">
-                      {" "}
-                      <em className="icon-setting"></em> Menu{" "}
-                    </Button>
+                    <Button variant="outlined"> <em className="icon-setting"></em>  Menu  </Button>
+
                   </div>
                 </div>
                 <CollapsibleCode codeItem={lefticonbutton} />
@@ -301,7 +375,7 @@ const Muibuttons = () => {
           </div>
         </div>
         {/* MUI left icon button Section Ends here */}
-        <hr></hr>
+
 
         {/* MUI right icon button Section Starts here */}
         <div className="row">
@@ -309,20 +383,15 @@ const Muibuttons = () => {
             <section>
               <h3 className="sub-heading">Button with right icon</h3>
               <p className="text">
-                The <code>Button</code> comes with three variants: text
-                (default), contained, and outlined.
+              Buttons may include an icon after the text.
               </p>
-              <div className="collapsible-code">
-                <div className="row m-t-10 m-l-10">
-                  <div className="col-12 ">
-                    {/* <button type="button" className="MuiButton-containedPrimary">  Primary button <em className="icon-down-open"></em> </button> */}
+              <div
+                className="collapsible-code">
+                <div className="row ">
+                  <div className="col-12 m-t-20 m-l-20 m-b-20 m-r-20 ">
 
-                    {/* <Button variant="contained" endIcon={<icon-down-open />}>Send</Button> */}
+                    <Button variant="contained" >  Menu <em className="icon-setting"></em>  </Button>
 
-                    <Button variant="contained">
-                      {" "}
-                      Menu <em className="icon-setting"></em>{" "}
-                    </Button>
                   </div>
                 </div>
                 <CollapsibleCode codeItem={righticonbutton} />
@@ -331,6 +400,30 @@ const Muibuttons = () => {
           </div>
         </div>
         {/* MUI right icon button Section Ends here */}
+
+      <hr className="section-border-bottom"></hr>
+      
+        <div className="row">
+          <div className="col-12 m-t-20">
+            <h3 className="sub-heading">React Material UI Component Library </h3>
+            <p className="text">
+              For more information, you may refer MUI component page by clicking
+              below link.
+            </p>
+
+            <div className="notification-main">
+              <div className="notification-content">
+                <a
+                  href="https://mui.com/material-ui/react-button/"
+                  target="blank" >
+                  MUI Buttons
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </div>
 
       <div className="bookmark-navigator">
