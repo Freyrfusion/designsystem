@@ -9,21 +9,27 @@ $space-padding-muibreadcrumb-y: $space-micro;
 
 
 #{$brandcall} {
-    .MuiBreadcrumbs-li{
+    .MuiBreadcrumbs-li {
         font-size: $font-size-muibreadcrumb-medium;
-			color: $color-text-muibreadcrumb;
-            &>a {
-				color: $color-text-muibreadcrumb;
-				text-decoration: none;
-             }  
+        color: $color-text-muibreadcrumb;
+
+        &>a {
+            color: $color-text-muibreadcrumb;
+            text-decoration: none;
+        }
     }
+
     .MuiBreadcrumbs-li p {
         font-weight: $font-weight-muibreadcrumb-bolder;
-        font-size: $font-size-muibreadcrumb-medium;;
+        font-size: $font-size-muibreadcrumb-medium;
+        margin-bottom: 0px;
         margin-top: 0px;
     }
-    .MuiSvgIcon-fontSizeMedium{
-        font-size: $font-size-muibreadcrumb-large;
-        padding-top: $space-padding-muibreadcrumb-y;
+
+    .MuiBreadcrumbs-separator {
+        .MuiSvgIcon-fontSizeMedium {
+            font-size: $font-size-muibreadcrumb-large;
+            padding-top: $space-padding-muibreadcrumb-y;
+        }
     }
 }

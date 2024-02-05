@@ -273,6 +273,7 @@ const Muitransferlist = () => {
                     <div className="col-12  m-t-30 m-l-20 m-b-30 m-r-20 ">
                       <Grid
                         container
+                        className="transferlist-main"
                         spacing={2}
                         justifyContent="center"
                         alignItems="center"

@@ -8,17 +8,19 @@ $font-size-muiaccordion-medium: $font-medium;
 
 #{$brandcall} {
     .MuiTypography-root {
-        margin-bottom: 0px;
+        // margin-bottom: 0px;
     }
-  
-    .MuiAccordionSummary-content{
+
+    .MuiAccordionSummary-content {
         p {
             font-size: $font-size-muiaccordion-medium;
             color: $color-text-muiaccordion;
+            margin-top: $space-nospace;
+            margin-bottom: $space-nospace;
         }
     }
 
-    .MuiAccordionDetails-root{
+    .MuiAccordionDetails-root {
         p {
             font-size: $font-size-muiaccordion-base;
             color: $color-text-muiaccordion;

@@ -4,57 +4,61 @@ $space-header-transferlist: $foundations-space-condensed;
 $space-micro-transferlist: $foundations-space-nano;
 
 #{$brandcall} {
-    .MuiPaper-root {
-        border: 1px solid $color-border-transferlist;
-        box-shadow: none !important;
+    .transferlist-main {
+        .MuiGrid-item {
+            .MuiPaper-root {
+                border: 1px solid $color-border-transferlist;
+                box-shadow: none !important;
 
-        .MuiList-root {
-            height: auto;
-        }
+                .MuiList-root {
+                    height: auto;
+                }
 
-        .MuiButtonBase-root {
-            padding: $space-transferlist;
+                .MuiButtonBase-root {
+                    padding: $space-transferlist;
 
-        }
+                }
 
-        .MuiCardHeader-root {
-            padding-left: $space-header-transferlist;
-            padding-right: $space-header-transferlist;
-        }
+                .MuiCardHeader-root {
+                    padding-left: $space-header-transferlist;
+                    padding-right: $space-header-transferlist;
+                }
 
-        MuiCardHeader-root {
-            padding-left: $space-transferlist;
-        }
+                MuiCardHeader-root {
+                    padding-left: $space-transferlist;
+                }
 
-        .MuiCardHeader-avatar {
-            padding-right: $space-micro-transferlist;
-            margin-right: $space-transferlist;
-        }
+                .MuiCardHeader-avatar {
+                    padding-right: $space-micro-transferlist;
+                    margin-right: $space-transferlist;
+                }
 
-        .MuiListItemIcon-root {
-            min-width: 40px;
-        }
+                .MuiListItemIcon-root {
+                    min-width: 40px;
+                }
 
-        .MuiCardHeader-content {
-            span {
-                font-size: $font-base;
-                font-weight: $text-bolder;
-                color: $black-800;
+                .MuiCardHeader-content {
+                    span {
+                        font-size: $font-base;
+                        font-weight: $text-bolder;
+                        color: $black-800;
+                    }
+                }
+
+                .MuiListItemText-root {
+                    color: $black-800;
+                }
+
+
+            }
+
+            .MuiGrid-root {
+                .MuiButton-outlinedPrimary {
+                    border-width: 2px;
+
+                }
+
             }
         }
-
-        .MuiListItemText-root {
-            color: $black-800;
-        }
-
-
-    }
-
-    .MuiGrid-root {
-        .MuiButton-outlinedPrimary {
-            border-width: 2px;
-
-        }
-
     }
 }

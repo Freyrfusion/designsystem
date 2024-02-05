@@ -62,103 +62,124 @@ const Muiswitch = () => {
     ),
   };
 
-
-
   return (
-    <div className="content-wrapper" >
-                           <div className="content-header">
-                           <h1 className="heading"> Switch </h1>
+    <div>
+      <div className="content-header">
+        <h1 className="heading"> Switch </h1>
 
-<p className="text m-b-0">
-A switch toggles the state of a setting (between on and off). Switches and checkboxes can often be used interchangeably, but the switch provides a more explicit, visible representation on a setting.
-</p>
+        <p className="text m-b-0">
+          A switch toggles the state of a setting (between on and off). Switches
+          and checkboxes can often be used interchangeably, but the switch
+          provides a more explicit, visible representation on a setting.
+        </p>
       </div>
-      
-      <div className="content-area">
-     
-        <div className="row">
-          <div className="col-12">
-            <section>
-              <h3 className="sub-heading">Component Usage </h3>
-              <p className="text">
-                To use design system styles, import below file to your App /
-                Component
-              </p>
+      <div className="content-wrapper">
+        <div className="content-area">
+          <div className="row">
+            <div className="col-12">
+              <section>
+                <h3 className="sub-heading">Component Usage </h3>
+                <p className="text">
+                  To use design system styles, import below file to your App /
+                  Component
+                </p>
 
-              <div className="code-container-import">
-                <pre>
-                  <code>
-                    <div className="m-l-15">
-                      @import url("https://freyadesignsystemurl/design/switch.css");
-
-                    </div>
-                  </code>
-                </pre>
-              </div>
-            </section>
-          </div>
-        </div>
-
-        <hr className="section-border-bottom"></hr>
-       
-        {/* Switch Section Starts here */}
-        <div className="row">
-          <div className="col-12 ">
-            <section>
-              <h3 className="sub-heading">Switches </h3>
-              <p className="text">
-                Switches are the preferred way to adjust settings on mobile. The option that the switch controls, as well as the state it's in, should be made clear from the corresponding inline label.
-              </p>
-              <div className="collapsible-code">
-                <div className="row">
-                  <div className="col-12 m-t-20 m-l-20 m-b-20 m-r-20 ">
-
-
-
-                    <FormGroup>
-                      <FormControlLabel control={<Switch defaultChecked size="small" />} label="Label" />
-                      <FormControlLabel required control={<Switch size="small" />} label="Required" />
-                      <FormControlLabel control={<Switch {...label} disabled defaultChecked size="small" />} label="Label" />
-                      <FormControlLabel disabled control={<Switch size="small" />} label="Disabled" />
-                    </FormGroup>
-
-                  </div>
-
+                <div className="code-container-import">
+                  <pre>
+                    <code>
+                      <div className="m-l-15">
+                        @import
+                        url("https://freyadesignsystemurl/design/switch.css");
+                      </div>
+                    </code>
+                  </pre>
                 </div>
-                <CollapsibleCode codeItem={switch1} />
-              </div>
-
-            </section>
+              </section>
+            </div>
           </div>
-        </div>
-        {/* Switch Section Ends here */}
 
-        <hr className="section-border-bottom"></hr>
-        
-        <div className="row">
-        <div className="col-12 m-t-20">
-            <h3 className="sub-heading">React Material UI Component Library </h3>
-            <p className="text">
-              For more information, you may refer MUI component page by clicking
-              below link.
-            </p>
+          <hr className="section-border-bottom"></hr>
 
-            <div className="notification-main">
-              <div className="notification-content">
-                <a
-                  href="https://mui.com/material-ui/react-switch/"
-                  target="blank">
-                  MUI Switchs
-                </a>
+          {/* Switch Section Starts here */}
+          <div className="row">
+            <div className="col-12 ">
+              <section>
+                <h3 className="sub-heading">Switches </h3>
+                <p className="text">
+                  Switches are the preferred way to adjust settings on mobile.
+                  The option that the switch controls, as well as the state it's
+                  in, should be made clear from the corresponding inline label.
+                </p>
+                <div className="collapsible-code">
+                  <div className="row">
+                    <div className="col-12 m-t-20 m-l-20 m-b-20 m-r-20 ">
+                      <FormGroup>
+                        <FormControlLabel
+                          className="m-b-10"
+                          control={<Switch defaultChecked size="small" />}
+                          label="Label"
+                        />
+                        <FormControlLabel
+                          required
+                          className="m-b-10"
+                          control={<Switch size="small" />}
+                          label="Required"
+                        />
+                        <FormControlLabel
+                          className="m-b-10"
+                          control={
+                            <Switch
+                              {...label}
+                              disabled
+                              defaultChecked
+                              size="small"
+                            />
+                          }
+                          label="Label"
+                        />
+                        <FormControlLabel
+                          className="m-b-10"
+                          disabled
+                          control={<Switch size="small" />}
+                          label="Disabled"
+                        />
+                      </FormGroup>
+                    </div>
+                  </div>
+                  <CollapsibleCode codeItem={switch1} />
+                </div>
+              </section>
+            </div>
+          </div>
+          {/* Switch Section Ends here */}
+
+          <hr className="section-border-bottom"></hr>
+
+          <div className="row">
+            <div className="col-12 m-t-20">
+              <h3 className="sub-heading">
+                React Material UI Component Library{" "}
+              </h3>
+              <p className="text">
+                For more information, you may refer MUI component page by
+                clicking below link.
+              </p>
+
+              <div className="notification-main">
+                <div className="notification-content">
+                  <a
+                    href="https://mui.com/material-ui/react-switch/"
+                    target="blank"
+                  >
+                    MUI Switchs
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-
-      </div>
-      <div className="bookmark-navigator">
-      </div>
+        <div className="bookmark-navigator"></div>
+      </div>{" "}
     </div>
   );
 };
