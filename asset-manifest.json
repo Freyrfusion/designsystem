@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/designsystem/design/main.css",
-    "main.js": "/designsystem/static/js/main.cae1f824.js",
+    "main.js": "/designsystem/static/js/main.0d7a0311.js",
     "designsystem.css": "/designsystem/design/designsystem.css",
     "designsystem.js": "/designsystem/static/js/designsystem.31d6cfe0.js",
     "icons.css": "/designsystem/design/icons.css",
@@ -291,8 +291,9 @@
     "static/media/iconlibrary.ttf?iz8a8p": "/designsystem/static/media/iconlibrary.eef34d109ab582c0d774.ttf",
     "static/media/logo.svg": "/designsystem/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/designsystem/index.html",
+    "static/media/avatar.svg": "/designsystem/static/media/avatar.1d1637d83b571f257031daf5067daa69.svg",
     "main.css.map": "/designsystem/design/main.css.map",
-    "main.cae1f824.js.map": "/designsystem/static/js/main.cae1f824.js.map",
+    "main.0d7a0311.js.map": "/designsystem/static/js/main.0d7a0311.js.map",
     "designsystem.css.map": "/designsystem/design/designsystem.css.map",
     "icons.css.map": "/designsystem/design/icons.css.map",
     "refractor-core-import.4d1d7a79.chunk.js.map": "/designsystem/static/js/react-syntax-highlighter/refractor-core-import.4d1d7a79.chunk.js.map",
@@ -576,6 +577,6 @@
   },
   "entrypoints": [
     "design/main.css",
-    "static/js/main.cae1f824.js"
+    "static/js/main.0d7a0311.js"
   ]
 }
