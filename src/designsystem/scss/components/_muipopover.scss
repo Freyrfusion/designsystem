@@ -1,0 +1,15 @@
+$size-font-muipopover-base : $font-base;
+$color-text-muipopover: $black-1000;
+$space-padding-muipopover: $space-compact $space-default;
+
+#{$brandcall} {
+    .MuiPopover-paper {
+        .MuiTypography-root {
+            padding: $space-padding-muipopover;
+            font-size: $size-font-muipopover-base;
+            color: $color-text-muipopover;
+            min-width: 100px;
+            max-width: 500px;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.MuiStepper-root {
+    .MuiStepLabel-iconContainer {
+        .Mui-completed {
+            color: $primary-600;
+        }
+
+        .Mui-active {
+            color: $primary-600;
+        }
+    }
+
+    .Mui-disabled {
+        .MuiStepIcon-root {
+            color: $black-300;
+        }
+
+    }
+}
+
+.visual-bg {
+    background-color: $primary-base;
+    height: 18px;
+    float: left;
+
+    &._2px {
+        width: 2px
+    }
+
+    &._4px {
+        width: 4px
+    }
+
+    &._8px {
+        width: 8px
+    }
+
+    &._12px {
+        width: 12px
+    }
+
+    &._16px {
+        width: 16px
+    }
+
+    &._24px {
+        width: 24px
+    }
+
+    &._32px {
+        width: 32px
+    }
+
+    &._40px {
+        width: 40px
+    }
+
+    &._48px {
+        width: 48px
+    }
+}

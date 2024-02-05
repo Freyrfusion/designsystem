@@ -1,0 +1,30 @@
+{
+  "Foundations": {
+    "icon": {
+      "size": {
+        "small": "12px",
+        "base": "16px",
+        "medium": "18px",
+        "large": "22px",
+        "lead": "28px"
+      }
+    },
+    "font": {
+      "size": {
+        "heading": {
+          "level1": "48px",
+          "level2": "36px",
+          "level3": "28px",
+          "level4": "22px",
+          "level5": "18px"
+        },
+        "body": {
+          "verysmall": "11px",
+          "base": "13px",
+          "medium": "15px",
+          "large": "18px"
+        }
+      }
+    }
+  }
+}

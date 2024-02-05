@@ -1,0 +1,129 @@
+{
+  "source": ["tokens/figmatokens/tokens.json"],
+  "platforms": {
+    "scss": {
+      "transformGroup": "scss",
+      "buildPath": "scss/",
+      "files": [
+        {
+          "destination": "fonts/_sizes.scss",
+          "format": "scss/variables", 
+          "filter": {
+            "type": "fontSizes"
+          }
+        },
+        {
+          "destination": "fonts/_weights.scss",
+          "format": "scss/variables",
+          "filter": {
+            "type": "fontWeights"
+          }
+        },
+        {
+          "destination": "fonts/_families.scss",
+          "format": "scss/variables",
+          "filter": {
+            "type": "fontFamilies"
+          }
+        },
+        {
+          "destination": "fonts/_lineHeights.scss",
+          "format": "scss/variables",
+          "filter": {
+            "type": "lineHeights"
+          }
+        },
+        {
+          "destination": "colors/_colors.scss",
+          "format": "scss/variables",
+          "filter": {
+            "type": "color"
+          }
+        },
+        {
+          "destination": "space/_spacing.scss",
+          "format": "scss/variables",
+          "filter": {
+            "type": "spacing"
+          }
+        },
+        {
+          "destination": "space/_letterSpacing.scss",
+          "format": "scss/variables",
+          "filter": {
+            "type": "letterSpacing"
+          }
+        },
+        {
+          "destination": "opacity/_opacity.scss",
+          "format": "scss/variables",
+          "filter": {
+            "type": "opacity"
+          }
+        },
+        {
+          "destination": "paragraph/_paragraphSpacing.scss",
+          "format": "scss/variables",
+          "filter": {
+            "type": "paragraphSpacing"
+          }
+        },
+         {
+          "destination": "sizes/_sizing.scss",
+          "format": "scss/variables",
+          "filter": {
+            "type": "sizing"
+          }
+        },
+        {
+          "destination": "border/_radius.scss",
+          "format": "scss/variables",
+          "filter": {
+            "type": "borderRadius"
+          }
+        },
+        {
+          "destination": "border/_width.scss",
+          "format": "scss/variables",
+          "filter": {
+            "type": "borderWidth"
+          }
+        },
+        {
+          "destination": "other/_z-index.scss",
+          "format": "scss/variables",
+          "filter": {
+            "type": "other"
+          }
+        }
+        ]
+    },
+    "json": {
+      "transformGroup": "scss",
+      "buildPath": "json/",
+      "files": [
+        {
+          "destination": "fonts/_sizes.json",
+          "format": "json/nested",
+          "filter": {
+            "type": "fontSizes"
+          }
+        },
+        {
+          "destination": "fonts/_weights.json",
+          "format": "json/nested",
+          "filter": {
+            "type": "fontWeights"
+          }
+        },
+        {
+          "destination": "colors/_colors.json",
+          "format": "json/nested",
+          "filter": {
+            "type": "color"
+          }
+        }
+      ]
+    }
+  }
+}

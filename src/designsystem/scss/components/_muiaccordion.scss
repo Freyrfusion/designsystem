@@ -1,0 +1,39 @@
+@import '../abstract/variables';
+@import '../abstract/component-variables';
+
+$color-text-muiaccordion: $black-900;
+
+$font-size-muiaccordion-base: $font-base;
+$font-size-muiaccordion-medium: $font-medium;
+
+#{$brandcall} {
+    .MuiTypography-root {
+        margin-bottom: 0px;
+    }
+  
+    .MuiAccordionSummary-content{
+        p {
+            font-size: $font-size-muiaccordion-medium;
+            color: $color-text-muiaccordion;
+        }
+    }
+
+    .MuiAccordionDetails-root{
+        p {
+            font-size: $font-size-muiaccordion-base;
+            color: $color-text-muiaccordion;
+        }
+    }
+
+    .MuiCollapse-root {
+        color: $color-text-muiaccordion;
+        font-size: $font-size-muiaccordion-base;
+    }
+
+    // .MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
+    //     min-height: 48px;
+    // }
+    // .MuiAccordionSummary-content.Mui-expanded{
+    //     margin: 10px 0px;
+    // }
+}

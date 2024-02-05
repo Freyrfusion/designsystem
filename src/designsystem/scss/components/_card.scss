@@ -1,0 +1,37 @@
+$font-size-muicard-base: $font-base;
+$font-size-muicard-large: $font-large;
+
+$font-weight-muicard-bolder: $text-bolder;
+
+$color-text-muicard: $black-900;
+$color-text-muicard-secondary: $black-400;
+
+$line-height-muicard-small: $lineheight-small;
+
+$space-padding-muicard-y: $space-condensed;
+
+
+#{$brandcall} {
+    .MuiCard-root {
+        width: 275px;
+
+        .MuiTypography-h5 {
+            font-size: $font-size-muicard-large;
+            font-weight: $font-weight-muicard-bolder;
+            color: $color-text-muicard;
+
+        }
+
+        .MuiTypography-body1 {
+            padding-bottom: $space-padding-muicard-y;
+            font-size: $font-size-muicard-base;
+            color: $color-text-muicard-secondary;
+        }
+
+        .MuiTypography-body2 {
+            font-size: $font-size-muicard-base;
+            line-height: $line-height-muicard-small;
+            color: $color-text-muicard;
+        }
+    }
+}

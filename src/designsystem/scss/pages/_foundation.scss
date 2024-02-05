@@ -1,0 +1,358 @@
+.foundation-main {
+    box-shadow: -1px 1px 2px 1px rgb(230, 230, 230);
+    padding: $space-comfortable;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    height: 150px;
+
+    .icon {
+        background: $primary-900;
+        color: $white;
+        padding: $space-default;
+        border-radius: $border-radius-base;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        font-size: $font-large;
+        line-height: 16px;
+    }
+
+
+    &:hover {
+        box-shadow: -3px 4px 7px 2px rgb(230, 230, 230);
+        transition: box-shadow 0.2s;
+    }
+
+    p {
+        margin-bottom: 0px !important;
+        line-height: 18px;
+    }
+}
+
+.h6 {
+    font-weight: $text-bolder !important;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.color_palette-bg {
+    display: block;
+    font-size: 13px;
+    margin-right: 24px;
+    background: #FFF;
+    box-shadow: 0 1.35pt 2.25pt rgba(0, 0, 0, 0.14), 0 0.3pt 2.7pt 0.3pt rgba(0, 0, 0, 0.12), 0 0.75pt 1.2pt -0.45pt rgba(0, 0, 0, 0.4);
+
+    list>item {
+        display: block;
+        padding: 8px 16px;
+
+        > {
+            * {
+                display: inline-block;
+                width: 48%;
+            }
+
+            action {
+                text-align: right;
+                display: none;
+
+                &:hover {
+                    display: block;
+                }
+
+
+            }
+        }
+
+        &:hover>action {
+            display: inline-block;
+        }
+
+    }
+}
+
+
+
+
+
+
+.bg-danger-100 {
+    background-color: $danger-100
+}
+
+.bg-danger-200 {
+    background-color: $danger-200
+}
+
+.bg-danger-300 {
+    background-color: $danger-300
+}
+
+.bg-danger-400 {
+    background-color: $danger-400
+}
+
+.bg-danger-500 {
+    background-color: $danger-500
+}
+
+.bg-danger-600 {
+    background-color: $danger-600;
+    color: $white;
+}
+
+.bg-danger-700 {
+    background-color: $danger-700;
+    color: $white;
+}
+
+.bg-danger-800 {
+    background-color: $danger-800;
+    color: $white;
+}
+
+.bg-danger-900 {
+    background-color: $danger-900;
+    color: $white;
+}
+
+
+.bg-success-100 {
+    background-color: $success-100
+}
+
+.bg-success-200 {
+    background-color: $success-200
+}
+
+.bg-success-300 {
+    background-color: $success-300
+}
+
+.bg-success-400 {
+    background-color: $success-400
+}
+
+.bg-success-500 {
+    background-color: $success-500
+}
+
+.bg-success-600 {
+    background-color: $success-600;
+    color: $white;
+}
+
+.bg-success-700 {
+    background-color: $success-700;
+    color: $white;
+}
+
+.bg-success-800 {
+    background-color: $success-800;
+    color: $white;
+}
+
+.bg-success-900 {
+    background-color: $success-900;
+    color: $white;
+}
+
+
+.bg-primary-100 {
+    background-color: $primary-100
+}
+
+.bg-primary-200 {
+    background-color: $primary-200
+}
+
+.bg-primary-300 {
+    background-color: $primary-300
+}
+
+.bg-primary-400 {
+    background-color: $primary-400
+}
+
+.bg-primary-500 {
+    background-color: $primary-500
+}
+
+.bg-primary-600 {
+    background-color: $primary-600;
+    color: $white;
+}
+
+.bg-primary-700 {
+    background-color: $primary-700;
+    color: $white;
+}
+
+.bg-primary-800 {
+    background-color: $primary-800;
+    color: $white;
+}
+
+.bg-primary-900 {
+    background-color: $primary-900;
+    color: $white;
+}
+
+.bg-warning-100 {
+    background-color: $warning-100
+}
+
+.bg-warning-200 {
+    background-color: $warning-200
+}
+
+.bg-warning-300 {
+    background-color: $warning-300
+}
+
+.bg-warning-400 {
+    background-color: $warning-400
+}
+
+.bg-warning-500 {
+    background-color: $warning-500
+}
+
+.bg-warning-600 {
+    background-color: $warning-600;
+    color: $white;
+}
+
+.bg-warning-700 {
+    background-color: $warning-700;
+    color: $white;
+}
+
+.bg-warning-800 {
+    background-color: $warning-800;
+    color: $white;
+}
+
+.bg-warning-900 {
+    background-color: $warning-900;
+    color: $white;
+}
+
+
+.bg-black-100 {
+    background-color: $black-100
+}
+
+.bg-black-200 {
+    background-color: $black-200
+}
+
+.bg-black-300 {
+    background-color: $black-300
+}
+
+.bg-black-400 {
+    background-color: $black-400
+}
+
+.bg-black-500 {
+    background-color: $black-500
+}
+
+.bg-black-600 {
+    background-color: $black-600;
+    color: $white;
+}
+
+.bg-black-700 {
+    background-color: $black-700;
+    color: $white;
+}
+
+.bg-black-800 {
+    background-color: $black-800;
+    color: $white;
+}
+
+.bg-black-900 {
+    background-color: $black-900;
+    color: $white;
+}
+
+.bg-black-1000 {
+    background-color: $black-1000;
+    color: $white;
+}
+
+//logo
+.logo-foundation {
+    width: 400px;
+    height: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+//spacing page
+p {
+    line-height: 22px;
+}
+
+.table-latitude {
+    width: 100%;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 5px;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+
+    thead {
+
+
+        th {
+            text-align: center;
+            padding: 10px;
+            color: $black-700;
+            border-bottom: 1px solid $black-200;
+            font-size: $font-base;
+            text-align: left;
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 0px;
+            color: grey;
+
+            &:hover {
+                background-color: lighten($black-100, 2%);
+            }
+
+            td {
+                padding: 10px;
+                border-bottom: 1px solid $black-200;
+                text-align: left;
+                color: $black-1000;
+                font-size: 13px;
+            }
+
+            .space-token {
+                font-size: $font-small;
+                background-color: $black-100;
+                padding: $space-nano $space-condensed;
+                border-radius: $border-radius-secondary;
+            }
+
+            th {
+                padding-left: 10px;
+                border: 0px;
+            }
+        }
+    }
+
+
+
+}

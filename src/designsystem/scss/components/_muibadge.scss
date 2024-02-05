@@ -1,0 +1,104 @@
+@import '../abstract/variables';
+@import '../abstract/component-variables';
+
+
+$color-text-muibadge:$black-1000;
+$color-background-muibadge-primary:$primary-200;
+$color-background-muibadge-success:$success-200;
+$color-background-muibadge-default:$black-200;
+
+$font-size-muibadge-small: $font-small;
+
+.MuiChip-label {
+    color: $color-text-muibadge;
+    font-size: $font-size-muibadge-small;
+    text-transform: capitalize;
+}
+#{$brandcall} {
+    .MuiChip-colorPrimary {
+        background-color: $color-background-muibadge-primary;  
+        @extend .MuiChip-label;
+    }
+
+    .MuiChip-colorSuccess {
+        background-color: $color-background-muibadge-success;
+        @extend .MuiChip-label;
+    }
+    .MuiChip-colorDefault{
+        background-color: $color-background-muibadge-default;
+        @extend .MuiChip-label; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $space-padding-badge-y:$space-micro;  
+// $space-padding-badge-x:$space-condensed;  
+
+// $line-height-badge-base:$lineheight-base;
+
+// $font-weight-badge-bold:$text-bold;
+// $font-size-badge-small:$font-small;
+
+// $border-radius-badge-base:$border-radius-base;
+
+// $color-text-badge-secondary:$white;
+
+// $muibadges-colors: (
+//   "primary":$primary-300,
+//   "success":$success-300,
+//   "danger":$danger-300,
+//   "warning":$warning-300,
+//   "secondary":$black-600,
+//   "inactive":$black-200,
+
+// ) !default;
+
+// $brandcall : ".freya-fusion";
+
+// @mixin MuiChip-root($bg-color) {
+//     padding:$space-padding-badge-y $space-padding-badge-x;
+//     line-height:$line-height-badge-base ;
+//     font-weight: $font-weight-badge-bold;
+//     font-size: $font-size-badge-small;
+//     background-color: $bg-color;
+
+//   }
+
+//   @each $key, $val in $muibadges-colors {
+//     #{$brandcall} .MuiChip-root-#{$key}{
+//         @include MuiChip-root($val);
+
+//         &.semirounded{
+//             border-radius: $border-radius-badge-base;
+//         }
+
+//         &.rounded{
+//             border-radius: 16px;
+//         }
+
+//     }
+//     @if $key == 'secondary'{
+//         #{$brandcall}.MuiChip-root-#{$key}{
+//         color:  $color-text-badge-secondary;
+//         }
+//     }
+
+
+// }

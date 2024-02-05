@@ -1,0 +1,34 @@
+@import '../abstract/variables';
+@import '../abstract/component-variables';
+
+
+$color-text-muitooltip:$white;
+$color-background-muitooltip:$black-900;
+
+$font-size-muitooltip-base:$font-base;
+
+$line-height-muitooltip-small:$lineheight-small;
+
+$space-padding-muitooltip-y:$space-condensed;
+$space-padding-muitooltip-x:$space-default;
+
+
+#{$brandcall} {
+    // .MuiButton-textSizeMedium{
+    //     color:$black-900 !important;
+    //     font-weight: 400 !important;
+    //     &:hover {
+    //      background-color: $black-200 !important;
+    //     }
+    // }
+    .MuiTooltip-tooltip{
+        color:$color-text-muitooltip;
+        background-color: $color-background-muitooltip;
+        font-size: $font-size-muitooltip-base;
+        // min-width: 10px;
+        max-width: 500px;
+        padding: $space-padding-muitooltip-y $space-padding-muitooltip-x;
+        line-height: $line-height-muitooltip-small;
+    }
+
+}

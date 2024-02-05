@@ -1,0 +1,29 @@
+$font-size-muibreadcrumb-medium: $font-medium;
+$font-size-muibreadcrumb-large: $font-large;
+
+$font-weight-muibreadcrumb-bolder: $text-bolder;
+
+$color-text-muibreadcrumb: $black-700;
+
+$space-padding-muibreadcrumb-y: $space-micro;
+
+
+#{$brandcall} {
+    .MuiBreadcrumbs-li{
+        font-size: $font-size-muibreadcrumb-medium;
+			color: $color-text-muibreadcrumb;
+            &>a {
+				color: $color-text-muibreadcrumb;
+				text-decoration: none;
+             }  
+    }
+    .MuiBreadcrumbs-li p {
+        font-weight: $font-weight-muibreadcrumb-bolder;
+        font-size: $font-size-muibreadcrumb-medium;;
+        margin-top: 0px;
+    }
+    .MuiSvgIcon-fontSizeMedium{
+        font-size: $font-size-muibreadcrumb-large;
+        padding-top: $space-padding-muibreadcrumb-y;
+    }
+}

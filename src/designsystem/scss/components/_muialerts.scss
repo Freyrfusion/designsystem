@@ -1,0 +1,42 @@
+$color-background-alerts-success: $success-100;
+$color-background-alerts-info: $foundations-info-200;
+$color-background-alerts-warning: $warning-100;
+$color-background-alerts-danger: $danger-100;
+$text-size-alert-message: 14px;
+
+#{$brandcall} {
+    .MuiAlert-root {
+        font-family: $font-family-base;
+
+        .MuiAlertTitle-root {
+            font-family: $font-family-base;
+        }
+
+        .MuiAlert-standardSuccess {
+            background: $color-background-alerts-success;
+            font-size: $text-size-alert-message;
+
+        }
+
+        .MuiAlert-standardInfo {
+            background: $color-background-alerts-info;
+            font-size: $text-size-alert-message;
+
+        }
+
+        .MuiAlert-standardWarning {
+            background: $color-background-alerts-warning;
+            font-size: $text-size-alert-message;
+
+        }
+
+
+        .MuiAlert-standardError {
+            background: $color-background-alerts-danger;
+            font-size: $text-size-alert-message;
+
+
+        }
+
+    }
+}
