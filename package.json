@@ -1,5 +1,5 @@
 {
-  "homepage": "https://vinodchelmeda.github.io/uRIMS-Library",
+  "homepage": "https://freyrfusion.github.io/designsystem/",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -89,7 +89,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.0",
+    "gh-pages": "^6.1.1",
     "mini-css-extract-plugin": "^2.7.6",
     "node-sass": "^9.0.0",
     "renamer": "^4.0.0",
