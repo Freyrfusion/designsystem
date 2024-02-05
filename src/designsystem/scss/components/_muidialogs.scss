@@ -1,0 +1,69 @@
+$color-background-dialog-button: $primary-600;
+$color-background-dialog-button-hover: $primary-700;
+$color-text-dialog-button: $white;
+$border-none-dialog-button: $no-border;
+$border-color-dialog: $black-100;
+$space-nospace-muidialog: $space-nospace;
+$font-base-muidialog-content: $font-base;
+$color-text-muidialog-content: $black-1000;
+$space-icon-action: $space-condensed $space-default;
+$font-size-muidialog-header-title: $font-large;
+$space-content-muidialog: $space-default;
+
+#{$brandcall} {
+    .MuiDialog-root {
+        .MuiDialog-container {
+            align-items: flex-start;
+
+            .MuiDialog-paper {
+                .MuiDialogTitle-root {
+                    margin: $space-nospace-muidialog;
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid $border-color-dialog;
+                    padding: $space-icon-action;
+
+                    h5 {
+                        margin: $space-nospace-muidialog;
+                        font-size: $font-size-muidialog-header-title;
+                    }
+
+                    .close {
+                        background-color: transparent;
+                        border: $border-none-dialog-button;
+                        cursor: pointer;
+                        padding: $space-nospace-muidialog;
+                    }
+                }
+
+                .MuiDialogContent-root {
+                    padding: $space-content-muidialog;
+                    border-bottom: 1px solid $border-color-dialog;
+
+                    p {
+                        font-size: $font-base-muidialog-content;
+                        color: $color-text-muidialog-content;
+                    }
+                }
+
+                .MuiDialogActions-root {
+                    padding: $space-icon-action;
+
+                    // .MuiButtonBase-root {
+                    //     background-color: $color-background-dialog-button;
+                    //     color: $color-text-dialog-button;
+                    //     border: $border-none-dialog-button;
+                    //     cursor: pointer;
+
+                    //     &:hover {
+                    //         background-color: $color-background-dialog-button-hover;
+                    //     }
+
+                    // }
+
+
+                }
+            }
+        }
+    }
+}

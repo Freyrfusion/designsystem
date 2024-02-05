@@ -1,0 +1,49 @@
+@import '../abstract/variables';
+@import '../abstract/component-variables';
+
+$color-switch-muithumb: $primary-base;
+$color-switch-muithumb-disabled: $primary-200;
+$color-background-muiswitch: $primary-200;
+$color-text-muimandatory: $danger-700;
+
+$font-size-muiswitch-base: $font-base;
+$color-text-muiswitch: $black-900;
+
+$space-padding-muiswitch-y: $space-compact;
+$space-padding-muiswitch-x: $space-compact;
+
+
+#{$brandcall} {
+   
+    .MuiFormControlLabel-root{
+        padding:$space-padding-muiswitch-y $space-padding-muiswitch-x;
+    }
+    .Mui-checked.MuiSwitch-thumb{
+        color: $color-switch-muithumb;
+    }
+
+    .MuiSwitch-switchBase {
+        &.Mui-checked {
+            color: $color-switch-muithumb;
+
+            +.MuiSwitch-track {
+                background-color: $color-background-muiswitch;
+            }
+
+            &.Mui-disabled {
+                color: $color-switch-muithumb-disabled;
+            }
+        }
+
+    }
+
+    .MuiFormControlLabel-label {
+        font-size: $font-size-muiswitch-base;
+        color: $color-text-muiswitch;
+    }
+
+    .MuiFormControlLabel-asterisk {
+        color: $color-text-muimandatory;
+    }
+
+}
