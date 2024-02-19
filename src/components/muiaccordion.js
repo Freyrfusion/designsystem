@@ -134,6 +134,8 @@ import Fade from '@mui/material/Fade';';
     import MuiAccordionDetails from '@mui/material/AccordionDetails';';
     
     // React MUI component code// 
+    export default function AccordionUsage() {
+      return (
     <div>
     <MuiAccordion1 expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
       <MuiAccordion1Summary aria-controls="panel1d-content" id="panel1d-header">
@@ -176,6 +178,8 @@ import Fade from '@mui/material/Fade';';
     </MuiAccordion1>
   
   </div>
+  );
+    } 
 `;
 
   // React Code Block End here

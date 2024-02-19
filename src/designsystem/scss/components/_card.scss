@@ -1,37 +1,88 @@
+$font-size-muicard-small: $font-small;
 $font-size-muicard-base: $font-base;
 $font-size-muicard-large: $font-large;
 
+$font-weight-muicard-bold: $text-bold;
 $font-weight-muicard-bolder: $text-bolder;
 
 $color-text-muicard: $black-900;
+$color-text-muicard-link: $primary-600;
 $color-text-muicard-secondary: $black-400;
+
+$color-background-muicard-primary: $primary-100;
 
 $line-height-muicard-small: $lineheight-small;
 
+$space-padding-muicard-nospace: $space-nospace;
 $space-padding-muicard-y: $space-condensed;
+$space-padding-muicard-x: $space-condensed;
+$space-padding-muicard-a: $space-compact;
+
+$border-radius-muicard-secondary: $border-radius-secondary;
+
 
 
 #{$brandcall} {
     .MuiCard-root {
         width: 275px;
+        padding: $space-padding-muicard-a;
+
+        .card-action-link {
+            border-radius: $border-radius-muicard-secondary;
+            padding: $space-padding-muicard-nospace $space-padding-muicard-x;
+            font-weight: $font-weight-muicard-bold;
+            font-size: $font-size-muicard-small;
+            color: $color-text-muicard-link;
+            background-color: $color-background-muicard-primary;
+        }
+
+        .MuiCardContent {
+            padding-top: $space-padding-muicard-nospace;
+        }
 
         .MuiTypography-h5 {
             font-size: $font-size-muicard-large;
             font-weight: $font-weight-muicard-bolder;
             color: $color-text-muicard;
+            width: 250px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
         }
 
-        .MuiTypography-body1 {
-            padding-bottom: $space-padding-muicard-y;
-            font-size: $font-size-muicard-base;
-            color: $color-text-muicard-secondary;
-        }
+
+        // .MuiTypography-body1 {
+        //     padding-bottom: $space-padding-muicard-y;
+        //     font-size: $font-size-muicard-base;
+
+        // }
 
         .MuiTypography-body2 {
             font-size: $font-size-muicard-base;
             line-height: $line-height-muicard-small;
-            color: $color-text-muicard;
+            color: $color-text-muicard-secondary;
+            margin-bottom:$space-padding-muicard-nospace;
+            // width: 250px;
+            // white-space: nowrap;
+            // height: 74px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
+    }
+
+    .MuiCardContent-root:last-child {
+        // padding-top: 8px;
+        // padding-bottom: 8px;
+        padding: $space-padding-muicard-y $space-padding-muicard-nospace;
+    }
+
+    .MuiCardActions-spacing {
+        justify-content: space-between;
+        padding-left: $space-padding-muicard-nospace;
     }
 }

@@ -9,6 +9,11 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.5",
     "@mui/material": "^5.15.4",
+    "@mui/x-data-grid": "^6.19.4",
+    "@mui/x-data-grid-generator": "^6.19.3",
+    "@mui/x-data-grid-premium": "^6.19.4",
+    "@mui/x-data-grid-pro": "^6.19.4",
+    "@mui/x-date-pickers": "^6.19.3",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@svgr/webpack": "^5.5.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -96,7 +101,7 @@
     "sass": "^1.69.5",
     "sass-loader": "^13.3.3",
     "sass-resources-loader": "^2.2.5",
-    "style-dictionary": "^3.9.0"
+    "style-dictionary": "^3.9.2"
   },
   "jest": {
     "roots": [

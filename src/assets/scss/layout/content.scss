@@ -30,7 +30,7 @@
         font-size: 16px;
         font-weight: 600;
         margin-bottom: 0px;
-        margin-top: 0px;
+
     }
 
     p {
@@ -225,4 +225,39 @@ h6 {
 
 .m-t-30 {
     margin-top: 30px !important;
+}
+
+
+.content-area>.row:first-of-type {
+    display: none;
+}
+
+.content-area>hr:first-of-type {
+    display: none;
+}
+
+
+section h3:nth-of-type(1) {
+    margin-top: -20px;
+}
+
+.foundations_main>.row:first-of-type {
+    display: block;
+    height: 200px;
+}
+
+foundations_main>hr:first-of-type {
+    display: block;
+
+}
+
+.foundations_main {
+    section h3:nth-of-type(1) {
+        margin-top: 0px;
+    }
+}
+
+.component_main>.row:first-of-type {
+    display: flex;
+
 }

@@ -50,6 +50,8 @@ $mui-buttons: (
     line-height: $line-height-muibutton-small;
     text-transform: none;
     box-shadow: none;
+    display: flex;
+    border: 1px solid transparent;
 
     em {
         padding: $icon-padding-muibutton-y $icon-padding-muibutton-x;

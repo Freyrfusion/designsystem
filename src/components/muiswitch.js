@@ -178,8 +178,7 @@ const Muiswitch = () => {
             </div>
           </div>
         </div>
-        <div className="bookmark-navigator"></div>
-      </div>{" "}
+      </div>
     </div>
   );
 };

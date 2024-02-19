@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { CopyBlock, dracula } from "react-code-blocks";
 import CollapsibleCode from "./CodeBlockcode";
-import { TextareaAutosize as BaseTextareaAutosize } from "@mui/base/TextareaAutosize";
+
+import { DemoContainer, DemoItem } from "@mui/x-date-pickers/internals/demo";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 
 const Textarea = () => {
   // Active class for bookmarks
@@ -18,15 +22,22 @@ const Textarea = () => {
   const exampleCodeBlock = `<Button variant="contained">Contained</Button>`;
 
   // Start Checkboxes
-  const basiccheckboxes = `// To use mui texarea-autosize import texarea-autosize component from mui
-  import { TextareaAutosize as BaseTextareaAutosize } from '@mui/base/TextareaAutosize';
-
-  //React MUI component code
-  export default function MinHeightTextarea() {
-    return (
-  <Textarea aria-label="minimum height" minRows={3} placeholder="Minimum 3 rows" />
-  );
-}`;
+  const datepicker = `// To use mui Datepicker import texarea-autosize component from mui
+  import { DemoContainer, DemoItem } from "@mui/x-date-pickers/internals/demo";
+  import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+  import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+  import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+  
+    //React MUI component code
+    export default function MinHeightTextarea() {
+      return (
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <DemoContainer components={["DatePicker"]}>
+          <DatePicker label="Basic date picker" />
+        </DemoContainer>
+      </LocalizationProvider>
+    );
+  }`;
 
   // React Code Block End here
 
@@ -38,11 +49,11 @@ const Textarea = () => {
     setIsCollapsed(!isCollapsed);
   };
   // Code for collapse End here
-  const basic_checkbox = {
+  const mui_datepicker = {
     code: (
       <CopyBlock
         language={language}
-        text={basiccheckboxes}
+        text={datepicker}
         showLineNumbers={lineNumbers}
         theme={dracula}
         wrapLines={true}
@@ -54,9 +65,9 @@ const Textarea = () => {
   return (
     <div>
       <div className="content-header">
-        <h1 className="heading"> Textarea Autosize</h1>
+        <h1 className="heading"> Date Picker</h1>
         <p className="text m-b-0">
-          Use the minRows prop to define the minimum height of the component.
+          The Date Picker component lets users select a date.
         </p>
       </div>
       <div className="content-wrapper">
@@ -89,23 +100,22 @@ const Textarea = () => {
             <div className="col-12">
               <section className="">
                 <div className="collapsible-code">
-                  <div className="row m-t-20 m-l-10">
-                    <div className="col-12">
-                      <span className="label_text">Label</span>
-                      <BaseTextareaAutosize
-                        aria-label="minimum height"
-                        className="textarea-custom"
-                        minRows={3}
-                        placeholder="Minimum 3 rows"
-                      />
+                  <div className="row m-t-10 m-b-10 m-l-20">
+                    <div className="col-10 no-scroll">
+                      <LocalizationProvider dateAdapter={AdapterDayjs}>
+                        <DemoContainer components={["DatePicker"]}>
+                          <DatePicker label="Select date" />
+                        </DemoContainer>
+                      </LocalizationProvider>
                     </div>
                   </div>
 
-                  <CollapsibleCode codeItem={basic_checkbox} />
+                  <CollapsibleCode codeItem={mui_datepicker} />
                 </div>
               </section>
             </div>
           </div>
+
           <hr className="section-border-bottom"></hr>
           <div className="row">
             <div className="col-12 m-t-10">
@@ -120,17 +130,17 @@ const Textarea = () => {
               <div className="notification-main">
                 <div className="notification-content">
                   <a
-                    href="https://mui.com/base-ui/react-textarea-autosize/"
+                    href="https://mui.com/x/react-date-pickers/date-picker/"
                     target="blank"
                   >
-                    MUI Textarea-autosize
+                    MUI Date Picker
                   </a>
                 </div>
               </div>
             </div>
           </div>
-        </div>{" "}
-      </div>{" "}
+        </div>
+      </div>
     </div>
   );
 };

@@ -21,7 +21,7 @@ const Muibreadcrumbcomponent = () => {
   // React Code Block Starts
   const [language, changeLanguage] = useState("js");
   const [lineNumbers, toggleLineNumbers] = useState(true);
-  const breadcrumbsCode = ` // To use mui chip import chip component from mui // 
+  const breadcrumbsCode = ` // To use mui breadcrumbs import breadcrumbs component from mui // 
     import Breadcrumbs from '@mui/material/Breadcrumbs';
     import Typography from '@mui/material/Typography';
     import Link from '@mui/material/Link';

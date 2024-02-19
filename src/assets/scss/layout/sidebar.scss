@@ -96,6 +96,19 @@
                     color: #3366FF;
                 }
             }
+
+            &.active {
+                background: #E9F2FF;
+                border-left: 3px solid #0C66E4;
+                color: #3366FF;
+                font-weight: 600;
+
+                a {
+                    color: #3366FF;
+                    font-weight: 600;
+
+                }
+            }
         }
     }
 
@@ -114,7 +127,7 @@
         display: table-cell;
         vertical-align: middle;
         width: 190px;
-        font-family: 'Titillium Web', sans-serif;
+        // font-family: 'Titillium Web', sans-serif;
     }
 
 }

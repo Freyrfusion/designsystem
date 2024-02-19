@@ -11,7 +11,7 @@ const Colors = () => {
         </p>
       </div>
       <div className="content-wrapper">
-        <div className="content-area">
+        <div className="content-area foundations_main">
           <h3 className="m-t-0 m-b-0"> The palette </h3>
           <div className="row">
             <div className="col-4">

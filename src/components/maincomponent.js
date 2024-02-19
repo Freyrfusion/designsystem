@@ -14,7 +14,7 @@ import Grid from "../assets/images/grid.png";
 import List from "../assets/images/list.png";
 import Menu from "../assets/images/menu.png";
 import Popover from "../assets/images/popover.png";
-import Sidebar from "../assets/images/sidebar.png";
+import SidebarImg from "../assets/images/sidebar.png";
 import Switch from "../assets/images/switch.png";
 import Tabs from "../assets/images/tabs.png";
 import Textarea from "../assets/images/textarea.png";
@@ -25,7 +25,10 @@ import CollapsibleCode from "./CodeBlockcode";
 import { CheckBox } from "@mui/icons-material";
 import { Breadcrumbs } from "@mui/material";
 
+import { Link } from "react-router-dom";
+
 const Muiform = () => {
+  const [isOpen, setOpen] = useState(false);
   // Active class for bookmarks
   const [activeElement, setActiveElement] = useState(0);
   const handleItemClick = (index) => {
@@ -69,13 +72,13 @@ const Muiform = () => {
       </div>
 
       <div className="content-wrapper">
-        <div className="content-area">
+        <div className="content-area component_main">
           <div className="row">
             <div className="col-md-4 m-20">
-              <a
-                href="/"
+              <Link
+                activeClassName="is-active"
+                to="/components/muiaccordion"
                 className="design-system-component"
-                onClick={() => setCurrentPage("muiaccordion")}
               >
                 <div className="component-innerbox">
                   <div className="component-image-box">
@@ -89,11 +92,15 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4 m-20">
-              <a href="" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/muialerts"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
                     <img src={Alerts} height="auto" width="100%" />
@@ -107,11 +114,15 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4 m-20">
-              <a href="" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/muiautocomplete"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
                     <img src={Autocomplete} height="auto" width="100%" />
@@ -124,13 +135,17 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className="row">
             <div className="col-md-4 m-20">
-              <a href="" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/muibadge"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
                     <img src={Badges} height="auto" width="100%" />
@@ -143,11 +158,15 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4 m-20">
-              <a href="" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/muibreadcrumbs"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
                     <img src={Breadcrumbsimage} height="auto" width="100%" />
@@ -160,11 +179,15 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4 m-20">
-              <a href="#muibuttons" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/muibuttons"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
                     <img src={Button} height="auto" width="100%" />
@@ -178,13 +201,17 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className="row">
             <div className="col-md-4 m-20">
-              <a href="" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/card"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
                     <img src={Card} height="auto" width="100%" />
@@ -197,11 +224,15 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4 m-20">
-              <a href="" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/muicheckbox"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
                     <img src={Checkbox} height="auto" width="100%" />
@@ -214,11 +245,15 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4 m-20">
-              <a href="" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/muidialogs"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
                     <img src={Dialog} height="auto" width="100%" />
@@ -226,19 +261,22 @@ const Muiform = () => {
                       <h2 class="component-heading-text"> Dialogs </h2>
                     </div>
                     <span class="component-content-text">
-                      {" "}
                       Dialogs inform users about a task and can contain critical
-                      information, require decisions, or involve multiple tasks.{" "}
+                      information, require decisions, or involve multiple tasks.
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className="row">
             <div className="col-md-4 m-20">
-              <a href="" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/muiform"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
                     <img src={Form} height="auto" width="100%" />
@@ -250,11 +288,15 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4 m-20">
-              <a href="" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/grid"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
                     <img src={Grid} height="auto" width="100%" />
@@ -266,10 +308,14 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-4 m-20">
-              <a href="" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/list"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
                     <img src={List} height="auto" width="100%" />
@@ -283,13 +329,17 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className="row">
             <div className="col-md-4 m-20">
-              <a href="" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/muimenu"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
                     <img src={Menu} height="auto" width="100%" />
@@ -302,10 +352,14 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-md-4 m-20">
-              <a href="" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/muipopover"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
                     <img src={Popover} height="auto" width="100%" />
@@ -318,14 +372,18 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4 m-20">
-              <a href="" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/sidebar"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
-                    <img src={Sidebar} height="auto" width="100%" />
+                    <img src={SidebarImg} height="auto" width="100%" />
                     <div class="component-heading">
                       <h2 class="component-heading-text"> Sidebar </h2>
                     </div>
@@ -336,13 +394,17 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className="row">
             <div className="col-md-4 m-20">
-              <a href="" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/muiswitch"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
                     <img src={Switch} height="auto" width="100%" />
@@ -355,11 +417,15 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4 m-20">
-              <a href="" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/muitabs"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
                     <img src={Tabs} height="auto" width="100%" />
@@ -372,11 +438,15 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="col-md-4 m-20">
-              <a href="" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/textareaautosize"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
                     <img src={Textarea} height="auto" width="100%" />
@@ -389,13 +459,17 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className="row">
             <div className="col-md-4 m-20">
-              <a href="" className="design-system-component">
+              <Link
+                activeClassName="is-active"
+                to="/components/muitooltip"
+                className="design-system-component"
+              >
                 <div className="component-innerbox">
                   <div className="component-image-box">
                     <img src={Tooltip} height="auto" width="100%" />
@@ -408,7 +482,7 @@ const Muiform = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

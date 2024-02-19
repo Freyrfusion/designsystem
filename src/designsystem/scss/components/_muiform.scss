@@ -12,7 +12,7 @@ $color-text-muiform-success: $success-700;
 $line-height-muiform-small: $lineheight-small;
 $color-background-muiinput: $white;
 $color-background-muiinput-black-hover: $black-900;
-$border-color-muiborder-hover: $black-300;
+$border-color-muiborder-hover: $primary-500;
 $border-color-muiborder-focus: $primary-500;
 $color-asterisk-muiform : $danger-700;
 $color-radio-text: $black-700;
@@ -22,12 +22,14 @@ $space-input-muiform: $space-condensed $space-compact;
 $border-radius-input-none : $border-radius-none;
 $space-border-none-input: $space-nospace;
 $space-autocomplete-custom: $space-nano;
+$space-autocomplete-input: $space-condensed;
 $size-font-muiinput: $font-base;
 $color-background-muichip: $black-100;
 $size-font-muichip-label: $font-small;
 $color-text-muichip: $black-1000;
 $weight-text-chip: $text-bold;
 $size-font-chip: $icon-small;
+$color-input-disabled: $black-100;
 //validations
 
 $color-border-success-muivalidation: $success-800;
@@ -282,9 +284,69 @@ $color-text-radio: $black-800;
         transform: none !important
     }
 
+
+    //Testing
+    .MuiInputBase-root {
+        @extend .mui_input;
+
+        .MuiFormLabel-root {
+            .MuiFormLabel-asterisk {
+                color: $color-asterisk-muiform;
+            }
+        }
+
+        .MuiFormControlLabel-root {
+
+            // .MuiRadio-root {
+            //     color: $color-radio-text;
+            //     font-size: 14px;
+            // }
+
+            .MuiTypography-root {
+                color: $color-radio-text;
+            }
+
+        }
+
+        p {
+            margin-left: $space-border-none-input;
+            font-weight: 100;
+        }
+
+        &:hover {
+            .MuiOutlinedInput-notchedOutline {
+                border: 2px solid $border-color-muiborder-hover;
+            }
+        }
+
+        &:focus {
+
+            border: 2px solid $border-color-muiborder-focus;
+        }
+
+
+        input {
+            padding: $space-border-none-input;
+            font-size: $size-font-muiinput;
+        }
+
+        .MuiSelect-select {
+            padding: $space-border-none-input;
+            text-align: left;
+        }
+    }
+
+    .MuiFormLabel-root {
+        @extend .mui_label;
+
+    }
+
+    // End Testing
+
+
     .MuiFormControl-root {
 
-        width: 45%;
+        // width: 45%;
 
         .MuiFormLabel-root {
             @extend .mui_label;
@@ -298,6 +360,10 @@ $color-text-radio: $black-800;
                 .MuiFormLabel-asterisk {
                     color: $color-asterisk-muiform;
                 }
+            }
+
+            &.Mui-disabled {
+                background: $color-input-disabled;
             }
 
             .MuiFormControlLabel-root {
@@ -439,7 +505,7 @@ $color-text-radio: $black-800;
     .MuiBox-root {
 
         .MuiTextField-root {
-            width: 45%;
+            // width: 45%;
         }
 
     }
@@ -455,16 +521,20 @@ $color-text-radio: $black-800;
     }
 
     //Autocomplete
+
+
     .autocomplete-custom {
         .MuiFormControl-root {
             .MuiInputBase-root {
-                padding: $space-autocomplete-custom;
+                padding-top: $space-autocomplete-input;
+                padding-bottom: $space-autocomplete-input;
 
                 .MuiChip-root {
                     height: 25px;
                     background-color: $color-background-muichip;
                     font-family: $font-family-base;
                     font-weight: $weight-text-chip;
+                    margin: $space-nospace;
 
                     .MuiChip-label {
                         font-size: $size-font-chip;
@@ -477,12 +547,30 @@ $color-text-radio: $black-800;
     }
 
     //validations
+    .label_text {
+        @extend .mui_label;
+        display: block;
+
+    }
 
 
 }
 
-.label_text {
-    @extend .mui_label;
-    display: block;
 
+// .MuiInputAdornment-root {
+//     .MuiIconButton-root {
+//         em {
+//             font-size: $font-large;
+//         }
+//     }
+// }
+
+.MuiSearch {
+    .MuiOutlinedInput-notchedOutline {
+        top: 0px;
+    }
+
+    em {
+        font-size: $font-base;
+    }
 }

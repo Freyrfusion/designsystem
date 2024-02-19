@@ -10,7 +10,7 @@ const Spacing = () => {
         </p>
       </div>
       <div className="content-wrapper">
-        <div className="content-area">
+        <div className="content-area foundations_main">
           <p className="m-t-0">
             The consistent and intentional use of a spacing system creates a
             more harmonious experience for the end user. A spacing system also

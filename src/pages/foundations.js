@@ -1,69 +1,44 @@
 import React, { useState } from "react";
-
-// Components
-import Foundationdefault from "../foundations/foundationdefault.js";
-import Colors from "../foundations/colors.js";
-import Logos from "../foundations/logos.js";
-import Spacing from "../foundations/spacing.js";
-import Typographies from "../foundations/typographies.js";
+import { NavLink, useLocation } from "react-router-dom";
 
 const UiFoundation = () => {
-  const [currentPage, setCurrentPage] = useState("foundationdefault");
-
-  const renderPage = () => {
-    switch (currentPage) {
-      // case "badges":
-      //   return <Badges />;
-
-      case "colors":
-        return <Colors />;
-      case "logos":
-        return <Logos />;
-      case "spacing":
-        return <Spacing />;
-      case "logos":
-        return <Logos />;
-      case "typographies":
-        return <Typographies />;
-
-      default:
-        return <Foundationdefault />;
-    }
-  };
-
+  const location = useLocation();
   return (
     <div>
       <div className="sidebar">
         <h6 className="m-t-10 m-b-0 m-l-20">Foundations</h6>
         <ul id="dynamic-tabs">
           <li
-            className={currentPage === "colors" && "activetab"}
-            onClick={() => setCurrentPage("colors")}
+            className={
+              location.pathname === "/foundations/colors" ? "active" : ""
+            }
           >
-            Colors
+            <NavLink to="/foundations/colors">Colors</NavLink>
+          </li>
+
+          <li
+            className={
+              location.pathname === "/foundations/logos" ? "active" : ""
+            }
+          >
+            <NavLink to="/foundations/logos">Logos</NavLink>
           </li>
           <li
-            className={currentPage === "logos" && "activetab"}
-            onClick={() => setCurrentPage("logos")}
+            className={
+              location.pathname === "/foundations/spacing" ? "active" : ""
+            }
           >
-            Logos
+            <NavLink to="/foundations/spacing">Spacing</NavLink>
           </li>
           <li
-            className={currentPage === "spacing" && "activetab"}
-            onClick={() => setCurrentPage("spacing")}
+            className={
+              location.pathname === "/foundations/typographies" ? "active" : ""
+            }
           >
-            Spacing
-          </li>
-          <li
-            className={currentPage === "typographies" && "activetab"}
-            onClick={() => setCurrentPage("typographies")}
-          >
-            Typographies
+            <NavLink to="/foundations/typographies">Typography</NavLink>
           </li>
         </ul>
       </div>
-
-      {renderPage()}
     </div>
   );
 };

@@ -1,0 +1,22 @@
+.MuiList-root {
+    float: none;
+    width: auto;
+    display: contents;
+
+
+    .MuiListItemIcon-root {
+        min-width: 36px;
+
+        svg {
+            font-size: $font-large;
+
+        }
+    }
+
+    .MuiListItemText-root {
+        span {
+            font-size: 14px;
+        }
+    }
+
+}

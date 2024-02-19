@@ -23,40 +23,36 @@ const Muicardcomponent = () => {
   // React Code Block Starts
   const [language, changeLanguage] = useState("js");
   const [lineNumbers, toggleLineNumbers] = useState(true);
-  const cardCode = ` // To use mui chip import chip component from mui // 
-    import Box from '@mui/material/Box';
+  const cardCode = ` // To use mui card import card component from mui // 
+import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
     
-    // React MUI component code// 
+// React MUI component code// 
     export default function BasicCard() {
       return (
-
-       
-    
-        <Card >
+  <Card>
+        <CardActions>
+          <span className="card-action-link"> ID-123 </span>
+          <span className=" ">  <em className=""></em>... </span>
+        </CardActions>
         <CardContent>
-
           <Typography variant="h5" component="div">
             Card
           </Typography>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            Subject
-          </Typography>
           <Typography variant="body2">
-          Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum,
-       
+            Lorem ipsum is typically a corrupted version of De
+            finibus bonorum et malorum.Lorem ipsum is typically a corrupted version of De
+            finibus bonorum et malorum. Lorem ipsum is typically a corrupted version of De
+            finibus bonorum et malorum.
           </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small"> More</Button>
-        </CardActions>
-      </Card>
-  
 
+        </CardContent>
+
+      </Card>
       );
     } 
       `;
@@ -144,21 +140,23 @@ import Typography from '@mui/material/Typography';
                   <div className="row ">
                     <div className="col-12 m-t-20 m-l-20 m-b-20 m-r-20 ">
                       <Card>
+                        <CardActions>
+                          <span className="card-action-link"> ID-123 </span>
+                          <span className=" ">  <em className=""></em>... </span>
+                        </CardActions>
                         <CardContent>
                           <Typography variant="h5" component="div">
                             Card
                           </Typography>
-                          <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                            Subject
-                          </Typography>
                           <Typography variant="body2">
                             Lorem ipsum is typically a corrupted version of De
-                            finibus bonorum et malorum,
+                            finibus bonorum et malorum.Lorem ipsum is typically a corrupted version of De
+                            finibus bonorum et malorum. Lorem ipsum is typically a corrupted version of De
+                            finibus bonorum et malorum.
                           </Typography>
+
                         </CardContent>
-                        <CardActions>
-                          <Button size="small"> More</Button>
-                        </CardActions>
+
                       </Card>
                     </div>
                   </div>

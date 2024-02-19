@@ -10,7 +10,7 @@ const Typography = () => {
           sentiment to assist our users through each stage of their journey.
         </p>
       </div>
-      <div className="content-wrapper">
+      <div className="content-wrapper foundations_main">
         <div className="content-area">
           <h3 className="m-b-10 m-t-0"> FreyaFusion font stack </h3>
           <h2 className="m-t-10 m-b-30">Open Sans</h2>

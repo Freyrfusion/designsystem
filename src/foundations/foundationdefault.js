@@ -1,8 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+import { Link } from "react-router-dom";
 
 const Foundationdefault = () => {
+  const [isOpen, setOpen] = useState(false);
+  const [activeElement, setActiveElement] = useState(0);
   const pathname = useLocation().pathname;
   return (
     <div>
@@ -15,7 +19,7 @@ const Foundationdefault = () => {
         </p>
       </div>
       <div className="content-wrapper">
-        <div className="content-area">
+        <div className="content-area foundations_main">
           <div className="row">
             <div className="col-6">
               {/* <Link
@@ -25,7 +29,11 @@ const Foundationdefault = () => {
               Foundations
             </Link> */}
 
-              <a className="foundation-main m-r-30">
+              <Link
+                activeClassName="is-active"
+                to="/foundations/colors"
+                className="foundation-main m-r-30"
+              >
                 <div className="icon">
                   <em className="icon-check-mark"></em>
                 </div>
@@ -35,10 +43,14 @@ const Foundationdefault = () => {
                   Color distinguishes our brand and reinforces consistent
                   experiences across products.
                 </p>
-              </a>
+              </Link>
             </div>
             <div className="col-6">
-              <a className="foundation-main">
+              <Link
+                activeClassName="is-active"
+                to="/foundations/Logos"
+                className="foundation-main"
+              >
                 <div className="icon">
                   <em className="icon-check-mark"></em>
                 </div>
@@ -49,12 +61,16 @@ const Foundationdefault = () => {
                   recognizable. All use our blue and white color palette with a
                   few variations.
                 </p>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="row m-t-30">
             <div className="col-6">
-              <a className="foundation-main m-r-30">
+              <Link
+                activeClassName="is-active"
+                to="/foundations/spacing"
+                className="foundation-main m-r-30"
+              >
                 <div className="icon">
                   <em className="icon-check-mark"></em>
                 </div>
@@ -64,10 +80,14 @@ const Foundationdefault = () => {
                   A spacing system simplifies the creation of page layouts and
                   UI.
                 </p>
-              </a>
+              </Link>
             </div>
             <div className="col-6">
-              <a className="foundation-main">
+              <Link
+                activeClassName="is-active"
+                to="/foundations/typographies"
+                className="foundation-main"
+              >
                 <div className="icon">
                   <em className="icon-check-mark"></em>
                 </div>
@@ -78,11 +98,11 @@ const Foundationdefault = () => {
                   appropriate sentiment to assist our users through each stage
                   of their journey.
                 </p>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 };

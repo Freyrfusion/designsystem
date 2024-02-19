@@ -150,7 +150,7 @@ renderInput={(params) => (
           <hr className="section-border-bottom"></hr>
 
           <div className="row" id="Combo box">
-            <div className="col-12 m-t-30">
+            <div className="col-12  ">
               <section>
                 <h3 className="sub-heading">Combo box</h3>
                 <p className="text">

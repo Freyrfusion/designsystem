@@ -12,7 +12,7 @@ const Logos = () => {
         </p>
       </div>
       <div className="content-wrapper">
-        <div className="content-area">
+        <div className="content-area foundations_main">
           <p>
             In everything we do, we aim to bring focus and clarity so our logos
             and symbols are direct, clear, and impactful. To accomplish this,

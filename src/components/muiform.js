@@ -8,6 +8,9 @@ import FormControl from "@mui/material/FormControl";
 import FormHelperText from "@mui/material/FormHelperText";
 import Input from "@mui/material/Input";
 import InputLabel from "@mui/material/InputLabel";
+import IconButton from "@mui/material/IconButton";
+import InputAdornment from "@mui/material/InputAdornment";
+import OutlinedInput from "@mui/material/OutlinedInput";
 
 const Muiform = () => {
   // Active class for bookmarks
@@ -333,6 +336,53 @@ export default function BasicTextFields() {
             </div>{" "}
           </div>
 
+          <div className="row" id="Search">
+            <div className="col-12">
+              <section>
+                <h3 className="sub-heading">Search </h3>
+                <p className="text">
+                  The prop is designed to cover the primary use case of a{" "}
+                  <code>search</code> input with suggestions, e.g. Google search
+                  or react-autowhatever.
+                </p>
+                <div className="collapsible-code">
+                  <div className="row">
+                    <div className="col-12 m-t-20 m-l-25 m-b-10">
+                      <FormControl variant="outlined" className="MuiSearch">
+                        <OutlinedInput
+                          id="outlined-adornment-password"
+                          type={"text"}
+                          startAdornment={
+                            <InputAdornment position="start">
+                              <IconButton
+                                aria-label="toggle password visibility"
+                                edge="end"
+                              >
+                                <em className="icon-search1"></em>
+                              </IconButton>
+                            </InputAdornment>
+                          }
+                          endAdornment={
+                            <InputAdornment position="end">
+                              <IconButton
+                                aria-label="toggle password visibility"
+                                edge="end"
+                              >
+                                <em className="icon-close-round"></em>
+                              </IconButton>
+                            </InputAdornment>
+                          }
+                        />
+                      </FormControl>
+                    </div>
+                  </div>
+
+                  <CollapsibleCode codeItem={dropdown_field} />
+                </div>
+              </section>
+            </div>
+          </div>
+
           <div className="row" id="Validation">
             <div className="col-12">
               <section>
@@ -436,7 +486,7 @@ export default function BasicTextFields() {
             ))}
           </ul>
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 };
