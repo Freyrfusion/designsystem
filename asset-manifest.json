@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/designsystem/design/main.css",
-    "main.js": "/designsystem/static/js/main.9dcab583.js",
+    "main.js": "/designsystem/static/js/main.6e6743cb.js",
     "designsystem.css": "/designsystem/design/designsystem.css",
     "designsystem.js": "/designsystem/static/js/designsystem.31d6cfe0.js",
     "icons.css": "/designsystem/design/icons.css",
@@ -285,8 +285,9 @@
     "react-syntax-highlighter_languages_refractor_yang.js": "/designsystem/static/js/react-syntax-highlighter_languages_refractor_yang.410fa2ff.chunk.js",
     "react-syntax-highlighter_languages_refractor_zig.js": "/designsystem/static/js/react-syntax-highlighter_languages_refractor_zig.76de947a.chunk.js",
     "static/js/5415.aecb2db6.chunk.js": "/designsystem/static/js/5415.aecb2db6.chunk.js",
+    "static/media/design-system.png": "/designsystem/static/media/design-system.dff9a681ac49c79b169f.png",
     "static/media/iconlibrary.svg?iz8a8p": "/designsystem/static/media/iconlibrary.a96116410979efcf27ae.svg",
-    "static/media/FreyaFusion-Logo.png": "/designsystem/static/media/FreyaFusion-Logo.32cdba72932693b3f915.png",
+    "static/media/FreyaFusion-Logo.png": "/designsystem/static/media/FreyaFusion-Logo.1190d47db84f643e8505.png",
     "static/media/iconlibrary.eot?iz8a8p": "/designsystem/static/media/iconlibrary.1e032441e1533381338c.eot",
     "static/media/iconlibrary.woff?iz8a8p": "/designsystem/static/media/iconlibrary.f83e375f8052695933ae.woff",
     "static/media/iconlibrary.ttf?iz8a8p": "/designsystem/static/media/iconlibrary.eef34d109ab582c0d774.ttf",
@@ -294,7 +295,7 @@
     "index.html": "/designsystem/index.html",
     "static/media/avatar.svg": "/designsystem/static/media/avatar.1d1637d83b571f257031daf5067daa69.svg",
     "main.css.map": "/designsystem/design/main.css.map",
-    "main.9dcab583.js.map": "/designsystem/static/js/main.9dcab583.js.map",
+    "main.6e6743cb.js.map": "/designsystem/static/js/main.6e6743cb.js.map",
     "designsystem.css.map": "/designsystem/design/designsystem.css.map",
     "icons.css.map": "/designsystem/design/icons.css.map",
     "refractor-core-import.4d1d7a79.chunk.js.map": "/designsystem/static/js/react-syntax-highlighter/refractor-core-import.4d1d7a79.chunk.js.map",
@@ -579,6 +580,6 @@
   },
   "entrypoints": [
     "design/main.css",
-    "static/js/main.9dcab583.js"
+    "static/js/main.6e6743cb.js"
   ]
 }
